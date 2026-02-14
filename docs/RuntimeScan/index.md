@@ -16,4 +16,3 @@ These documents complement the Interface-derived wiki pages:
 - [EvidenceIndex.json](EvidenceIndex.json) — raw evidence index.
 - [EvidenceIndex_VerificationReport.md](EvidenceIndex_VerificationReport.md) — verification report.
 - [GlobalsIndex.json](GlobalsIndex.json) — raw globals index.
-

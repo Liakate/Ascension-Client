@@ -20,4 +20,3 @@ This repository combines:
 - [docs/Templates.md](docs/Templates.md)
 - [docs/JsonMessaging.md](docs/JsonMessaging.md)
 - [docs/APIs/index.md](docs/APIs/index.md)
-
