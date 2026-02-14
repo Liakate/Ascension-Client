@@ -108,3 +108,8 @@
 
 
 Some useful helpers are implemented in Interface Lua but are **not** part of the runtime scan output. See: [`InterfaceLuaUtilities.md`](InterfaceLuaUtilities.md).
+
+
+## Related
+
+- [Runtime scan](../RuntimeScan/index.md)

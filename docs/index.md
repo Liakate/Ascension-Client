@@ -97,6 +97,7 @@ See: [`APIs/index.md`](APIs/index.md).
 ## Navigation
 
 
+- [Runtime scan](RuntimeScan/index.md)
 - Folder & structure docs:
 
 [`Folders/AddOns.md`](Folders/AddOns.md)
