@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>C_MysticEnchant</title>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.5;margin:0;padding:0;background:#fff;color:#111}
+main{max-width:980px;margin:0 auto;padding:32px 20px}
+pre,code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
+pre{padding:12px;overflow:auto;background:#f6f8fa;border-radius:8px}
+code{background:#f6f8fa;border-radius:6px;padding:0.15em 0.35em}
+pre code{background:transparent;padding:0}
+table{border-collapse:collapse;display:block;overflow:auto}
+th,td{border:1px solid #d0d7de;padding:6px 10px}
+h1,h2,h3{line-height:1.25}
+a{color:#0969da;text-decoration:none}
+a:hover{text-decoration:underline}
+hr{border:0;border-top:1px solid #d0d7de;margin:24px 0}
+</style>
+</head>
+<body>
+<main>
+<h1>C_MysticEnchant</h1>
+
+<p><strong>Members:</strong> 56  •  <strong>Functions:</strong> 56  •  <strong>Interface calls:</strong> 74 (across up to 14 files)</p>
+
+<p><strong>Defined in Interface Lua:</strong> no</p>
+
+<p><strong>Definition / evidence:</strong> not defined in Interface Lua (likely native client API)</p>
+
+<h2>Members</h2>
+
+<table>
+<thead>
+<tr>
+  <th>Member</th>
+  <th>Kind</th>
+  <th>Syntax / access</th>
+  <th>Example (from Interface)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>ApplyItem</td>
+  <td>function</td>
+  <td>C_MysticEnchant.ApplyItem(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>ApplySlot</td>
+  <td>function</td>
+  <td>C_MysticEnchant.ApplySlot(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>CanApplyAnySlot</td>
+  <td>function</td>
+  <td>C_MysticEnchant.CanApplyAnySlot(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>CanApplyItem</td>
+  <td>function</td>
+  <td>C_MysticEnchant.CanApplyItem(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>CanApplySlot</td>
+  <td>function</td>
+  <td>C_MysticEnchant.CanApplySlot(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>CanCollectionReforgeAnySlot</td>
+  <td>function</td>
+  <td>C_MysticEnchant.CanCollectionReforgeAnySlot(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>CanCollectionReforgeItem</td>
+  <td>function</td>
+  <td>C_MysticEnchant.CanCollectionReforgeItem(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>CanCollectionReforgeSlot</td>
+  <td>function</td>
+  <td>C_MysticEnchant.CanCollectionReforgeSlot(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>CanDestroy</td>
+  <td>function</td>
+  <td>C_MysticEnchant.CanDestroy(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>CanDisenchantItem</td>
+  <td>function</td>
+  <td>C_MysticEnchant.CanDisenchantItem(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>CanDisenchantSlot</td>
+  <td>function</td>
+  <td>C_MysticEnchant.CanDisenchantSlot(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>CanEquipEnchant</td>
+  <td>function</td>
+  <td>C_MysticEnchant.CanEquipEnchant(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>CanEquipItem</td>
+  <td>function</td>
+  <td>C_MysticEnchant.CanEquipItem(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>CanEquipSlot</td>
+  <td>function</td>
+  <td>C_MysticEnchant.CanEquipSlot(arg1)</td>
+  <td>safeCheckResult, errorMessages = C_MysticEnchant.CanEquipSlot(EnchantCollectionUtil:GetRealSlotID...</td>
+</tr>
+<tr>
+  <td>CanInspect</td>
+  <td>function</td>
+  <td>C_MysticEnchant.CanInspect(arg1)</td>
+  <td>if C_MysticEnchant.CanInspect(self.unit) then</td>
+</tr>
+<tr>
+  <td>CanPurchaseMysticExtract</td>
+  <td>function</td>
+  <td>C_MysticEnchant.CanPurchaseMysticExtract()</td>
+  <td>if C_MysticEnchant.CanPurchaseMysticExtract() then</td>
+</tr>
+<tr>
+  <td>CanPurchaseMysticScroll</td>
+  <td>function</td>
+  <td>C_MysticEnchant.CanPurchaseMysticScroll(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>CanReforgeItem</td>
+  <td>function</td>
+  <td>C_MysticEnchant.CanReforgeItem(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>CanReforgeSlot</td>
+  <td>function</td>
+  <td>C_MysticEnchant.CanReforgeSlot(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>CanSaveApply</td>
+  <td>function</td>
+  <td>C_MysticEnchant.CanSaveApply(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>CanSaveCollectionReforge</td>
+  <td>function</td>
+  <td>C_MysticEnchant.CanSaveCollectionReforge(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>CollectionReforgeItem</td>
+  <td>function</td>
+  <td>C_MysticEnchant.CollectionReforgeItem(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>CollectionReforgeSlot</td>
+  <td>function</td>
+  <td>C_MysticEnchant.CollectionReforgeSlot(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Destroy</td>
+  <td>function</td>
+  <td>C_MysticEnchant.Destroy(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>DisenchantItem</td>
+  <td>function</td>
+  <td>C_MysticEnchant.DisenchantItem(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>DisenchantSlot</td>
+  <td>function</td>
+  <td>C_MysticEnchant.DisenchantSlot(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>GetAppliedEnchant</td>
+  <td>function</td>
+  <td>C_MysticEnchant.GetAppliedEnchant(arg1, arg2)</td>
+  <td>return self:GetTempSlotData(slot) or C_MysticEnchant.GetAppliedEnchant("player", slot)</td>
+</tr>
+<tr>
+  <td>GetApplyChanges</td>
+  <td>function</td>
+  <td>C_MysticEnchant.GetApplyChanges()</td>
+  <td>self.tempSlotData = C_MysticEnchant.GetApplyChanges()</td>
+</tr>
+<tr>
+  <td>GetApplyItemCost</td>
+  <td>function</td>
+  <td>C_MysticEnchant.GetApplyItemCost(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>GetCollectionReforgeChanges</td>
+  <td>function</td>
+  <td>C_MysticEnchant.GetCollectionReforgeChanges()</td>
+  <td>self.tempSlotData = C_MysticEnchant.GetCollectionReforgeChanges()</td>
+</tr>
+<tr>
+  <td>GetCollectionReforgeItemCost</td>
+  <td>function</td>
+  <td>C_MysticEnchant.GetCollectionReforgeItemCost(arg1)</td>
+  <td>local tokenCost, moneyCost = C_MysticEnchant.GetCollectionReforgeItemCost(spellID)</td>
+</tr>
+<tr>
+  <td>GetCollectionReforgeSlotCost</td>
+  <td>function</td>
+  <td>C_MysticEnchant.GetCollectionReforgeSlotCost(arg1)</td>
+  <td>local tokenCost, moneyCost = C_MysticEnchant.GetCollectionReforgeSlotCost(spellID)</td>
+</tr>
+<tr>
+  <td>GetDisenchantCost</td>
+  <td>function</td>
+  <td>C_MysticEnchant.GetDisenchantCost(arg1, arg2)</td>
+  <td>local tokenCost, markCost = C_MysticEnchant.GetDisenchantCost(SpellID, MysticEnchantUtil.NeedsToP...</td>
+</tr>
+<tr>
+  <td>GetEnchantInfoByItem</td>
+  <td>function</td>
+  <td>C_MysticEnchant.GetEnchantInfoByItem(arg1)</td>
+  <td>local REData = C_MysticEnchant.GetEnchantInfoByItem(itemID) or (itemID == ItemData.UNTARNISHED_MY...</td>
+</tr>
+<tr>
+  <td>GetEnchantInfoBySpell</td>
+  <td>function</td>
+  <td>C_MysticEnchant.GetEnchantInfoBySpell(arg1)</td>
+  <td>local enchantInfo = C_MysticEnchant.GetEnchantInfoBySpell(spellID)</td>
+</tr>
+<tr>
+  <td>GetMysticScrollCost</td>
+  <td>function</td>
+  <td>C_MysticEnchant.GetMysticScrollCost()</td>
+  <td>self.MysticScrollCost = C_MysticEnchant.GetMysticScrollCost()</td>
+</tr>
+<tr>
+  <td>GetMysticScrolls</td>
+  <td>function</td>
+  <td>C_MysticEnchant.GetMysticScrolls()</td>
+  <td>self.scrolls = C_MysticEnchant.GetMysticScrolls()</td>
+</tr>
+<tr>
+  <td>GetProgress</td>
+  <td>function</td>
+  <td>C_MysticEnchant.GetProgress()</td>
+  <td>progress, level = C_MysticEnchant.GetProgress()</td>
+</tr>
+<tr>
+  <td>GetReforgeCost</td>
+  <td>function</td>
+  <td>C_MysticEnchant.GetReforgeCost()</td>
+  <td>local tokenCost = C_MysticEnchant.GetReforgeCost()</td>
+</tr>
+<tr>
+  <td>GetSaveCollectionReforgeSlotCost</td>
+  <td>function</td>
+  <td>C_MysticEnchant.GetSaveCollectionReforgeSlotCost(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>HasAnyCollected</td>
+  <td>function</td>
+  <td>C_MysticEnchant.HasAnyCollected()</td>
+  <td>local hasAnyEnchants = C_MysticEnchant.HasAnyCollected() or C_MysticEnchant.HasAnyScroll()</td>
+</tr>
+<tr>
+  <td>HasAnyScroll</td>
+  <td>function</td>
+  <td>C_MysticEnchant.HasAnyScroll()</td>
+  <td>local hasAnyEnchants = C_MysticEnchant.HasAnyCollected() or C_MysticEnchant.HasAnyScroll()</td>
+</tr>
+<tr>
+  <td>HasAnySlotEnchanted</td>
+  <td>function</td>
+  <td>C_MysticEnchant.HasAnySlotEnchanted(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>HasNearbyMysticAltar</td>
+  <td>function</td>
+  <td>C_MysticEnchant.HasNearbyMysticAltar()</td>
+  <td>return C_MysticEnchant.HasNearbyMysticAltar()</td>
+</tr>
+<tr>
+  <td>Inspect</td>
+  <td>function</td>
+  <td>C_MysticEnchant.Inspect(arg1, arg2)</td>
+  <td>C_MysticEnchant.Inspect(self.unit, true)</td>
+</tr>
+<tr>
+  <td>PurchaseMysticExtract</td>
+  <td>function</td>
+  <td>C_MysticEnchant.PurchaseMysticExtract()</td>
+  <td>C_MysticEnchant.PurchaseMysticExtract()</td>
+</tr>
+<tr>
+  <td>PurchaseMysticScroll</td>
+  <td>function</td>
+  <td>C_MysticEnchant.PurchaseMysticScroll(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>QueryEnchants</td>
+  <td>function</td>
+  <td>C_MysticEnchant.QueryEnchants(arg1, arg2, arg3, arg4)</td>
+  <td>local _, totalKnownEnchants = C_MysticEnchant.QueryEnchants(1, 1, "", {Enum.ECFilters.RE_FILTER_K...</td>
+</tr>
+<tr>
+  <td>ReforgeItem</td>
+  <td>function</td>
+  <td>C_MysticEnchant.ReforgeItem(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>ReforgeSlot</td>
+  <td>function</td>
+  <td>C_MysticEnchant.ReforgeSlot(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>SaveApply</td>
+  <td>function</td>
+  <td>C_MysticEnchant.SaveApply(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>SaveCollectionReforge</td>
+  <td>function</td>
+  <td>C_MysticEnchant.SaveCollectionReforge(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>UndoApply</td>
+  <td>function</td>
+  <td>C_MysticEnchant.UndoApply(arg1)</td>
+  <td>C_MysticEnchant.UndoApply(slot)</td>
+</tr>
+<tr>
+  <td>UndoCollectionReforge</td>
+  <td>function</td>
+  <td>C_MysticEnchant.UndoCollectionReforge(arg1)</td>
+  <td>C_MysticEnchant.UndoCollectionReforge(slot)</td>
+</tr>
+<tr>
+  <td>UndoLastApply</td>
+  <td>function</td>
+  <td>C_MysticEnchant.UndoLastApply(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>UndoLastCollectionReforge</td>
+  <td>function</td>
+  <td>C_MysticEnchant.UndoLastCollectionReforge(...)</td>
+  <td></td>
+</tr>
+</tbody>
+</table>
+
+<h2>Notes</h2>
+
+<ul>
+<li>9 member(s) had a runtime probe marked <code>ok</code> in the scan data.</li>
+</ul>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>C_MythicPlus</title>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.5;margin:0;padding:0;background:#fff;color:#111}
+main{max-width:980px;margin:0 auto;padding:32px 20px}
+pre,code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
+pre{padding:12px;overflow:auto;background:#f6f8fa;border-radius:8px}
+code{background:#f6f8fa;border-radius:6px;padding:0.15em 0.35em}
+pre code{background:transparent;padding:0}
+table{border-collapse:collapse;display:block;overflow:auto}
+th,td{border:1px solid #d0d7de;padding:6px 10px}
+h1,h2,h3{line-height:1.25}
+a{color:#0969da;text-decoration:none}
+a:hover{text-decoration:underline}
+hr{border:0;border-top:1px solid #d0d7de;margin:24px 0}
+</style>
+</head>
+<body>
+<main>
+<h1>C_MythicPlus</h1>
+
+<p><strong>Members:</strong> 12  •  <strong>Functions:</strong> 12  •  <strong>Interface calls:</strong> 34 (across up to 5 files)</p>
+
+<p><strong>Defined in Interface Lua:</strong> no</p>
+
+<p><strong>Definition / evidence:</strong> not defined in Interface Lua (likely native client API)</p>
+
+<h2>Members</h2>
+
+<table>
+<thead>
+<tr>
+  <th>Member</th>
+  <th>Kind</th>
+  <th>Syntax / access</th>
+  <th>Example (from Interface)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>ActivateKeystone</td>
+  <td>function</td>
+  <td>C_MythicPlus.ActivateKeystone()</td>
+  <td></td>
+</tr>
+<tr>
+  <td>GetActiveKeystoneChampions</td>
+  <td>function</td>
+  <td>C_MythicPlus.GetActiveKeystoneChampions()</td>
+  <td>local champions = C_MythicPlus.GetActiveKeystoneChampions()</td>
+</tr>
+<tr>
+  <td>GetActiveKeystoneEncounters</td>
+  <td>function</td>
+  <td>C_MythicPlus.GetActiveKeystoneEncounters()</td>
+  <td>local encountersInfo = C_MythicPlus.GetActiveKeystoneEncounters()</td>
+</tr>
+<tr>
+  <td>GetActiveKeystoneInfo</td>
+  <td>function</td>
+  <td>C_MythicPlus.GetActiveKeystoneInfo()</td>
+  <td>local activeKeystone = C_MythicPlus.GetActiveKeystoneInfo()</td>
+</tr>
+<tr>
+  <td>GetActiveKeystoneTime</td>
+  <td>function</td>
+  <td>C_MythicPlus.GetActiveKeystoneTime()</td>
+  <td>local timeLeft, timeLimit = C_MythicPlus.GetActiveKeystoneTime()</td>
+</tr>
+<tr>
+  <td>GetActiveKeystoneTrash</td>
+  <td>function</td>
+  <td>C_MythicPlus.GetActiveKeystoneTrash()</td>
+  <td>local trash = C_MythicPlus.GetActiveKeystoneTrash()</td>
+</tr>
+<tr>
+  <td>GetCurrentAffixes</td>
+  <td>function</td>
+  <td>C_MythicPlus.GetCurrentAffixes()</td>
+  <td>local affixes = C_MythicPlus.GetCurrentAffixes()</td>
+</tr>
+<tr>
+  <td>GetKeystoneInfo</td>
+  <td>function</td>
+  <td>C_MythicPlus.GetKeystoneInfo(arg1)</td>
+  <td>local keystoneInfo = C_MythicPlus.GetKeystoneInfo(keystoneID)</td>
+</tr>
+<tr>
+  <td>GetMapEncounters</td>
+  <td>function</td>
+  <td>C_MythicPlus.GetMapEncounters(arg1)</td>
+  <td>self:UpdateEncounters(C_MythicPlus.GetMapEncounters(dungeonID))</td>
+</tr>
+<tr>
+  <td>GetMapFinalEncounter</td>
+  <td>function</td>
+  <td>C_MythicPlus.GetMapFinalEncounter(arg1)</td>
+  <td>self.finalEncounter = C_MythicPlus.GetMapFinalEncounter(dungeonID)</td>
+</tr>
+<tr>
+  <td>IsItemKeystone</td>
+  <td>function</td>
+  <td>C_MythicPlus.IsItemKeystone(arg1)</td>
+  <td>if itemID and C_MythicPlus.IsItemKeystone(itemID) then</td>
+</tr>
+<tr>
+  <td>IsKeystoneActive</td>
+  <td>function</td>
+  <td>C_MythicPlus.IsKeystoneActive()</td>
+  <td>if C_MythicPlus.IsKeystoneActive() then</td>
+</tr>
+</tbody>
+</table>
+
+</main>
+</body>
+</html>

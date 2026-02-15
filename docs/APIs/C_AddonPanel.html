@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>C_AddonPanel</title>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.5;margin:0;padding:0;background:#fff;color:#111}
+main{max-width:980px;margin:0 auto;padding:32px 20px}
+pre,code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
+pre{padding:12px;overflow:auto;background:#f6f8fa;border-radius:8px}
+code{background:#f6f8fa;border-radius:6px;padding:0.15em 0.35em}
+pre code{background:transparent;padding:0}
+table{border-collapse:collapse;display:block;overflow:auto}
+th,td{border:1px solid #d0d7de;padding:6px 10px}
+h1,h2,h3{line-height:1.25}
+a{color:#0969da;text-decoration:none}
+a:hover{text-decoration:underline}
+hr{border:0;border-top:1px solid #d0d7de;margin:24px 0}
+</style>
+</head>
+<body>
+<main>
+<h1>C_AddonPanel</h1>
+
+<p><strong>Members:</strong> 24  •  <strong>Functions:</strong> 20  •  <strong>Interface calls:</strong> 57 (across up to 4 files)</p>
+
+<p><strong>Defined in Interface Lua:</strong> yes</p>
+
+<p><strong>Definition / evidence:</strong> <code>SharedXML/Util/C_AddonPanel.lua</code> line 1</p>
+
+<h2>Members</h2>
+
+<table>
+<thead>
+<tr>
+  <th>Member</th>
+  <th>Kind</th>
+  <th>Syntax / access</th>
+  <th>Example (from Interface)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>DeleteSaveState</td>
+  <td>function</td>
+  <td>C_AddonPanel:DeleteSaveState(arg1)</td>
+  <td>function C_AddonPanel:DeleteSaveState(id)</td>
+</tr>
+<tr>
+  <td>EnableHiddenAddons</td>
+  <td>function</td>
+  <td>C_AddonPanel:EnableHiddenAddons()</td>
+  <td>function C_AddonPanel:EnableHiddenAddons()</td>
+</tr>
+<tr>
+  <td>EnumerateAddOns</td>
+  <td>function</td>
+  <td>C_AddonPanel:EnumerateAddOns()</td>
+  <td>for _, addon in C_AddonPanel:EnumerateAddOns() do</td>
+</tr>
+<tr>
+  <td>GetAddonDisabledBy</td>
+  <td>function</td>
+  <td>C_AddonPanel:GetAddonDisabledBy(arg1)</td>
+  <td>local disabledChars = C_AddonPanel:GetAddonDisabledBy(addon)</td>
+</tr>
+<tr>
+  <td>GetAddonIndex</td>
+  <td>function</td>
+  <td>C_AddonPanel:GetAddonIndex(arg1, arg2)</td>
+  <td>local selectedIndex = C_AddonPanel:GetAddonIndex(self.selectedAddon, addons)</td>
+</tr>
+<tr>
+  <td>GetAddonIndexRaw</td>
+  <td>function</td>
+  <td>C_AddonPanel:GetAddonIndexRaw(arg1)</td>
+  <td>function C_AddonPanel:GetAddonIndexRaw(addonToFind)</td>
+</tr>
+<tr>
+  <td>GetAddonObject</td>
+  <td>function</td>
+  <td>C_AddonPanel:GetAddonObject(arg1)</td>
+  <td>function C_AddonPanel:GetAddonObject(name)</td>
+</tr>
+<tr>
+  <td>GetNumInsecureAddons</td>
+  <td>function</td>
+  <td>C_AddonPanel:GetNumInsecureAddons()</td>
+  <td>function C_AddonPanel:GetNumInsecureAddons()</td>
+</tr>
+<tr>
+  <td>GetSaveState</td>
+  <td>function</td>
+  <td>C_AddonPanel:GetSaveState(arg1)</td>
+  <td>local preset = C_AddonPanel:GetSaveState(id)</td>
+</tr>
+<tr>
+  <td>GetSaveStateIDs</td>
+  <td>function</td>
+  <td>C_AddonPanel:GetSaveStateIDs()</td>
+  <td>for i, id in ipairs(C_AddonPanel:GetSaveStateIDs()) do</td>
+</tr>
+<tr>
+  <td>GetSearchedAddons</td>
+  <td>function</td>
+  <td>C_AddonPanel:GetSearchedAddons(arg1)</td>
+  <td>local addons = C_AddonPanel:GetSearchedAddons(self.searchText)</td>
+</tr>
+<tr>
+  <td>HasConfigurableAddons</td>
+  <td>function</td>
+  <td>C_AddonPanel:HasConfigurableAddons()</td>
+  <td>function C_AddonPanel:HasConfigurableAddons()</td>
+</tr>
+<tr>
+  <td>InitializeAddonList</td>
+  <td>function</td>
+  <td>C_AddonPanel:InitializeAddonList()</td>
+  <td>function C_AddonPanel:InitializeAddonList()</td>
+</tr>
+<tr>
+  <td>IsAddonSearched</td>
+  <td>function</td>
+  <td>C_AddonPanel:IsAddonSearched(arg1, arg2)</td>
+  <td>function C_AddonPanel:IsAddonSearched(addon, searchText)</td>
+</tr>
+<tr>
+  <td>IsSecureAddon</td>
+  <td>function</td>
+  <td>C_AddonPanel:IsSecureAddon(arg1)</td>
+  <td>function C_AddonPanel:IsSecureAddon(id)</td>
+</tr>
+<tr>
+  <td>MakeSaveState</td>
+  <td>function</td>
+  <td>C_AddonPanel:MakeSaveState()</td>
+  <td>self.saveState = C_AddonPanel:MakeSaveState()</td>
+</tr>
+<tr>
+  <td>RefreshAddonData</td>
+  <td>function</td>
+  <td>C_AddonPanel:RefreshAddonData()</td>
+  <td>function C_AddonPanel:RefreshAddonData()</td>
+</tr>
+<tr>
+  <td>RestoreSaveState</td>
+  <td>function</td>
+  <td>C_AddonPanel:RestoreSaveState(arg1)</td>
+  <td>C_AddonPanel:RestoreSaveState(self.saveState)</td>
+</tr>
+<tr>
+  <td>UpdateAddonList</td>
+  <td>function</td>
+  <td>C_AddonPanel:UpdateAddonList()</td>
+  <td>function C_AddonPanel:UpdateAddonList()</td>
+</tr>
+<tr>
+  <td>WriteSaveState</td>
+  <td>function</td>
+  <td>C_AddonPanel:WriteSaveState(arg1, arg2, arg3)</td>
+  <td>function C_AddonPanel:WriteSaveState(id, state, write)</td>
+</tr>
+<tr>
+  <td>saveFile</td>
+  <td>string</td>
+  <td>C_AddonPanel.saveFile</td>
+  <td>local compressed = ReadCustomWTF(C_AddonPanel.saveFile)</td>
+</tr>
+<tr>
+  <td>addons</td>
+  <td>table</td>
+  <td>C_AddonPanel.addons</td>
+  <td></td>
+</tr>
+<tr>
+  <td>addonsByIndex</td>
+  <td>table</td>
+  <td>C_AddonPanel.addonsByIndex</td>
+  <td></td>
+</tr>
+<tr>
+  <td>addonsByName</td>
+  <td>table</td>
+  <td>C_AddonPanel.addonsByName</td>
+  <td></td>
+</tr>
+</tbody>
+</table>
+
+</main>
+</body>
+</html>

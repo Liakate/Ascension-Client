@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>C_PVP</title>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.5;margin:0;padding:0;background:#fff;color:#111}
+main{max-width:980px;margin:0 auto;padding:32px 20px}
+pre,code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
+pre{padding:12px;overflow:auto;background:#f6f8fa;border-radius:8px}
+code{background:#f6f8fa;border-radius:6px;padding:0.15em 0.35em}
+pre code{background:transparent;padding:0}
+table{border-collapse:collapse;display:block;overflow:auto}
+th,td{border:1px solid #d0d7de;padding:6px 10px}
+h1,h2,h3{line-height:1.25}
+a{color:#0969da;text-decoration:none}
+a:hover{text-decoration:underline}
+hr{border:0;border-top:1px solid #d0d7de;margin:24px 0}
+</style>
+</head>
+<body>
+<main>
+<h1>C_PVP</h1>
+
+<p><strong>Members:</strong> 19  •  <strong>Functions:</strong> 18  •  <strong>Interface calls:</strong> 128 (across up to 4 files)</p>
+
+<p><strong>Defined in Interface Lua:</strong> yes</p>
+
+<p><strong>Definition / evidence:</strong> <code>FrameXML/Util/C_PVP.lua</code> line 1</p>
+
+<h2>Members</h2>
+
+<table>
+<thead>
+<tr>
+  <th>Member</th>
+  <th>Kind</th>
+  <th>Syntax / access</th>
+  <th>Example (from Interface)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>InHighRisk</td>
+  <td>boolean</td>
+  <td>C_PVP.InHighRisk</td>
+  <td></td>
+</tr>
+<tr>
+  <td>CanQueueCasual</td>
+  <td>function</td>
+  <td>C_PVP:CanQueueCasual()</td>
+  <td>{ name = "AscensionPVPFrameCasualFrame", label = "QUICK_MATCH", icon = "Interface\Icons\achieve...</td>
+</tr>
+<tr>
+  <td>CanQueueInHighRisk</td>
+  <td>function</td>
+  <td>C_PVP:CanQueueInHighRisk()</td>
+  <td>if not C_PVP:CanQueueInHighRisk() then</td>
+</tr>
+<tr>
+  <td>CanQueueRated</td>
+  <td>function</td>
+  <td>C_PVP:CanQueueRated()</td>
+  <td>{ name = "AscensionPVPFrameRatedFrame", label = "RATED", label2 = "[ARENA_POINTS]", icon = "Inter...</td>
+</tr>
+<tr>
+  <td>GetBattlegroundFaction</td>
+  <td>function</td>
+  <td>C_PVP:GetBattlegroundFaction()</td>
+  <td>self:StartTimer(seconds / 1000, C_PVP:GetBattlegroundFaction())</td>
+</tr>
+<tr>
+  <td>GetCurrentBestRating</td>
+  <td>function</td>
+  <td>C_PVP:GetCurrentBestRating()</td>
+  <td>function C_PVP:GetCurrentBestRating()</td>
+</tr>
+<tr>
+  <td>GetEliteTierInfo</td>
+  <td>function</td>
+  <td>C_PVP:GetEliteTierInfo()</td>
+  <td>local eliteName, eliteMinRating, elitePrevTier, eliteIcon = C_PVP:GetEliteTierInfo()</td>
+</tr>
+<tr>
+  <td>GetHolidayBGInfo</td>
+  <td>function</td>
+  <td>C_PVP:GetHolidayBGInfo()</td>
+  <td>local holidays = C_PVP:GetHolidayBGInfo()</td>
+</tr>
+<tr>
+  <td>GetHonorRank</td>
+  <td>function</td>
+  <td>C_PVP:GetHonorRank(arg1)</td>
+  <td>local level, currentIcon, currentGloryReq, nextIcon, nextGloryReq = C_PVP:GetHonorRank(glory)</td>
+</tr>
+<tr>
+  <td>GetIsCurrentMapHighRisk</td>
+  <td>function</td>
+  <td>C_PVP:GetIsCurrentMapHighRisk()</td>
+  <td>local isHighRisk = C_PVP:GetIsCurrentMapHighRisk()</td>
+</tr>
+<tr>
+  <td>GetMapIsHighRisk</td>
+  <td>function</td>
+  <td>C_PVP:GetMapIsHighRisk(arg1)</td>
+  <td>local isHighRisk = C_PVP:GetMapIsHighRisk(GetMapInfo())</td>
+</tr>
+<tr>
+  <td>GetMaxGearDropAmount</td>
+  <td>function</td>
+  <td>C_PVP:GetMaxGearDropAmount()</td>
+  <td>function C_PVP:GetMaxGearDropAmount()</td>
+</tr>
+<tr>
+  <td>GetPVPTierInfo</td>
+  <td>function</td>
+  <td>C_PVP:GetPVPTierInfo(arg1)</td>
+  <td>ratingName, _, _, _, _, ratingIcon = C_PVP:GetPVPTierInfo(team.rating)</td>
+</tr>
+<tr>
+  <td>GetRandomBGInfo</td>
+  <td>function</td>
+  <td>C_PVP:GetRandomBGInfo()</td>
+  <td>local bgName, canQueue, battleGroundIndex, battleGroundID, hasWon, winHonorAmount, winArenaAmount...</td>
+</tr>
+<tr>
+  <td>GetRandomBrawlBGInfo</td>
+  <td>function</td>
+  <td>C_PVP:GetRandomBrawlBGInfo()</td>
+  <td>local bgName, canQueue, battleGroundIndex, battleGroundID, hasWon, winHonorAmount, winArenaAmount...</td>
+</tr>
+<tr>
+  <td>GetRequiredItemLevelForEvents</td>
+  <td>function</td>
+  <td>C_PVP:GetRequiredItemLevelForEvents()</td>
+  <td>function() return format(EVENT_HR_MATERIALS_HERB_DESC, "Dreadmaul Rock", C_PVP:GetRequiredItemLev...</td>
+</tr>
+<tr>
+  <td>IsLegacyWarmode</td>
+  <td>function</td>
+  <td>C_PVP:IsLegacyWarmode()</td>
+  <td>﻿if not C_PVP:IsLegacyWarmode() then</td>
+</tr>
+<tr>
+  <td>PLAYER_ENTERING_WORLD</td>
+  <td>function</td>
+  <td>C_PVP:PLAYER_ENTERING_WORLD()</td>
+  <td>function C_PVP:PLAYER_ENTERING_WORLD()</td>
+</tr>
+<tr>
+  <td>ZONE_CHANGED_NEW_AREA</td>
+  <td>function</td>
+  <td>C_PVP:ZONE_CHANGED_NEW_AREA()</td>
+  <td>function C_PVP:ZONE_CHANGED_NEW_AREA()</td>
+</tr>
+</tbody>
+</table>
+
+</main>
+</body>
+</html>

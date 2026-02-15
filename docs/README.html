@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Interface (Ascension client) — extracted from interface.zip</title>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.5;margin:0;padding:0;background:#fff;color:#111}
+main{max-width:980px;margin:0 auto;padding:32px 20px}
+pre,code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
+pre{padding:12px;overflow:auto;background:#f6f8fa;border-radius:8px}
+code{background:#f6f8fa;border-radius:6px;padding:0.15em 0.35em}
+pre code{background:transparent;padding:0}
+table{border-collapse:collapse;display:block;overflow:auto}
+th,td{border:1px solid #d0d7de;padding:6px 10px}
+h1,h2,h3{line-height:1.25}
+a{color:#0969da;text-decoration:none}
+a:hover{text-decoration:underline}
+hr{border:0;border-top:1px solid #d0d7de;margin:24px 0}
+</style>
+</head>
+<body>
+<main>
+<h1>Interface (Ascension client) — extracted from interface.zip</h1>
+
+<p><strong>Interface number:</strong> 30300 (WotLK 3.3.5-era client with Ascension patches)  </p>
+
+<p><strong>Source archive SHA-1:</strong> <code>0ad56577357a0ba4c63ed6e80390d611e0a6ff81</code>  </p>
+
+<p><strong>Generated:</strong> 2026-02-13 (Europe/Amsterdam)</p>
+
+<h2>What this is</h2>
+
+<p>This document set describes the <strong>Ascension client UI package</strong> shipped as <code>Interface/</code>:</p>
+
+<ul>
+<li>Blizzard-era UI (FrameXML / GlueXML) with Ascension additions and overrides.</li>
+<li>Shipped AddOns (Ascension and Blizzard_ modules).</li>
+<li>Shared libraries and utility code.</li>
+</ul>
+
+<p>It is written in a “wiki-style API reference” format (syntax → arguments → returns → examples), similar to the documentation style used by Warcraft wiki.</p>
+
+<h2>Top-level folders</h2>
+
+<table>
+<thead>
+<tr>
+  <th>Folder</th>
+  <th>Purpose</th>
+  <th>Files</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Interface/AddOns</td>
+  <td>AddOn packages loaded by the in-game AddOn loader (per .toc )</td>
+  <td>532</td>
+</tr>
+<tr>
+  <td>Interface/FrameXML</td>
+  <td>In-game UI (“logged in”) core frames, templates, utilities</td>
+  <td>539</td>
+</tr>
+<tr>
+  <td>Interface/GlueXML</td>
+  <td>Login / character select / realm list UI (“glue screens”)</td>
+  <td>94</td>
+</tr>
+<tr>
+  <td>Interface/LCDXML</td>
+  <td>LCD device layouts (e.g., Logitech-style LCD panels)</td>
+  <td>2</td>
+</tr>
+<tr>
+  <td>Interface/LibraryXML</td>
+  <td>Shipped libraries (Ace3, LibDeflate, LibSharedMedia, etc.)</td>
+  <td>141</td>
+</tr>
+<tr>
+  <td>Interface/SharedXML</td>
+  <td>Shared UI templates + utility mixins used by both GlueXML &amp; FrameXML</td>
+  <td>134</td>
+</tr>
+</tbody>
+</table>
+
+<h2>Loading model (high level)</h2>
+
+<h3>1) AddOns</h3>
+
+<ul>
+<li>The game loads <code>Interface/AddOns/&lt;AddonName&gt;/&lt;AddonName&gt;.toc</code>.</li>
+<li><code>.toc</code> lists files to load (Lua and XML).</li>
+<li>AddOns can be <strong>LoadOnDemand</strong> and loaded at runtime (e.g., when opening a panel).</li>
+</ul>
+
+<h3>2) GlueXML (login screens)</h3>
+
+<ul>
+<li>Loaded before you enter the world.</li>
+<li>Uses its own global frames and scripts (e.g., realm list, character select).</li>
+<li>Uses a subset of SharedXML + its own utility layer (see <code>Interface/GlueXML/Util</code>).</li>
+</ul>
+
+<h3>3) FrameXML (in-game UI)</h3>
+
+<ul>
+<li>Loaded after you enter the world and <code>UIParent</code> is created.</li>
+<li>The file <code>Interface/FrameXML/FrameXML.toc</code> is the primary in-game load list.</li>
+</ul>
+
+<h3>4) SharedXML</h3>
+
+<ul>
+<li>Shared templates and mixins used by both GlueXML and FrameXML.</li>
+<li>Ascension also ships several “client-side helper” namespaces here (notably <code>C_Hook</code>, <code>C_Comm</code>, serializers/deflate, and compatibility stubs).</li>
+</ul>
+
+<h2>What counts as “Ascension APIs”</h2>
+
+<p>In this documentation set, <strong>Ascension APIs</strong> includes:</p>
+
+<ul>
+<li><strong>Native client APIs</strong> exposed to Lua (mostly <code>C_*</code> namespaces and a small list of global functions).</li>
+<li><strong>Lua-defined client namespaces</strong> shipped in the UI (e.g., <code>C_Hook</code>, <code>C_Comm</code>, <code>C_Keystones</code>, etc.).</li>
+<li><strong>Utility modules</strong> shipped with the client UI that are intended to be used by UI code and AddOns (e.g., <code>ChallengeUtil</code>, <code>GameEventUtil</code>, <code>MysticEnchantManagerUtil</code>, ...).</li>
+</ul>
+
+<p>See: <a href="APIs/index.html"><code>APIs/index.md</code></a>.</p>
+
+<h2>Navigation</h2>
+
+<ul>
+<li><a href="RuntimeScan/index.html">Runtime scan</a></li>
+<li>Folder &amp; structure docs:</li>
+</ul>
+
+<p><a href="Folders/AddOns.html"><code>Folders/AddOns.md</code></a><br />
+<a href="Folders/FrameXML.html"><code>Folders/FrameXML.md</code></a><br />
+<a href="Folders/GlueXML.html"><code>Folders/GlueXML.md</code></a><br />
+<a href="Folders/LCDXML.html"><code>Folders/LCDXML.md</code></a><br />
+<a href="Folders/LibraryXML.html"><code>Folders/LibraryXML.md</code></a><br />
+<a href="Folders/SharedXML.html"><code>Folders/SharedXML.md</code></a></p>
+
+<ul>
+<li><a href="Folders/AddOns.html"><code>Folders/AddOns.md</code></a></li>
+<li><a href="Folders/FrameXML.html"><code>Folders/FrameXML.md</code></a></li>
+<li><a href="Folders/GlueXML.html"><code>Folders/GlueXML.md</code></a></li>
+<li><a href="Folders/LCDXML.html"><code>Folders/LCDXML.md</code></a></li>
+<li><a href="Folders/LibraryXML.html"><code>Folders/LibraryXML.md</code></a></li>
+<li><a href="Folders/SharedXML.html"><code>Folders/SharedXML.md</code></a>
+<ul>
+<li>API reference:</li>
+</ul></li>
+</ul>
+
+<p><a href="APIs/index.html"><code>APIs/index.md</code></a></p>
+
+<ul>
+<li><a href="APIs/index.html"><code>APIs/index.md</code></a>
+<ul>
+<li><a href="Events.html"><code>Events.md</code></a></li>
+<li><a href="Enums.html"><code>Enums.md</code></a></li>
+<li><a href="Templates.html"><code>Templates.md</code></a></li>
+<li><a href="JsonMessaging.html"><code>JsonMessaging.md</code></a></li>
+</ul></li>
+</ul>
+
+</main>
+</body>
+</html>

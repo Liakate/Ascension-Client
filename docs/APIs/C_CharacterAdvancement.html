@@ -1,0 +1,817 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>C_CharacterAdvancement</title>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.5;margin:0;padding:0;background:#fff;color:#111}
+main{max-width:980px;margin:0 auto;padding:32px 20px}
+pre,code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
+pre{padding:12px;overflow:auto;background:#f6f8fa;border-radius:8px}
+code{background:#f6f8fa;border-radius:6px;padding:0.15em 0.35em}
+pre code{background:transparent;padding:0}
+table{border-collapse:collapse;display:block;overflow:auto}
+th,td{border:1px solid #d0d7de;padding:6px 10px}
+h1,h2,h3{line-height:1.25}
+a{color:#0969da;text-decoration:none}
+a:hover{text-decoration:underline}
+hr{border:0;border-top:1px solid #d0d7de;margin:24px 0}
+</style>
+</head>
+<body>
+<main>
+<h1>C_CharacterAdvancement</h1>
+
+<p><strong>Members:</strong> 127  •  <strong>Functions:</strong> 127  •  <strong>Interface calls:</strong> 582 (across up to 22 files)</p>
+
+<p><strong>Defined in Interface Lua:</strong> no</p>
+
+<p><strong>Definition / evidence:</strong> not defined in Interface Lua (likely native client API)</p>
+
+<h2>Members</h2>
+
+<table>
+<thead>
+<tr>
+  <th>Member</th>
+  <th>Kind</th>
+  <th>Syntax / access</th>
+  <th>Example (from Interface)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>AddByEntryID</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.AddByEntryID(arg1, arg2)</td>
+  <td>C_CharacterAdvancement.AddByEntryID(dropdown.targetEntry.ID, numRanks)</td>
+</tr>
+<tr>
+  <td>AddSuggestionContextOverride</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.AddSuggestionContextOverride(arg1)</td>
+  <td>C_CharacterAdvancement.AddSuggestionContextOverride(dropdown.targetEntry.ID)</td>
+</tr>
+<tr>
+  <td>ApplyPendingBuild</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.ApplyPendingBuild()</td>
+  <td>C_CharacterAdvancement.ApplyPendingBuild()</td>
+</tr>
+<tr>
+  <td>CanAddByEntryID</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.CanAddByEntryID(arg1, arg2)</td>
+  <td>info.disabled = not C_CharacterAdvancement.CanAddByEntryID(dropdown.targetEntry.ID, numRanks)</td>
+</tr>
+<tr>
+  <td>CanApplyPendingBuild</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.CanApplyPendingBuild()</td>
+  <td>local canApply, reason, traversalError, entryID, entryRank, marksCost, goldCost = C_CharacterAdva...</td>
+</tr>
+<tr>
+  <td>CanClearPendingBuild</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.CanClearPendingBuild(arg1)</td>
+  <td>local canReset, reason, traversalError, entryID, entryRank = C_CharacterAdvancement.CanClearPendi...</td>
+</tr>
+<tr>
+  <td>CanLearnID</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.CanLearnID(arg1)</td>
+  <td>info.disabled = not C_CharacterAdvancement.CanLearnID(entry.ID)</td>
+</tr>
+<tr>
+  <td>CanRemoveByEntryID</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.CanRemoveByEntryID(arg1)</td>
+  <td>local canUnlearn, reason = C_CharacterAdvancement.CanRemoveByEntryID(dropdown.targetEntry.ID)</td>
+</tr>
+<tr>
+  <td>CanSwapEntriesByID</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.CanSwapEntriesByID(arg1)</td>
+  <td>if C_CharacterAdvancement.CanSwapEntriesByID(swapData) then</td>
+</tr>
+<tr>
+  <td>CanSwitchActiveChrSpec</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.CanSwitchActiveChrSpec(arg1)</td>
+  <td>if not C_CharacterAdvancement.CanSwitchActiveChrSpec(self.specInfo.ID) then</td>
+</tr>
+<tr>
+  <td>CanUnlearnAllSpells</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.CanUnlearnAllSpells()</td>
+  <td>canReset, reason = C_CharacterAdvancement.CanUnlearnAllSpells()</td>
+</tr>
+<tr>
+  <td>CanUnlearnAllTalents</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.CanUnlearnAllTalents()</td>
+  <td>local canReset, reason = C_CharacterAdvancement.CanUnlearnAllTalents()</td>
+</tr>
+<tr>
+  <td>CanUnlearnID</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.CanUnlearnID(arg1)</td>
+  <td>info.disabled = not C_CharacterAdvancement.CanUnlearnID(entry.ID)</td>
+</tr>
+<tr>
+  <td>CanUseBrowser</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.CanUseBrowser()</td>
+  <td>function C_CharacterAdvancement.CanUseBrowser()</td>
+</tr>
+<tr>
+  <td>CancelPendingBuild</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.CancelPendingBuild()</td>
+  <td>C_CharacterAdvancement.CancelPendingBuild()</td>
+</tr>
+<tr>
+  <td>ClearPendingBuild</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.ClearPendingBuild(arg1)</td>
+  <td>C_CharacterAdvancement.ClearPendingBuild(Const.CharacterAdvancement.OnlyClearAllowed)</td>
+</tr>
+<tr>
+  <td>ClearPendingBuildByTab</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.ClearPendingBuildByTab(arg1, arg2, arg3)</td>
+  <td>C_CharacterAdvancement.ClearPendingBuildByTab(self.class, self.tab, clearType)</td>
+</tr>
+<tr>
+  <td>ClearRecentlyLearnedEntries</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.ClearRecentlyLearnedEntries()</td>
+  <td>C_CharacterAdvancement.ClearRecentlyLearnedEntries()</td>
+</tr>
+<tr>
+  <td>ClearSuggestionContextOverrides</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.ClearSuggestionContextOverrides()</td>
+  <td>C_CharacterAdvancement.ClearSuggestionContextOverrides()</td>
+</tr>
+<tr>
+  <td>ExportBuild</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.ExportBuild(arg1)</td>
+  <td>local buildLink = C_CharacterAdvancement.ExportBuild(true)</td>
+</tr>
+<tr>
+  <td>GetAbilityEssenceCost</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetAbilityEssenceCost(arg1)</td>
+  <td>local aeCost = C_CharacterAdvancement.GetAbilityEssenceCost(self.spellID) or 0</td>
+</tr>
+<tr>
+  <td>GetActiveChrSpec</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetActiveChrSpec()</td>
+  <td>local activeSpecID = C_CharacterAdvancement.GetActiveChrSpec()</td>
+</tr>
+<tr>
+  <td>GetActiveSpecID</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetActiveSpecID()</td>
+  <td>local activeId = C_CharacterAdvancement.GetActiveSpecID()</td>
+</tr>
+<tr>
+  <td>GetAllEntries</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetAllEntries()</td>
+  <td>for _, data in ipairs(C_CharacterAdvancement.GetAllEntries()) do</td>
+</tr>
+<tr>
+  <td>GetCategories</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetCategories()</td>
+  <td>local categories = C_CharacterAdvancement.GetCategories()</td>
+</tr>
+<tr>
+  <td>GetCategoryDisplayInfo</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetCategoryDisplayInfo(arg1)</td>
+  <td>local reqLevel, name, icon, description = C_CharacterAdvancement.GetCategoryDisplayInfo(categoryID)</td>
+</tr>
+<tr>
+  <td>GetClassAEInvestment</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetClassAEInvestment(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>GetClassInfo</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetClassInfo(arg1)</td>
+  <td>local class, spec = C_CharacterAdvancement.GetClassInfo(self.spellID)</td>
+</tr>
+<tr>
+  <td>GetClassPointInvestment</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetClassPointInvestment(arg1, arg2)</td>
+  <td>local classTESpent = C_CharacterAdvancement.GetClassPointInvestment(class, 0) or 0</td>
+</tr>
+<tr>
+  <td>GetClassTEInvestment</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetClassTEInvestment(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>GetEntriesAvailableForSwap</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetEntriesAvailableForSwap(arg1)</td>
+  <td>swapSuggestions = C_CharacterAdvancement.GetEntriesAvailableForSwap({Entry = dropdown.targetEntry...</td>
+</tr>
+<tr>
+  <td>GetEntriesAvailableForTrade</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetEntriesAvailableForTrade(arg1)</td>
+  <td>swapSuggestions = C_CharacterAdvancement.GetEntriesAvailableForTrade({Entry = dropdown.targetEntr...</td>
+</tr>
+<tr>
+  <td>GetEntriesByClass</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetEntriesByClass(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>GetEntryByInternalID</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetEntryByInternalID(arg1)</td>
+  <td>local talentInfo = C_CharacterAdvancement.GetEntryByInternalID(talent.TalentID)</td>
+</tr>
+<tr>
+  <td>GetEntryBySpellID</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetEntryBySpellID(arg1)</td>
+  <td>local entry = C_CharacterAdvancement.GetEntryBySpellID(dropdown.spell)</td>
+</tr>
+<tr>
+  <td>GetExpectedAE</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetExpectedAE(arg1)</td>
+  <td>self.expectedAEByLevel[i] = C_CharacterAdvancement.GetExpectedAE(i) or 0</td>
+</tr>
+<tr>
+  <td>GetExpectedTE</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetExpectedTE(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>GetFilteredEntryAtIndex</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetFilteredEntryAtIndex(arg1)</td>
+  <td>self.entry = C_CharacterAdvancement.GetFilteredEntryAtIndex(self.index)</td>
+</tr>
+<tr>
+  <td>GetFilteredEntryAtIndexByCategory</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetFilteredEntryAtIndexByCategory(arg1, arg2)</td>
+  <td>local entry, isSuggested = C_CharacterAdvancement.GetFilteredEntryAtIndexByCategory(self:GetCateg...</td>
+</tr>
+<tr>
+  <td>GetGlobalAEInvestment</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetGlobalAEInvestment()</td>
+  <td>local totalAESpent = C_CharacterAdvancement.GetGlobalAEInvestment() or 0</td>
+</tr>
+<tr>
+  <td>GetGlobalTEInvestment</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetGlobalTEInvestment()</td>
+  <td>local totalTESpent = C_CharacterAdvancement.GetGlobalTEInvestment() or 0</td>
+</tr>
+<tr>
+  <td>GetImplicitByClass</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetImplicitByClass(arg1, arg2)</td>
+  <td>for _, entry in ipairs(C_CharacterAdvancement.GetImplicitByClass(class, spec)) do</td>
+</tr>
+<tr>
+  <td>GetInspectInfo</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetInspectInfo(arg1)</td>
+  <td>local _, unlockedSpecs = C_CharacterAdvancement.GetInspectInfo(AscensionInspectFrame:GetUnit())</td>
+</tr>
+<tr>
+  <td>GetInspectedBuild</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetInspectedBuild(arg1, arg2)</td>
+  <td>local entries = C_CharacterAdvancement.GetInspectedBuild(unit, self.activeSpec)</td>
+</tr>
+<tr>
+  <td>GetInternalID</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetInternalID(arg1)</td>
+  <td>table.insert(internalIDs, {C_CharacterAdvancement.GetInternalID(spellID), 1})</td>
+</tr>
+<tr>
+  <td>GetKnownSpellEntries</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetKnownSpellEntries()</td>
+  <td>for i, entry in ipairs(C_CharacterAdvancement.GetKnownSpellEntries()) do</td>
+</tr>
+<tr>
+  <td>GetKnownSpellEntriesForClass</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetKnownSpellEntriesForClass(arg1, arg2)</td>
+  <td>local knownSpells = C_CharacterAdvancement.GetKnownSpellEntriesForClass(CharacterAdvancementUtil....</td>
+</tr>
+<tr>
+  <td>GetKnownSpells</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetKnownSpells()</td>
+  <td>for _, spellID in ipairs(C_CharacterAdvancement.GetKnownSpells()) do</td>
+</tr>
+<tr>
+  <td>GetKnownTalentEntries</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetKnownTalentEntries()</td>
+  <td>for i, entry in ipairs(C_CharacterAdvancement.GetKnownTalentEntries()) do</td>
+</tr>
+<tr>
+  <td>GetKnownTalentEntriesForClass</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetKnownTalentEntriesForClass(arg1, arg2)</td>
+  <td>local knownTalents = C_CharacterAdvancement.GetKnownTalentEntriesForClass(CharacterAdvancementUti...</td>
+</tr>
+<tr>
+  <td>GetLearnedAE</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetLearnedAE()</td>
+  <td>local ae = C_CharacterAdvancement.GetLearnedAE(class, spec)</td>
+</tr>
+<tr>
+  <td>GetLearnedTE</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetLearnedTE()</td>
+  <td>local te = C_CharacterAdvancement.GetLearnedTE(class, spec)</td>
+</tr>
+<tr>
+  <td>GetLowestInvestmentRequired</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetLowestInvestmentRequired(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>GetMasteriesByClass</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetMasteriesByClass(arg1, arg2)</td>
+  <td>for _, entry in ipairs(C_CharacterAdvancement.GetMasteriesByClass(class, spec)) do</td>
+</tr>
+<tr>
+  <td>GetNumFilteredEntries</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetNumFilteredEntries(...)</td>
+  <td>self.SideBar.SpellList:SetGetNumResultsFunction(C_CharacterAdvancement.GetNumFilteredEntries)</td>
+</tr>
+<tr>
+  <td>GetNumFilteredEntriesByCategory</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetNumFilteredEntriesByCategory(arg1)</td>
+  <td>local categoryTotalResults = C_CharacterAdvancement.GetNumFilteredEntriesByCategory(categoryID)</td>
+</tr>
+<tr>
+  <td>GetPendingClassAEInvestment</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetPendingClassAEInvestment(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>GetPendingClassPointInvestment</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetPendingClassPointInvestment(arg1)</td>
+  <td>return C_CVar.GetBool("previewCharacterAdvancementChanges") and C_CharacterAdvancement.GetPending...</td>
+</tr>
+<tr>
+  <td>GetPendingClassTEInvestment</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetPendingClassTEInvestment(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>GetPendingExpectedAE</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetPendingExpectedAE(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>GetPendingExpectedTE</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetPendingExpectedTE(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>GetPendingGlobalAEInvestment</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetPendingGlobalAEInvestment(arg1)</td>
+  <td>return C_CVar.GetBool("previewCharacterAdvancementChanges") and C_CharacterAdvancement.GetPending...</td>
+</tr>
+<tr>
+  <td>GetPendingGlobalTEInvestment</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetPendingGlobalTEInvestment(arg1)</td>
+  <td>return C_CVar.GetBool("previewCharacterAdvancementChanges") and C_CharacterAdvancement.GetPending...</td>
+</tr>
+<tr>
+  <td>GetPendingRankByEntryID</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetPendingRankByEntryID(arg1)</td>
+  <td>rank, maxRank = C_CharacterAdvancement.GetPendingRankByEntryID(entry.ID)</td>
+</tr>
+<tr>
+  <td>GetPendingRemainingAE</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetPendingRemainingAE()</td>
+  <td>aeCount = C_CharacterAdvancement.IsPending() and C_CharacterAdvancement.GetPendingRemainingAE() o...</td>
+</tr>
+<tr>
+  <td>GetPendingRemainingTE</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetPendingRemainingTE()</td>
+  <td>teCount = C_CharacterAdvancement.IsPending() and C_CharacterAdvancement.GetPendingRemainingTE() o...</td>
+</tr>
+<tr>
+  <td>GetPendingSummary</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetPendingSummary(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>GetPendingTabAEInvestment</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetPendingTabAEInvestment(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>GetPendingTabTEInvestment</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetPendingTabTEInvestment(arg1)</td>
+  <td>return C_CVar.GetBool("previewCharacterAdvancementChanges") and C_CharacterAdvancement.GetPending...</td>
+</tr>
+<tr>
+  <td>GetQualityCount</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetQualityCount(arg1)</td>
+  <td>amount = C_CharacterAdvancement.GetQualityCount(self.quality)</td>
+</tr>
+<tr>
+  <td>GetQualityInfo</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetQualityInfo(arg1)</td>
+  <td>local quality, qualityCount = C_CharacterAdvancement.GetQualityInfo(spellID)</td>
+</tr>
+<tr>
+  <td>GetQualityLimit</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetQualityLimit(arg1)</td>
+  <td>local limit = C_CharacterAdvancement.GetQualityLimit(self.quality)</td>
+</tr>
+<tr>
+  <td>GetRemainingAE</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetRemainingAE()</td>
+  <td>return C_CharacterAdvancement.GetRemainingAE() or 0</td>
+</tr>
+<tr>
+  <td>GetRemainingTE</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetRemainingTE()</td>
+  <td>return C_CharacterAdvancement.GetRemainingTE() or 0</td>
+</tr>
+<tr>
+  <td>GetRootSpellTagTypes</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetRootSpellTagTypes()</td>
+  <td>local rootTags = C_CharacterAdvancement.GetRootSpellTagTypes()</td>
+</tr>
+<tr>
+  <td>GetSpellTagTypeDisplayInfo</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetSpellTagTypeDisplayInfo(arg1)</td>
+  <td>local name = C_CharacterAdvancement.GetSpellTagTypeDisplayInfo(value) or value</td>
+</tr>
+<tr>
+  <td>GetSpellTagTypes</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetSpellTagTypes(arg1)</td>
+  <td>tags = C_CharacterAdvancement.GetSpellTagTypes(rootTag)</td>
+</tr>
+<tr>
+  <td>GetSpellsByClass</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetSpellsByClass(arg1, arg2, arg3)</td>
+  <td>for i, entry in ipairs(C_CharacterAdvancement.GetSpellsByClass(class, spec, false)) do</td>
+</tr>
+<tr>
+  <td>GetSuggestedStats</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetSuggestedStats()</td>
+  <td>local topStat, topStats = C_CharacterAdvancement.GetSuggestedStats()</td>
+</tr>
+<tr>
+  <td>GetTabAEInvestment</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetTabAEInvestment(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>GetTabTEInvestment</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetTabTEInvestment(arg1, arg2, arg3)</td>
+  <td>local treeTESpent = C_CharacterAdvancement.GetTabTEInvestment(class, spec, 0) or 0</td>
+</tr>
+<tr>
+  <td>GetTalentEssenceCost</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetTalentEssenceCost(arg1)</td>
+  <td>local teCost = C_CharacterAdvancement.GetTalentEssenceCost(spellID) or 0</td>
+</tr>
+<tr>
+  <td>GetTalentRankByID</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetTalentRankByID(arg1)</td>
+  <td>local currentRank, maxRank = C_CharacterAdvancement.GetTalentRankByID(entry.ID)</td>
+</tr>
+<tr>
+  <td>GetTalentRankBySpellID</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetTalentRankBySpellID(arg1)</td>
+  <td>local talentRank = C_CharacterAdvancement.GetTalentRankBySpellID(spellID)</td>
+</tr>
+<tr>
+  <td>GetTalentsByClass</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.GetTalentsByClass(arg1, arg2, arg3)</td>
+  <td>for i, entry in ipairs(C_CharacterAdvancement.GetTalentsByClass(class, spec, false)) do</td>
+</tr>
+<tr>
+  <td>HasAnySuggestionContextOverrides</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.HasAnySuggestionContextOverrides()</td>
+  <td>if C_CharacterAdvancement.HasAnySuggestionContextOverrides() then</td>
+</tr>
+<tr>
+  <td>ImportPendingBuild</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.ImportPendingBuild(arg1)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>ImportPendingBuildID</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.ImportPendingBuildID(arg1)</td>
+  <td>C_CharacterAdvancement.ImportPendingBuildID(buildID)</td>
+</tr>
+<tr>
+  <td>InspectUnit</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.InspectUnit(arg1)</td>
+  <td>C_CharacterAdvancement.InspectUnit(AscensionInspectFrame:GetUnit())</td>
+</tr>
+<tr>
+  <td>IsAbilityID</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.IsAbilityID(arg1)</td>
+  <td>elseif C_CharacterAdvancement.IsAbilityID(internalID) or C_CharacterAdvancement.IsTalentAbilityID...</td>
+</tr>
+<tr>
+  <td>IsAbilitySpellID</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.IsAbilitySpellID(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>IsActiveBuildAvailable</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.IsActiveBuildAvailable(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>IsConnectionAllowed</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.IsConnectionAllowed(arg1, arg2)</td>
+  <td>return C_CharacterAdvancement.IsConnectionAllowed(otherEntryID, self.entry.ID)</td>
+</tr>
+<tr>
+  <td>IsFiltered</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.IsFiltered(arg1)</td>
+  <td>self.Icon.LocationIcon:SetShown(C_CharacterAdvancement.IsFiltered(self.entry.ID))</td>
+</tr>
+<tr>
+  <td>IsKnownID</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.IsKnownID(arg1)</td>
+  <td>if C_CharacterAdvancement.IsKnownID(dropdown.targetEntry.ID) and C_GameMode:IsGameModeActive(Enum...</td>
+</tr>
+<tr>
+  <td>IsKnownSpellID</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.IsKnownSpellID(arg1)</td>
+  <td>self.Icon.Known:SetShown(C_CharacterAdvancement.IsKnownSpellID(spellID))</td>
+</tr>
+<tr>
+  <td>IsLockedID</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.IsLockedID(arg1)</td>
+  <td>if C_CharacterAdvancement.IsLockedID(dropdown.targetEntry.ID) then</td>
+</tr>
+<tr>
+  <td>IsMastery</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.IsMastery(arg1)</td>
+  <td>elseif C_CharacterAdvancement.IsMastery(entry.Spells[1]) then</td>
+</tr>
+<tr>
+  <td>IsPending</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.IsPending()</td>
+  <td>if C_CharacterAdvancement.IsPending() then</td>
+</tr>
+<tr>
+  <td>IsPendingBuildAvailable</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.IsPendingBuildAvailable()</td>
+  <td>if C_CharacterAdvancement.IsPendingBuildAvailable() then</td>
+</tr>
+<tr>
+  <td>IsPendingEntryID</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.IsPendingEntryID(arg1)</td>
+  <td>C_CharacterAdvancement.IsPendingEntryID(self.nodeID) or</td>
+</tr>
+<tr>
+  <td>IsSuggestionContextOverride</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.IsSuggestionContextOverride(arg1)</td>
+  <td>if C_CharacterAdvancement.IsSuggestionContextOverride(dropdown.targetEntry.ID) then</td>
+</tr>
+<tr>
+  <td>IsTalentAbilityID</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.IsTalentAbilityID(arg1)</td>
+  <td>if C_CharacterAdvancement.IsTalentID(entry.ID) or C_CharacterAdvancement.IsTalentAbilityID(entry....</td>
+</tr>
+<tr>
+  <td>IsTalentAbilitySpellID</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.IsTalentAbilitySpellID(arg1)</td>
+  <td>elseif C_CharacterAdvancement.IsTalentAbilitySpellID(dropdown.spellID) then</td>
+</tr>
+<tr>
+  <td>IsTalentID</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.IsTalentID(arg1)</td>
+  <td>if C_CharacterAdvancement.IsTalentID(entry.ID) or C_CharacterAdvancement.IsTalentAbilityID(entry....</td>
+</tr>
+<tr>
+  <td>IsTalentSpellID</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.IsTalentSpellID(arg1)</td>
+  <td>if C_CharacterAdvancement.IsTalentSpellID(self.spellID) then</td>
+</tr>
+<tr>
+  <td>KnowsConnectedNodesFor</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.KnowsConnectedNodesFor(arg1)</td>
+  <td>local canAdd = C_CharacterAdvancement.KnowsConnectedNodesFor(entry.ID)</td>
+</tr>
+<tr>
+  <td>LearnID</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.LearnID(arg1)</td>
+  <td>DevConsole:Print("Example: dfunc C_CharacterAdvancement.LearnID")</td>
+</tr>
+<tr>
+  <td>LockID</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.LockID(arg1)</td>
+  <td>C_CharacterAdvancement.LockID(dropdown.targetEntry.ID)</td>
+</tr>
+<tr>
+  <td>MeetsInvestmentForAddByEntryID</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.MeetsInvestmentForAddByEntryID(arg1, arg2)</td>
+  <td>self.isGated = not C_CharacterAdvancement.MeetsInvestmentForAddByEntryID(self.entry.ID, numRanks)</td>
+</tr>
+<tr>
+  <td>PickupSpell</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.PickupSpell(arg1)</td>
+  <td>C_CharacterAdvancement.PickupSpell(self.entry.ID)</td>
+</tr>
+<tr>
+  <td>RemoveByEntryID</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.RemoveByEntryID(arg1)</td>
+  <td>C_CharacterAdvancement.RemoveByEntryID(dropdown.targetEntry.ID)</td>
+</tr>
+<tr>
+  <td>RemoveSuggestionContextOverride</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.RemoveSuggestionContextOverride(arg1)</td>
+  <td>C_CharacterAdvancement.RemoveSuggestionContextOverride(dropdown.targetEntry.ID)</td>
+</tr>
+<tr>
+  <td>SetFilteredEntries</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.SetFilteredEntries(arg1, arg2)</td>
+  <td>C_CharacterAdvancement.SetFilteredEntries("", OnlyKnownFilter)</td>
+</tr>
+<tr>
+  <td>SetFilteredEntriesByCategory</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.SetFilteredEntriesByCategory(arg1, arg2, arg3, arg4)</td>
+  <td>C_CharacterAdvancement.SetFilteredEntriesByCategory(categoryID, filterOutput[2], searchQuery or "...</td>
+</tr>
+<tr>
+  <td>ShouldConfirmLearnID</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.ShouldConfirmLearnID(arg1)</td>
+  <td>local shouldConfirm, reasons = C_CharacterAdvancement.ShouldConfirmLearnID(internalID)</td>
+</tr>
+<tr>
+  <td>ShouldConfirmUnlearnAllSpells</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.ShouldConfirmUnlearnAllSpells()</td>
+  <td>local shouldConfirm, reasons = C_CharacterAdvancement.ShouldConfirmUnlearnAllSpells()</td>
+</tr>
+<tr>
+  <td>ShouldConfirmUnlearnAllTalents</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.ShouldConfirmUnlearnAllTalents()</td>
+  <td>local shouldConfirm, reasons = C_CharacterAdvancement.ShouldConfirmUnlearnAllTalents()</td>
+</tr>
+<tr>
+  <td>ShouldConfirmUnlearnID</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.ShouldConfirmUnlearnID(arg1)</td>
+  <td>local shouldConfirm, reasons = C_CharacterAdvancement.ShouldConfirmUnlearnID(internalID)</td>
+</tr>
+<tr>
+  <td>SwapEntriesByID</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.SwapEntriesByID(arg1)</td>
+  <td>C_CharacterAdvancement.SwapEntriesByID(swapData)</td>
+</tr>
+<tr>
+  <td>SwitchActiveChrSpec</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.SwitchActiveChrSpec(arg1)</td>
+  <td>C_CharacterAdvancement.SwitchActiveChrSpec(specID)</td>
+</tr>
+<tr>
+  <td>UnitKnownID</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.UnitKnownID(arg1, arg2, arg3)</td>
+  <td>if C_CharacterAdvancement.UnitKnownID(unit, entry.ID, self.activeSpec) then</td>
+</tr>
+<tr>
+  <td>UnitTalentRankByID</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.UnitTalentRankByID(arg1, arg2, arg3)</td>
+  <td>local currentRank = C_CharacterAdvancement.UnitTalentRankByID(unit, entry.ID, self.activeSpec)</td>
+</tr>
+<tr>
+  <td>UnlearnAllSpells</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.UnlearnAllSpells()</td>
+  <td>C_CharacterAdvancement.UnlearnAllSpells()</td>
+</tr>
+<tr>
+  <td>UnlearnAllTalents</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.UnlearnAllTalents()</td>
+  <td>C_CharacterAdvancement.UnlearnAllTalents()</td>
+</tr>
+<tr>
+  <td>UnlearnID</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.UnlearnID(arg1)</td>
+  <td>C_CharacterAdvancement.UnlearnID(spells)</td>
+</tr>
+<tr>
+  <td>UnlockID</td>
+  <td>function</td>
+  <td>C_CharacterAdvancement.UnlockID(arg1)</td>
+  <td>C_CharacterAdvancement.UnlockID(dropdown.targetEntry.ID)</td>
+</tr>
+</tbody>
+</table>
+
+<h2>Notes</h2>
+
+<ul>
+<li>3 member(s) had a runtime probe marked <code>ok</code> in the scan data.</li>
+</ul>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EvidenceIndex verification report (Runtime scan)</title>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.5;margin:0;padding:0;background:#fff;color:#111}
+main{max-width:980px;margin:0 auto;padding:32px 20px}
+pre,code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
+pre{padding:12px;overflow:auto;background:#f6f8fa;border-radius:8px}
+code{background:#f6f8fa;border-radius:6px;padding:0.15em 0.35em}
+pre code{background:transparent;padding:0}
+table{border-collapse:collapse;display:block;overflow:auto}
+th,td{border:1px solid #d0d7de;padding:6px 10px}
+h1,h2,h3{line-height:1.25}
+a{color:#0969da;text-decoration:none}
+a:hover{text-decoration:underline}
+hr{border:0;border-top:1px solid #d0d7de;margin:24px 0}
+</style>
+</head>
+<body>
+<main>
+<h1>EvidenceIndex verification report (Runtime scan)</h1>
+
+<ul>
+<li>generated_at: <code>2026-02-13T21:39:35Z</code></li>
+<li>scan_tool_version: <code>0.3.58</code></li>
+<li>client_build: <code>12340</code></li>
+<li>savedvars: <code>E:\Ascension Launcher\resources\client\WTF\Account\CtrlAlt\SavedVariables\Runtime scan.lua</code></li>
+<li>apiindex: <code>E:\Ascension Launcher\resources\client\Interface\AddOns\Runtime scan\Core\ApiIndex.lua</code></li>
+</ul>
+
+<p>Entries: <strong>1089</strong></p>
+
+<blockquote>
+  <p>NOTE: No <code>runtime_members</code> presence data found in this EvidenceIndex.<br />
+  The "missing at runtime" signal is <em>not</em> confirmed for members yet.<br />
+  Run <code>scan runtime_members</code> in-game (out of combat), then regenerate EvidenceIndex.</p>
+</blockquote>
+
+<h2>Mixed dot/colon usage in Interface</h2>
+
+<p>Interface call-sites use both <code>.</code> and <code>:</code> for the same member. Treat as unsafe until confirmed (or split by context).</p>
+
+<p>Count: <strong>0</strong></p>
+
+<h2>Interface vs trace call-style mismatch</h2>
+
+<p>Observed calls disagree with Interface <code>op</code>. This can indicate different implementations, wrapper tables, or hook artifacts.</p>
+
+<p>Count: <strong>0</strong></p>
+
+<h2>Interface-called but namespace is non-table at runtime (likely false positive)</h2>
+
+<p>Runtime presence scan reports <code>type(namespace)</code> is not <code>table</code>/<code>userdata</code>, so the Interface match is likely a constant (e.g. <code>C_FOO</code> string) used with a Lua method like <code>:format(...)</code>.</p>
+
+<p>Count: <strong>0</strong></p>
+
+<h2>Interface-called but missing at runtime</h2>
+
+<p>UI code calls it, but runtime scan didn't find it. Common causes: LoadOnDemand not loaded, gated system, or seasonal feature.</p>
+
+<p>Count: <strong>0</strong></p>
+
+<h2>Interface-called but runtime not checked yet</h2>
+
+<p>Interface evidence exists, but there is no per-member runtime presence data in this EvidenceIndex (run <code>scan runtime_members</code>). Treat as <em>unknown</em> rather than missing.</p>
+
+<p>Count: <strong>904</strong></p>
+
+<ul>
+<li><code>C_AccountInfo.GetCharacterAtIndex</code></li>
+<li><code>C_AccountInfo.GetGMLevel</code></li>
+<li><code>C_AccountInfo.GetNumCharacters</code></li>
+<li><code>C_AccountInfo.IsGM</code></li>
+<li><code>C_AddonPanel.DeleteSaveState</code></li>
+<li><code>C_AddonPanel.EnableHiddenAddons</code></li>
+<li><code>C_AddonPanel.EnumerateAddOns</code></li>
+<li><code>C_AddonPanel.GetAddonDisabledBy</code></li>
+<li><code>C_AddonPanel.GetAddonIndex</code></li>
+<li><code>C_AddonPanel.GetAddonIndexRaw</code></li>
+<li><code>C_AddonPanel.GetAddonObject</code></li>
+<li><code>C_AddonPanel.GetNumInsecureAddons</code></li>
+<li><code>C_AddonPanel.GetSaveState</code></li>
+<li><code>C_AddonPanel.GetSaveStateIDs</code></li>
+<li><code>C_AddonPanel.GetSearchedAddons</code></li>
+<li><code>C_AddonPanel.HasConfigurableAddons</code></li>
+<li><code>C_AddonPanel.InitializeAddonList</code></li>
+<li><code>C_AddonPanel.IsAddonSearched</code></li>
+<li><code>C_AddonPanel.IsSecureAddon</code></li>
+<li><code>C_AddonPanel.MakeSaveState</code></li>
+<li><code>C_AddonPanel.RefreshAddonData</code></li>
+<li><code>C_AddonPanel.RestoreSaveState</code></li>
+<li><code>C_AddonPanel.UpdateAddonList</code></li>
+<li><code>C_AddonPanel.WriteSaveState</code></li>
+<li><code>C_Appearance.ApplyPendingAppearances</code></li>
+<li><code>C_Appearance.CanApplyPendingAppearances</code></li>
+<li><code>C_Appearance.CanSeeAppearances</code></li>
+<li><code>C_Appearance.CanSetAppearance</code></li>
+<li><code>C_Appearance.ClearInvalidPendingAppearances</code></li>
+<li><code>C_Appearance.ClearPendingAppearance</code></li>
+<li><code>C_Appearance.ClearPendingAppearances</code></li>
+<li><code>C_Appearance.GetActiveDiscount</code></li>
+<li><code>C_Appearance.GetAlternativeIDs</code></li>
+<li><code>C_Appearance.GetAppearanceDetails</code></li>
+<li><code>C_Appearance.GetAppearanceDisplayInfo</code></li>
+<li><code>C_Appearance.GetAppearanceForCategory</code></li>
+<li><code>C_Appearance.GetAppearanceItemSet</code></li>
+<li><code>C_Appearance.GetAppearanceWebURL</code></li>
+<li><code>C_Appearance.GetCreatureDisplayItems</code></li>
+<li><code>C_Appearance.GetEtherealBazaarWebURL</code></li>
+<li>... (864 more)</li>
+</ul>
+
+<h2>Trace-called but runtime not checked yet</h2>
+
+<p>apitrace observed calls, but this EvidenceIndex lacks per-member runtime presence. This usually means the presence scan was run in a different session/context (or not run).</p>
+
+<p>Count: <strong>17</strong></p>
+
+<ul>
+<li><code>C_BuildCreator.GetNumBuilds</code></li>
+<li><code>C_BuildCreator.QueryAllBuilds</code></li>
+<li><code>C_BuildCreator.UpdateFilter</code></li>
+<li><code>C_BuildEditor.CanAddArmorType</code></li>
+<li><code>C_BuildEditor.CanAddWeaponType</code></li>
+<li><code>C_MysticEnchant.CanEquipSlot</code></li>
+<li><code>C_MysticEnchant.GetAppliedEnchant</code></li>
+<li><code>C_MysticEnchant.GetEnchantInfoByItem</code></li>
+<li><code>C_MysticEnchant.GetEnchantInfoBySpell</code></li>
+<li><code>C_MysticEnchant.GetMysticScrollCost</code></li>
+<li><code>C_MysticEnchant.GetMysticScrolls</code></li>
+<li><code>C_MysticEnchant.GetProgress</code></li>
+<li><code>C_MysticEnchant.HasAnyCollected</code></li>
+<li><code>C_MysticEnchant.HasNearbyMysticAltar</code></li>
+<li><code>C_MysticEnchant.QueryEnchants</code></li>
+<li><code>C_MysticEnchantPreset.GetNumPresets</code></li>
+<li><code>C_MysticEnchantPreset.GetPresetData</code></li>
+</ul>
+
+<h2>Interface-called but runtime kind is not function</h2>
+
+<p>Interface evidence suggests callable, but runtime scan reports non-function. Usually indicates stale evidence or table-metamethod behavior.</p>
+
+<p>Count: <strong>0</strong></p>
+
+<h2>Interface-called and present (index-only) but not a function</h2>
+
+<p>Index-only presence scan found a non-function (table/field) where Interface evidence suggests callable. This is usually a false-positive call-site parse or a metamethod/wrapper edge case.</p>
+
+<p>Count: <strong>0</strong></p>
+
+<h2>Runtime function never called (no evidence)</h2>
+
+<p>Function exists at runtime but was neither called in Interface call-sites nor observed via apitrace. Likely niche, gated, or new.</p>
+
+<p>Count: <strong>0</strong></p>
+
+<h2>Ambiguous call-style (no Interface and no trace)</h2>
+
+<p>Runtime sees a function, but there is no evidence for <code>.</code> vs <code>:</code> yet. Avoid calling without additional proof (apitrace or interface update).</p>
+
+<p>Count: <strong>0</strong></p>
+
+</main>
+</body>
+</html>

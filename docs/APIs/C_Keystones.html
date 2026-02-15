@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>C_Keystones</title>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.5;margin:0;padding:0;background:#fff;color:#111}
+main{max-width:980px;margin:0 auto;padding:32px 20px}
+pre,code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
+pre{padding:12px;overflow:auto;background:#f6f8fa;border-radius:8px}
+code{background:#f6f8fa;border-radius:6px;padding:0.15em 0.35em}
+pre code{background:transparent;padding:0}
+table{border-collapse:collapse;display:block;overflow:auto}
+th,td{border:1px solid #d0d7de;padding:6px 10px}
+h1,h2,h3{line-height:1.25}
+a{color:#0969da;text-decoration:none}
+a:hover{text-decoration:underline}
+hr{border:0;border-top:1px solid #d0d7de;margin:24px 0}
+</style>
+</head>
+<body>
+<main>
+<h1>C_Keystones</h1>
+
+<p><strong>Members:</strong> 16  •  <strong>Functions:</strong> 16  •  <strong>Interface calls:</strong> 37 (across up to 3 files)</p>
+
+<p><strong>Defined in Interface Lua:</strong> yes</p>
+
+<p><strong>Definition / evidence:</strong> <code>FrameXML/Util/C_Keystones.lua</code> line 72</p>
+
+<h2>Members</h2>
+
+<table>
+<thead>
+<tr>
+  <th>Member</th>
+  <th>Kind</th>
+  <th>Syntax / access</th>
+  <th>Example (from Interface)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>ASCENSION_MYTHIC_PLUS_KEYSTONE_ACTIVATION_WINDOW_VISIBILITY_CHANGED</td>
+  <td>function</td>
+  <td>C_Keystones:ASCENSION_MYTHIC_PLUS_KEYSTONE_ACTIVATION_WINDOW_VISIBILITY_CHANGED()</td>
+  <td>function C_Keystones:ASCENSION_MYTHIC_PLUS_KEYSTONE_ACTIVATION_WINDOW_VISIBILITY_CHANGED()</td>
+</tr>
+<tr>
+  <td>GetCurrentSetBest</td>
+  <td>function</td>
+  <td>C_Keystones.GetCurrentSetBest()</td>
+  <td>local bestKey = C_Keystones.GetCurrentSetBest()</td>
+</tr>
+<tr>
+  <td>GetCurrentSetString</td>
+  <td>function</td>
+  <td>C_Keystones.GetCurrentSetString()</td>
+  <td>function C_Keystones.GetCurrentSetString()</td>
+</tr>
+<tr>
+  <td>GetDungeonBest</td>
+  <td>function</td>
+  <td>C_Keystones.GetDungeonBest(arg1)</td>
+  <td>function C_Keystones.GetDungeonBest(dungeonID)</td>
+</tr>
+<tr>
+  <td>GetDungeonBestLink</td>
+  <td>function</td>
+  <td>C_Keystones.GetDungeonBestLink(arg1)</td>
+  <td>function C_Keystones.GetDungeonBestLink(dungeonID)</td>
+</tr>
+<tr>
+  <td>GetKeystoneDungeonInfo</td>
+  <td>function</td>
+  <td>C_Keystones.GetKeystoneDungeonInfo(arg1)</td>
+  <td>local dungeonName, fileName, bestRun = C_Keystones.GetKeystoneDungeonInfo(dungeonID)</td>
+</tr>
+<tr>
+  <td>GetKeystoneInInventory</td>
+  <td>function</td>
+  <td>C_Keystones.GetKeystoneInInventory()</td>
+  <td>function C_Keystones.GetKeystoneInInventory()</td>
+</tr>
+<tr>
+  <td>GetKeystoneInInventoryItemID</td>
+  <td>function</td>
+  <td>C_Keystones.GetKeystoneInInventoryItemID()</td>
+  <td>local keystoneID = C_Keystones.GetKeystoneInInventoryItemID()</td>
+</tr>
+<tr>
+  <td>GetPlayerSaveKey</td>
+  <td>function</td>
+  <td>C_Keystones.GetPlayerSaveKey()</td>
+  <td>function C_Keystones.GetPlayerSaveKey()</td>
+</tr>
+<tr>
+  <td>GetProfileLink</td>
+  <td>function</td>
+  <td>C_Keystones.GetProfileLink(arg1)</td>
+  <td>function C_Keystones.GetProfileLink(expansion)</td>
+</tr>
+<tr>
+  <td>GetSetBest</td>
+  <td>function</td>
+  <td>C_Keystones.GetSetBest(arg1)</td>
+  <td>function C_Keystones.GetSetBest(affixSetString, expansion)</td>
+</tr>
+<tr>
+  <td>GetTimedDungeonsForExpansion</td>
+  <td>function</td>
+  <td>C_Keystones.GetTimedDungeonsForExpansion(arg1)</td>
+  <td>#C_Keystones.GetTimedDungeonsForExpansion(self.expansion)</td>
+</tr>
+<tr>
+  <td>MYTHIC_PLUS_COMPLETE</td>
+  <td>function</td>
+  <td>C_Keystones:MYTHIC_PLUS_COMPLETE(arg1)</td>
+  <td>function C_Keystones:MYTHIC_PLUS_COMPLETE(success)</td>
+</tr>
+<tr>
+  <td>MYTHIC_PLUS_COUNTDOWN_STARTED</td>
+  <td>function</td>
+  <td>C_Keystones:MYTHIC_PLUS_COUNTDOWN_STARTED(arg1)</td>
+  <td>function C_Keystones:MYTHIC_PLUS_COUNTDOWN_STARTED(seconds)</td>
+</tr>
+<tr>
+  <td>MYTHIC_PLUS_STARTED</td>
+  <td>function</td>
+  <td>C_Keystones:MYTHIC_PLUS_STARTED()</td>
+  <td>function C_Keystones:MYTHIC_PLUS_STARTED()</td>
+</tr>
+<tr>
+  <td>SaveKeystoneRun</td>
+  <td>function</td>
+  <td>C_Keystones.SaveKeystoneRun(arg1, arg2, arg3, arg4, arg5)</td>
+  <td>function C_Keystones.SaveKeystoneRun(dungeonID, finalTime, overtime, level, a)</td>
+</tr>
+</tbody>
+</table>
+
+</main>
+</body>
+</html>

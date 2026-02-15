@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>JSON messaging index</title>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.5;margin:0;padding:0;background:#fff;color:#111}
+main{max-width:980px;margin:0 auto;padding:32px 20px}
+pre,code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
+pre{padding:12px;overflow:auto;background:#f6f8fa;border-radius:8px}
+code{background:#f6f8fa;border-radius:6px;padding:0.15em 0.35em}
+pre code{background:transparent;padding:0}
+table{border-collapse:collapse;display:block;overflow:auto}
+th,td{border:1px solid #d0d7de;padding:6px 10px}
+h1,h2,h3{line-height:1.25}
+a{color:#0969da;text-decoration:none}
+a:hover{text-decoration:underline}
+hr{border:0;border-top:1px solid #d0d7de;margin:24px 0}
+</style>
+</head>
+<body>
+<main>
+<h1>JSON messaging index</h1>
+
+<p>This page indexes JSON messaging usage in the shipped Interface.</p>
+
+<ul>
+<li><strong>Outgoing</strong>: <code>SendJsonMessage("CATEGORY", jsonString[, priority])</code> call sites.</li>
+<li><strong>Incoming update pattern</strong>: handled by <code>C_Hook</code> using sub-events that match <code>ASCENSION_CUSTOM_JSON_(.*)_UPDATE</code>.</li>
+</ul>
+
+<h2>Outgoing categories (string literal)</h2>
+
+<p><strong>Categories found:</strong> 4</p>
+
+<table>
+<thead>
+<tr>
+  <th>Category</th>
+  <th>Call sites</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>BUILD_CREATOR_DATA_REQUEST</td>
+  <td>Interface/FrameXML/Ascension_BuildDraft/Ascension_BuildDraft.lua @ 40</td>
+</tr>
+<tr>
+  <td>CHARACTER_ADVANCEMENT_LOADOUT_ACTIVATE_REQUEST</td>
+  <td>Interface/FrameXML/Util/TalentLoadoutUtil.lua @ 18, 24</td>
+</tr>
+<tr>
+  <td>CHARACTER_ADVANCEMENT_LOADOUT_SET_NAME_REQUEST</td>
+  <td>Interface/FrameXML/Util/TalentLoadoutUtil.lua @ 44, 61</td>
+</tr>
+<tr>
+  <td>STATISTIC_QUERY_REQUEST</td>
+  <td>Interface/FrameXML/Util/C_Cache.lua @ 26, 39</td>
+</tr>
+</tbody>
+</table>
+
+<h2>Outgoing categories (dynamic)</h2>
+
+<p>These calls pass a variable/expression as the first argument instead of a string literal.</p>
+
+<table>
+<thead>
+<tr>
+  <th>Category expression</th>
+  <th>Call sites</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>category</td>
+  <td>Interface/SharedXML/Util/C_Comm.lua @ 83, 106, 114</td>
+</tr>
+<tr>
+  <td>self:GetAttribute("category")</td>
+  <td>Interface/SharedXML/Util/C_Comm.lua @ 102</td>
+</tr>
+</tbody>
+</table>
+
+<h2>Incoming update events</h2>
+
+<p>The Interface does not hard-code specific update event names. Instead, the hook system recognizes update sub-events by pattern:</p>
+
+<div class="codehilite">
+<pre><span></span><code>ASCENSION_CUSTOM_JSON_(.*)_UPDATE
+</code></pre>
+</div>
+
+<p>When a matching sub-event is received, the category portion is extracted and used to read cached JSON payload data:</p>
+
+<div class="codehilite">
+<pre><span></span><code>HasJsonCacheData(category, id)
+GetJsonCacheData(category, id)
+</code></pre>
+</div>
+
+<p><strong>Handler locations:</strong></p>
+
+<ul>
+<li><code>Interface/FrameXML/Data/LiveUpdate.lua</code> @ 88</li>
+<li><code>Interface/SharedXML/C_Hook.lua</code> @ 130</li>
+<li><code>Interface/SharedXML/C_Hook.lua</code> @ 132</li>
+</ul>
+
+<p>In this client build, sub-events are processed under <code>COMMENTATOR_SKIRMISH_QUEUE_REQUEST</code> (see <code>SharedXML/C_Hook.lua</code>).</p>
+
+<h2>Direct JSON cache API calls (string literal)</h2>
+
+<h3>HasJsonCacheData("CATEGORY", ...)</h3>
+
+<ul>
+<li><code>MISC_PLAYER_DATA_PAYLOAD</code> — Interface/FrameXML/Util/C_NoviceNetwork.lua @ 8</li>
+</ul>
+
+<h3>GetJsonCacheData("CATEGORY", ...)</h3>
+
+<ul>
+<li><code>CHARACTER_ADVANCEMENT_LOADOUT_ACTIVE_PAYLOAD</code> — Interface/FrameXML/Util/TalentLoadoutUtil.lua @ 121</li>
+<li><code>CHARACTER_ADVANCEMENT_LOADOUT_OWNED_PAYLOAD</code> — Interface/FrameXML/Util/TalentLoadoutUtil.lua @ 120</li>
+<li><code>CHECKPOINTS_ENABLED_PAYLOAD</code> — Interface/FrameXML/Util/C_Instance.lua @ 56</li>
+<li><code>MISC_PLAYER_DATA_PAYLOAD</code> — Interface/FrameXML/Util/C_NoviceNetwork.lua @ 9</li>
+</ul>
+
+<p>Build time: 2026-02-13 22:21:51.</p>
+
+</main>
+</body>
+</html>

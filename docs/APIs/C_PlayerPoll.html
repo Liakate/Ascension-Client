@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>C_PlayerPoll</title>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.5;margin:0;padding:0;background:#fff;color:#111}
+main{max-width:980px;margin:0 auto;padding:32px 20px}
+pre,code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
+pre{padding:12px;overflow:auto;background:#f6f8fa;border-radius:8px}
+code{background:#f6f8fa;border-radius:6px;padding:0.15em 0.35em}
+pre code{background:transparent;padding:0}
+table{border-collapse:collapse;display:block;overflow:auto}
+th,td{border:1px solid #d0d7de;padding:6px 10px}
+h1,h2,h3{line-height:1.25}
+a{color:#0969da;text-decoration:none}
+a:hover{text-decoration:underline}
+hr{border:0;border-top:1px solid #d0d7de;margin:24px 0}
+</style>
+</head>
+<body>
+<main>
+<h1>C_PlayerPoll</h1>
+
+<p><strong>Members:</strong> 9  •  <strong>Functions:</strong> 9  •  <strong>Interface calls:</strong> 26 (across up to 3 files)</p>
+
+<p><strong>Defined in Interface Lua:</strong> no</p>
+
+<p><strong>Definition / evidence:</strong> not defined in Interface Lua (likely native client API)</p>
+
+<h2>Members</h2>
+
+<table>
+<thead>
+<tr>
+  <th>Member</th>
+  <th>Kind</th>
+  <th>Syntax / access</th>
+  <th>Example (from Interface)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>CanChangeQuestionChoice</td>
+  <td>function</td>
+  <td>C_PlayerPoll.CanChangeQuestionChoice(arg1)</td>
+  <td>if C_PlayerPoll.CanChangeQuestionChoice(i) then</td>
+</tr>
+<tr>
+  <td>CanSubmitAnswer</td>
+  <td>function</td>
+  <td>C_PlayerPoll.CanSubmitAnswer(arg1, arg2, arg3)</td>
+  <td>local canSubmit = C_PlayerPoll.CanSubmitAnswer(self.questionIndex, self.selectedIndex, self.Addit...</td>
+</tr>
+<tr>
+  <td>GetNumQuestionChoices</td>
+  <td>function</td>
+  <td>C_PlayerPoll.GetNumQuestionChoices(arg1)</td>
+  <td>for j = 1, C_PlayerPoll.GetNumQuestionChoices(i) do</td>
+</tr>
+<tr>
+  <td>GetNumQuestions</td>
+  <td>function</td>
+  <td>C_PlayerPoll.GetNumQuestions()</td>
+  <td>if C_PlayerPoll.GetNumQuestions() &gt; 0 then</td>
+</tr>
+<tr>
+  <td>GetQuestionChoiceInfo</td>
+  <td>function</td>
+  <td>C_PlayerPoll.GetQuestionChoiceInfo(arg1, arg2)</td>
+  <td>local _, isSelected = C_PlayerPoll.GetQuestionChoiceInfo(i, j)</td>
+</tr>
+<tr>
+  <td>GetQuestionInfo</td>
+  <td>function</td>
+  <td>C_PlayerPoll.GetQuestionInfo(arg1)</td>
+  <td>local _, questionText = C_PlayerPoll.GetQuestionInfo(self.index)</td>
+</tr>
+<tr>
+  <td>HasUnansweredQuestions</td>
+  <td>function</td>
+  <td>C_PlayerPoll.HasUnansweredQuestions()</td>
+  <td>if C_PlayerPoll.HasUnansweredQuestions() then</td>
+</tr>
+<tr>
+  <td>RequestQuestionList</td>
+  <td>function</td>
+  <td>C_PlayerPoll.RequestQuestionList(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>SubmitAnswer</td>
+  <td>function</td>
+  <td>C_PlayerPoll.SubmitAnswer(arg1, arg2, arg3)</td>
+  <td>C_PlayerPoll.SubmitAnswer(self.questionIndex, self.selectedIndex, additionalInfo)</td>
+</tr>
+</tbody>
+</table>
+
+</main>
+</body>
+</html>

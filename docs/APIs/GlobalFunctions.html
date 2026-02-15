@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Global functions (Ascension)</title>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.5;margin:0;padding:0;background:#fff;color:#111}
+main{max-width:980px;margin:0 auto;padding:32px 20px}
+pre,code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
+pre{padding:12px;overflow:auto;background:#f6f8fa;border-radius:8px}
+code{background:#f6f8fa;border-radius:6px;padding:0.15em 0.35em}
+pre code{background:transparent;padding:0}
+table{border-collapse:collapse;display:block;overflow:auto}
+th,td{border:1px solid #d0d7de;padding:6px 10px}
+h1,h2,h3{line-height:1.25}
+a{color:#0969da;text-decoration:none}
+a:hover{text-decoration:underline}
+hr{border:0;border-top:1px solid #d0d7de;margin:24px 0}
+</style>
+</head>
+<body>
+<main>
+<h1>Global functions (Ascension)</h1>
+
+<p>These functions are exposed globally (not under a <code>C_*</code> namespace) according to the API surface scan.</p>
+
+<h2>AscensionChallenges_LoadUI</h2>
+
+<h3>Syntax</h3>
+
+<div class="codehilite">
+<pre><span></span><code>AscensionChallenges_LoadUI
+(...)
+</code></pre>
+</div>
+
+<h3>Arguments / returns</h3>
+
+<ul>
+<li>Unknown (native) unless otherwise observed.</li>
+</ul>
+
+<h3>Example</h3>
+
+<ul>
+<li>No call site found in the shipped Interface Lua (may be glue-only, server-driven, or for external AddOns).</li>
+</ul>
+
+<h2>AscensionHelpUI_LoadUI</h2>
+
+<h3>Syntax</h3>
+
+<div class="codehilite">
+<pre><span></span><code>AscensionHelpUI_LoadUI
+(...)
+</code></pre>
+</div>
+
+<h3>Arguments / returns</h3>
+
+<ul>
+<li>Unknown (native) unless otherwise observed.</li>
+</ul>
+
+<h3>Example (from Interface)</h3>
+
+<div class="codehilite">
+<pre><span></span><code>AscensionHelpUI_LoadUI
+()
+</code></pre>
+</div>
+
+<p><em>Seen in</em>: <code>AddOns/Ascension_PTRFeedback/PTRFeedbackMixin.lua</code> line 17.</p>
+
+<h2>AscensionInspectFrame_LoadUI</h2>
+
+<h3>Syntax</h3>
+
+<div class="codehilite">
+<pre><span></span><code>AscensionInspectFrame_LoadUI
+(...)
+</code></pre>
+</div>
+
+<h3>Arguments / returns</h3>
+
+<ul>
+<li>Unknown (native) unless otherwise observed.</li>
+</ul>
+
+<h3>Example</h3>
+
+<ul>
+<li>No call site found in the shipped Interface Lua (may be glue-only, server-driven, or for external AddOns).</li>
+</ul>
+
+<h2>Ascension_GetArenaBracketCutoffs</h2>
+
+<h3>Syntax</h3>
+
+<div class="codehilite">
+<pre><span></span><code>Ascension_GetArenaBracketCutoffs
+(...)
+</code></pre>
+</div>
+
+<h3>Arguments / returns</h3>
+
+<ul>
+<li>Unknown (native) unless otherwise observed.</li>
+</ul>
+
+<h3>Example (from Interface)</h3>
+
+<div class="codehilite">
+<pre><span></span><code>tierInfo
+[
+i
+].
+rating
+
+=
+
+select
+(
+i
+
+-
+
+1
+,
+
+Ascension_GetArenaBracketCutoffs
+())
+
+or
+
+tierInfo
+[
+i
+].
+rating
+</code></pre>
+</div>
+
+<p><em>Seen in</em>: <code>FrameXML/Util/C_PVP.lua</code> line 160.</p>
+
+<h2>Ascension_GetArenaRewardInfo</h2>
+
+<h3>Syntax</h3>
+
+<div class="codehilite">
+<pre><span></span><code>Ascension_GetArenaRewardInfo
+(...)
+</code></pre>
+</div>
+
+<h3>Arguments / returns</h3>
+
+<ul>
+<li>Unknown (native) unless otherwise observed.</li>
+</ul>
+
+<h3>Example (from Interface)</h3>
+
+<div class="codehilite">
+<pre><span></span><code>local
+
+currAP
+,
+
+maxAP
+
+=
+
+Ascension_GetArenaRewardInfo
+()
+</code></pre>
+</div>
+
+<p><em>Seen in</em>: <code>AddOns/AscensionUI/Gossips/CallBoard.lua</code> line 316.</p>
+
+<h2>Ascension_QueryArenaRewardInfo</h2>
+
+<h3>Syntax</h3>
+
+<div class="codehilite">
+<pre><span></span><code>Ascension_QueryArenaRewardInfo
+(...)
+</code></pre>
+</div>
+
+<h3>Arguments / returns</h3>
+
+<ul>
+<li>Unknown (native) unless otherwise observed.</li>
+</ul>
+
+<h3>Example (from Interface)</h3>
+
+<div class="codehilite">
+<pre><span></span><code>Ascension_QueryArenaRewardInfo
+()
+</code></pre>
+</div>
+
+<p><em>Seen in</em>: <code>FrameXML/Ascension_LFG/Ascension_LFG.lua</code> line 36.</p>
+
+<h2>CA_GetCreditAmount</h2>
+
+<h3>Syntax</h3>
+
+<div class="codehilite">
+<pre><span></span><code>CA_GetCreditAmount
+(...)
+</code></pre>
+</div>
+
+<h3>Arguments / returns</h3>
+
+<ul>
+<li>Unknown (native) unless otherwise observed.</li>
+</ul>
+
+<h3>Example (from Interface)</h3>
+
+<div class="codehilite">
+<pre><span></span><code>abilityUnlearns
+
+=
+
+abilityUnlearns
+
+or
+
+CA_GetCreditAmount
+(
+Enum
+.
+ResetCreditType
+.
+AbilityUnlearn
+)
+</code></pre>
+</div>
+
+<p><em>Seen in</em>: <code>FrameXML/Util/CharacterAdvancementCostUtil.lua</code> line 70.</p>
+
+<h2>CA_IsSpellKnown</h2>
+
+<h3>Syntax</h3>
+
+<div class="codehilite">
+<pre><span></span><code>CA_IsSpellKnown
+(...)
+</code></pre>
+</div>
+
+<h3>Arguments / returns</h3>
+
+<ul>
+<li>Unknown (native) unless otherwise observed.</li>
+</ul>
+
+<h3>Example (from Interface)</h3>
+
+<div class="codehilite">
+<pre><span></span><code>local
+
+canLearn
+
+=
+
+maxSpellID
+
+and
+
+not
+
+IsSpellKnown
+(
+maxSpellID
+)
+
+and
+
+not
+
+CA_IsSpellKnown
+(
+maxSpellID
+)
+</code></pre>
+</div>
+
+<p><em>Seen in</em>: <code>AddOns/Ascension_CharacterAdvancementSeason9/Templates/CASpellButton.lua</code> line 124.</p>
+
+<h2>Custom_HandleTerrainClick</h2>
+
+<h3>Syntax</h3>
+
+<div class="codehilite">
+<pre><span></span><code>Custom_HandleTerrainClick
+(...)
+</code></pre>
+</div>
+
+<h3>Arguments / returns</h3>
+
+<ul>
+<li>Unknown (native) unless otherwise observed.</li>
+</ul>
+
+<h3>Example</h3>
+
+<ul>
+<li>No call site found in the shipped Interface Lua (may be glue-only, server-driven, or for external AddOns).</li>
+</ul>
+
+<h2>Custom_HandleTerrainClick_PlayerPos</h2>
+
+<h3>Syntax</h3>
+
+<div class="codehilite">
+<pre><span></span><code>Custom_HandleTerrainClick_PlayerPos
+(...)
+</code></pre>
+</div>
+
+<h3>Arguments / returns</h3>
+
+<ul>
+<li>Unknown (native) unless otherwise observed.</li>
+</ul>
+
+<h3>Example</h3>
+
+<ul>
+<li>No call site found in the shipped Interface Lua (may be glue-only, server-driven, or for external AddOns).</li>
+</ul>
+
+<h2>Custom_HandleTerrainClick_TargetPos</h2>
+
+<h3>Syntax</h3>
+
+<div class="codehilite">
+<pre><span></span><code>Custom_HandleTerrainClick_TargetPos
+(...)
+</code></pre>
+</div>
+
+<h3>Arguments / returns</h3>
+
+<ul>
+<li>Unknown (native) unless otherwise observed.</li>
+</ul>
+
+<h3>Example</h3>
+
+<ul>
+<li>No call site found in the shipped Interface Lua (may be glue-only, server-driven, or for external AddOns).</li>
+</ul>
+
+<h2>Custom_SendAutoQuestAccept</h2>
+
+<h3>Syntax</h3>
+
+<div class="codehilite">
+<pre><span></span><code>Custom_SendAutoQuestAccept
+(...)
+</code></pre>
+</div>
+
+<h3>Arguments / returns</h3>
+
+<ul>
+<li>Unknown (native) unless otherwise observed.</li>
+</ul>
+
+<h3>Example</h3>
+
+<ul>
+<li>No call site found in the shipped Interface Lua (may be glue-only, server-driven, or for external AddOns).</li>
+</ul>
+
+<h2>Draft_LoadUI</h2>
+
+<h3>Syntax</h3>
+
+<div class="codehilite">
+<pre><span></span><code>Draft_LoadUI
+(...)
+</code></pre>
+</div>
+
+<h3>Arguments / returns</h3>
+
+<ul>
+<li>Unknown (native) unless otherwise observed.</li>
+</ul>
+
+<h3>Example (from Interface)</h3>
+
+<div class="codehilite">
+<pre><span></span><code>Draft_LoadUI
+()
+</code></pre>
+</div>
+
+<p><em>Seen in</em>: <code>FrameXML/Util/DraftUtil.lua</code> line 140.</p>
+
+</main>
+</body>
+</html>

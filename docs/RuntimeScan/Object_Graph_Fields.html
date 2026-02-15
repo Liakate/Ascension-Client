@@ -1,0 +1,2573 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Object Graph Fields (v2)</title>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.5;margin:0;padding:0;background:#fff;color:#111}
+main{max-width:980px;margin:0 auto;padding:32px 20px}
+pre,code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
+pre{padding:12px;overflow:auto;background:#f6f8fa;border-radius:8px}
+code{background:#f6f8fa;border-radius:6px;padding:0.15em 0.35em}
+pre code{background:transparent;padding:0}
+table{border-collapse:collapse;display:block;overflow:auto}
+th,td{border:1px solid #d0d7de;padding:6px 10px}
+h1,h2,h3{line-height:1.25}
+a{color:#0969da;text-decoration:none}
+a:hover{text-decoration:underline}
+hr{border:0;border-top:1px solid #d0d7de;margin:24px 0}
+</style>
+</head>
+<body>
+<main>
+<h1>Object Graph Fields (v2)</h1>
+
+<p>_Generated: 2026-02-13T21:39:37Z_<br />
+Rows: 506</p>
+
+<table>
+<thead>
+<tr>
+  <th>path</th>
+  <th>value</th>
+  <th>lua_type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameScrollUpButton.normalTexture</code></td>
+  <td>ui-scrollbar-scrollupbutton-up</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameScrollUpButton.downTexture</code></td>
+  <td>ui-scrollbar-scrollupbutton-down</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameScrollUpButton.overTexture</code></td>
+  <td>ui-scrollbar-scrollupbutton-highlight</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameScrollUpButton.direction</code></td>
+  <td>1</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton18Left.atlas</code></td>
+  <td>collapse-button-left</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterCompanionPanelSearchBoxSearchIcon.atlas</code></td>
+  <td>common-search-magnifyingglass</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionReputationPanelScrollListScrollFrameScrollBarTrackMiddle.atlas</code></td>
+  <td>!ui-scrollbar-center</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameScrollBarTrackBegin.atlas</code></td>
+  <td>ui-scrollbar-endcap-top</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionLFGFrameButton3Ring.atlas</code></td>
+  <td>bluemenu-Ring</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionSpellbookFrameContentSpellsSpellButton5TextBackground.atlas</code></td>
+  <td>spellbook-text-background</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterBackSlot.unit</code></td>
+  <td>player</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterBackSlot.backgroundTextureName</code></td>
+  <td>interface\paperdoll\UI-PaperDoll-Slot-Chest.blp</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterBackSlot.count</code></td>
+  <td>1</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterBackSlot.hasItem</code></td>
+  <td>1</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterBackSlot.slotName</code></td>
+  <td>BackSlot</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionSpellbookFrameContentSpellsSpellButton2TextBackground.atlas</code></td>
+  <td>spellbook-text-background</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionSpellbookFrameSideBarTab8RankUp.tooltipText</code></td>
+  <td>Visit a Trainer or Book of Ascension to level up your spells!</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionSpellbookFrameSideBarTab8RankUp.tooltipTitle</code></td>
+  <td>New Rank Available!</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionSpellbookFrameContentSpellsSpellButton7TrainBookTrainBook.atlas</code></td>
+  <td>spellbook-trainbook</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton19.statInfo</code></td>
+  <td>PLAYERSTAT_RANGED_COMBAT</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton19.isCollapsed</code></td>
+  <td>False</td>
+  <td>boolean</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton19.index</code></td>
+  <td>19</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton19.unit</code></td>
+  <td>player</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton19.isHeader</code></td>
+  <td>True</td>
+  <td>boolean</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionReputationPanelScrollListScrollFrameScrollBar.doNotHide</code></td>
+  <td>True</td>
+  <td>boolean</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionReputationPanelScrollListScrollFrameScrollBar.value</code></td>
+  <td>0</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionReputationPanelScrollListScrollFrameScrollBar.percent</code></td>
+  <td>0</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionReputationPanelScrollListScrollFrameScrollBar.minValue</code></td>
+  <td>0</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionReputationPanelScrollListScrollFrameScrollBar.maxValue</code></td>
+  <td>380.0000051974303</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionReputationPanelScrollListScrollFrameScrollBar.valueStep</code></td>
+  <td>0.005</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionSpellbookFrameContentProfessionsProfession12ProgressBarLeft.atlas</code></td>
+  <td>professionbook-statusbar-left</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton11Middle.atlas</code></td>
+  <td>collapse-button-middle</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFeetSlot.unit</code></td>
+  <td>player</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFeetSlot.backgroundTextureName</code></td>
+  <td>interface\paperdoll\UI-PaperDoll-Slot-Feet.blp</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFeetSlot.count</code></td>
+  <td>1</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFeetSlot.hasItem</code></td>
+  <td>1</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFeetSlot.slotName</code></td>
+  <td>FeetSlot</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionSpellbookFrameContentPetSpellsSpellButton12TextBackground2.atlas</code></td>
+  <td>spellbook-text-background</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterCompanionPanelSearchBoxLeft.atlas</code></td>
+  <td>common-search-border-left</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton3.tooltip</code></td>
+  <td>Prestige Level</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton3.index</code></td>
+  <td>3</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton3.unit</code></td>
+  <td>player</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton3.isHeader</code></td>
+  <td>False</td>
+  <td>boolean</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionPVEFrameLFDFrameRoleButtonDPS.permDisabled</code></td>
+  <td>False</td>
+  <td>boolean</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionPVEFrameLFDFrameRoleButtonDPS.role</code></td>
+  <td>DAMAGER</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionLFGFrameButton1Ring.atlas</code></td>
+  <td>bluemenu-Ring</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton3Left.atlas</code></td>
+  <td>collapse-button-left</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionWeeklyKeystoneFrameBackground.atlas</code></td>
+  <td>mythic-keystone-backdrop-8</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionSpellbookFrameContentPetSpellsSpellButton3TextBackground2.atlas</code></td>
+  <td>spellbook-text-background</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionSpellbookFrameContentSpellsSpellButton11TextBackground2.atlas</code></td>
+  <td>spellbook-text-background</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterCompanionPanelScrollFrameButton1Icon.borderTexture</code></td>
+  <td>Interface\Buttons\CheckButtonHilight</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton9Background.atlas</code></td>
+  <td>UI-Character-Info-Line-Bounce</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterChestSlotPopoutButton.id</code></td>
+  <td>5</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton12Middle.atlas</code></td>
+  <td>collapse-button-middle</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterTitlesPanelScrollFrameButton2Active.atlas</code></td>
+  <td>GarrMission_LevelUpBanner</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionSpellbookFrameContentSpellsSpellButton6TrainSlotFrame.atlas</code></td>
+  <td>spellbook-trainslot</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionPVPFrameHelpPlateButton.HelpPlate</code></td>
+  <td>PVP_FRAME</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterMainHandSlotPopoutButton.id</code></td>
+  <td>16</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFramePoolFrameAscensionCharacterFrameTabTemplate2.forceDisabled</code></td>
+  <td>False</td>
+  <td>boolean</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFramePoolFrameAscensionCharacterFrameTabTemplate2.tabText</code></td>
+  <td>Pets</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFramePoolFrameAscensionCharacterFrameTabTemplate2.tabID</code></td>
+  <td>2</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFramePoolFrameAscensionCharacterFrameTabTemplate2.atlasName</code></td>
+  <td>wow-tab</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFramePoolFrameAscensionCharacterFrameTabTemplate2.isSelected</code></td>
+  <td>False</td>
+  <td>boolean</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionSpellbookFrameContentSpellsSpellButton6TrainBookTrainBook.atlas</code></td>
+  <td>spellbook-trainbook</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionSpellbookFrameContentPetSpellsSpellButton5TextBackground2.atlas</code></td>
+  <td>spellbook-text-background</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton6Left.atlas</code></td>
+  <td>collapse-button-left</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionSpellbookFrameContentSpellsSpellButton9TrainBookTrainBook.atlas</code></td>
+  <td>spellbook-trainbook</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.ASCENSION_SECONDARY_COLOR.1</code></td>
+  <td>0.99</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.ASCENSION_SECONDARY_COLOR.2</code></td>
+  <td>0.54</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.ASCENSION_SECONDARY_COLOR.3</code></td>
+  <td>0</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.ASCENSION_SECONDARY_COLOR.4</code></td>
+  <td>1</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.ASCENSION_SECONDARY_COLOR.a</code></td>
+  <td>1</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.ASCENSION_SECONDARY_COLOR.colorStr</code></td>
+  <td>fffc8a00</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.ASCENSION_SECONDARY_COLOR.b</code></td>
+  <td>0</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.ASCENSION_SECONDARY_COLOR.r</code></td>
+  <td>0.99</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.ASCENSION_SECONDARY_COLOR.hex</code></td>
+  <td>|cfffc8a00</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.ASCENSION_SECONDARY_COLOR.g</code></td>
+  <td>0.54</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionSpellbookFrameContentPetSpellsSpellButton8TrainBookTrainBook.atlas</code></td>
+  <td>spellbook-trainbook</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.C_TrinityCore.index</code></td>
+  <td>1</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.C_Comm.elapsed</code></td>
+  <td>1</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.C_Comm.HardThrottleStart</code></td>
+  <td>4781.689</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.C_Comm.available</code></td>
+  <td>5</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.C_Comm.LastAvailableUpdate</code></td>
+  <td>1770919387</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterTitlesPanelScrollFrameButton7Active.atlas</code></td>
+  <td>GarrMission_LevelUpBanner</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionPVPFrameCasualFrame.InlineSkirmishes</code></td>
+  <td>False</td>
+  <td>boolean</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterCompanionPanelScrollFrameButton4Icon.borderTexture</code></td>
+  <td>Interface\Buttons\CheckButtonHilight</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionLFGFrameButton2Ring.atlas</code></td>
+  <td>bluemenu-Ring</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionSpellbookFrameSideBarTab14.HasInfo</code></td>
+  <td>False</td>
+  <td>boolean</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFrameRightInsetPoolFrameAscensionCharacterFrameSideTabTemplate2Center.atlas</code></td>
+  <td>_wow-tab-top-Center</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionSpellbookFrameContentProfessionsProfession8.IsHoldCast</code></td>
+  <td>False</td>
+  <td>boolean</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionSpellbookFrameContentProfessionsProfession8.description</code></td>
+  <td>Pursue valuable and useful ores, extracting them straight from the earth with a pickaxe. Their familiarity with the land...</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionSpellbookFrameContentProfessionsProfession8.skillID</code></td>
+  <td>186</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFinger1Slot.unit</code></td>
+  <td>player</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFinger1Slot.backgroundTextureName</code></td>
+  <td>interface\paperdoll\UI-PaperDoll-Slot-Finger.blp</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFinger1Slot.count</code></td>
+  <td>1</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFinger1Slot.hasItem</code></td>
+  <td>1</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFinger1Slot.slotName</code></td>
+  <td>Finger1Slot</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCurrencyPanelScrollListScrollFrameButton18CategoryBackground.atlas</code></td>
+  <td>Char-Stat-Top</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionWeeklyKeystoneFrameDungeonScrollScrollFrameScrollBarTrackBegin.atlas</code></td>
+  <td>ui-scrollbar-endcap-top</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton5Left.atlas</code></td>
+  <td>collapse-button-left</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterRangedSlot.unit</code></td>
+  <td>player</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterRangedSlot.count</code></td>
+  <td>1</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterRangedSlot.hasItem</code></td>
+  <td>1</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterRangedSlot.backgroundTextureName</code></td>
+  <td>interface\paperdoll\UI-PaperDoll-Slot-Ranged.blp</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterRangedSlot.slotName</code></td>
+  <td>RangedSlot</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterRangedSlot.verticalFlyout</code></td>
+  <td>True</td>
+  <td>boolean</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton6Background.atlas</code></td>
+  <td>UI-Character-Info-Line-Bounce</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterMysticEnchantPanelScrollFrameScrollBarTrackMiddle.atlas</code></td>
+  <td>!ui-scrollbar-center</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCurrencyPanelScrollList.isInitialized</code></td>
+  <td>True</td>
+  <td>boolean</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCurrencyPanelScrollList.template</code></td>
+  <td>CurrencyPanelItemTemplate</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton2ControlsEdit.tooltipText</code></td>
+  <td>Edit this set's name or ignored slots.</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton2ControlsEdit.tooltipTitle</code></td>
+  <td>Edit Set</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterAmmoSlotFrame.atlas</code></td>
+  <td>Char-BottomSlot</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterMysticEnchantPanelScrollFrameScrollUpButton.normalTexture</code></td>
+  <td>ui-scrollbar-scrollupbutton-up</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterMysticEnchantPanelScrollFrameScrollUpButton.downTexture</code></td>
+  <td>ui-scrollbar-scrollupbutton-down</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterMysticEnchantPanelScrollFrameScrollUpButton.overTexture</code></td>
+  <td>ui-scrollbar-scrollupbutton-highlight</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterMysticEnchantPanelScrollFrameScrollUpButton.direction</code></td>
+  <td>1</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionSpellbookFrameContentSpellsSpellButton7TrainSlotFrame.atlas</code></td>
+  <td>spellbook-trainslot</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton1EditControlsEditIcon.tooltipTitle</code></td>
+  <td>Change Icon</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton8Left.atlas</code></td>
+  <td>collapse-button-left</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionSpellbookFrameSideBarTab9RankUp.tooltipText</code></td>
+  <td>Visit a Trainer or Book of Ascension to level up your spells!</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionSpellbookFrameSideBarTab9RankUp.tooltipTitle</code></td>
+  <td>New Rank Available!</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton2Middle.atlas</code></td>
+  <td>collapse-button-middle</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCurrencyPanelScrollListScrollFrameScrollUpButton.normalTexture</code></td>
+  <td>ui-scrollbar-scrollupbutton-up</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCurrencyPanelScrollListScrollFrameScrollUpButton.downTexture</code></td>
+  <td>ui-scrollbar-scrollupbutton-down</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCurrencyPanelScrollListScrollFrameScrollUpButton.overTexture</code></td>
+  <td>ui-scrollbar-scrollupbutton-highlight</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCurrencyPanelScrollListScrollFrameScrollUpButton.direction</code></td>
+  <td>1</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterCompanionPanelSearchBoxMiddle.atlas</code></td>
+  <td>common-search-border-middle</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterCompanionPanelScrollFrameScrollDownButton.normalTexture</code></td>
+  <td>ui-scrollbar-scrolldownbutton-up</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterCompanionPanelScrollFrameScrollDownButton.downTexture</code></td>
+  <td>ui-scrollbar-scrolldownbutton-down</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterCompanionPanelScrollFrameScrollDownButton.direction</code></td>
+  <td>-1</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterCompanionPanelScrollFrameScrollDownButton.overTexture</code></td>
+  <td>ui-scrollbar-scrolldownbutton-highlight</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelEquipButton.atlasName</code></td>
+  <td>ui-dialogbox-button</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.C_PVP.InHighRisk</code></td>
+  <td>False</td>
+  <td>boolean</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionSpellbookFrameContentProfessionsProfession9ProgressBarBGRight.atlas</code></td>
+  <td>professionbook-statusbar-bg-right</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionPVPFrameRatedFrameArena2v2.teamSize</code></td>
+  <td>2</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionPVPFrameRatedFrameArena2v2.bgIndex</code></td>
+  <td>1</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionSpellbookFrameContentProfessionsProfession7ProgressBarBGRight.atlas</code></td>
+  <td>professionbook-statusbar-bg-right</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionSpellbookFrameContentSpellsSpellButton2Background.atlas</code></td>
+  <td>spellbook-emptyslot</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton1ControlsEdit.tooltipText</code></td>
+  <td>Edit this set's name or ignored slots.</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton1ControlsEdit.tooltipTitle</code></td>
+  <td>Edit Set</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionReputationPanelScrollListScrollFrameScrollUpButton.normalTexture</code></td>
+  <td>ui-scrollbar-scrollupbutton-up</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionReputationPanelScrollListScrollFrameScrollUpButton.downTexture</code></td>
+  <td>ui-scrollbar-scrollupbutton-down</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionReputationPanelScrollListScrollFrameScrollUpButton.overTexture</code></td>
+  <td>ui-scrollbar-scrollupbutton-highlight</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionReputationPanelScrollListScrollFrameScrollUpButton.direction</code></td>
+  <td>1</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFrameRightInsetPoolFrameAscensionCharacterFrameSideTabTemplate3Center.atlas</code></td>
+  <td>_wow-tab-top-Center</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionSpellbookFrameContentProfessionsProfession13.IsHoldCast</code></td>
+  <td>False</td>
+  <td>boolean</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionSpellbookFrameContentProfessionsProfession13.description</code></td>
+  <td>Catch the bounty of Azeroth's lakes and seas. Careful bait selection and patience can result in some truly rewarding hau...</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionSpellbookFrameContentProfessionsProfession13.skillID</code></td>
+  <td>356</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton16Left.atlas</code></td>
+  <td>collapse-button-left</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton1EditControlsSave.tooltipText</code></td>
+  <td>Saves your current equipment to this set.</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton1EditControlsSave.tooltipTitle</code></td>
+  <td>Save Changes</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionSpellbookFrameContentSpellsSpellButton11Background.atlas</code></td>
+  <td>spellbook-emptyslot</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFeetSlotPopoutButton.id</code></td>
+  <td>8</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionSpellbookFrameContentProfessionsProfession1ProgressBarBGLeft.atlas</code></td>
+  <td>professionbook-statusbar-bg-left</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton6.tooltip</code></td>
+  <td>|cffffffffAgility 86 (55|r|r|cff1aff1a+31|r|cffffffff)|r</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton6.index</code></td>
+  <td>6</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton6.tooltip2</code></td>
+  <td>Increases Attack Power by 76 Increases Critical Hit chance by 10.64%|nIncreases Armor by 172 Increases Dodge Chance by ...</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton6.unit</code></td>
+  <td>player</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton6.isHeader</code></td>
+  <td>False</td>
+  <td>boolean</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton3EditBoxRight.atlas</code></td>
+  <td>common-search-border-right</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionSpellbookFrameSideBarTab15.HasInfo</code></td>
+  <td>False</td>
+  <td>boolean</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionSpellbookFrameContentSpellsSpellButton1TrainSlotFrame.atlas</code></td>
+  <td>spellbook-trainslot</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionPVPFrameCasualFrameCallToArmsButton2.tooltipTableKey</code></td>
+  <td>Holiday</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.C_CrowdControl.HasControl</code></td>
+  <td>True</td>
+  <td>boolean</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionSpellbookFrameSideBarTab16.HasInfo</code></td>
+  <td>False</td>
+  <td>boolean</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFeetSlotFrame.atlas</code></td>
+  <td>Char-RightSlot</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionSpellbookFrameContentProfessionsProfession4IconBorder.atlas</code></td>
+  <td>professionbook-icon-border</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton19Background.atlas</code></td>
+  <td>UI-Character-Info-Line-Bounce</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionSpellbookFrameContentProfessionsProfession12IconBorder.atlas</code></td>
+  <td>professionbook-icon-border</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterNeckSlotFrame.atlas</code></td>
+  <td>Char-LeftSlot</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionPetPaperDollPanelCompanionTabCompanionModel.defaultDistance</code></td>
+  <td>0</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionPetPaperDollPanelCompanionTabCompanionModel.dragMove</code></td>
+  <td>True</td>
+  <td>boolean</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionPetPaperDollPanelCompanionTabCompanionModel.facing</code></td>
+  <td>0.449999988079071</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionPetPaperDollPanelCompanionTabCompanionModel.dragRotation</code></td>
+  <td>True</td>
+  <td>boolean</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionPetPaperDollPanelCompanionTabCompanionModel.distance</code></td>
+  <td>0</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionPetPaperDollPanelCompanionTabCompanionModel.scrollZoom</code></td>
+  <td>True</td>
+  <td>boolean</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionPetPaperDollPanelCompanionTabCompanionModel.minDistance</code></td>
+  <td>-1.4</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionPetPaperDollPanelCompanionTabCompanionModel.maxDistance</code></td>
+  <td>1.4</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionPetPaperDollPanelCompanionTabCompanionModel.dragScale</code></td>
+  <td>0.001</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionPetPaperDollPanelCompanionTabCompanionModel.defaultFacing</code></td>
+  <td>0.449999988079071</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterTitlesPanelScrollFrameButton10Active.atlas</code></td>
+  <td>GarrMission_LevelUpBanner</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionSpellbookFrameContentProfessionsProfession4ProgressBarLeft.atlas</code></td>
+  <td>professionbook-statusbar-left</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton5Icon.borderTexture</code></td>
+  <td>Interface\Buttons\UI-Quickslot2</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionSpellbookFrameContentSpellsSpellButton9.canClickBind</code></td>
+  <td>False</td>
+  <td>boolean</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionSpellbookFrameContentSpellsSpellButton9.pickedUp</code></td>
+  <td>False</td>
+  <td>boolean</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionSpellbookFrameContentSpellsSpellButton9.IsHoldCast</code></td>
+  <td>False</td>
+  <td>boolean</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionSpellbookFrameContentSpellsSpellButton9.isPassive</code></td>
+  <td>False</td>
+  <td>boolean</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton10Right.atlas</code></td>
+  <td>collapse-button-right</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionSkillsPanelScrollListScrollFrameButton17CategoryBackground.atlas</code></td>
+  <td>Char-Stat-Top</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterTitlesPanelScrollFrameButton16Active.atlas</code></td>
+  <td>GarrMission_LevelUpBanner</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionPVPFrameCasualFrameCallToArmsButton1RewardHonorBorder.atlas</code></td>
+  <td>honorsystem-bar-rewardborder-circle</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterTrinket0SlotFrame.atlas</code></td>
+  <td>Char-RightSlot</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionSpellbookFrameContentSpellsSearchSearchIcon.atlas</code></td>
+  <td>common-search-magnifyingglass</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton7.tooltip</code></td>
+  <td>|cffffffffIntellect 20|r</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton7.index</code></td>
+  <td>7</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton7.unit</code></td>
+  <td>player</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton7.isHeader</code></td>
+  <td>False</td>
+  <td>boolean</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton9Middle.atlas</code></td>
+  <td>collapse-button-middle</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton13Middle.atlas</code></td>
+  <td>collapse-button-middle</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterBackSlotCooldown.start</code></td>
+  <td>0</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterBackSlotCooldown.duration</code></td>
+  <td>0</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterCompanionPanelScrollFrameButton7Icon.borderTexture</code></td>
+  <td>Interface\Buttons\CheckButtonHilight</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionPVPFrameHonorBar.type</code></td>
+  <td>honor</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionPVEFrameLFDFrameSpecificListButton9.id</code></td>
+  <td>273</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionPVEFrameLFDFrameSpecificListButton9.isCollapsed</code></td>
+  <td>False</td>
+  <td>boolean</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton1.statInfo</code></td>
+  <td>CHARACTER_INFO</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton1.isCollapsed</code></td>
+  <td>False</td>
+  <td>boolean</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton1.index</code></td>
+  <td>1</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton1.unit</code></td>
+  <td>player</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton1.isHeader</code></td>
+  <td>True</td>
+  <td>boolean</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCurrencyPanelScrollListScrollFrameScrollBarThumb.overMiddleTexture</code></td>
+  <td>ui-scrollbar-knob-mouseover-center</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCurrencyPanelScrollListScrollFrameScrollBarThumb.overEndTexture</code></td>
+  <td>ui-scrollbar-knob-mouseover-endcap-bottom</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCurrencyPanelScrollListScrollFrameScrollBarThumb.downEndTexture</code></td>
+  <td>ui-scrollbar-knob-endcap-bottom-disabled</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCurrencyPanelScrollListScrollFrameScrollBarThumb.upEndTexture</code></td>
+  <td>ui-scrollbar-knob-endcap-bottom</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCurrencyPanelScrollListScrollFrameScrollBarThumb.upBeginTexture</code></td>
+  <td>ui-scrollbar-knob-endcap-top</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCurrencyPanelScrollListScrollFrameScrollBarThumb.upMiddleTexture</code></td>
+  <td>ui-scrollbar-knob-center</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCurrencyPanelScrollListScrollFrameScrollBarThumb.downMiddleTexture</code></td>
+  <td>ui-scrollbar-knob-center-disabled</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCurrencyPanelScrollListScrollFrameScrollBarThumb.overBeginTexture</code></td>
+  <td>ui-scrollbar-knob-mouseover-endcap-top</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCurrencyPanelScrollListScrollFrameScrollBarThumb.downBeginTexture</code></td>
+  <td>ui-scrollbar-knob-endcap-top-disabled</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFrameRightInsetPoolFrameAscensionCharacterFrameSideTabTemplate1Center.atlas</code></td>
+  <td>_wow-tab-top-Center-Checked</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFinger0Slot.unit</code></td>
+  <td>player</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFinger0Slot.backgroundTextureName</code></td>
+  <td>interface\paperdoll\UI-PaperDoll-Slot-Finger.blp</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFinger0Slot.count</code></td>
+  <td>1</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFinger0Slot.hasItem</code></td>
+  <td>1</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFinger0Slot.slotName</code></td>
+  <td>Finger0Slot</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCurrencyPanelScrollListScrollFrameButton3CategoryBackground.atlas</code></td>
+  <td>Char-Stat-Top</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterTitlesPanelScrollFrameButton9Active.atlas</code></td>
+  <td>GarrMission_LevelUpBanner</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionSpellbookFrameContentSpellsSpellButton5TrainBookTrainBook.atlas</code></td>
+  <td>spellbook-trainbook</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionSpellbookFrameContentPetSpellsSpellButton5.IsHoldCast</code></td>
+  <td>False</td>
+  <td>boolean</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterCompanionPanelScrollFrameScrollBarTrackBegin.atlas</code></td>
+  <td>ui-scrollbar-endcap-top</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionSpellbookFrameContentSpellsSpellButton5Background.atlas</code></td>
+  <td>spellbook-emptyslot</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionSpellbookFrameContentPetSpellsSpellButton8Background.atlas</code></td>
+  <td>spellbook-emptyslot</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameScrollBarTrackEnd.atlas</code></td>
+  <td>ui-scrollbar-endcap-bottom</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton13Background.atlas</code></td>
+  <td>UI-Character-Info-Line-Bounce</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterHandsSlotCooldown.start</code></td>
+  <td>0</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterHandsSlotCooldown.duration</code></td>
+  <td>0</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCurrencyPanelScrollListScrollFrame.hybridScroll</code></td>
+  <td>True</td>
+  <td>boolean</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCurrencyPanelScrollListScrollFrame.offset</code></td>
+  <td>0</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCurrencyPanelScrollListScrollFrame.buttonHeight</code></td>
+  <td>17</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCurrencyPanelScrollListScrollFrame.isHorizontal</code></td>
+  <td>False</td>
+  <td>boolean</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionSpellbookFrameContentSpellsSpellButton10TextBackground.atlas</code></td>
+  <td>spellbook-text-background</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionPVEFrameLFDFrameSpecificListButton4.id</code></td>
+  <td>3305</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionPVEFrameLFDFrameSpecificListButton4.isCollapsed</code></td>
+  <td>False</td>
+  <td>boolean</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionReputationPanelScrollListScrollFrameScrollDownButton.normalTexture</code></td>
+  <td>ui-scrollbar-scrolldownbutton-up</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionReputationPanelScrollListScrollFrameScrollDownButton.downTexture</code></td>
+  <td>ui-scrollbar-scrolldownbutton-down</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionReputationPanelScrollListScrollFrameScrollDownButton.direction</code></td>
+  <td>-1</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionReputationPanelScrollListScrollFrameScrollDownButton.overTexture</code></td>
+  <td>ui-scrollbar-scrolldownbutton-highlight</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionPVPFrameRatedFrameArena3v3.teamSize</code></td>
+  <td>3</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionPVPFrameRatedFrameArena3v3.bgIndex</code></td>
+  <td>2</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterTitlesPanelScrollFrameButton15Active.atlas</code></td>
+  <td>GarrMission_LevelUpBanner</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionSpellbookFrameContentSpellsSpellButton10TextBackground2.atlas</code></td>
+  <td>spellbook-text-background</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterTitlesPanelScrollFrameButton4Active.atlas</code></td>
+  <td>GarrMission_LevelUpBanner</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFramePoolFrameAscensionCharacterFrameTabTemplate1Center.atlas</code></td>
+  <td>_wow-tab-Center-Checked</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFramePoolFrameAscensionCharacterFrameTabTemplate2Right.atlas</code></td>
+  <td>wow-tab-Right</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFramePoolFrameAscensionCharacterFrameTabTemplate2Center.atlas</code></td>
+  <td>_wow-tab-Center</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFramePoolFrameAscensionCharacterFrameTabTemplate3.forceDisabled</code></td>
+  <td>False</td>
+  <td>boolean</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFramePoolFrameAscensionCharacterFrameTabTemplate3.tabText</code></td>
+  <td>Reputation</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFramePoolFrameAscensionCharacterFrameTabTemplate3.tabID</code></td>
+  <td>3</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFramePoolFrameAscensionCharacterFrameTabTemplate3.atlasName</code></td>
+  <td>wow-tab</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFramePoolFrameAscensionCharacterFrameTabTemplate3.isSelected</code></td>
+  <td>False</td>
+  <td>boolean</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFramePoolFrameAscensionCharacterFrameTabTemplate3Left.atlas</code></td>
+  <td>wow-tab-Left</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFramePoolFrameAscensionCharacterFrameTabTemplate4Left.atlas</code></td>
+  <td>wow-tab-Left</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFramePoolFrameAscensionCharacterFrameTabTemplate4Right.atlas</code></td>
+  <td>wow-tab-Right</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFramePoolFrameAscensionCharacterFrameTabTemplate4Center.atlas</code></td>
+  <td>_wow-tab-Center</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFramePoolFrameAscensionCharacterFrameTabTemplate5.forceDisabled</code></td>
+  <td>False</td>
+  <td>boolean</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFramePoolFrameAscensionCharacterFrameTabTemplate5.tabText</code></td>
+  <td>Currency</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFramePoolFrameAscensionCharacterFrameTabTemplate5.tabID</code></td>
+  <td>5</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFramePoolFrameAscensionCharacterFrameTabTemplate5.atlasName</code></td>
+  <td>wow-tab</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFramePoolFrameAscensionCharacterFrameTabTemplate5.isSelected</code></td>
+  <td>False</td>
+  <td>boolean</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFramePoolFrameAscensionCharacterFrameTabTemplate5Left.atlas</code></td>
+  <td>wow-tab-Left</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFramePoolFrameAscensionCharacterFrameTabTemplate5Center.atlas</code></td>
+  <td>_wow-tab-Center</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFrameRightInsetPoolFrameAscensionCharacterFrameSideTabTemplate2.forceDisabled</code></td>
+  <td>False</td>
+  <td>boolean</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFrameRightInsetPoolFrameAscensionCharacterFrameSideTabTemplate2.textPadding</code></td>
+  <td>10</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFrameRightInsetPoolFrameAscensionCharacterFrameSideTabTemplate2.tabText</code></td>
+  <td></td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFrameRightInsetPoolFrameAscensionCharacterFrameSideTabTemplate2.tabID</code></td>
+  <td>2</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFrameRightInsetPoolFrameAscensionCharacterFrameSideTabTemplate2.tooltipTitle</code></td>
+  <td>Titles</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFrameRightInsetPoolFrameAscensionCharacterFrameSideTabTemplate2.atlasName</code></td>
+  <td>wow-tab-top</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFrameRightInsetPoolFrameAscensionCharacterFrameSideTabTemplate2.internalTooltipTitle</code></td>
+  <td>Titles</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFrameRightInsetPoolFrameAscensionCharacterFrameSideTabTemplate2.isSelected</code></td>
+  <td>False</td>
+  <td>boolean</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFrameRightInsetPoolFrameAscensionCharacterFrameSideTabTemplate2Left.atlas</code></td>
+  <td>wow-tab-top-Left</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFrameRightInsetPoolFrameAscensionCharacterFrameSideTabTemplate2Right.atlas</code></td>
+  <td>wow-tab-top-Right</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFrameRightInsetPoolFrameAscensionCharacterFrameSideTabTemplate2Icon.atlas</code></td>
+  <td>paperdoll-title-tab</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFrameRightInsetPoolFrameAscensionCharacterFrameSideTabTemplate3.forceDisabled</code></td>
+  <td>False</td>
+  <td>boolean</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFrameRightInsetPoolFrameAscensionCharacterFrameSideTabTemplate3.textPadding</code></td>
+  <td>10</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFrameRightInsetPoolFrameAscensionCharacterFrameSideTabTemplate3.tabText</code></td>
+  <td></td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFrameRightInsetPoolFrameAscensionCharacterFrameSideTabTemplate3.tabID</code></td>
+  <td>3</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFrameRightInsetPoolFrameAscensionCharacterFrameSideTabTemplate3.tooltipTitle</code></td>
+  <td>Equipment Manager</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFrameRightInsetPoolFrameAscensionCharacterFrameSideTabTemplate3.atlasName</code></td>
+  <td>wow-tab-top</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFrameRightInsetPoolFrameAscensionCharacterFrameSideTabTemplate3.internalTooltipTitle</code></td>
+  <td>Equipment Manager</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFrameRightInsetPoolFrameAscensionCharacterFrameSideTabTemplate3.isSelected</code></td>
+  <td>False</td>
+  <td>boolean</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFrameRightInsetPoolFrameAscensionCharacterFrameSideTabTemplate3Left.atlas</code></td>
+  <td>wow-tab-top-Left</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFrameRightInsetPoolFrameAscensionCharacterFrameSideTabTemplate3Right.atlas</code></td>
+  <td>wow-tab-top-Right</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFrameRightInsetPoolFrameAscensionCharacterFrameSideTabTemplate3Icon.atlas</code></td>
+  <td>paperdoll-equipment-manager-tab</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFrameRightInsetPoolFrameAscensionCharacterFrameSideTabTemplate4Left.atlas</code></td>
+  <td>wow-tab-top-Left</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterFrameRightInsetPoolFrameAscensionCharacterFrameSideTabTemplate4Icon.atlas</code></td>
+  <td>paperdoll-mystic-enchant-tab</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameScrollBarTrackBegin.atlas</code></td>
+  <td>ui-scrollbar-endcap-top</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameScrollBarThumb.overMiddleTexture</code></td>
+  <td>ui-scrollbar-knob-mouseover-center</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameScrollBarThumb.overEndTexture</code></td>
+  <td>ui-scrollbar-knob-mouseover-endcap-bottom</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameScrollBarThumb.downEndTexture</code></td>
+  <td>ui-scrollbar-knob-endcap-bottom-disabled</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameScrollBarThumb.upEndTexture</code></td>
+  <td>ui-scrollbar-knob-endcap-bottom</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameScrollBarThumb.upBeginTexture</code></td>
+  <td>ui-scrollbar-knob-endcap-top</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameScrollBarThumb.upMiddleTexture</code></td>
+  <td>ui-scrollbar-knob-center</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameScrollBarThumb.downMiddleTexture</code></td>
+  <td>ui-scrollbar-knob-center-disabled</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameScrollBarThumb.overBeginTexture</code></td>
+  <td>ui-scrollbar-knob-mouseover-endcap-top</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameScrollBarThumb.downBeginTexture</code></td>
+  <td>ui-scrollbar-knob-endcap-top-disabled</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameScrollBarThumbEnd.atlas</code></td>
+  <td>ui-scrollbar-knob-endcap-bottom</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameScrollBarThumbMiddle.atlas</code></td>
+  <td>ui-scrollbar-knob-center</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameScrollDownButton.normalTexture</code></td>
+  <td>ui-scrollbar-scrolldownbutton-up</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameScrollDownButton.downTexture</code></td>
+  <td>ui-scrollbar-scrolldownbutton-down</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameScrollDownButton.overTexture</code></td>
+  <td>ui-scrollbar-scrolldownbutton-highlight</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameScrollDownButton.direction</code></td>
+  <td>-1</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton1Background.atlas</code></td>
+  <td>UI-Character-Info-Line-Bounce</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton2.tooltip</code></td>
+  <td>Average Item Level: 5.87</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton2.index</code></td>
+  <td>2</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton2.tooltip2</code></td>
+  <td>Average item level of your currently equipped gear. Blue and Green Quality grant less total average item level than epic...</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton2.unit</code></td>
+  <td>player</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton2.isHeader</code></td>
+  <td>False</td>
+  <td>boolean</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton2Left.atlas</code></td>
+  <td>collapse-button-left</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton2Right.atlas</code></td>
+  <td>collapse-button-right</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton3Right.atlas</code></td>
+  <td>collapse-button-right</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton4Left.atlas</code></td>
+  <td>collapse-button-left</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton4Middle.atlas</code></td>
+  <td>collapse-button-middle</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton5Middle.atlas</code></td>
+  <td>collapse-button-middle</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton6Right.atlas</code></td>
+  <td>collapse-button-right</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton7Left.atlas</code></td>
+  <td>collapse-button-left</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton7Right.atlas</code></td>
+  <td>collapse-button-right</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton7Background.atlas</code></td>
+  <td>UI-Character-Info-Line-Bounce</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton8Right.atlas</code></td>
+  <td>collapse-button-right</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton8Background.atlas</code></td>
+  <td>UI-Character-Info-Line-Bounce</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton9.tooltip</code></td>
+  <td>|cffffffffStamina 70 (42|r|r|cff1aff1a+28|r|cffffffff)|r</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton9.index</code></td>
+  <td>9</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton9.tooltip2</code></td>
+  <td>Increases Health by 520</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton9.unit</code></td>
+  <td>player</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton9.isHeader</code></td>
+  <td>False</td>
+  <td>boolean</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton9Left.atlas</code></td>
+  <td>collapse-button-left</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton9Right.atlas</code></td>
+  <td>collapse-button-right</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton10Left.atlas</code></td>
+  <td>collapse-button-left</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton10Middle.atlas</code></td>
+  <td>collapse-button-middle</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton11Right.atlas</code></td>
+  <td>collapse-button-right</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton12.tooltip</code></td>
+  <td>|cffffffffAttack Speed 2.50 / 2.60|r</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton12.index</code></td>
+  <td>12</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton12.tooltip2</code></td>
+  <td>Haste rating 0 (0.00% haste)</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton12.unit</code></td>
+  <td>player</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton12.isHeader</code></td>
+  <td>False</td>
+  <td>boolean</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton12Right.atlas</code></td>
+  <td>collapse-button-right</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton12Background.atlas</code></td>
+  <td>UI-Character-Info-Line-Bounce</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton13Left.atlas</code></td>
+  <td>collapse-button-left</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton14Left.atlas</code></td>
+  <td>collapse-button-left</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton14Right.atlas</code></td>
+  <td>collapse-button-right</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton14Middle.atlas</code></td>
+  <td>collapse-button-middle</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton15Left.atlas</code></td>
+  <td>collapse-button-left</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton15Right.atlas</code></td>
+  <td>collapse-button-right</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton15Background.atlas</code></td>
+  <td>UI-Character-Info-Line-Bounce</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton16.tooltip</code></td>
+  <td>|cffffffffArmor Penetration|r</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton16.index</code></td>
+  <td>16</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton16.tooltip2</code></td>
+  <td>Armor penetration rating 0 (Enemy armor reduced by up to 0.00%).</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton16.unit</code></td>
+  <td>player</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton16.isHeader</code></td>
+  <td>False</td>
+  <td>boolean</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton16Right.atlas</code></td>
+  <td>collapse-button-right</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton17Right.atlas</code></td>
+  <td>collapse-button-right</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton17Middle.atlas</code></td>
+  <td>collapse-button-middle</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton19Right.atlas</code></td>
+  <td>collapse-button-right</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton7ControlsEdit.tooltipText</code></td>
+  <td>Edit this set's name or ignored slots.</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton7ControlsEdit.tooltipTitle</code></td>
+  <td>Edit Set</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton20Left.atlas</code></td>
+  <td>collapse-button-left</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton20Middle.atlas</code></td>
+  <td>collapse-button-middle</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton20Background.atlas</code></td>
+  <td>UI-Character-Info-Line-Bounce</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton21.tooltip</code></td>
+  <td>|cffffffffAttack Speed 2.00|r</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton21.index</code></td>
+  <td>21</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton21.tooltip2</code></td>
+  <td>Haste rating 0 (0.00% haste)</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton21.unit</code></td>
+  <td>player</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton21.isHeader</code></td>
+  <td>False</td>
+  <td>boolean</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton21Left.atlas</code></td>
+  <td>collapse-button-left</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton21Right.atlas</code></td>
+  <td>collapse-button-right</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCurrencyPanelScrollListScrollFrameButton5CategoryBackground.atlas</code></td>
+  <td>Char-Stat-Top</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterStatsPanelScrollFrameButton21Background.atlas</code></td>
+  <td>UI-Character-Info-Line-Bounce</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterTitlesPanelBackground.atlas</code></td>
+  <td>UI-Character-Info-Warrior-BG</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterTitlesPanelScrollFrame.hybridScroll</code></td>
+  <td>True</td>
+  <td>boolean</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterTitlesPanelScrollFrame.offset</code></td>
+  <td>0</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterTitlesPanelScrollFrame.buttonHeight</code></td>
+  <td>18</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterTitlesPanelScrollFrame.isHorizontal</code></td>
+  <td>False</td>
+  <td>boolean</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterTitlesPanelScrollFrameScrollBarThumb.overMiddleTexture</code></td>
+  <td>ui-scrollbar-knob-mouseover-center</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterTitlesPanelScrollFrameScrollBarThumb.overEndTexture</code></td>
+  <td>ui-scrollbar-knob-mouseover-endcap-bottom</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterTitlesPanelScrollFrameScrollBarThumb.downEndTexture</code></td>
+  <td>ui-scrollbar-knob-endcap-bottom-disabled</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterTitlesPanelScrollFrameScrollBarThumb.upEndTexture</code></td>
+  <td>ui-scrollbar-knob-endcap-bottom</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterTitlesPanelScrollFrameScrollBarThumb.upBeginTexture</code></td>
+  <td>ui-scrollbar-knob-endcap-top</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterTitlesPanelScrollFrameScrollBarThumb.upMiddleTexture</code></td>
+  <td>ui-scrollbar-knob-center</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterTitlesPanelScrollFrameScrollBarThumb.downMiddleTexture</code></td>
+  <td>ui-scrollbar-knob-center-disabled</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterTitlesPanelScrollFrameScrollBarThumb.overBeginTexture</code></td>
+  <td>ui-scrollbar-knob-mouseover-endcap-top</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterTitlesPanelScrollFrameScrollBarThumb.downBeginTexture</code></td>
+  <td>ui-scrollbar-knob-endcap-top-disabled</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterTitlesPanelScrollFrameScrollUpButton.normalTexture</code></td>
+  <td>ui-scrollbar-scrollupbutton-up</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterTitlesPanelScrollFrameScrollUpButton.downTexture</code></td>
+  <td>ui-scrollbar-scrollupbutton-down</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterTitlesPanelScrollFrameScrollUpButton.overTexture</code></td>
+  <td>ui-scrollbar-scrollupbutton-highlight</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterTitlesPanelScrollFrameScrollUpButton.direction</code></td>
+  <td>1</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterTitlesPanelScrollFrameScrollDownButton.normalTexture</code></td>
+  <td>ui-scrollbar-scrolldownbutton-up</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterTitlesPanelScrollFrameScrollDownButton.downTexture</code></td>
+  <td>ui-scrollbar-scrolldownbutton-down</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterTitlesPanelScrollFrameScrollDownButton.direction</code></td>
+  <td>-1</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterTitlesPanelScrollFrameScrollDownButton.overTexture</code></td>
+  <td>ui-scrollbar-scrolldownbutton-highlight</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterTitlesPanelScrollFrameButton3Active.atlas</code></td>
+  <td>GarrMission_LevelUpBanner</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterTitlesPanelScrollFrameButton8Active.atlas</code></td>
+  <td>GarrMission_LevelUpBanner</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterTitlesPanelScrollFrameButton12Active.atlas</code></td>
+  <td>GarrMission_LevelUpBanner</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterTitlesPanelScrollFrameButton13Active.atlas</code></td>
+  <td>GarrMission_LevelUpBanner</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterTitlesPanelScrollFrameButton17Active.atlas</code></td>
+  <td>GarrMission_LevelUpBanner</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterTitlesPanelScrollFrameButton18Active.atlas</code></td>
+  <td>GarrMission_LevelUpBanner</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterTitlesPanelScrollFrameButton19Active.atlas</code></td>
+  <td>GarrMission_LevelUpBanner</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterTitlesPanelScrollFrameButton21Active.atlas</code></td>
+  <td>GarrMission_LevelUpBanner</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelBackground.atlas</code></td>
+  <td>garrlanding-followerframe</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrame.hybridScroll</code></td>
+  <td>True</td>
+  <td>boolean</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrame.offset</code></td>
+  <td>0</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrame.buttonHeight</code></td>
+  <td>48</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrame.isHorizontal</code></td>
+  <td>False</td>
+  <td>boolean</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameScrollBar.doNotHide</code></td>
+  <td>True</td>
+  <td>boolean</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameScrollBar.value</code></td>
+  <td>0</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameScrollBar.percent</code></td>
+  <td>0</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameScrollBar.minValue</code></td>
+  <td>0</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameScrollBar.maxValue</code></td>
+  <td>383.9999912464334</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameScrollBar.valueStep</code></td>
+  <td>0.005</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameScrollBarTrackMiddle.atlas</code></td>
+  <td>!ui-scrollbar-center</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameScrollBarThumb.overMiddleTexture</code></td>
+  <td>ui-scrollbar-knob-mouseover-center</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameScrollBarThumb.overEndTexture</code></td>
+  <td>ui-scrollbar-knob-mouseover-endcap-bottom</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameScrollBarThumb.downEndTexture</code></td>
+  <td>ui-scrollbar-knob-endcap-bottom-disabled</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameScrollBarThumb.upEndTexture</code></td>
+  <td>ui-scrollbar-knob-endcap-bottom</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameScrollBarThumb.upBeginTexture</code></td>
+  <td>ui-scrollbar-knob-endcap-top</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameScrollBarThumb.upMiddleTexture</code></td>
+  <td>ui-scrollbar-knob-center</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameScrollBarThumb.downMiddleTexture</code></td>
+  <td>ui-scrollbar-knob-center-disabled</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameScrollBarThumb.overBeginTexture</code></td>
+  <td>ui-scrollbar-knob-mouseover-endcap-top</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameScrollBarThumb.downBeginTexture</code></td>
+  <td>ui-scrollbar-knob-endcap-top-disabled</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameScrollDownButton.normalTexture</code></td>
+  <td>ui-scrollbar-scrolldownbutton-up</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameScrollDownButton.downTexture</code></td>
+  <td>ui-scrollbar-scrolldownbutton-down</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameScrollDownButton.direction</code></td>
+  <td>-1</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameScrollDownButton.overTexture</code></td>
+  <td>ui-scrollbar-scrolldownbutton-highlight</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelIconSelector.ScrollFrame.offset</code></td>
+  <td>0</td>
+  <td>number</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelSendToBankToggleGlow.atlas</code></td>
+  <td>garrlanding-sidetoast-glow</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton1Icon.borderTexture</code></td>
+  <td>Interface\Buttons\UI-Quickslot2</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton1ControlsDelete.tooltipText</code></td>
+  <td>Permanently delete this set.</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton1ControlsDelete.tooltipTitle</code></td>
+  <td>Delete Set</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton1EditBoxRight.atlas</code></td>
+  <td>common-search-border-right</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton2Icon.borderTexture</code></td>
+  <td>Interface\Buttons\UI-Quickslot2</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton2EditControlsStopEdit.tooltipText</code></td>
+  <td>Stop editing the current equipment set settings.</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton2EditControlsStopEdit.tooltipTitle</code></td>
+  <td>Stop Editing</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton2EditControlsSave.tooltipText</code></td>
+  <td>Saves your current equipment to this set.</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton2EditControlsSave.tooltipTitle</code></td>
+  <td>Save Changes</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton2EditBoxLeft.atlas</code></td>
+  <td>common-search-border-left</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton2EditBoxMiddle.atlas</code></td>
+  <td>common-search-border-middle</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton3Icon.borderTexture</code></td>
+  <td>Interface\Buttons\UI-Quickslot2</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton3ControlsEdit.tooltipText</code></td>
+  <td>Edit this set's name or ignored slots.</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton3ControlsEdit.tooltipTitle</code></td>
+  <td>Edit Set</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton3ControlsDelete.tooltipText</code></td>
+  <td>Permanently delete this set.</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton3ControlsDelete.tooltipTitle</code></td>
+  <td>Delete Set</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton3EditControlsStopEdit.tooltipText</code></td>
+  <td>Stop editing the current equipment set settings.</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton3EditControlsStopEdit.tooltipTitle</code></td>
+  <td>Stop Editing</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton3EditControlsEditIcon.tooltipTitle</code></td>
+  <td>Change Icon</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton3EditBoxLeft.atlas</code></td>
+  <td>common-search-border-left</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton3EditBoxMiddle.atlas</code></td>
+  <td>common-search-border-middle</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton4ControlsEdit.tooltipText</code></td>
+  <td>Edit this set's name or ignored slots.</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton4ControlsEdit.tooltipTitle</code></td>
+  <td>Edit Set</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton4ControlsDelete.tooltipText</code></td>
+  <td>Permanently delete this set.</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton4ControlsDelete.tooltipTitle</code></td>
+  <td>Delete Set</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton4EditControlsStopEdit.tooltipText</code></td>
+  <td>Stop editing the current equipment set settings.</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton4EditControlsStopEdit.tooltipTitle</code></td>
+  <td>Stop Editing</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton4EditControlsSave.tooltipText</code></td>
+  <td>Saves your current equipment to this set.</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton4EditControlsSave.tooltipTitle</code></td>
+  <td>Save Changes</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton4EditControlsEditIcon.tooltipTitle</code></td>
+  <td>Change Icon</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton4EditBoxLeft.atlas</code></td>
+  <td>common-search-border-left</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton4EditBoxMiddle.atlas</code></td>
+  <td>common-search-border-middle</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton5ControlsEdit.tooltipText</code></td>
+  <td>Edit this set's name or ignored slots.</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton5ControlsEdit.tooltipTitle</code></td>
+  <td>Edit Set</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton5ControlsDelete.tooltipText</code></td>
+  <td>Permanently delete this set.</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton5ControlsDelete.tooltipTitle</code></td>
+  <td>Delete Set</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton5EditControlsEditIcon.tooltipTitle</code></td>
+  <td>Change Icon</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton6ControlsEdit.tooltipText</code></td>
+  <td>Edit this set's name or ignored slots.</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton6ControlsEdit.tooltipTitle</code></td>
+  <td>Edit Set</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton6ControlsDelete.tooltipText</code></td>
+  <td>Permanently delete this set.</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton6ControlsDelete.tooltipTitle</code></td>
+  <td>Delete Set</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton6EditControlsStopEdit.tooltipText</code></td>
+  <td>Stop editing the current equipment set settings.</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton6EditControlsStopEdit.tooltipTitle</code></td>
+  <td>Stop Editing</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton6EditControlsSave.tooltipText</code></td>
+  <td>Saves your current equipment to this set.</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton6EditControlsSave.tooltipTitle</code></td>
+  <td>Save Changes</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton6EditBoxLeft.atlas</code></td>
+  <td>common-search-border-left</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton6EditBoxMiddle.atlas</code></td>
+  <td>common-search-border-middle</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton7ControlsDelete.tooltipText</code></td>
+  <td>Permanently delete this set.</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton7ControlsDelete.tooltipTitle</code></td>
+  <td>Delete Set</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton7EditControlsStopEdit.tooltipText</code></td>
+  <td>Stop editing the current equipment set settings.</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton7EditControlsStopEdit.tooltipTitle</code></td>
+  <td>Stop Editing</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton7EditControlsSave.tooltipText</code></td>
+  <td>Saves your current equipment to this set.</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton7EditControlsSave.tooltipTitle</code></td>
+  <td>Save Changes</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton7EditBoxLeft.atlas</code></td>
+  <td>common-search-border-left</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton7EditBoxRight.atlas</code></td>
+  <td>common-search-border-right</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton7EditBoxMiddle.atlas</code></td>
+  <td>common-search-border-middle</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton8ControlsEdit.tooltipText</code></td>
+  <td>Edit this set's name or ignored slots.</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton8ControlsEdit.tooltipTitle</code></td>
+  <td>Edit Set</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton8ControlsDelete.tooltipText</code></td>
+  <td>Permanently delete this set.</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton8ControlsDelete.tooltipTitle</code></td>
+  <td>Delete Set</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton8EditControlsStopEdit.tooltipText</code></td>
+  <td>Stop editing the current equipment set settings.</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton8EditControlsStopEdit.tooltipTitle</code></td>
+  <td>Stop Editing</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton8EditControlsSave.tooltipText</code></td>
+  <td>Saves your current equipment to this set.</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton8EditControlsSave.tooltipTitle</code></td>
+  <td>Save Changes</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton8EditControlsEditIcon.tooltipTitle</code></td>
+  <td>Change Icon</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton8EditBoxLeft.atlas</code></td>
+  <td>common-search-border-left</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton8EditBoxRight.atlas</code></td>
+  <td>common-search-border-right</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton8EditBoxMiddle.atlas</code></td>
+  <td>common-search-border-middle</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterMysticEnchantPanel.PreventSelection</code></td>
+  <td>True</td>
+  <td>boolean</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterMysticEnchantPanel.template</code></td>
+  <td>MysticEnchantPanelItemTemplate</td>
+  <td>string</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterMysticEnchantPanel.isInitialized</code></td>
+  <td>True</td>
+  <td>boolean</td>
+</tr>
+<tr>
+  <td><code>_G.AscensionCharacterMysticEnchantPanel.unit</code></td>
+  <td>player</td>
+  <td>string</td>
+</tr>
+</tbody>
+</table>
+
+</main>
+</body>
+</html>

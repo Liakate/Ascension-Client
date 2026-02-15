@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>C_GameMode</title>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.5;margin:0;padding:0;background:#fff;color:#111}
+main{max-width:980px;margin:0 auto;padding:32px 20px}
+pre,code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
+pre{padding:12px;overflow:auto;background:#f6f8fa;border-radius:8px}
+code{background:#f6f8fa;border-radius:6px;padding:0.15em 0.35em}
+pre code{background:transparent;padding:0}
+table{border-collapse:collapse;display:block;overflow:auto}
+th,td{border:1px solid #d0d7de;padding:6px 10px}
+h1,h2,h3{line-height:1.25}
+a{color:#0969da;text-decoration:none}
+a:hover{text-decoration:underline}
+hr{border:0;border-top:1px solid #d0d7de;margin:24px 0}
+</style>
+</head>
+<body>
+<main>
+<h1>C_GameMode</h1>
+
+<p><strong>Members:</strong> 22  •  <strong>Functions:</strong> 19  •  <strong>Interface calls:</strong> 111 (across up to 41 files)</p>
+
+<p><strong>Defined in Interface Lua:</strong> yes</p>
+
+<p><strong>Definition / evidence:</strong> <code>FrameXML/Util/C_GameMode.lua</code> line 4</p>
+
+<h2>Members</h2>
+
+<table>
+<thead>
+<tr>
+  <th>Member</th>
+  <th>Kind</th>
+  <th>Syntax / access</th>
+  <th>Example (from Interface)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>ASCENSION_CUSTOM_GAME_MODE_CHANGED</td>
+  <td>function</td>
+  <td>C_GameMode:ASCENSION_CUSTOM_GAME_MODE_CHANGED()</td>
+  <td>function C_GameMode:ASCENSION_CUSTOM_GAME_MODE_CHANGED()</td>
+</tr>
+<tr>
+  <td>DoesFrameHaveEvent</td>
+  <td>function</td>
+  <td>C_GameMode.DoesFrameHaveEvent(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>GenerateCallbackEvents</td>
+  <td>function</td>
+  <td>C_GameMode:GenerateCallbackEvents(arg1)</td>
+  <td>C_GameMode:GenerateCallbackEvents(</td>
+</tr>
+<tr>
+  <td>GetActiveGameModes</td>
+  <td>function</td>
+  <td>C_GameMode:GetActiveGameModes()</td>
+  <td>function C_GameMode:GetActiveGameModes()</td>
+</tr>
+<tr>
+  <td>GetCallbackTable</td>
+  <td>function</td>
+  <td>C_GameMode.GetCallbackTable(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>GetCallbackTables</td>
+  <td>function</td>
+  <td>C_GameMode.GetCallbackTables(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>GetCallbacksByEvent</td>
+  <td>function</td>
+  <td>C_GameMode.GetCallbacksByEvent(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>HasRegistrantsForEvent</td>
+  <td>function</td>
+  <td>C_GameMode.HasRegistrantsForEvent(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>IsAnyGameModeActive</td>
+  <td>function</td>
+  <td>C_GameMode:IsAnyGameModeActive()</td>
+  <td>function C_GameMode:IsAnyGameModeActive()</td>
+</tr>
+<tr>
+  <td>IsGameModeActive</td>
+  <td>function</td>
+  <td>C_GameMode:IsGameModeActive(arg1)</td>
+  <td>local isWildCard = C_GameMode:IsGameModeActive(Enum.GameMode.WildCard)</td>
+</tr>
+<tr>
+  <td>OnLoad</td>
+  <td>function</td>
+  <td>C_GameMode.OnLoad(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>PLAYER_ENTERING_WORLD</td>
+  <td>function</td>
+  <td>C_GameMode:PLAYER_ENTERING_WORLD()</td>
+  <td>function C_GameMode:PLAYER_ENTERING_WORLD()</td>
+</tr>
+<tr>
+  <td>RegisterCallback</td>
+  <td>function</td>
+  <td>C_GameMode:RegisterCallback(arg1, arg2)</td>
+  <td>C_GameMode:RegisterCallback("OnGameModeChanged", GenerateClosure(self.OnGameModeChanged, self))</td>
+</tr>
+<tr>
+  <td>RegisterCallbackWithHandle</td>
+  <td>function</td>
+  <td>C_GameMode:RegisterCallbackWithHandle(arg1, arg2)</td>
+  <td>self.gamemodeCallback = C_GameMode:RegisterCallbackWithHandle("OnGameModeChanged", GenerateClosu...</td>
+</tr>
+<tr>
+  <td>SecureInsertEvent</td>
+  <td>function</td>
+  <td>C_GameMode.SecureInsertEvent(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>SetUndefinedEventsAllowed</td>
+  <td>function</td>
+  <td>C_GameMode.SetUndefinedEventsAllowed(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>TriggerEvent</td>
+  <td>function</td>
+  <td>C_GameMode.TriggerEvent(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>UnregisterCallback</td>
+  <td>function</td>
+  <td>C_GameMode.UnregisterCallback(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>UnregisterEvents</td>
+  <td>function</td>
+  <td>C_GameMode.UnregisterEvents(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Event.OnGameModeChanged</td>
+  <td>string</td>
+  <td>C_GameMode.Event.OnGameModeChanged</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Event</td>
+  <td>table</td>
+  <td>C_GameMode.Event</td>
+  <td></td>
+</tr>
+<tr>
+  <td>callbackTables</td>
+  <td>table</td>
+  <td>C_GameMode.callbackTables</td>
+  <td></td>
+</tr>
+</tbody>
+</table>
+
+<h2>Notes</h2>
+
+<ul>
+<li>3 member(s) had a runtime probe marked <code>ok</code> in the scan data.</li>
+</ul>
+
+</main>
+</body>
+</html>

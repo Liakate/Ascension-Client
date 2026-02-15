@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>C_Player</title>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.5;margin:0;padding:0;background:#fff;color:#111}
+main{max-width:980px;margin:0 auto;padding:32px 20px}
+pre,code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
+pre{padding:12px;overflow:auto;background:#f6f8fa;border-radius:8px}
+code{background:#f6f8fa;border-radius:6px;padding:0.15em 0.35em}
+pre code{background:transparent;padding:0}
+table{border-collapse:collapse;display:block;overflow:auto}
+th,td{border:1px solid #d0d7de;padding:6px 10px}
+h1,h2,h3{line-height:1.25}
+a{color:#0969da;text-decoration:none}
+a:hover{text-decoration:underline}
+hr{border:0;border-top:1px solid #d0d7de;margin:24px 0}
+</style>
+</head>
+<body>
+<main>
+<h1>C_Player</h1>
+
+<p><strong>Members:</strong> 44  •  <strong>Functions:</strong> 43  •  <strong>Interface calls:</strong> 341 (across up to 33 files)</p>
+
+<p><strong>Defined in Interface Lua:</strong> yes</p>
+
+<p><strong>Definition / evidence:</strong> <code>FrameXML/Util/C_Player.lua</code> line 1</p>
+
+<h2>Members</h2>
+
+<table>
+<thead>
+<tr>
+  <th>Member</th>
+  <th>Kind</th>
+  <th>Syntax / access</th>
+  <th>Example (from Interface)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>GetAverageItemLevel</td>
+  <td>function</td>
+  <td>C_Player:GetAverageItemLevel()</td>
+  <td>local averageItemLevel = C_Player:GetAverageItemLevel()</td>
+</tr>
+<tr>
+  <td>GetClass</td>
+  <td>function</td>
+  <td>C_Player:GetClass()</td>
+  <td>PortraitFrame_SetClassIcon(self, C_Player:GetClass())</td>
+</tr>
+<tr>
+  <td>GetCurrentCompanion</td>
+  <td>function</td>
+  <td>C_Player:GetCurrentCompanion()</td>
+  <td>local _, companionName = C_Player:GetCurrentCompanion()</td>
+</tr>
+<tr>
+  <td>GetCurrentMapContinentZone</td>
+  <td>function</td>
+  <td>C_Player:GetCurrentMapContinentZone()</td>
+  <td>function C_Player:GetCurrentMapContinentZone()</td>
+</tr>
+<tr>
+  <td>GetCurrentMapExpansion</td>
+  <td>function</td>
+  <td>C_Player:GetCurrentMapExpansion()</td>
+  <td>function C_Player:GetCurrentMapExpansion()</td>
+</tr>
+<tr>
+  <td>GetCurrentMapInfo</td>
+  <td>function</td>
+  <td>C_Player:GetCurrentMapInfo()</td>
+  <td>function C_Player:GetCurrentMapInfo()</td>
+</tr>
+<tr>
+  <td>GetFaction</td>
+  <td>function</td>
+  <td>C_Player:GetFaction()</td>
+  <td>creature = C_Player:GetFaction() == "Horde" and 80190 or 80189,</td>
+</tr>
+<tr>
+  <td>GetLevel</td>
+  <td>function</td>
+  <td>C_Player:GetLevel()</td>
+  <td>if C_Player:GetLevel() == maxLevel or C_Player:IsGM() or isWildCard then</td>
+</tr>
+<tr>
+  <td>GetName</td>
+  <td>function</td>
+  <td>C_Player:GetName()</td>
+  <td>if C_Player:GetName() ~= "Unknown" then</td>
+</tr>
+<tr>
+  <td>GetPvEPower</td>
+  <td>function</td>
+  <td>C_Player:GetPvEPower()</td>
+  <td>local PVEPower = C_Player:GetPvEPower()</td>
+</tr>
+<tr>
+  <td>GetPvPPower</td>
+  <td>function</td>
+  <td>C_Player:GetPvPPower()</td>
+  <td>local pvpPower = C_Player:GetPvPPower()</td>
+</tr>
+<tr>
+  <td>GetRace</td>
+  <td>function</td>
+  <td>C_Player:GetRace()</td>
+  <td>function C_Player:GetRace()</td>
+</tr>
+<tr>
+  <td>GetRuleset</td>
+  <td>function</td>
+  <td>C_Player:GetRuleset()</td>
+  <td>self.selected = ruleset or C_Player:GetRuleset()</td>
+</tr>
+<tr>
+  <td>GetRulesetCooldown</td>
+  <td>function</td>
+  <td>C_Player:GetRulesetCooldown()</td>
+  <td>local cooldown = C_Player:GetRulesetCooldown()</td>
+</tr>
+<tr>
+  <td>GetSex</td>
+  <td>function</td>
+  <td>C_Player:GetSex()</td>
+  <td>function C_Player:GetSex()</td>
+</tr>
+<tr>
+  <td>HasAura</td>
+  <td>function</td>
+  <td>C_Player:HasAura(arg1)</td>
+  <td>if C_Player:HasAura(801647) then</td>
+</tr>
+<tr>
+  <td>HasBuff</td>
+  <td>function</td>
+  <td>C_Player:HasBuff(arg1)</td>
+  <td>function C_Player:HasBuff(buffID)</td>
+</tr>
+<tr>
+  <td>HasDebuff</td>
+  <td>function</td>
+  <td>C_Player:HasDebuff(arg1)</td>
+  <td>function C_Player:HasDebuff(debuffID)</td>
+</tr>
+<tr>
+  <td>HasRuleset</td>
+  <td>function</td>
+  <td>C_Player:HasRuleset()</td>
+  <td>function C_Player:HasRuleset()</td>
+</tr>
+<tr>
+  <td>InCombat</td>
+  <td>function</td>
+  <td>C_Player:InCombat()</td>
+  <td>if C_Player:InCombat() then</td>
+</tr>
+<tr>
+  <td>IsCustomClass</td>
+  <td>function</td>
+  <td>C_Player:IsCustomClass()</td>
+  <td>elseif C_Player:IsCustomClass() then</td>
+</tr>
+<tr>
+  <td>IsDead</td>
+  <td>function</td>
+  <td>C_Player:IsDead()</td>
+  <td>return C_Manastorm.IsInManastorm() and C_Manastorm.GetActiveManastormType() == "SOLO" and C_Playe...</td>
+</tr>
+<tr>
+  <td>IsDefaultClass</td>
+  <td>function</td>
+  <td>C_Player:IsDefaultClass()</td>
+  <td>elseif C_Player:IsDefaultClass() then</td>
+</tr>
+<tr>
+  <td>IsEffectivelyTank</td>
+  <td>function</td>
+  <td>C_Player:IsEffectivelyTank()</td>
+  <td>return assignedRole == "TANK" or C_Player:IsEffectivelyTank()</td>
+</tr>
+<tr>
+  <td>IsGM</td>
+  <td>function</td>
+  <td>C_Player:IsGM()</td>
+  <td>if IsControlKeyDown() and C_Player:IsGM() and not UnitExists("target") and not C_AppearanceCollec...</td>
+</tr>
+<tr>
+  <td>IsGroupLeader</td>
+  <td>function</td>
+  <td>C_Player:IsGroupLeader()</td>
+  <td>function C_Player:IsGroupLeader()</td>
+</tr>
+<tr>
+  <td>IsHero</td>
+  <td>function</td>
+  <td>C_Player:IsHero()</td>
+  <td>if C_Player:IsHero() then</td>
+</tr>
+<tr>
+  <td>IsHighRisk</td>
+  <td>function</td>
+  <td>C_Player:IsHighRisk()</td>
+  <td>if not C_Player:IsHighRisk() then</td>
+</tr>
+<tr>
+  <td>IsImmune</td>
+  <td>function</td>
+  <td>C_Player:IsImmune()</td>
+  <td>if C_Player:IsImmune() then</td>
+</tr>
+<tr>
+  <td>IsInGroup</td>
+  <td>function</td>
+  <td>C_Player:IsInGroup()</td>
+  <td>function C_Player:IsInGroup()</td>
+</tr>
+<tr>
+  <td>IsInRaid</td>
+  <td>function</td>
+  <td>C_Player:IsInRaid()</td>
+  <td>function C_Player:IsInRaid()</td>
+</tr>
+<tr>
+  <td>IsMaxLevel</td>
+  <td>function</td>
+  <td>C_Player:IsMaxLevel()</td>
+  <td>if C_Player:IsMaxLevel() and self.build.EndGameIDPVE and self.build.EndGameIDPVE:len() &gt; 0 then</td>
+</tr>
+<tr>
+  <td>IsNoRiskPvE</td>
+  <td>function</td>
+  <td>C_Player:IsNoRiskPvE()</td>
+  <td>function C_Player:IsNoRiskPvE()</td>
+</tr>
+<tr>
+  <td>IsNoRiskPvP</td>
+  <td>function</td>
+  <td>C_Player:IsNoRiskPvP()</td>
+  <td>if C_Player:IsNoRiskPvP() then</td>
+</tr>
+<tr>
+  <td>IsNoRiskPvPOrHigher</td>
+  <td>function</td>
+  <td>C_Player:IsNoRiskPvPOrHigher()</td>
+  <td>function C_Player:IsNoRiskPvPOrHigher()</td>
+</tr>
+<tr>
+  <td>IsPrestiged</td>
+  <td>function</td>
+  <td>C_Player:IsPrestiged()</td>
+  <td>local isPrestiged = C_Player:IsPrestiged()</td>
+</tr>
+<tr>
+  <td>IsTitansGrip</td>
+  <td>function</td>
+  <td>C_Player:IsTitansGrip()</td>
+  <td>function C_Player:IsTitansGrip()</td>
+</tr>
+<tr>
+  <td>IsWorldPVP</td>
+  <td>function</td>
+  <td>C_Player:IsWorldPVP()</td>
+  <td>function C_Player:IsWorldPVP()</td>
+</tr>
+<tr>
+  <td>PLAYER_ENTERING_WORLD</td>
+  <td>function</td>
+  <td>C_Player:PLAYER_ENTERING_WORLD()</td>
+  <td>function C_Player:PLAYER_ENTERING_WORLD()</td>
+</tr>
+<tr>
+  <td>PLAYER_LEVEL_UP</td>
+  <td>function</td>
+  <td>C_Player:PLAYER_LEVEL_UP(arg1)</td>
+  <td>function C_Player:PLAYER_LEVEL_UP(level)</td>
+</tr>
+<tr>
+  <td>SetRuleset</td>
+  <td>function</td>
+  <td>C_Player:SetRuleset(arg1)</td>
+  <td>function C_Player:SetRuleset(ruleset)</td>
+</tr>
+<tr>
+  <td>UNIT_PET</td>
+  <td>function</td>
+  <td>C_Player:UNIT_PET()</td>
+  <td>function C_Player:UNIT_PET()</td>
+</tr>
+<tr>
+  <td>UpdatePvEPower</td>
+  <td>function</td>
+  <td>C_Player:UpdatePvEPower()</td>
+  <td>function C_Player:UpdatePvEPower()</td>
+</tr>
+<tr>
+  <td>currentLevel</td>
+  <td>number</td>
+  <td>C_Player.currentLevel</td>
+  <td></td>
+</tr>
+</tbody>
+</table>
+
+</main>
+</body>
+</html>

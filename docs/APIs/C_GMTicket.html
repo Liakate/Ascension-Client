@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>C_GMTicket</title>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.5;margin:0;padding:0;background:#fff;color:#111}
+main{max-width:980px;margin:0 auto;padding:32px 20px}
+pre,code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
+pre{padding:12px;overflow:auto;background:#f6f8fa;border-radius:8px}
+code{background:#f6f8fa;border-radius:6px;padding:0.15em 0.35em}
+pre code{background:transparent;padding:0}
+table{border-collapse:collapse;display:block;overflow:auto}
+th,td{border:1px solid #d0d7de;padding:6px 10px}
+h1,h2,h3{line-height:1.25}
+a{color:#0969da;text-decoration:none}
+a:hover{text-decoration:underline}
+hr{border:0;border-top:1px solid #d0d7de;margin:24px 0}
+</style>
+</head>
+<body>
+<main>
+<h1>C_GMTicket</h1>
+
+<p><strong>Members:</strong> 27  •  <strong>Functions:</strong> 27  •  <strong>Interface calls:</strong> 3 (across up to 1 files)</p>
+
+<p><strong>Defined in Interface Lua:</strong> no</p>
+
+<p><strong>Definition / evidence:</strong> not defined in Interface Lua (likely native client API)</p>
+
+<h2>Members</h2>
+
+<table>
+<thead>
+<tr>
+  <th>Member</th>
+  <th>Kind</th>
+  <th>Syntax / access</th>
+  <th>Example (from Interface)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>ApproveAutomatedMessage</td>
+  <td>function</td>
+  <td>C_GMTicket.ApproveAutomatedMessage(arg1)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>AssignGMTicket</td>
+  <td>function</td>
+  <td>C_GMTicket.AssignGMTicket(arg1, arg2)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>CanAssignGMTicket</td>
+  <td>function</td>
+  <td>C_GMTicket.CanAssignGMTicket(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>CanCloseTicket</td>
+  <td>function</td>
+  <td>C_GMTicket.CanCloseTicket(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>CanMarkResponseSeen</td>
+  <td>function</td>
+  <td>C_GMTicket.CanMarkResponseSeen(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>CanSendTicketMessage</td>
+  <td>function</td>
+  <td>C_GMTicket.CanSendTicketMessage(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>CanSetTicketPriority</td>
+  <td>function</td>
+  <td>C_GMTicket.CanSetTicketPriority(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>CanSetTicketStatus</td>
+  <td>function</td>
+  <td>C_GMTicket.CanSetTicketStatus(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>CanSetTicketTitle</td>
+  <td>function</td>
+  <td>C_GMTicket.CanSetTicketTitle(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>CloseTicket</td>
+  <td>function</td>
+  <td>C_GMTicket.CloseTicket(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>DeclineAutomatedMessage</td>
+  <td>function</td>
+  <td>C_GMTicket.DeclineAutomatedMessage(arg1, arg2)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>GetAutomatedMessage</td>
+  <td>function</td>
+  <td>C_GMTicket.GetAutomatedMessage(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>GetNumSuggestions</td>
+  <td>function</td>
+  <td>C_GMTicket.GetNumSuggestions(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>GetNumTickets</td>
+  <td>function</td>
+  <td>C_GMTicket.GetNumTickets(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>GetSuggestionAtIndex</td>
+  <td>function</td>
+  <td>C_GMTicket.GetSuggestionAtIndex(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>GetTicketAtIndex</td>
+  <td>function</td>
+  <td>C_GMTicket.GetTicketAtIndex(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>GetTicketByID</td>
+  <td>function</td>
+  <td>C_GMTicket.GetTicketByID(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>GetTicketMessage</td>
+  <td>function</td>
+  <td>C_GMTicket.GetTicketMessage(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>GetTicketMessages</td>
+  <td>function</td>
+  <td>C_GMTicket.GetTicketMessages(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>IsResponseSeen</td>
+  <td>function</td>
+  <td>C_GMTicket.IsResponseSeen(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>IsTicketAssignedToMe</td>
+  <td>function</td>
+  <td>C_GMTicket.IsTicketAssignedToMe(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>MarkResponseSeen</td>
+  <td>function</td>
+  <td>C_GMTicket.MarkResponseSeen(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>SendTicketMessage</td>
+  <td>function</td>
+  <td>C_GMTicket.SendTicketMessage(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>SetTicketFilter</td>
+  <td>function</td>
+  <td>C_GMTicket.SetTicketFilter(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>SetTicketPriority</td>
+  <td>function</td>
+  <td>C_GMTicket.SetTicketPriority(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>SetTicketStatus</td>
+  <td>function</td>
+  <td>C_GMTicket.SetTicketStatus(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>SetTicketTitle</td>
+  <td>function</td>
+  <td>C_GMTicket.SetTicketTitle(...)</td>
+  <td></td>
+</tr>
+</tbody>
+</table>
+
+</main>
+</body>
+</html>

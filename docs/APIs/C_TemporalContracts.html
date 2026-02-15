@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>C_TemporalContracts</title>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.5;margin:0;padding:0;background:#fff;color:#111}
+main{max-width:980px;margin:0 auto;padding:32px 20px}
+pre,code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
+pre{padding:12px;overflow:auto;background:#f6f8fa;border-radius:8px}
+code{background:#f6f8fa;border-radius:6px;padding:0.15em 0.35em}
+pre code{background:transparent;padding:0}
+table{border-collapse:collapse;display:block;overflow:auto}
+th,td{border:1px solid #d0d7de;padding:6px 10px}
+h1,h2,h3{line-height:1.25}
+a{color:#0969da;text-decoration:none}
+a:hover{text-decoration:underline}
+hr{border:0;border-top:1px solid #d0d7de;margin:24px 0}
+</style>
+</head>
+<body>
+<main>
+<h1>C_TemporalContracts</h1>
+
+<p><strong>Members:</strong> 16  •  <strong>Functions:</strong> 16  •  <strong>Interface calls:</strong> 20 (across up to 1 files)</p>
+
+<p><strong>Defined in Interface Lua:</strong> no</p>
+
+<p><strong>Definition / evidence:</strong> not defined in Interface Lua (likely native client API)</p>
+
+<h2>Members</h2>
+
+<table>
+<thead>
+<tr>
+  <th>Member</th>
+  <th>Kind</th>
+  <th>Syntax / access</th>
+  <th>Example (from Interface)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>ActivateAllTemporalContracts</td>
+  <td>function</td>
+  <td>C_TemporalContracts.ActivateAllTemporalContracts(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>ActivateAllTemporalContractsByContentType</td>
+  <td>function</td>
+  <td>C_TemporalContracts.ActivateAllTemporalContractsByContentType(arg1, arg2)</td>
+  <td>C_TemporalContracts.ActivateAllTemporalContractsByContentType(parent.category, true)</td>
+</tr>
+<tr>
+  <td>ActivateTemporalContract</td>
+  <td>function</td>
+  <td>C_TemporalContracts.ActivateTemporalContract(arg1, arg2)</td>
+  <td>C_TemporalContracts.ActivateTemporalContract(category, true)</td>
+</tr>
+<tr>
+  <td>GetCategoryData</td>
+  <td>function</td>
+  <td>C_TemporalContracts.GetCategoryData(arg1)</td>
+  <td>local serverData = C_TemporalContracts.GetCategoryData(subCategory)</td>
+</tr>
+<tr>
+  <td>GetCategoryName</td>
+  <td>function</td>
+  <td>C_TemporalContracts.GetCategoryName(arg1)</td>
+  <td>self.title:SetText("|cffFFFFFF"..C_TemporalContracts.GetCategoryName(self.name) or self.name)</td>
+</tr>
+<tr>
+  <td>GetCompletableQuestsByCategory</td>
+  <td>function</td>
+  <td>C_TemporalContracts.GetCompletableQuestsByCategory(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>GetCompletableTemporalContracts</td>
+  <td>function</td>
+  <td>C_TemporalContracts.GetCompletableTemporalContracts()</td>
+  <td>local temporalContractsInfo = C_TemporalContracts.GetCompletableTemporalContracts() or {}</td>
+</tr>
+<tr>
+  <td>GetQuestCategory</td>
+  <td>function</td>
+  <td>C_TemporalContracts.GetQuestCategory(arg1)</td>
+  <td>local subCatagory = C_TemporalContracts.GetQuestCategory(questID)</td>
+</tr>
+<tr>
+  <td>GetQuestSortIDs</td>
+  <td>function</td>
+  <td>C_TemporalContracts.GetQuestSortIDs(arg1, arg2)</td>
+  <td>local questSortIds = C_TemporalContracts.GetQuestSortIDs(questData.ID, false)</td>
+</tr>
+<tr>
+  <td>GetQuestSortText</td>
+  <td>function</td>
+  <td>C_TemporalContracts.GetQuestSortText(arg1)</td>
+  <td>self.categorizedQuestList[questSortId] = self.categorizedQuestList[questSortId] or {name = C_Temp...</td>
+</tr>
+<tr>
+  <td>GetTemporalContractInfo</td>
+  <td>function</td>
+  <td>C_TemporalContracts.GetTemporalContractInfo(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>GetTemporalContractTypes</td>
+  <td>function</td>
+  <td>C_TemporalContracts.GetTemporalContractTypes()</td>
+  <td>for category, subCategoryData in pairs(C_TemporalContracts.GetTemporalContractTypes()) do</td>
+</tr>
+<tr>
+  <td>GetTotalContentTypeCost</td>
+  <td>function</td>
+  <td>C_TemporalContracts.GetTotalContentTypeCost(arg1)</td>
+  <td>local totalCostInfo = C_TemporalContracts.GetTotalContentTypeCost(category) or {}</td>
+</tr>
+<tr>
+  <td>GetTotalContentTypeRewards</td>
+  <td>function</td>
+  <td>C_TemporalContracts.GetTotalContentTypeRewards(arg1)</td>
+  <td>subCategoryData["TOTAL"] = {rewards = C_TemporalContracts.GetTotalContentTypeRewards(category), r...</td>
+</tr>
+<tr>
+  <td>GetTotalContractTypeCost</td>
+  <td>function</td>
+  <td>C_TemporalContracts.GetTotalContractTypeCost(arg1)</td>
+  <td>local costInfo = C_TemporalContracts.GetTotalContractTypeCost(subCategory) or {}</td>
+</tr>
+<tr>
+  <td>GetTotalContractTypeRewards</td>
+  <td>function</td>
+  <td>C_TemporalContracts.GetTotalContractTypeRewards(arg1)</td>
+  <td>data.rewards = C_TemporalContracts.GetTotalContractTypeRewards(subCategory)</td>
+</tr>
+</tbody>
+</table>
+
+<h2>Notes</h2>
+
+<ul>
+<li>2 member(s) had a runtime probe marked <code>ok</code> in the scan data.</li>
+</ul>
+
+</main>
+</body>
+</html>

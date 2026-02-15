@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>C_SkillCard</title>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.5;margin:0;padding:0;background:#fff;color:#111}
+main{max-width:980px;margin:0 auto;padding:32px 20px}
+pre,code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
+pre{padding:12px;overflow:auto;background:#f6f8fa;border-radius:8px}
+code{background:#f6f8fa;border-radius:6px;padding:0.15em 0.35em}
+pre code{background:transparent;padding:0}
+table{border-collapse:collapse;display:block;overflow:auto}
+th,td{border:1px solid #d0d7de;padding:6px 10px}
+h1,h2,h3{line-height:1.25}
+a{color:#0969da;text-decoration:none}
+a:hover{text-decoration:underline}
+hr{border:0;border-top:1px solid #d0d7de;margin:24px 0}
+</style>
+</head>
+<body>
+<main>
+<h1>C_SkillCard</h1>
+
+<p><strong>Members:</strong> 15  •  <strong>Functions:</strong> 15  •  <strong>Interface calls:</strong> 20 (across up to 2 files)</p>
+
+<p><strong>Defined in Interface Lua:</strong> no</p>
+
+<p><strong>Definition / evidence:</strong> not defined in Interface Lua (likely native client API)</p>
+
+<h2>Members</h2>
+
+<table>
+<thead>
+<tr>
+  <th>Member</th>
+  <th>Kind</th>
+  <th>Syntax / access</th>
+  <th>Example (from Interface)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>GetCardAtIndex</td>
+  <td>function</td>
+  <td>C_SkillCard.GetCardAtIndex(arg1, arg2)</td>
+  <td>if C_SkillCard.GetCardAtIndex("SKILL_CARD_DEFAULT_NORMAL", i-1) == 0 then</td>
+</tr>
+<tr>
+  <td>GetCardCount</td>
+  <td>function</td>
+  <td>C_SkillCard.GetCardCount(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>GetCardID</td>
+  <td>function</td>
+  <td>C_SkillCard.GetCardID(arg1)</td>
+  <td>local cardID, cardRank = C_SkillCard.GetCardID(itemID)</td>
+</tr>
+<tr>
+  <td>GetCardRankAtIndex</td>
+  <td>function</td>
+  <td>C_SkillCard.GetCardRankAtIndex(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>GetCardSpellID</td>
+  <td>function</td>
+  <td>C_SkillCard.GetCardSpellID(arg1, arg2)</td>
+  <td>local spellID = C_SkillCard.GetCardSpellID(cardID, cardRank)</td>
+</tr>
+<tr>
+  <td>GetMaxCardCount</td>
+  <td>function</td>
+  <td>C_SkillCard.GetMaxCardCount(arg1)</td>
+  <td>for i = 1, C_SkillCard.GetMaxCardCount("SKILL_CARD_DEFAULT_NORMAL") do</td>
+</tr>
+<tr>
+  <td>GetSkillCardInfo</td>
+  <td>function</td>
+  <td>C_SkillCard.GetSkillCardInfo(arg1, arg2)</td>
+  <td>return C_SkillCard.GetSkillCardInfo(cardID, rank)</td>
+</tr>
+<tr>
+  <td>GetSkillCardInfoAtIndex</td>
+  <td>function</td>
+  <td>C_SkillCard.GetSkillCardInfoAtIndex(arg1, arg2)</td>
+  <td>return C_SkillCard.GetSkillCardInfoAtIndex(cardType, index)</td>
+</tr>
+<tr>
+  <td>GetSkillCardQuality</td>
+  <td>function</td>
+  <td>C_SkillCard.GetSkillCardQuality(arg1, arg2)</td>
+  <td>local quality = C_SkillCard.GetSkillCardQuality(cardData.CardID, displayedRank) or cardData.Quality</td>
+</tr>
+<tr>
+  <td>IsCardAtIndexActive</td>
+  <td>function</td>
+  <td>C_SkillCard.IsCardAtIndexActive(arg1, arg2)</td>
+  <td>return C_SkillCard.IsCardAtIndexActive(cardType, index)</td>
+</tr>
+<tr>
+  <td>IsCardAtIndexBlocked</td>
+  <td>function</td>
+  <td>C_SkillCard.IsCardAtIndexBlocked(arg1, arg2)</td>
+  <td>return C_SkillCard.IsCardAtIndexBlocked(isGolden and self.cardTypeGolden or self.cardTypeNormal, ...</td>
+</tr>
+<tr>
+  <td>IsCardedID</td>
+  <td>function</td>
+  <td>C_SkillCard.IsCardedID(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>IsCardedSpellID</td>
+  <td>function</td>
+  <td>C_SkillCard.IsCardedSpellID(arg1)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>RemoveCardAtIndex</td>
+  <td>function</td>
+  <td>C_SkillCard.RemoveCardAtIndex(arg1, arg2)</td>
+  <td>C_SkillCard.RemoveCardAtIndex(cardType, index)</td>
+</tr>
+<tr>
+  <td>SetCardAtIndex</td>
+  <td>function</td>
+  <td>C_SkillCard.SetCardAtIndex(arg1, arg2, arg3)</td>
+  <td>C_SkillCard.SetCardAtIndex(cardType, index, cardID)</td>
+</tr>
+</tbody>
+</table>
+
+<h2>Notes</h2>
+
+<ul>
+<li>3 member(s) had a runtime probe marked <code>ok</code> in the scan data.</li>
+</ul>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,679 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>C_Spell</title>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.5;margin:0;padding:0;background:#fff;color:#111}
+main{max-width:980px;margin:0 auto;padding:32px 20px}
+pre,code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
+pre{padding:12px;overflow:auto;background:#f6f8fa;border-radius:8px}
+code{background:#f6f8fa;border-radius:6px;padding:0.15em 0.35em}
+pre code{background:transparent;padding:0}
+table{border-collapse:collapse;display:block;overflow:auto}
+th,td{border:1px solid #d0d7de;padding:6px 10px}
+h1,h2,h3{line-height:1.25}
+a{color:#0969da;text-decoration:none}
+a:hover{text-decoration:underline}
+hr{border:0;border-top:1px solid #d0d7de;margin:24px 0}
+</style>
+</head>
+<body>
+<main>
+<h1>C_Spell</h1>
+
+<p><strong>Members:</strong> 105  •  <strong>Functions:</strong> 34  •  <strong>Interface calls:</strong> 80 (across up to 9 files)</p>
+
+<p><strong>Defined in Interface Lua:</strong> yes</p>
+
+<p><strong>Definition / evidence:</strong> <code>FrameXML/Util/C_Spell.lua</code> line 1</p>
+
+<h2>Members</h2>
+
+<table>
+<thead>
+<tr>
+  <th>Member</th>
+  <th>Kind</th>
+  <th>Syntax / access</th>
+  <th>Example (from Interface)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>knownSpellNames.Alchemy</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Alchemy</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Auto Attack</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Auto Attack</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Axe Specialization</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Axe Specialization</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Basic Campfire</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Basic Campfire</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Battle Shout</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Battle Shout</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Battle Stance</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Battle Stance</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Berserker Stance</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Berserker Stance</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Blacksmithing</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Blacksmithing</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Block</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Block</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Blood Fury</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Blood Fury</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Bloodrage</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Bloodrage</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Challenging Shout</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Challenging Shout</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Charge</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Charge</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Cleave</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Cleave</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Command</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Command</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Cooking</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Cooking</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Defensive Stance</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Defensive Stance</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Demoralizing Shout</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Demoralizing Shout</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Disarm</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Disarm</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Disenchant</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Disenchant</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Dodge</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Dodge</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Dual Wield</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Dual Wield</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Enchanting</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Enchanting</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Engineering</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Engineering</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Execute</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Execute</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Find Herbs</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Find Herbs</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Find Minerals</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Find Minerals</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Find Trees</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Find Trees</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.First Aid</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.First Aid</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Fishing</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Fishing</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.For the Horde!</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.For the Horde!</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Hamstring</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Hamstring</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Hardiness</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Hardiness</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Heroic Strike</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Heroic Strike</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.High-Risk (PvP)</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.High-Risk (PvP)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Intercept</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Intercept</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Intimidating Shout</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Intimidating Shout</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Mercenary for Hire!</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Mercenary for Hire!</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Mocking Blow</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Mocking Blow</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Overpower</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Overpower</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Parry</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Parry</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.PvE Mode</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.PvE Mode</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Rend</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Rend</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Resilient Constitution</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Resilient Constitution</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Resurrect in Capital City</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Resurrect in Capital City</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Resurrect in Closest Town</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Resurrect in Closest Town</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Retaliation</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Retaliation</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Revenge</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Revenge</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Shield Bash</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Shield Bash</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Shield Block</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Shield Block</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Shield Wall</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Shield Wall</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Shoot</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Shoot</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Skinning</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Skinning</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Slam</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Slam</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Smelting</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Smelting</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Specialization I</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Specialization I</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Specialization II</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Specialization II</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Specialization III</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Specialization III</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Stance Mastery</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Stance Mastery</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Sunder Armor</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Sunder Armor</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Taunt</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Taunt</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Throw</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Throw</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Thunder Clap</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Thunder Clap</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Victory Rush</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Victory Rush</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.War Mode (PvP)</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.War Mode (PvP)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Whirlwind</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Whirlwind</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Wildcard Flying Mount</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Wildcard Flying Mount</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Wildcard Mount</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Wildcard Mount</td>
+  <td></td>
+</tr>
+<tr>
+  <td>knownSpellNames.Woodcutting</td>
+  <td>boolean</td>
+  <td>C_Spell.knownSpellNames.Woodcutting</td>
+  <td></td>
+</tr>
+<tr>
+  <td>AppliesBuff</td>
+  <td>function</td>
+  <td>C_Spell.AppliesBuff(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>AppliesDebuff</td>
+  <td>function</td>
+  <td>C_Spell.AppliesDebuff(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>GetFirstRank</td>
+  <td>function</td>
+  <td>C_Spell.GetFirstRank(arg1)</td>
+  <td>spellID = C_Spell.GetFirstRank(spellID) or spellID</td>
+</tr>
+<tr>
+  <td>GetFreeActionButton</td>
+  <td>function</td>
+  <td>C_Spell:GetFreeActionButton()</td>
+  <td>local target = C_Spell:GetFreeActionButton()</td>
+</tr>
+<tr>
+  <td>GetFreeActionID</td>
+  <td>function</td>
+  <td>C_Spell:GetFreeActionID()</td>
+  <td>local action = C_Spell:GetFreeActionID()</td>
+</tr>
+<tr>
+  <td>GetMaxLearnableRank</td>
+  <td>function</td>
+  <td>C_Spell.GetMaxLearnableRank(arg1, arg2)</td>
+  <td>local maxSpellID = C_Spell.GetMaxLearnableRank(self.spellID, C_Player:GetLevel())</td>
+</tr>
+<tr>
+  <td>GetNameAndID</td>
+  <td>function</td>
+  <td>C_Spell:GetNameAndID(arg1, arg2, arg3)</td>
+  <td>local name, spellID = C_Spell:GetNameAndID(self:GetText():trim(), true)</td>
+</tr>
+<tr>
+  <td>GetPresetSpell</td>
+  <td>function</td>
+  <td>C_Spell:GetPresetSpell(arg1)</td>
+  <td>function C_Spell:GetPresetSpell(index)</td>
+</tr>
+<tr>
+  <td>GetSpecSpell</td>
+  <td>function</td>
+  <td>C_Spell:GetSpecSpell(arg1)</td>
+  <td>function C_Spell:GetSpecSpell(index)</td>
+</tr>
+<tr>
+  <td>GetSpellActionID</td>
+  <td>function</td>
+  <td>C_Spell:GetSpellActionID(arg1)</td>
+  <td>function C_Spell:GetSpellActionID(spellId, maximumSlots)</td>
+</tr>
+<tr>
+  <td>GetSpellDescription</td>
+  <td>function</td>
+  <td>C_Spell:GetSpellDescription(arg1)</td>
+  <td>local desc = C_Spell:GetSpellDescription(spellID)</td>
+</tr>
+<tr>
+  <td>GetSpellID</td>
+  <td>function</td>
+  <td>C_Spell:GetSpellID(arg1, arg2)</td>
+  <td>local spellID = C_Spell:GetSpellID(spellName, spellRank)</td>
+</tr>
+<tr>
+  <td>HasMultipleSpellRanks</td>
+  <td>function</td>
+  <td>C_Spell.HasMultipleSpellRanks()</td>
+  <td>local showAllRanks = GetCVarBool("ShowAllSpellRanks") and C_Spell.HasMultipleSpellRanks()</td>
+</tr>
+<tr>
+  <td>HasNotMaxedRanks</td>
+  <td>function</td>
+  <td>C_Spell:HasNotMaxedRanks()</td>
+  <td>function C_Spell:HasNotMaxedRanks()</td>
+</tr>
+<tr>
+  <td>HasRuneUI</td>
+  <td>function</td>
+  <td>C_Spell.HasRuneUI()</td>
+  <td>self:SetShown(C_Spell.HasRuneUI())</td>
+</tr>
+<tr>
+  <td>IsActionAlmostReady</td>
+  <td>function</td>
+  <td>C_Spell:IsActionAlmostReady(arg1)</td>
+  <td>function C_Spell:IsActionAlmostReady(action, ms)</td>
+</tr>
+<tr>
+  <td>IsActivePreset</td>
+  <td>function</td>
+  <td>C_Spell:IsActivePreset(arg1)</td>
+  <td>function C_Spell:IsActivePreset(spellId)</td>
+</tr>
+<tr>
+  <td>IsActiveSpec</td>
+  <td>function</td>
+  <td>C_Spell:IsActiveSpec(arg1)</td>
+  <td>function C_Spell:IsActiveSpec(spellId)</td>
+</tr>
+<tr>
+  <td>IsAnyRankKnown</td>
+  <td>function</td>
+  <td>C_Spell:IsAnyRankKnown(arg1)</td>
+  <td>if not C_Spell:IsAnyRankKnown(self.spell) then</td>
+</tr>
+<tr>
+  <td>IsCastAlmostDone</td>
+  <td>function</td>
+  <td>C_Spell:IsCastAlmostDone()</td>
+  <td>function C_Spell:IsCastAlmostDone(ms)</td>
+</tr>
+<tr>
+  <td>IsHarmfulSpell</td>
+  <td>function</td>
+  <td>C_Spell.IsHarmfulSpell(arg1, arg2)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>IsHelpfulSpell</td>
+  <td>function</td>
+  <td>C_Spell.IsHelpfulSpell(arg1, arg2)</td>
+  <td>if sourceName and spellID and C_Spell.IsHelpfulSpell(spellID, true) and not IGNORED_SPELL_IDS[spe...</td>
+</tr>
+<tr>
+  <td>IsImmunitySpell</td>
+  <td>function</td>
+  <td>C_Spell.IsImmunitySpell(...)</td>
+  <td>return AuraUtil.GetAura(unit, C_Spell.IsImmunitySpell, nil, AuraUtil.Predicate.CheckFunction)</td>
+</tr>
+<tr>
+  <td>IsPresetSpell</td>
+  <td>function</td>
+  <td>C_Spell:IsPresetSpell(arg1)</td>
+  <td>function C_Spell:IsPresetSpell(spellId)</td>
+</tr>
+<tr>
+  <td>IsSpecSpell</td>
+  <td>function</td>
+  <td>C_Spell:IsSpecSpell(arg1)</td>
+  <td>function C_Spell:IsSpecSpell(spellId)</td>
+</tr>
+<tr>
+  <td>IsTrainerSpell</td>
+  <td>function</td>
+  <td>C_Spell.IsTrainerSpell(arg1)</td>
+  <td>canLearn = canLearn and C_Spell.IsTrainerSpell(maxSpellID)</td>
+</tr>
+<tr>
+  <td>PLAYER_ENTERING_WORLD</td>
+  <td>function</td>
+  <td>C_Spell:PLAYER_ENTERING_WORLD()</td>
+  <td>function C_Spell:PLAYER_ENTERING_WORLD()</td>
+</tr>
+<tr>
+  <td>PLAYER_LEVEL_UP</td>
+  <td>function</td>
+  <td>C_Spell:PLAYER_LEVEL_UP(arg1)</td>
+  <td>function C_Spell:PLAYER_LEVEL_UP(levels)</td>
+</tr>
+<tr>
+  <td>PlaceSpellOnActionBar</td>
+  <td>function</td>
+  <td>C_Spell:PlaceSpellOnActionBar(arg1)</td>
+  <td>function C_Spell:PlaceSpellOnActionBar(spellName)</td>
+</tr>
+<tr>
+  <td>RemoveSpellFromActionBar</td>
+  <td>function</td>
+  <td>C_Spell:RemoveSpellFromActionBar(arg1)</td>
+  <td>function C_Spell:RemoveSpellFromActionBar(spellName)</td>
+</tr>
+<tr>
+  <td>SET_ACTION_BUTTON_SPELL_PAYLOAD</td>
+  <td>function</td>
+  <td>C_Spell:SET_ACTION_BUTTON_SPELL_PAYLOAD(arg1)</td>
+  <td>function C_Spell:SET_ACTION_BUTTON_SPELL_PAYLOAD(json)</td>
+</tr>
+<tr>
+  <td>SPELLS_CHANGED</td>
+  <td>function</td>
+  <td>C_Spell:SPELLS_CHANGED(arg1)</td>
+  <td>function C_Spell:SPELLS_CHANGED(data)</td>
+</tr>
+<tr>
+  <td>ShouldHoldToCast</td>
+  <td>function</td>
+  <td>C_Spell:ShouldHoldToCast(arg1)</td>
+  <td>function C_Spell:ShouldHoldToCast(name, rank)</td>
+</tr>
+<tr>
+  <td>TabHasNotMaxedRanks</td>
+  <td>function</td>
+  <td>C_Spell:TabHasNotMaxedRanks(arg1)</td>
+  <td>tab:SetInfo(id, name, texture, offset, numSpells, highestRankOffset, highestRankNumSpells, C_Spel...</td>
+</tr>
+<tr>
+  <td>AutoPlaceIgnored</td>
+  <td>table</td>
+  <td>C_Spell.AutoPlaceIgnored</td>
+  <td>C_Spell.AutoPlaceIgnored = {</td>
+</tr>
+<tr>
+  <td>knownSpellNames</td>
+  <td>table</td>
+  <td>C_Spell.knownSpellNames</td>
+  <td>C_Spell.knownSpellNames = {}</td>
+</tr>
+</tbody>
+</table>
+
+</main>
+</body>
+</html>

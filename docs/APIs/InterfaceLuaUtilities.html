@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Interface Lua utilities (Ascension)</title>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.5;margin:0;padding:0;background:#fff;color:#111}
+main{max-width:980px;margin:0 auto;padding:32px 20px}
+pre,code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
+pre{padding:12px;overflow:auto;background:#f6f8fa;border-radius:8px}
+code{background:#f6f8fa;border-radius:6px;padding:0.15em 0.35em}
+pre code{background:transparent;padding:0}
+table{border-collapse:collapse;display:block;overflow:auto}
+th,td{border:1px solid #d0d7de;padding:6px 10px}
+h1,h2,h3{line-height:1.25}
+a{color:#0969da;text-decoration:none}
+a:hover{text-decoration:underline}
+hr{border:0;border-top:1px solid #d0d7de;margin:24px 0}
+</style>
+</head>
+<body>
+<main>
+<h1>Interface Lua utilities (Ascension)</h1>
+
+<p>These APIs are implemented in the shipped Interface Lua. Some are also referenced by AddOns.</p>
+
+<h2>JSON cache helpers</h2>
+
+<p>Ascension UI code uses a JSON cache pattern for server/client payloads.</p>
+
+<p><em>Defined in</em>: <code>SharedXML/Util/CustomFunctionChecks.lua</code></p>
+
+<h3>Functions</h3>
+
+<h4>ClearJsonCache(category)</h4>
+
+<ul>
+<li>Used to clear/query cached JSON payloads by category (+ optional index).</li>
+</ul>
+
+<h4>GetJsonCacheData(category, index)</h4>
+
+<ul>
+<li>Used to clear/query cached JSON payloads by category (+ optional index).</li>
+</ul>
+
+<h4>HasJsonCacheData(category, index)</h4>
+
+<ul>
+<li>Used to clear/query cached JSON payloads by category (+ optional index).</li>
+</ul>
+
+<h2>SendJsonMessage</h2>
+
+<p><em>Defined in</em>: <code>SharedXML/Util/C_Comm.lua</code></p>
+
+<h3>Syntax</h3>
+
+<div class="codehilite">
+<pre><span></span><code>SendJsonMessage
+(
+eventName
+,
+
+jsonString
+,
+
+channel
+)
+</code></pre>
+</div>
+
+<h3>Notes</h3>
+
+<ul>
+<li>Used by FrameXML modules to request/query data from the server (e.g., stats, payloads).</li>
+<li>Common <code>channel</code> values observed: <code>"BULK"</code>.</li>
+</ul>
+
+<h2>Timers</h2>
+
+<h2>Timer</h2>
+
+<p><em>Defined in</em>: <code>SharedXML/Util/Timer.lua</code></p>
+
+<h3>Members</h3>
+
+<h4>Timer.After(duration, callback)</h4>
+
+<h4>Timer.AfterCombat(callback)</h4>
+
+<h4>Timer.NewTimer(duration, callback)</h4>
+
+<h4>Timer.NewTicker(duration, callback, iterations)</h4>
+
+<h4>Timer.WaitFor(duration, condition, callback, maxWaitSeconds)</h4>
+
+<h4>Timer.AfterEvent(event, callback, count)</h4>
+
+<h4>Timer.NextFrame(callback)</h4>
+
+<h2>C_Timer</h2>
+
+<p><em>Defined in</em>: <code>SharedXML/Util/Timer.lua</code></p>
+
+<ul>
+<li>No explicit function definitions detected by simple pattern scan (may be locals or mixins).</li>
+</ul>
+
+<h2>Network opcode utilities</h2>
+
+<h2>OpcodeUtil</h2>
+
+<p><em>Defined in</em>: <code>SharedXML/Util/OpcodeUtil.lua</code></p>
+
+<h3>Members</h3>
+
+<h4>OpcodeUtil.RegisterOpcodeEvent(opcode, event, handler)</h4>
+
+<p>Registers an opcode event.  </p>
+
+<p>When an opcode is received, the event will be triggered, using Handler to process the packet into args.  </p>
+
+<p>first return value should be if the event should fire or not</p>
+
+<h4>OpcodeUtil.RemoveOpcodeEvent(opcode, event)</h4>
+
+<p>Removes an opcode event.</p>
+
+<h2>Challenge and Trial creator utilities</h2>
+
+<h2>ChallengeUtil</h2>
+
+<p><em>Defined in</em>: <code>FrameXML/Util/ChallengeUtil.lua</code></p>
+
+<h3>Members</h3>
+
+<h4>ChallengeUtil.GetRequirementLocalization(RequirementType)</h4>
+
+<h4>ChallengeUtil.ApplyMiscValueFormatting(miscValue1, miscValue2, miscValue3, formatter1, formatter2, formatter3)</h4>
+
+<h4>ChallengeUtil.AreConditionsEqual(conditionA, conditionB)</h4>
+
+<h4>ChallengeUtil.CanGroup()</h4>
+
+<h4>ChallengeUtil.CanUseGroupFinder()</h4>
+
+<h4>ChallengeUtil.CanQueueBattlegrounds()</h4>
+
+<h4>ChallengeUtil.CanQueueArenas()</h4>
+
+<h2>TrialCreatorUtil</h2>
+
+<p><em>Defined in</em>: <code>FrameXML/Util/ChallengeUtil.lua</code></p>
+
+<h3>Members</h3>
+
+<h4>TrialCreatorUtil.ContinueOnLoad(trialID, callback)</h4>
+
+<h2>Game event utilities</h2>
+
+<h2>GameEventUtil</h2>
+
+<p><em>Defined in</em>: <code>FrameXML/Util/GameEventUtil.lua</code></p>
+
+<h3>Members</h3>
+
+<h4>GameEventUtil.IsEventActive(eventID)</h4>
+
+<h4>GameEventUtil.IsAnyEventActive(...)</h4>
+
+<h4>GameEventUtil.GetTimeRemaining(eventID)</h4>
+
+<h4>GameEventUtil.GetTimeUntil(eventID)</h4>
+
+<h4>GameEventUtil.GetState(eventID)</h4>
+
+<h2>Mystic Enchant manager utilities</h2>
+
+<h2>MysticEnchantManagerUtil</h2>
+
+<p><em>Defined in</em>: <code>FrameXML/Util/MysticEnchantManagerUtil.lua</code></p>
+
+<h3>Members</h3>
+
+<h4>MysticEnchantManagerUtil.GetEditablePreset()</h4>
+
+<h4>MysticEnchantManagerUtil.SetEditablePreset(index)</h4>
+
+<h4>MysticEnchantManagerUtil.GetPresetUnlockItem()</h4>
+
+<h4>MysticEnchantManagerUtil.GetMaxPresets()</h4>
+
+<h4>MysticEnchantManagerUtil.GetFreePresets()</h4>
+
+<h4>MysticEnchantManagerUtil.HasUnlockItem()</h4>
+
+<h4>MysticEnchantManagerUtil.GetNumPresets()</h4>
+
+<h4>MysticEnchantManagerUtil.GetPresetData(index)</h4>
+
+<h4>MysticEnchantManagerUtil.GetActualPresetName(index)</h4>
+
+<h4>MysticEnchantManagerUtil.GetPresetName(index)</h4>
+
+<h4>MysticEnchantManagerUtil.GetActivePreset()</h4>
+
+<h4>MysticEnchantManagerUtil.GetActualPresetIcon(index)</h4>
+
+<h4>MysticEnchantManagerUtil.GetPresetIcon(index)</h4>
+
+<h4>MysticEnchantManagerUtil.UpdatePresetSlotMap(index, slotMap)</h4>
+
+<h4>MysticEnchantManagerUtil.GetPresetSlotMap(index)</h4>
+
+<h4>MysticEnchantManagerUtil.GetPresetInfo(index)</h4>
+
+<h4>MysticEnchantManagerUtil.SaveCurrentAndActivateIndex(index)</h4>
+
+<h4>MysticEnchantManagerUtil.WritePresets()</h4>
+
+<h4>MysticEnchantManagerUtil.UpdatePresetData(name, icon)</h4>
+
+<h4>MysticEnchantManagerUtil.AttemptOperation(func, checkFunc, ...)</h4>
+
+<h2>Token utilities</h2>
+
+<h2>TokenUtil</h2>
+
+<p><em>Defined in</em>: <code>FrameXML/Util/TokenUtil.lua</code></p>
+
+<h3>Members</h3>
+
+<h4>TokenUtil.GetTokenCount(tokenType)</h4>
+
+<h4>TokenUtil.CreateFromTokenType(tokenType)</h4>
+
+<h4>TokenUtil.GetTokenLink(tokenType)</h4>
+
+<h4>TokenUtil.GetScrollOfFortuneTalentsForSpec(specID)</h4>
+
+<h4>TokenUtil.GetScrollOfFortuneAbilitiesForSpec(specID)</h4>
+
+<h4>TokenUtil.GetScrollOfFortuneForSpec(specID)</h4>
+
+<h4>TokenUtil.GetSpecIDByToken(tokenType)</h4>
+
+<h4>TokenUtil.RecentlyUsedCaseOfFortune()</h4>
+
+<h4>TokenUtil:TOKEN_UPDATED(tokenType, oldAmount, newAmount)</h4>
+
+<h4>TokenUtil:SCROLL_OF_FORTUNE_USED()</h4>
+
+<h4>TokenUtil:CASE_OF_FORTUNE_USED()</h4>
+
+<h2>Character Advancement reset cost utilities</h2>
+
+<h2>CACostUtil</h2>
+
+<p><em>Defined in</em>: <code>FrameXML/Util/CharacterAdvancementCostUtil.lua</code></p>
+
+<h3>Members</h3>
+
+<h4>CACostUtil:GetUnlearnMarksCost(level)</h4>
+
+<h4>CACostUtil:GetUnlearnCostPerLevel(level)</h4>
+
+<h4>CACostUtil:GetUnlearnMoneyCost(level, abilityUnlearns, talentUnlearns, talentRank)</h4>
+
+<h4>CACostUtil:GetResetCost(resetCreditType, purgeIndexTable)</h4>
+
+<p>TODO: Probably get rid of next reset cost?</p>
+
+<h4>CACostUtil:GetSingleAbilityResetCost()</h4>
+
+<h4>CACostUtil:GetSingleTalentResetCost()</h4>
+
+<h4>CACostUtil:GetSingleUnlearnCost(internalID, abilityUnlearns, talentUnlearns)</h4>
+
+<h4>CACostUtil:GetWildcardIndexTableForInternalID(internalID)</h4>
+
+<h4>CACostUtil:GetSpellsResetCostWildCard(unlearnList)</h4>
+
+<h4>CACostUtil:GetSpellsResetCost(unlearnList)</h4>
+
+<h4>CACostUtil:GetAbilityResetCost(items, indexTable)</h4>
+
+<hr />
+
+<h2>Full Resets                                --</h2>
+
+<h4>CACostUtil:GetTalentResetCost(items, indexTable)</h4>
+
+<h4>CACostUtil:GetAbilityAndTalentResetCost()</h4>
+
+<p>this method combines actual cost of talent/ability reset</p>
+
+<h4>CACostUtil:ResetCheck()</h4>
+
+</main>
+</body>
+</html>

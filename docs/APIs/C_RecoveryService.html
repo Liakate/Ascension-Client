@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>C_RecoveryService</title>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.5;margin:0;padding:0;background:#fff;color:#111}
+main{max-width:980px;margin:0 auto;padding:32px 20px}
+pre,code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
+pre{padding:12px;overflow:auto;background:#f6f8fa;border-radius:8px}
+code{background:#f6f8fa;border-radius:6px;padding:0.15em 0.35em}
+pre code{background:transparent;padding:0}
+table{border-collapse:collapse;display:block;overflow:auto}
+th,td{border:1px solid #d0d7de;padding:6px 10px}
+h1,h2,h3{line-height:1.25}
+a{color:#0969da;text-decoration:none}
+a:hover{text-decoration:underline}
+hr{border:0;border-top:1px solid #d0d7de;margin:24px 0}
+</style>
+</head>
+<body>
+<main>
+<h1>C_RecoveryService</h1>
+
+<p><strong>Members:</strong> 7  •  <strong>Functions:</strong> 7  •  <strong>Interface calls:</strong> 4 (across up to 1 files)</p>
+
+<p><strong>Defined in Interface Lua:</strong> no</p>
+
+<p><strong>Definition / evidence:</strong> not defined in Interface Lua (likely native client API)</p>
+
+<h2>Members</h2>
+
+<table>
+<thead>
+<tr>
+  <th>Member</th>
+  <th>Kind</th>
+  <th>Syntax / access</th>
+  <th>Example (from Interface)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>GetCategoryItemAtIndex</td>
+  <td>function</td>
+  <td>C_RecoveryService.GetCategoryItemAtIndex(arg1, arg2)</td>
+  <td>self.item = C_RecoveryService.GetCategoryItemAtIndex(self.category, self.index)</td>
+</tr>
+<tr>
+  <td>GetNumItemsInCategory</td>
+  <td>function</td>
+  <td>C_RecoveryService.GetNumItemsInCategory(arg1)</td>
+  <td>return C_RecoveryService.GetNumItemsInCategory(self.currentCategory) or 0</td>
+</tr>
+<tr>
+  <td>QueryCategory</td>
+  <td>function</td>
+  <td>C_RecoveryService.QueryCategory(arg1)</td>
+  <td>C_RecoveryService.QueryCategory(category)</td>
+</tr>
+<tr>
+  <td>RecoverCategoryItemAtIndex</td>
+  <td>function</td>
+  <td>C_RecoveryService.RecoverCategoryItemAtIndex(...)</td>
+  <td>local recoverFunc = GenerateClosure(C_RecoveryService.RecoverCategoryItemAtIndex, self.category, ...</td>
+</tr>
+<tr>
+  <td>SwapFactionChangePotion</td>
+  <td>function</td>
+  <td>C_RecoveryService.SwapFactionChangePotion(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>SwapRaceChangePotion</td>
+  <td>function</td>
+  <td>C_RecoveryService.SwapRaceChangePotion(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>UpdateFilter</td>
+  <td>function</td>
+  <td>C_RecoveryService.UpdateFilter(arg1, arg2)</td>
+  <td>C_RecoveryService.UpdateFilter(self.currentCategory, text)</td>
+</tr>
+</tbody>
+</table>
+
+</main>
+</body>
+</html>

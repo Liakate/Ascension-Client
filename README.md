@@ -7,13 +7,14 @@ This repository combines:
 
 ## Start here
 
-- [docs/README.md](docs/README.md)
+- [Docs index (HTML)](docs/index.html)
+- [Interface overview (HTML)](docs/README.html)
 
-## Runtime scan (Markdown)
+## Runtime scan (HTML)
 
 The `docs/RuntimeScan/` docs are the human-readable, GitHub-friendly write-ups of what was observed at runtime.
 
-- [docs/RuntimeScan/index.md](docs/RuntimeScan/index.md)
+- [Runtime scan index (HTML)](docs/RuntimeScan/index.html)
 
 ## Bronzebeard Scan folder (HTML + raw exports)
 
@@ -27,10 +28,10 @@ Entry points:
 
 Raw exports:
 
-- [API documentation (v2)](Bronzebeard%20Scan/API_DOCUMENTATION_v2.md)
-- [Runtime objects (v2)](Bronzebeard%20Scan/API_DOCUMENTATION_v2_RUNTIME_OBJECTS.md)
-- [Global UI objects (v2)](Bronzebeard%20Scan/GLOBAL_UI_OBJECTS_v2.md)
-- [Object graph fields (v2)](Bronzebeard%20Scan/OBJECT_GRAPH_FIELDS_v2.md)
+- [API documentation (v2)](Bronzebeard%20Scan/API_DOCUMENTATION_v2.html)
+- [Runtime objects (v2)](Bronzebeard%20Scan/API_DOCUMENTATION_v2_RUNTIME_OBJECTS.html)
+- [Global UI objects (v2)](Bronzebeard%20Scan/GLOBAL_UI_OBJECTS_v2.html)
+- [Object graph fields (v2)](Bronzebeard%20Scan/OBJECT_GRAPH_FIELDS_v2.html)
 - [Evidence index (JSON)](Bronzebeard%20Scan/EvidenceIndex.json)
 - [Globals index (JSON)](Bronzebeard%20Scan/GlobalsIndex.json)
 
@@ -39,8 +40,8 @@ Raw exports:
 
 ## Interface wiki indexes
 
-- [docs/Events.md](docs/Events.md)
-- [docs/Enums.md](docs/Enums.md)
-- [docs/Templates.md](docs/Templates.md)
-- [docs/JsonMessaging.md](docs/JsonMessaging.md)
-- [docs/APIs/index.md](docs/APIs/index.md)
+- [docs/Events.html](docs/Events.html)
+- [docs/Enums.html](docs/Enums.html)
+- [docs/Templates.html](docs/Templates.html)
+- [docs/JsonMessaging.html](docs/JsonMessaging.html)
+- [docs/APIs/index.html](docs/APIs/index.html)

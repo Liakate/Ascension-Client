@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>C_Config</title>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.5;margin:0;padding:0;background:#fff;color:#111}
+main{max-width:980px;margin:0 auto;padding:32px 20px}
+pre,code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
+pre{padding:12px;overflow:auto;background:#f6f8fa;border-radius:8px}
+code{background:#f6f8fa;border-radius:6px;padding:0.15em 0.35em}
+pre code{background:transparent;padding:0}
+table{border-collapse:collapse;display:block;overflow:auto}
+th,td{border:1px solid #d0d7de;padding:6px 10px}
+h1,h2,h3{line-height:1.25}
+a{color:#0969da;text-decoration:none}
+a:hover{text-decoration:underline}
+hr{border:0;border-top:1px solid #d0d7de;margin:24px 0}
+</style>
+</head>
+<body>
+<main>
+<h1>C_Config</h1>
+
+<p><strong>Members:</strong> 6  •  <strong>Functions:</strong> 6  •  <strong>Interface calls:</strong> 46 (across up to 24 files)</p>
+
+<p><strong>Defined in Interface Lua:</strong> no</p>
+
+<p><strong>Definition / evidence:</strong> not defined in Interface Lua (likely native client API)</p>
+
+<h2>Members</h2>
+
+<table>
+<thead>
+<tr>
+  <th>Member</th>
+  <th>Kind</th>
+  <th>Syntax / access</th>
+  <th>Example (from Interface)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>GetBoolConfig</td>
+  <td>function</td>
+  <td>C_Config.GetBoolConfig(arg1)</td>
+  <td>return IsRangedCategory() and C_Config.GetBoolConfig("CONFIG_THROWN_WEAPON_APPEARANCES_ENABLED")</td>
+</tr>
+<tr>
+  <td>GetFloatConfig</td>
+  <td>function</td>
+  <td>C_Config.GetFloatConfig(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>GetFloatVectorConfig</td>
+  <td>function</td>
+  <td>C_Config.GetFloatVectorConfig(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>GetIntConfig</td>
+  <td>function</td>
+  <td>C_Config.GetIntConfig(arg1)</td>
+  <td>itemID = C_Config.GetIntConfig(reward.configItemID)</td>
+</tr>
+<tr>
+  <td>GetIntVectorConfig</td>
+  <td>function</td>
+  <td>C_Config.GetIntVectorConfig(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>GetRateConfig</td>
+  <td>function</td>
+  <td>C_Config.GetRateConfig(arg1)</td>
+  <td>depositMulti = C_Config.GetRateConfig("RATE_AUCTION_DEPOSIT_VANITY") or 0.0833</td>
+</tr>
+</tbody>
+</table>
+
+<h2>Notes</h2>
+
+<ul>
+<li>3 member(s) had a runtime probe marked <code>ok</code> in the scan data.</li>
+</ul>
+
+</main>
+</body>
+</html>

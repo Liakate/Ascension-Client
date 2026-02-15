@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>C_AppearanceCollection</title>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.5;margin:0;padding:0;background:#fff;color:#111}
+main{max-width:980px;margin:0 auto;padding:32px 20px}
+pre,code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
+pre{padding:12px;overflow:auto;background:#f6f8fa;border-radius:8px}
+code{background:#f6f8fa;border-radius:6px;padding:0.15em 0.35em}
+pre code{background:transparent;padding:0}
+table{border-collapse:collapse;display:block;overflow:auto}
+th,td{border:1px solid #d0d7de;padding:6px 10px}
+h1,h2,h3{line-height:1.25}
+a{color:#0969da;text-decoration:none}
+a:hover{text-decoration:underline}
+hr{border:0;border-top:1px solid #d0d7de;margin:24px 0}
+</style>
+</head>
+<body>
+<main>
+<h1>C_AppearanceCollection</h1>
+
+<p><strong>Members:</strong> 12  •  <strong>Functions:</strong> 12  •  <strong>Interface calls:</strong> 27 (across up to 3 files)</p>
+
+<p><strong>Defined in Interface Lua:</strong> no</p>
+
+<p><strong>Definition / evidence:</strong> not defined in Interface Lua (likely native client API)</p>
+
+<h2>Members</h2>
+
+<table>
+<thead>
+<tr>
+  <th>Member</th>
+  <th>Kind</th>
+  <th>Syntax / access</th>
+  <th>Example (from Interface)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>ApplyCategoryFilter</td>
+  <td>function</td>
+  <td>C_AppearanceCollection.ApplyCategoryFilter(arg1, arg2, arg3, arg4)</td>
+  <td>C_AppearanceCollection.ApplyCategoryFilter(self.categoryID, self.SearchBox:GetText():trim(), filt...</td>
+</tr>
+<tr>
+  <td>CollectItemAppearance</td>
+  <td>function</td>
+  <td>C_AppearanceCollection.CollectItemAppearance(arg1)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>GetAppearanceTypes</td>
+  <td>function</td>
+  <td>C_AppearanceCollection.GetAppearanceTypes()</td>
+  <td>for index, appearanceType in ipairs(C_AppearanceCollection.GetAppearanceTypes()) do</td>
+</tr>
+<tr>
+  <td>GetAvailableChapters</td>
+  <td>function</td>
+  <td>C_AppearanceCollection.GetAvailableChapters(arg1)</td>
+  <td>local chapter = C_AppearanceCollection.GetAvailableChapters(season)</td>
+</tr>
+<tr>
+  <td>GetAvailableSeasons</td>
+  <td>function</td>
+  <td>C_AppearanceCollection.GetAvailableSeasons()</td>
+  <td>local season = C_AppearanceCollection.GetAvailableSeasons()</td>
+</tr>
+<tr>
+  <td>GetCategoriesForType</td>
+  <td>function</td>
+  <td>C_AppearanceCollection.GetCategoriesForType(arg1)</td>
+  <td>categories = C_AppearanceCollection.GetCategoriesForType("APPEARANCE_TYPE_ITEM")</td>
+</tr>
+<tr>
+  <td>GetCategoryAppearances</td>
+  <td>function</td>
+  <td>C_AppearanceCollection.GetCategoryAppearances(arg1)</td>
+  <td>local appearanceIDs = C_AppearanceCollection.GetCategoryAppearances(self.page)</td>
+</tr>
+<tr>
+  <td>GetCategoryInfo</td>
+  <td>function</td>
+  <td>C_AppearanceCollection.GetCategoryInfo(arg1)</td>
+  <td>local _, icon = C_AppearanceCollection.GetCategoryInfo(categoryID)</td>
+</tr>
+<tr>
+  <td>GetCategoryMaxPages</td>
+  <td>function</td>
+  <td>C_AppearanceCollection.GetCategoryMaxPages()</td>
+  <td>self.maxPages = C_AppearanceCollection.GetCategoryMaxPages()</td>
+</tr>
+<tr>
+  <td>GetCollectedCount</td>
+  <td>function</td>
+  <td>C_AppearanceCollection.GetCollectedCount(arg1)</td>
+  <td>local collected, numAppearances = C_AppearanceCollection.GetCollectedCount(self.categoryID)</td>
+</tr>
+<tr>
+  <td>GetSeasonalItems</td>
+  <td>function</td>
+  <td>C_AppearanceCollection.GetSeasonalItems(arg1, arg2)</td>
+  <td>local appearanceIDs = C_AppearanceCollection.GetSeasonalItems(season, chapter)</td>
+</tr>
+<tr>
+  <td>IsAppearanceCollected</td>
+  <td>function</td>
+  <td>C_AppearanceCollection.IsAppearanceCollected(arg1)</td>
+  <td>self.isCollected = C_AppearanceCollection.IsAppearanceCollected(self.appearanceID) and 1 or 0</td>
+</tr>
+</tbody>
+</table>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Interface/FrameXML</title>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.5;margin:0;padding:0;background:#fff;color:#111}
+main{max-width:980px;margin:0 auto;padding:32px 20px}
+pre,code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
+pre{padding:12px;overflow:auto;background:#f6f8fa;border-radius:8px}
+code{background:#f6f8fa;border-radius:6px;padding:0.15em 0.35em}
+pre code{background:transparent;padding:0}
+table{border-collapse:collapse;display:block;overflow:auto}
+th,td{border:1px solid #d0d7de;padding:6px 10px}
+h1,h2,h3{line-height:1.25}
+a{color:#0969da;text-decoration:none}
+a:hover{text-decoration:underline}
+hr{border:0;border-top:1px solid #d0d7de;margin:24px 0}
+</style>
+</head>
+<body>
+<main>
+<h1>Interface/FrameXML</h1>
+
+<h2>Summary</h2>
+
+<p><code>Interface/FrameXML</code> is the <strong>in-game UI</strong> (loaded after login) and contains:</p>
+
+<ul>
+<li>Core Blizzard-era UI frames and templates (action bars, character frame, chat, tooltips, etc.)</li>
+<li>Ascension additions (folders prefixed <code>Ascension_...</code>)</li>
+<li>Utility modules (notably <code>FrameXML/Util/</code>)</li>
+</ul>
+
+<p>The main load list is <code>FrameXML.toc</code>, which enumerates the Lua/XML files loaded for the in-game UI.</p>
+
+<h2>Subfolders</h2>
+
+<table>
+<thead>
+<tr>
+  <th>Folder</th>
+  <th>Purpose</th>
+  <th>Files</th>
+  <th>Key files (examples)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>AddonCompat</td>
+  <td>Compatibility shims for popular third-party AddOns.</td>
+  <td>4</td>
+  <td>AddonCompat.lua, AddonCompat.xml, ArkInventory.lua, ElvUI.lua</td>
+</tr>
+<tr>
+  <td>Ascension_BuildDraft</td>
+  <td>UI for Ascension 'build draft' features (draft/selection panels).</td>
+  <td>6</td>
+  <td>Ascension BuildDraft.lua, Ascension BuildDraft.xml, BuildDraftArrowMixin.lua, BuildDraftCardMixin.lua, BuildDraftRole...</td>
+</tr>
+<tr>
+  <td>Ascension_CharacterFrame</td>
+  <td>Ascension extensions/overrides to the character frame.</td>
+  <td>26</td>
+  <td>CharacterFrame.lua, CharacterFrame.xml</td>
+</tr>
+<tr>
+  <td>Ascension_CoAResources</td>
+  <td>Resource displays for Conquest of Azeroth (CoA) archetypes and custom resources.</td>
+  <td>21</td>
+  <td>Ascension BarbarianResource.lua, Ascension ChronomancerResource.lua, Ascension CoAMultiCast.lua, Ascension CoAMultiCa...</td>
+</tr>
+<tr>
+  <td>Ascension_CustomResources</td>
+  <td>Framework + templates for custom resource bars/segments.</td>
+  <td>4</td>
+  <td>Ascension_CustomResources.xml, CustomResourceContainer.lua, CustomResourceDefinitions.lua, CustomResourceSegment.lua</td>
+</tr>
+<tr>
+  <td>Ascension_DebugTools</td>
+  <td>Ascension-specific debug and developer utilities.</td>
+  <td>4</td>
+  <td>Ascension_DebugTools.xml, CommandHyperlinks.lua, SoundKitBrowser.lua, SoundKitBrowser.xml</td>
+</tr>
+<tr>
+  <td>Ascension_LFG</td>
+  <td>Ascension group finder / LFG UI extensions.</td>
+  <td>10</td>
+  <td>Ascension LFG.lua, Ascension LFG.xml, Ascension PVE.lua, Ascension PVE.xml, Ascension PVP.lua, Ascension PVP.xml, Asc...</td>
+</tr>
+<tr>
+  <td>Ascension_LoseControl</td>
+  <td>Crowd control / loss-of-control UI elements (timers, alerts).</td>
+  <td>2</td>
+  <td>Ascension LoseControl.lua, Ascension LoseControl.xml</td>
+</tr>
+<tr>
+  <td>Ascension_MythicalBoons</td>
+  <td>UI for Mythical Boons system.</td>
+  <td>3</td>
+  <td>Ascension MythicalBoons.lua, Ascension MythicalBoons.xml, DynamicRadialMenu.lua</td>
+</tr>
+<tr>
+  <td>Ascension_POI</td>
+  <td>Points-of-interest / world map POI overlays and related payload handling.</td>
+  <td>8</td>
+  <td>MapPoiPin.lua, PoiTemplates.xml, StaticPOIs.xml</td>
+</tr>
+<tr>
+  <td>Ascension_Spellbook</td>
+  <td>Ascension spellbook extensions (classless abilities, filters).</td>
+  <td>3</td>
+  <td>Ascension ProfessionBook.lua, Ascension Spellbook.lua, Ascension_Spellbook.xml</td>
+</tr>
+<tr>
+  <td>Ascension_TrackerHeader</td>
+  <td>Quest/objective tracker header customization.</td>
+  <td>2</td>
+  <td>Ascension TrackerHeader.lua, Ascension TrackerHeader.xml</td>
+</tr>
+<tr>
+  <td>CharacterAdvancement</td>
+  <td>Character Advancement (CA) UI and helpers (talents/spells progression).</td>
+  <td>7</td>
+  <td>CAConnectionBaseMixin.lua, CAGateBaseMixin.lua, CALineConnectionMixin.lua, CATalentBaseMixin.lua, CATalentChoiceBaseM...</td>
+</tr>
+<tr>
+  <td>Data</td>
+  <td>Client-side data tables used by Ascension UI (IDs, enums, constants).</td>
+  <td>10</td>
+  <td>C_ContentLoader.lua, CharacterAdvancement.lua, CrowdControl.lua, HandOfFateQuests.lua, Items.lua, LiveUpdate.lua, Map...</td>
+</tr>
+<tr>
+  <td>Notifications</td>
+  <td>Toast/alert notification systems used by Ascension UI.</td>
+  <td>5</td>
+  <td>NotificationsTemplates.xml, ToastContainer.lua, ToastContainer.xml, ToastMixin.lua, ToastNotificationSystem.lua</td>
+</tr>
+<tr>
+  <td>Objects</td>
+  <td>Reusable UI object classes/mixins (buttons, list items, etc.).</td>
+  <td>7</td>
+  <td>AsyncCallbackHandler.lua, Creature.lua, GameObject.lua, Item.lua, ItemLocation.lua, Quest.lua, Spell.lua</td>
+</tr>
+<tr>
+  <td>Scenario</td>
+  <td>Scenario UI (objective tracker / scenario frames).</td>
+  <td>4</td>
+  <td>ScenarioObjectiveTracker.lua, ScenarioObjectiveTracker.xml, ScenarioTemplates.lua, ScenarioTemplates.xml</td>
+</tr>
+<tr>
+  <td>Settings</td>
+  <td>Settings UI framework (panels, categories, toggles).</td>
+  <td>3</td>
+  <td>InterfaceOptions.lua, InterfaceOptionsFrame.lua, InterfaceOptionsFrame.xml</td>
+</tr>
+<tr>
+  <td>Util</td>
+  <td>Utility modules used across FrameXML (helpers, wrappers, utilities).</td>
+  <td>56</td>
+  <td>ActionBarUtil.lua, AppearanceUtil.lua, AuraUtil.lua, BindingUtil.lua, BuildCreatorUtil.lua, C Cache.lua, C CrowdContr...</td>
+</tr>
+</tbody>
+</table>
+
+<h2>Notes for AddOn authors</h2>
+
+<h3>Secure/protected UI &amp; combat lockdown</h3>
+
+<p>Many FrameXML elements use secure templates (action buttons, unit frames, secure state drivers).  </p>
+
+<p>Do not change protected attributes or secure handler state in combat; guard with <code>InCombatLockdown()</code>.</p>
+
+<h3>Ascension additions</h3>
+
+<p>Ascension ships extra systems (builds, CA, Mystic Enchants, seasonal features, etc.). Most of those are implemented as:</p>
+
+<ul>
+<li>Extra <code>Ascension_...</code> modules in FrameXML and AddOns</li>
+<li>Native <code>C_*</code> namespaces exposed by the client (documented in <code>APIs/</code>)</li>
+</ul>
+
+</main>
+</body>
+</html>

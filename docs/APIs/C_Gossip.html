@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>C_Gossip</title>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.5;margin:0;padding:0;background:#fff;color:#111}
+main{max-width:980px;margin:0 auto;padding:32px 20px}
+pre,code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
+pre{padding:12px;overflow:auto;background:#f6f8fa;border-radius:8px}
+code{background:#f6f8fa;border-radius:6px;padding:0.15em 0.35em}
+pre code{background:transparent;padding:0}
+table{border-collapse:collapse;display:block;overflow:auto}
+th,td{border:1px solid #d0d7de;padding:6px 10px}
+h1,h2,h3{line-height:1.25}
+a{color:#0969da;text-decoration:none}
+a:hover{text-decoration:underline}
+hr{border:0;border-top:1px solid #d0d7de;margin:24px 0}
+</style>
+</head>
+<body>
+<main>
+<h1>C_Gossip</h1>
+
+<p><strong>Members:</strong> 41  •  <strong>Functions:</strong> 29  •  <strong>Interface calls:</strong> 53 (across up to 6 files)</p>
+
+<p><strong>Defined in Interface Lua:</strong> yes</p>
+
+<p><strong>Definition / evidence:</strong> <code>FrameXML/Util/C_Gossip.lua</code> line 1</p>
+
+<h2>Members</h2>
+
+<table>
+<thead>
+<tr>
+  <th>Member</th>
+  <th>Kind</th>
+  <th>Syntax / access</th>
+  <th>Example (from Interface)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>CheckHookItemHide</td>
+  <td>function</td>
+  <td>C_Gossip:CheckHookItemHide(arg1)</td>
+  <td>function C_Gossip:CheckHookItemHide(id)</td>
+</tr>
+<tr>
+  <td>CheckHookItemShow</td>
+  <td>function</td>
+  <td>C_Gossip:CheckHookItemShow(arg1)</td>
+  <td>function C_Gossip:CheckHookItemShow(id)</td>
+</tr>
+<tr>
+  <td>CheckHookNPCHide</td>
+  <td>function</td>
+  <td>C_Gossip:CheckHookNPCHide(arg1)</td>
+  <td>function C_Gossip:CheckHookNPCHide(id)</td>
+</tr>
+<tr>
+  <td>CheckHookNPCShow</td>
+  <td>function</td>
+  <td>C_Gossip:CheckHookNPCShow(arg1)</td>
+  <td>function C_Gossip:CheckHookNPCShow(id)</td>
+</tr>
+<tr>
+  <td>CheckItemHide</td>
+  <td>function</td>
+  <td>C_Gossip:CheckItemHide(arg1)</td>
+  <td>function C_Gossip:CheckItemHide(id)</td>
+</tr>
+<tr>
+  <td>CheckItemShow</td>
+  <td>function</td>
+  <td>C_Gossip:CheckItemShow(arg1)</td>
+  <td>function C_Gossip:CheckItemShow(id)</td>
+</tr>
+<tr>
+  <td>CheckNPCHide</td>
+  <td>function</td>
+  <td>C_Gossip:CheckNPCHide(arg1)</td>
+  <td>function C_Gossip:CheckNPCHide(id)</td>
+</tr>
+<tr>
+  <td>CheckNPCShow</td>
+  <td>function</td>
+  <td>C_Gossip:CheckNPCShow(arg1)</td>
+  <td>function C_Gossip:CheckNPCShow(id)</td>
+</tr>
+<tr>
+  <td>GOSSIP_CLOSED</td>
+  <td>function</td>
+  <td>C_Gossip:GOSSIP_CLOSED()</td>
+  <td>function C_Gossip:GOSSIP_CLOSED()</td>
+</tr>
+<tr>
+  <td>GOSSIP_SHOW</td>
+  <td>function</td>
+  <td>C_Gossip:GOSSIP_SHOW()</td>
+  <td>function C_Gossip:GOSSIP_SHOW()</td>
+</tr>
+<tr>
+  <td>HookItem</td>
+  <td>function</td>
+  <td>C_Gossip:HookItem(arg1, arg2, arg3)</td>
+  <td>function C_Gossip:HookItem(id, show, hide)</td>
+</tr>
+<tr>
+  <td>HookItems</td>
+  <td>function</td>
+  <td>C_Gossip:HookItems(arg1, arg2, arg3)</td>
+  <td>function C_Gossip:HookItems(group, show, hide)</td>
+</tr>
+<tr>
+  <td>HookNPC</td>
+  <td>function</td>
+  <td>C_Gossip:HookNPC(arg1, arg2, arg3)</td>
+  <td>function C_Gossip:HookNPC(id, show, hide)</td>
+</tr>
+<tr>
+  <td>HookNPCs</td>
+  <td>function</td>
+  <td>C_Gossip:HookNPCs(arg1, arg2, arg3)</td>
+  <td>function C_Gossip:HookNPCs(group, show, hide)</td>
+</tr>
+<tr>
+  <td>MakeGroup</td>
+  <td>function</td>
+  <td>C_Gossip:MakeGroup(arg1)</td>
+  <td>local arenaNPCs = C_Gossip:MakeGroup(18897, 19856, 19861, 29534, 30611,</td>
+</tr>
+<tr>
+  <td>RedirectItem</td>
+  <td>function</td>
+  <td>C_Gossip:RedirectItem(arg1, arg2, arg3)</td>
+  <td>function C_Gossip:RedirectItem(id, show, hide)</td>
+</tr>
+<tr>
+  <td>RedirectItems</td>
+  <td>function</td>
+  <td>C_Gossip:RedirectItems(arg1, arg2, arg3)</td>
+  <td>function C_Gossip:RedirectItems(group, show, hide)</td>
+</tr>
+<tr>
+  <td>RedirectNPC</td>
+  <td>function</td>
+  <td>C_Gossip:RedirectNPC(arg1, arg2)</td>
+  <td>C_Gossip:RedirectNPC(npcID, GenerateClosure(self.OnGossipShow, self), GenerateClosure(self.OnGoss...</td>
+</tr>
+<tr>
+  <td>RedirectNPCs</td>
+  <td>function</td>
+  <td>C_Gossip:RedirectNPCs(arg1, arg2, arg3)</td>
+  <td>C_Gossip:RedirectNPCs(arenaNPCs, OnShowGossip)</td>
+</tr>
+<tr>
+  <td>RemoveHookItem</td>
+  <td>function</td>
+  <td>C_Gossip:RemoveHookItem(arg1)</td>
+  <td>function C_Gossip:RemoveHookItem(handle)</td>
+</tr>
+<tr>
+  <td>RemoveHookNPC</td>
+  <td>function</td>
+  <td>C_Gossip:RemoveHookNPC(arg1)</td>
+  <td>function C_Gossip:RemoveHookNPC(handle)</td>
+</tr>
+<tr>
+  <td>RemoveRedirectItem</td>
+  <td>function</td>
+  <td>C_Gossip:RemoveRedirectItem(arg1)</td>
+  <td>function C_Gossip:RemoveRedirectItem(id)</td>
+</tr>
+<tr>
+  <td>RemoveRedirectItems</td>
+  <td>function</td>
+  <td>C_Gossip:RemoveRedirectItems(arg1)</td>
+  <td>function C_Gossip:RemoveRedirectItems(group)</td>
+</tr>
+<tr>
+  <td>RemoveRedirectNPC</td>
+  <td>function</td>
+  <td>C_Gossip:RemoveRedirectNPC(arg1)</td>
+  <td>function C_Gossip:RemoveRedirectNPC(id)</td>
+</tr>
+<tr>
+  <td>RemoveRedirectNPCs</td>
+  <td>function</td>
+  <td>C_Gossip:RemoveRedirectNPCs(arg1)</td>
+  <td>function C_Gossip:RemoveRedirectNPCs(group)</td>
+</tr>
+<tr>
+  <td>RestoreGossip</td>
+  <td>function</td>
+  <td>C_Gossip:RestoreGossip()</td>
+  <td>C_Gossip:RestoreGossip()</td>
+</tr>
+<tr>
+  <td>SilentHideGossip</td>
+  <td>function</td>
+  <td>C_Gossip:SilentHideGossip()</td>
+  <td>C_Gossip:SilentHideGossip()</td>
+</tr>
+<tr>
+  <td>_hookItem.generateHandle</td>
+  <td>function</td>
+  <td>C_Gossip._hookItem.generateHandle(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>_hookNPC.generateHandle</td>
+  <td>function</td>
+  <td>C_Gossip._hookNPC.generateHandle(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>_hookItem</td>
+  <td>table</td>
+  <td>C_Gossip._hookItem</td>
+  <td></td>
+</tr>
+<tr>
+  <td>_hookItem.hide</td>
+  <td>table</td>
+  <td>C_Gossip._hookItem.hide</td>
+  <td></td>
+</tr>
+<tr>
+  <td>_hookItem.show</td>
+  <td>table</td>
+  <td>C_Gossip._hookItem.show</td>
+  <td></td>
+</tr>
+<tr>
+  <td>_hookNPC</td>
+  <td>table</td>
+  <td>C_Gossip._hookNPC</td>
+  <td></td>
+</tr>
+<tr>
+  <td>_hookNPC.hide</td>
+  <td>table</td>
+  <td>C_Gossip._hookNPC.hide</td>
+  <td></td>
+</tr>
+<tr>
+  <td>_hookNPC.show</td>
+  <td>table</td>
+  <td>C_Gossip._hookNPC.show</td>
+  <td></td>
+</tr>
+<tr>
+  <td>_redirectItem</td>
+  <td>table</td>
+  <td>C_Gossip._redirectItem</td>
+  <td></td>
+</tr>
+<tr>
+  <td>_redirectItem.hide</td>
+  <td>table</td>
+  <td>C_Gossip._redirectItem.hide</td>
+  <td></td>
+</tr>
+<tr>
+  <td>_redirectItem.show</td>
+  <td>table</td>
+  <td>C_Gossip._redirectItem.show</td>
+  <td></td>
+</tr>
+<tr>
+  <td>_redirectNPC</td>
+  <td>table</td>
+  <td>C_Gossip._redirectNPC</td>
+  <td></td>
+</tr>
+<tr>
+  <td>_redirectNPC.hide</td>
+  <td>table</td>
+  <td>C_Gossip._redirectNPC.hide</td>
+  <td></td>
+</tr>
+<tr>
+  <td>_redirectNPC.show</td>
+  <td>table</td>
+  <td>C_Gossip._redirectNPC.show</td>
+  <td></td>
+</tr>
+</tbody>
+</table>
+
+</main>
+</body>
+</html>

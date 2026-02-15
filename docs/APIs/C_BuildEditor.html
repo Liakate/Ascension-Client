@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>C_BuildEditor</title>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.5;margin:0;padding:0;background:#fff;color:#111}
+main{max-width:980px;margin:0 auto;padding:32px 20px}
+pre,code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
+pre{padding:12px;overflow:auto;background:#f6f8fa;border-radius:8px}
+code{background:#f6f8fa;border-radius:6px;padding:0.15em 0.35em}
+pre code{background:transparent;padding:0}
+table{border-collapse:collapse;display:block;overflow:auto}
+th,td{border:1px solid #d0d7de;padding:6px 10px}
+h1,h2,h3{line-height:1.25}
+a{color:#0969da;text-decoration:none}
+a:hover{text-decoration:underline}
+hr{border:0;border-top:1px solid #d0d7de;margin:24px 0}
+</style>
+</head>
+<body>
+<main>
+<h1>C_BuildEditor</h1>
+
+<p><strong>Members:</strong> 63  •  <strong>Functions:</strong> 63  •  <strong>Interface calls:</strong> 153 (across up to 8 files)</p>
+
+<p><strong>Defined in Interface Lua:</strong> no</p>
+
+<p><strong>Definition / evidence:</strong> not defined in Interface Lua (likely native client API)</p>
+
+<h2>Members</h2>
+
+<table>
+<thead>
+<tr>
+  <th>Member</th>
+  <th>Kind</th>
+  <th>Syntax / access</th>
+  <th>Example (from Interface)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>AddArmorType</td>
+  <td>function</td>
+  <td>C_BuildEditor.AddArmorType(arg1)</td>
+  <td>C_BuildEditor.AddArmorType(armor)</td>
+</tr>
+<tr>
+  <td>AddRandomEnchant</td>
+  <td>function</td>
+  <td>C_BuildEditor.AddRandomEnchant(arg1)</td>
+  <td>C_BuildEditor.AddRandomEnchant(enchant)</td>
+</tr>
+<tr>
+  <td>AddSpell</td>
+  <td>function</td>
+  <td>C_BuildEditor.AddSpell(arg1)</td>
+  <td>C_BuildEditor.AddSpell(spell)</td>
+</tr>
+<tr>
+  <td>AddWeaponType</td>
+  <td>function</td>
+  <td>C_BuildEditor.AddWeaponType(arg1)</td>
+  <td>C_BuildEditor.AddWeaponType(weapon)</td>
+</tr>
+<tr>
+  <td>CanAddArmorType</td>
+  <td>function</td>
+  <td>C_BuildEditor.CanAddArmorType(arg1)</td>
+  <td>if C_BuildEditor.CanAddArmorType(armor) then</td>
+</tr>
+<tr>
+  <td>CanAddRandomEnchant</td>
+  <td>function</td>
+  <td>C_BuildEditor.CanAddRandomEnchant(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>CanAddSpell</td>
+  <td>function</td>
+  <td>C_BuildEditor.CanAddSpell(arg1)</td>
+  <td>local canLearn, reason = C_BuildEditor.CanAddSpell(BuildCreatorUtil.CreateSpellInfo(self.spellID,...</td>
+</tr>
+<tr>
+  <td>CanAddWeaponType</td>
+  <td>function</td>
+  <td>C_BuildEditor.CanAddWeaponType(arg1)</td>
+  <td>if C_BuildEditor.CanAddWeaponType(weapon) then</td>
+</tr>
+<tr>
+  <td>CanPublishBuild</td>
+  <td>function</td>
+  <td>C_BuildEditor.CanPublishBuild()</td>
+  <td>local canPublish, failReasons = C_BuildEditor.CanPublishBuild()</td>
+</tr>
+<tr>
+  <td>CanRemoveArmorType</td>
+  <td>function</td>
+  <td>C_BuildEditor.CanRemoveArmorType(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>CanRemoveRandomEnchant</td>
+  <td>function</td>
+  <td>C_BuildEditor.CanRemoveRandomEnchant(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>CanRemoveSpell</td>
+  <td>function</td>
+  <td>C_BuildEditor.CanRemoveSpell(arg1)</td>
+  <td>canUnlearn, reason = C_BuildEditor.CanRemoveSpell(BuildCreatorUtil.CreateSpellInfo(self.spellID, ...</td>
+</tr>
+<tr>
+  <td>CanRemoveWeaponType</td>
+  <td>function</td>
+  <td>C_BuildEditor.CanRemoveWeaponType(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>CanSetArmorTypeComment</td>
+  <td>function</td>
+  <td>C_BuildEditor.CanSetArmorTypeComment(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>CanSetEnchantFlags</td>
+  <td>function</td>
+  <td>C_BuildEditor.CanSetEnchantFlags(arg1)</td>
+  <td>info.enabled = C_BuildEditor.CanSetEnchantFlags(spellID)</td>
+</tr>
+<tr>
+  <td>CanSetEnchantLevel</td>
+  <td>function</td>
+  <td>C_BuildEditor.CanSetEnchantLevel(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>CanSetIsCoreAbility</td>
+  <td>function</td>
+  <td>C_BuildEditor.CanSetIsCoreAbility(arg1, arg2)</td>
+  <td>info.disabled = not C_BuildEditor.CanSetIsCoreAbility(spellID, not buildSpell.IsCoreAbility)</td>
+</tr>
+<tr>
+  <td>CanSetIsEmpoweringAbility</td>
+  <td>function</td>
+  <td>C_BuildEditor.CanSetIsEmpoweringAbility(arg1, arg2)</td>
+  <td>info.disabled = not C_BuildEditor.CanSetIsEmpoweringAbility(spellID, not buildSpell.IsEmpoweringA...</td>
+</tr>
+<tr>
+  <td>CanSetIsOptimalAbility</td>
+  <td>function</td>
+  <td>C_BuildEditor.CanSetIsOptimalAbility(arg1, arg2)</td>
+  <td>info.disabled = not C_BuildEditor.CanSetIsOptimalAbility(spellID, not buildSpell.IsOptimalAbility)</td>
+</tr>
+<tr>
+  <td>CanSetIsSynergisticAbility</td>
+  <td>function</td>
+  <td>C_BuildEditor.CanSetIsSynergisticAbility(arg1, arg2)</td>
+  <td>info.disabled = not C_BuildEditor.CanSetIsSynergisticAbility(spellID, not buildSpell.IsSynergisti...</td>
+</tr>
+<tr>
+  <td>CanSetRandomEnchantComment</td>
+  <td>function</td>
+  <td>C_BuildEditor.CanSetRandomEnchantComment(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>CanSetRandomEnchantStacks</td>
+  <td>function</td>
+  <td>C_BuildEditor.CanSetRandomEnchantStacks(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>CanSetSpellComment</td>
+  <td>function</td>
+  <td>C_BuildEditor.CanSetSpellComment(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>CanSetSpellFlags</td>
+  <td>function</td>
+  <td>C_BuildEditor.CanSetSpellFlags(arg1)</td>
+  <td>info.enabled = C_BuildEditor.CanSetSpellFlags(spellID)</td>
+</tr>
+<tr>
+  <td>CanSetSpellLevel</td>
+  <td>function</td>
+  <td>C_BuildEditor.CanSetSpellLevel(arg1, arg2)</td>
+  <td>elseif spell and C_BuildEditor.CanSetSpellLevel(spell.Spell, level) then</td>
+</tr>
+<tr>
+  <td>CanSetWeaponTypeComment</td>
+  <td>function</td>
+  <td>C_BuildEditor.CanSetWeaponTypeComment(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>DiscardPendingBuild</td>
+  <td>function</td>
+  <td>C_BuildEditor.DiscardPendingBuild()</td>
+  <td>C_BuildEditor.DiscardPendingBuild()</td>
+</tr>
+<tr>
+  <td>DoesBuildHaveEnchant</td>
+  <td>function</td>
+  <td>C_BuildEditor.DoesBuildHaveEnchant(arg1)</td>
+  <td>if C_BuildEditor.DoesBuildHaveEnchant(self.spellID) then</td>
+</tr>
+<tr>
+  <td>DoesBuildHaveSpellID</td>
+  <td>function</td>
+  <td>C_BuildEditor.DoesBuildHaveSpellID(arg1)</td>
+  <td>if nextSpellID and not C_BuildEditor.DoesBuildHaveSpellID(nextSpellID) then</td>
+</tr>
+<tr>
+  <td>EditBuild</td>
+  <td>function</td>
+  <td>C_BuildEditor.EditBuild(arg1)</td>
+  <td>C_BuildEditor.EditBuild(build.ID)</td>
+</tr>
+<tr>
+  <td>ExportPendingBuild</td>
+  <td>function</td>
+  <td>C_BuildEditor.ExportPendingBuild(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>GetEssenceForLevel</td>
+  <td>function</td>
+  <td>C_BuildEditor.GetEssenceForLevel(arg1)</td>
+  <td>local _, aeRemaining, _, teRemaining = C_BuildEditor.GetEssenceForLevel(GetMaxLevel())</td>
+</tr>
+<tr>
+  <td>GetFilteredEntryAtIndex</td>
+  <td>function</td>
+  <td>C_BuildEditor.GetFilteredEntryAtIndex(arg1)</td>
+  <td>self.entry = C_BuildEditor.GetFilteredEntryAtIndex(self.index)</td>
+</tr>
+<tr>
+  <td>GetNumFilteredEntries</td>
+  <td>function</td>
+  <td>C_BuildEditor.GetNumFilteredEntries(...)</td>
+  <td>self.SideBar.SpellList:SetGetNumResultsFunction(C_BuildEditor.GetNumFilteredEntries)</td>
+</tr>
+<tr>
+  <td>GetPendingBuild</td>
+  <td>function</td>
+  <td>C_BuildEditor.GetPendingBuild()</td>
+  <td>local build = C_BuildEditor.GetPendingBuild()</td>
+</tr>
+<tr>
+  <td>GetQualityInfo</td>
+  <td>function</td>
+  <td>C_BuildEditor.GetQualityInfo(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>GetQualityInfoForLevel</td>
+  <td>function</td>
+  <td>C_BuildEditor.GetQualityInfoForLevel()</td>
+  <td>amount = select(self.quality, C_BuildEditor.GetQualityInfoForLevel()) or 0</td>
+</tr>
+<tr>
+  <td>GetSpellByID</td>
+  <td>function</td>
+  <td>C_BuildEditor.GetSpellByID(arg1)</td>
+  <td>local spellInfo = C_BuildEditor.GetSpellByID(self.spellID)</td>
+</tr>
+<tr>
+  <td>ImportBuild</td>
+  <td>function</td>
+  <td>C_BuildEditor.ImportBuild(arg1)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>ImportCurrentBuild</td>
+  <td>function</td>
+  <td>C_BuildEditor.ImportCurrentBuild(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>PublishBuild</td>
+  <td>function</td>
+  <td>C_BuildEditor.PublishBuild()</td>
+  <td>local publishSent, failReason = C_BuildEditor.PublishBuild()</td>
+</tr>
+<tr>
+  <td>RemoveArmorType</td>
+  <td>function</td>
+  <td>C_BuildEditor.RemoveArmorType(arg1)</td>
+  <td>C_BuildEditor.RemoveArmorType(self.info.Type)</td>
+</tr>
+<tr>
+  <td>RemoveRandomEnchant</td>
+  <td>function</td>
+  <td>C_BuildEditor.RemoveRandomEnchant(arg1)</td>
+  <td>C_BuildEditor.RemoveRandomEnchant(self.spellID)</td>
+</tr>
+<tr>
+  <td>RemoveSpell</td>
+  <td>function</td>
+  <td>C_BuildEditor.RemoveSpell(arg1)</td>
+  <td>C_BuildEditor.RemoveSpell(self.spellID)</td>
+</tr>
+<tr>
+  <td>RemoveWeaponType</td>
+  <td>function</td>
+  <td>C_BuildEditor.RemoveWeaponType(arg1)</td>
+  <td>C_BuildEditor.RemoveWeaponType(self.info.Type)</td>
+</tr>
+<tr>
+  <td>SetCategory</td>
+  <td>function</td>
+  <td>C_BuildEditor.SetCategory(arg1)</td>
+  <td>C_BuildEditor.SetCategory(deserializedBuild.Category)</td>
+</tr>
+<tr>
+  <td>SetComment</td>
+  <td>function</td>
+  <td>C_BuildEditor.SetComment(arg1, arg2)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>SetDescription</td>
+  <td>function</td>
+  <td>C_BuildEditor.SetDescription(arg1)</td>
+  <td>C_BuildEditor.SetDescription(deserializedBuild.Description)</td>
+</tr>
+<tr>
+  <td>SetDifficultyRating</td>
+  <td>function</td>
+  <td>C_BuildEditor.SetDifficultyRating(arg1)</td>
+  <td>C_BuildEditor.SetDifficultyRating(deserializedBuild.DifficultyRating)</td>
+</tr>
+<tr>
+  <td>SetEnchantFlags</td>
+  <td>function</td>
+  <td>C_BuildEditor.SetEnchantFlags(arg1, arg2)</td>
+  <td>C_BuildEditor.SetEnchantFlags(spellID, bit.bxor(buildSpell.Flags, Enum.BuildSpellFlags.NotifyOnLe...</td>
+</tr>
+<tr>
+  <td>SetEnchantLevel</td>
+  <td>function</td>
+  <td>C_BuildEditor.SetEnchantLevel(arg1, arg2)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>SetEnchantStacks</td>
+  <td>function</td>
+  <td>C_BuildEditor.SetEnchantStacks(arg1, arg2)</td>
+  <td>C_BuildEditor.SetEnchantStacks(self.spellID, self.info.Stacks + 1)</td>
+</tr>
+<tr>
+  <td>SetFilteredEntries</td>
+  <td>function</td>
+  <td>C_BuildEditor.SetFilteredEntries(arg1, arg2)</td>
+  <td>C_BuildEditor.SetFilteredEntries("", OnlyKnownFilter)</td>
+</tr>
+<tr>
+  <td>SetIcon</td>
+  <td>function</td>
+  <td>C_BuildEditor.SetIcon(arg1)</td>
+  <td>C_BuildEditor.SetIcon(deserializedBuild.Icon)</td>
+</tr>
+<tr>
+  <td>SetIsCoreAbility</td>
+  <td>function</td>
+  <td>C_BuildEditor.SetIsCoreAbility(arg1, arg2)</td>
+  <td>C_BuildEditor.SetIsCoreAbility(spellID, not buildSpell.IsCoreAbility)</td>
+</tr>
+<tr>
+  <td>SetIsEmpoweringAbility</td>
+  <td>function</td>
+  <td>C_BuildEditor.SetIsEmpoweringAbility(arg1, arg2)</td>
+  <td>C_BuildEditor.SetIsEmpoweringAbility(self.spellID, not self.info.IsEmpoweringAbility)</td>
+</tr>
+<tr>
+  <td>SetIsOptimalAbility</td>
+  <td>function</td>
+  <td>C_BuildEditor.SetIsOptimalAbility(arg1, arg2)</td>
+  <td>C_BuildEditor.SetIsOptimalAbility(self.spellID, not self.info.IsOptimalAbility)</td>
+</tr>
+<tr>
+  <td>SetIsSynergisticAbility</td>
+  <td>function</td>
+  <td>C_BuildEditor.SetIsSynergisticAbility(arg1, arg2)</td>
+  <td>C_BuildEditor.SetIsSynergisticAbility(self.spellID, not self.info.IsSynergisticAbility)</td>
+</tr>
+<tr>
+  <td>SetName</td>
+  <td>function</td>
+  <td>C_BuildEditor.SetName(arg1)</td>
+  <td>C_BuildEditor.SetName(deserializedBuild.Name)</td>
+</tr>
+<tr>
+  <td>SetPrimaryStat</td>
+  <td>function</td>
+  <td>C_BuildEditor.SetPrimaryStat(arg1)</td>
+  <td>C_BuildEditor.SetPrimaryStat(deserializedBuild.PrimaryStat)</td>
+</tr>
+<tr>
+  <td>SetRoles</td>
+  <td>function</td>
+  <td>C_BuildEditor.SetRoles(arg1)</td>
+  <td>C_BuildEditor.SetRoles(deserializedBuild.Roles)</td>
+</tr>
+<tr>
+  <td>SetSpellFlags</td>
+  <td>function</td>
+  <td>C_BuildEditor.SetSpellFlags(arg1, arg2)</td>
+  <td>C_BuildEditor.SetSpellFlags(spellID, bit.bxor(buildSpell.Flags, Enum.BuildSpellFlags.NotifyOnLearn))</td>
+</tr>
+<tr>
+  <td>SetSpellLevel</td>
+  <td>function</td>
+  <td>C_BuildEditor.SetSpellLevel(arg1, arg2)</td>
+  <td>C_BuildEditor.SetSpellLevel(spell.Spell, 60)</td>
+</tr>
+</tbody>
+</table>
+
+<h2>Notes</h2>
+
+<ul>
+<li>2 member(s) had a runtime probe marked <code>ok</code> in the scan data.</li>
+</ul>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>C_Quest</title>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.5;margin:0;padding:0;background:#fff;color:#111}
+main{max-width:980px;margin:0 auto;padding:32px 20px}
+pre,code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
+pre{padding:12px;overflow:auto;background:#f6f8fa;border-radius:8px}
+code{background:#f6f8fa;border-radius:6px;padding:0.15em 0.35em}
+pre code{background:transparent;padding:0}
+table{border-collapse:collapse;display:block;overflow:auto}
+th,td{border:1px solid #d0d7de;padding:6px 10px}
+h1,h2,h3{line-height:1.25}
+a{color:#0969da;text-decoration:none}
+a:hover{text-decoration:underline}
+hr{border:0;border-top:1px solid #d0d7de;margin:24px 0}
+</style>
+</head>
+<body>
+<main>
+<h1>C_Quest</h1>
+
+<p><strong>Members:</strong> 31  •  <strong>Functions:</strong> 21  •  <strong>Interface calls:</strong> 65 (across up to 7 files)</p>
+
+<p><strong>Defined in Interface Lua:</strong> yes</p>
+
+<p><strong>Definition / evidence:</strong> <code>FrameXML/Util/C_Quest.lua</code> line 3</p>
+
+<h2>Members</h2>
+
+<table>
+<thead>
+<tr>
+  <th>Member</th>
+  <th>Kind</th>
+  <th>Syntax / access</th>
+  <th>Example (from Interface)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>isQuerying</td>
+  <td>boolean</td>
+  <td>C_Quest.isQuerying</td>
+  <td></td>
+</tr>
+<tr>
+  <td>ASCENSION_CUSTOM_QUEST_REWARDED</td>
+  <td>function</td>
+  <td>C_Quest:ASCENSION_CUSTOM_QUEST_REWARDED(arg1)</td>
+  <td>function C_Quest:ASCENSION_CUSTOM_QUEST_REWARDED(id)</td>
+</tr>
+<tr>
+  <td>AddAutoQuestPopUp</td>
+  <td>function</td>
+  <td>C_Quest:AddAutoQuestPopUp(arg1)</td>
+  <td>C_Quest:AddAutoQuestPopUp(Enum.Quests.PTAscension.RankUpYourSpells)</td>
+</tr>
+<tr>
+  <td>ExpandAllQuestHeaders</td>
+  <td>function</td>
+  <td>C_Quest:ExpandAllQuestHeaders()</td>
+  <td>function C_Quest:ExpandAllQuestHeaders()</td>
+</tr>
+<tr>
+  <td>GetCurrentQuests</td>
+  <td>function</td>
+  <td>C_Quest:GetCurrentQuests(arg1)</td>
+  <td>function C_Quest:GetCurrentQuests(forceTrack)</td>
+</tr>
+<tr>
+  <td>GetPortraitData</td>
+  <td>function</td>
+  <td>C_Quest:GetPortraitData()</td>
+  <td>function C_Quest:GetPortraitData(questID)</td>
+</tr>
+<tr>
+  <td>GetQuestID</td>
+  <td>function</td>
+  <td>C_Quest:GetQuestID(arg1)</td>
+  <td>function C_Quest:GetQuestID(index)</td>
+</tr>
+<tr>
+  <td>GetQuestIndexByID</td>
+  <td>function</td>
+  <td>C_Quest:GetQuestIndexByID(arg1)</td>
+  <td>return C_Quest:GetQuestIndexByID(self.questID)</td>
+</tr>
+<tr>
+  <td>GetQuestNameByID</td>
+  <td>function</td>
+  <td>C_Quest:GetQuestNameByID(arg1)</td>
+  <td>local name = C_Quest:GetQuestNameByID(questID)</td>
+</tr>
+<tr>
+  <td>GetTitleByID</td>
+  <td>function</td>
+  <td>C_Quest.GetTitleByID(arg1)</td>
+  <td>function C_Quest.GetTitleByID(questID)</td>
+</tr>
+<tr>
+  <td>HasOrHasDoneQuest</td>
+  <td>function</td>
+  <td>C_Quest:HasOrHasDoneQuest(arg1)</td>
+  <td>return C_Quest:HasOrHasDoneQuest(self.questID)</td>
+</tr>
+<tr>
+  <td>IsFelforgedChallenge</td>
+  <td>function</td>
+  <td>C_Quest:IsFelforgedChallenge(arg1)</td>
+  <td>function C_Quest:IsFelforgedChallenge(questId)</td>
+</tr>
+<tr>
+  <td>IsOnQuestID</td>
+  <td>function</td>
+  <td>C_Quest:IsOnQuestID(arg1)</td>
+  <td>if (C_Quest:IsOnQuestID(quest)) then</td>
+</tr>
+<tr>
+  <td>IsQuerying</td>
+  <td>function</td>
+  <td>C_Quest:IsQuerying()</td>
+  <td>function C_Quest:IsQuerying()</td>
+</tr>
+<tr>
+  <td>IsQuestCachedByID</td>
+  <td>function</td>
+  <td>C_Quest:IsQuestCachedByID(arg1)</td>
+  <td>return C_Quest:IsQuestCachedByID(self.questID)</td>
+</tr>
+<tr>
+  <td>IsQuestComplete</td>
+  <td>function</td>
+  <td>C_Quest:IsQuestComplete(arg1)</td>
+  <td>--condition = function() return (C_Quest:IsQuestComplete(7) or not(C_Quest:IsOnQuestID(7))) end,</td>
+</tr>
+<tr>
+  <td>IsQuestTurnedIn</td>
+  <td>function</td>
+  <td>C_Quest:IsQuestTurnedIn(arg1)</td>
+  <td>if not(C_Quest:IsQuestTurnedIn(questID)) then</td>
+</tr>
+<tr>
+  <td>PLAYER_LOGIN</td>
+  <td>function</td>
+  <td>C_Quest:PLAYER_LOGIN()</td>
+  <td>function C_Quest:PLAYER_LOGIN()</td>
+</tr>
+<tr>
+  <td>QUEST_ACCEPTED</td>
+  <td>function</td>
+  <td>C_Quest:QUEST_ACCEPTED(arg1)</td>
+  <td>function C_Quest:QUEST_ACCEPTED(index)</td>
+</tr>
+<tr>
+  <td>QUEST_LOG_UPDATE</td>
+  <td>function</td>
+  <td>C_Quest:QUEST_LOG_UPDATE()</td>
+  <td>function C_Quest:QUEST_LOG_UPDATE()</td>
+</tr>
+<tr>
+  <td>QUEST_QUERY_COMPLETE</td>
+  <td>function</td>
+  <td>C_Quest:QUEST_QUERY_COMPLETE()</td>
+  <td>function C_Quest:QUEST_QUERY_COMPLETE()</td>
+</tr>
+<tr>
+  <td>SendPathToAscensionEvent</td>
+  <td>function</td>
+  <td>C_Quest:SendPathToAscensionEvent(arg1)</td>
+  <td>C_Quest:SendPathToAscensionEvent("ACTION_OPEN_HERO_ARCHITECT")</td>
+</tr>
+<tr>
+  <td>felforgedChallenges.<truncated></td>
+  <td>note</td>
+  <td>C_Quest.felforgedChallenges.<truncated></td>
+  <td></td>
+</tr>
+<tr>
+  <td>lastQuery</td>
+  <td>number</td>
+  <td>C_Quest.lastQuery</td>
+  <td></td>
+</tr>
+<tr>
+  <td>PortraitData</td>
+  <td>table</td>
+  <td>C_Quest.PortraitData</td>
+  <td>C_Quest.PortraitData = { -- TODO: Support for multiple creatures</td>
+</tr>
+<tr>
+  <td>activeQuests</td>
+  <td>table</td>
+  <td>C_Quest.activeQuests</td>
+  <td></td>
+</tr>
+<tr>
+  <td>completedQuests</td>
+  <td>table</td>
+  <td>C_Quest.completedQuests</td>
+  <td></td>
+</tr>
+<tr>
+  <td>felforgedChallenges</td>
+  <td>table</td>
+  <td>C_Quest.felforgedChallenges</td>
+  <td>C_Quest.felforgedChallenges = {</td>
+</tr>
+<tr>
+  <td>queryIds</td>
+  <td>table</td>
+  <td>C_Quest.queryIds</td>
+  <td></td>
+</tr>
+<tr>
+  <td>titles</td>
+  <td>table</td>
+  <td>C_Quest.titles</td>
+  <td>C_Quest.titles = {</td>
+</tr>
+<tr>
+  <td>turnedInQuests</td>
+  <td>table</td>
+  <td>C_Quest.turnedInQuests</td>
+  <td></td>
+</tr>
+</tbody>
+</table>
+
+</main>
+</body>
+</html>

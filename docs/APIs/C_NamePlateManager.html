@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>C_NamePlateManager</title>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.5;margin:0;padding:0;background:#fff;color:#111}
+main{max-width:980px;margin:0 auto;padding:32px 20px}
+pre,code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
+pre{padding:12px;overflow:auto;background:#f6f8fa;border-radius:8px}
+code{background:#f6f8fa;border-radius:6px;padding:0.15em 0.35em}
+pre code{background:transparent;padding:0}
+table{border-collapse:collapse;display:block;overflow:auto}
+th,td{border:1px solid #d0d7de;padding:6px 10px}
+h1,h2,h3{line-height:1.25}
+a{color:#0969da;text-decoration:none}
+a:hover{text-decoration:underline}
+hr{border:0;border-top:1px solid #d0d7de;margin:24px 0}
+</style>
+</head>
+<body>
+<main>
+<h1>C_NamePlateManager</h1>
+
+<p><strong>Members:</strong> 9  •  <strong>Functions:</strong> 9  •  <strong>Interface calls:</strong> 27 (across up to 3 files)</p>
+
+<p><strong>Defined in Interface Lua:</strong> yes</p>
+
+<p><strong>Definition / evidence:</strong> <code>FrameXML/Util/C_NamePlateManager.lua</code> line 1</p>
+
+<h2>Members</h2>
+
+<table>
+<thead>
+<tr>
+  <th>Member</th>
+  <th>Kind</th>
+  <th>Syntax / access</th>
+  <th>Example (from Interface)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>ApplyFPSIncrease</td>
+  <td>function</td>
+  <td>C_NamePlateManager.ApplyFPSIncrease(arg1)</td>
+  <td>C_NamePlateManager.ApplyFPSIncrease(frame)</td>
+</tr>
+<tr>
+  <td>CheckNamePlateMotion</td>
+  <td>function</td>
+  <td>C_NamePlateManager.CheckNamePlateMotion()</td>
+  <td>setFunc = function() C_NamePlateManager.CheckNamePlateMotion() end,</td>
+</tr>
+<tr>
+  <td>DisableBlizzPlate</td>
+  <td>function</td>
+  <td>C_NamePlateManager.DisableBlizzPlate(arg1)</td>
+  <td>C_NamePlateManager.DisableBlizzPlate(unit)</td>
+</tr>
+<tr>
+  <td>EnumerateActiveNamePlates</td>
+  <td>function</td>
+  <td>C_NamePlateManager.EnumerateActiveNamePlates()</td>
+  <td>for frame in C_NamePlateManager.EnumerateActiveNamePlates() do</td>
+</tr>
+<tr>
+  <td>GetNamePlateSize</td>
+  <td>function</td>
+  <td>C_NamePlateManager.GetNamePlateSize()</td>
+  <td>unitFrame:SetSize(C_NamePlateManager.GetNamePlateSize())</td>
+</tr>
+<tr>
+  <td>IsNamePlateMoving</td>
+  <td>function</td>
+  <td>C_NamePlateManager.IsNamePlateMoving(arg1)</td>
+  <td>function C_NamePlateManager.IsNamePlateMoving(nameplate)</td>
+</tr>
+<tr>
+  <td>RefreshNamePlateSize</td>
+  <td>function</td>
+  <td>C_NamePlateManager.RefreshNamePlateSize()</td>
+  <td>C_NamePlateManager.RefreshNamePlateSize()</td>
+</tr>
+<tr>
+  <td>SetEnableResizeNamePlates</td>
+  <td>function</td>
+  <td>C_NamePlateManager.SetEnableResizeNamePlates(arg1)</td>
+  <td>C_NamePlateManager.SetEnableResizeNamePlates(true)</td>
+</tr>
+<tr>
+  <td>SetNamePlateSize</td>
+  <td>function</td>
+  <td>C_NamePlateManager.SetNamePlateSize(arg1, arg2)</td>
+  <td>C_NamePlateManager.SetNamePlateSize(clickableWidth, clickableHeight)</td>
+</tr>
+</tbody>
+</table>
+
+</main>
+</body>
+</html>

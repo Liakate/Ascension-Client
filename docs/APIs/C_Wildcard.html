@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>C_Wildcard</title>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.5;margin:0;padding:0;background:#fff;color:#111}
+main{max-width:980px;margin:0 auto;padding:32px 20px}
+pre,code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
+pre{padding:12px;overflow:auto;background:#f6f8fa;border-radius:8px}
+code{background:#f6f8fa;border-radius:6px;padding:0.15em 0.35em}
+pre code{background:transparent;padding:0}
+table{border-collapse:collapse;display:block;overflow:auto}
+th,td{border:1px solid #d0d7de;padding:6px 10px}
+h1,h2,h3{line-height:1.25}
+a{color:#0969da;text-decoration:none}
+a:hover{text-decoration:underline}
+hr{border:0;border-top:1px solid #d0d7de;margin:24px 0}
+</style>
+</head>
+<body>
+<main>
+<h1>C_Wildcard</h1>
+
+<p><strong>Members:</strong> 51  •  <strong>Functions:</strong> 51  •  <strong>Interface calls:</strong> 76 (across up to 5 files)</p>
+
+<p><strong>Defined in Interface Lua:</strong> no</p>
+
+<p><strong>Definition / evidence:</strong> not defined in Interface Lua (likely native client API)</p>
+
+<h2>Members</h2>
+
+<table>
+<thead>
+<tr>
+  <th>Member</th>
+  <th>Kind</th>
+  <th>Syntax / access</th>
+  <th>Example (from Interface)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>AddAllDesiredFilter</td>
+  <td>function</td>
+  <td>C_Wildcard.AddAllDesiredFilter()</td>
+  <td></td>
+</tr>
+<tr>
+  <td>AddAllUndesiredFilter</td>
+  <td>function</td>
+  <td>C_Wildcard.AddAllUndesiredFilter(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>AddDesiredID</td>
+  <td>function</td>
+  <td>C_Wildcard.AddDesiredID(arg1, arg2)</td>
+  <td>C_Wildcard.AddDesiredID(id, spellType)</td>
+</tr>
+<tr>
+  <td>AddUndesiredID</td>
+  <td>function</td>
+  <td>C_Wildcard.AddUndesiredID(arg1, arg2)</td>
+  <td>C_Wildcard.AddUndesiredID(ID, entry.Type)</td>
+</tr>
+<tr>
+  <td>CanAddDesiredID</td>
+  <td>function</td>
+  <td>C_Wildcard.CanAddDesiredID(arg1, arg2)</td>
+  <td>return C_Wildcard.CanAddDesiredID(self.entry.ID, self.entry.Type)</td>
+</tr>
+<tr>
+  <td>CanAddUndesiredID</td>
+  <td>function</td>
+  <td>C_Wildcard.CanAddUndesiredID(arg1, arg2)</td>
+  <td>if C_Wildcard.CanAddUndesiredID(id, spellType) then</td>
+</tr>
+<tr>
+  <td>CanRepurchaseAbilityRolls</td>
+  <td>function</td>
+  <td>C_Wildcard.CanRepurchaseAbilityRolls(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>CanRepurchaseAnyRolls</td>
+  <td>function</td>
+  <td>C_Wildcard.CanRepurchaseAnyRolls(arg1)</td>
+  <td>tab:SetTabEnabled(C_Wildcard.CanRepurchaseAnyRolls(false), REPURCHASE_SCROLLS, REPURCHASE_SCROLLS...</td>
+</tr>
+<tr>
+  <td>CanRepurchaseRolls</td>
+  <td>function</td>
+  <td>C_Wildcard.CanRepurchaseRolls(arg1, arg2)</td>
+  <td>local canPurchase, error = C_Wildcard.CanRepurchaseRolls(self.scrollClaimAmount, isUsingGold)</td>
+</tr>
+<tr>
+  <td>CanRepurchaseTalentRolls</td>
+  <td>function</td>
+  <td>C_Wildcard.CanRepurchaseTalentRolls(arg1, arg2)</td>
+  <td>local canPurchase, error = C_Wildcard.CanRepurchaseTalentRolls(self.talentScrollClaimAmount, false)</td>
+</tr>
+<tr>
+  <td>CanResetAbilities</td>
+  <td>function</td>
+  <td>C_Wildcard.CanResetAbilities()</td>
+  <td>if (C_Wildcard.CanResetAbilities()) then</td>
+</tr>
+<tr>
+  <td>CanRollAbilities</td>
+  <td>function</td>
+  <td>C_Wildcard.CanRollAbilities()</td>
+  <td>if not C_Wildcard.CanRollAbilities() then</td>
+</tr>
+<tr>
+  <td>CanStartRapidRolling</td>
+  <td>function</td>
+  <td>C_Wildcard.CanStartRapidRolling()</td>
+  <td>local canRoll, reason = C_Wildcard.CanStartRapidRolling()</td>
+</tr>
+<tr>
+  <td>CanUseRapidRolling</td>
+  <td>function</td>
+  <td>C_Wildcard.CanUseRapidRolling()</td>
+  <td>local canActivate = C_Wildcard.CanUseRapidRolling()</td>
+</tr>
+<tr>
+  <td>ClearDesiredSpells</td>
+  <td>function</td>
+  <td>C_Wildcard.ClearDesiredSpells()</td>
+  <td>C_Wildcard.ClearDesiredSpells()</td>
+</tr>
+<tr>
+  <td>ClearUndesiredSpells</td>
+  <td>function</td>
+  <td>C_Wildcard.ClearUndesiredSpells()</td>
+  <td>C_Wildcard.ClearUndesiredSpells()</td>
+</tr>
+<tr>
+  <td>GetFilteredDesiredEntryAtIndex</td>
+  <td>function</td>
+  <td>C_Wildcard.GetFilteredDesiredEntryAtIndex(arg1)</td>
+  <td>return C_Wildcard.GetFilteredDesiredEntryAtIndex(self.index)</td>
+</tr>
+<tr>
+  <td>GetFilteredUndesiredEntryAtIndex</td>
+  <td>function</td>
+  <td>C_Wildcard.GetFilteredUndesiredEntryAtIndex(arg1)</td>
+  <td>return C_Wildcard.GetFilteredUndesiredEntryAtIndex(self.index)</td>
+</tr>
+<tr>
+  <td>GetMaxRepurchasableAbilityRolls</td>
+  <td>function</td>
+  <td>C_Wildcard.GetMaxRepurchasableAbilityRolls(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>GetMaxRepurchasableRolls</td>
+  <td>function</td>
+  <td>C_Wildcard.GetMaxRepurchasableRolls(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>GetMaxRepurchasableTalentRolls</td>
+  <td>function</td>
+  <td>C_Wildcard.GetMaxRepurchasableTalentRolls(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>GetMaximumRapidRolls</td>
+  <td>function</td>
+  <td>C_Wildcard.GetMaximumRapidRolls()</td>
+  <td>local maxRolls = C_Wildcard.GetMaximumRapidRolls()</td>
+</tr>
+<tr>
+  <td>GetNextUnlearnedID</td>
+  <td>function</td>
+  <td>C_Wildcard.GetNextUnlearnedID()</td>
+  <td>if C_Wildcard.GetNextUnlearnedID() == self.entry.ID then</td>
+</tr>
+<tr>
+  <td>GetNumFilteredDesiredEntries</td>
+  <td>function</td>
+  <td>C_Wildcard.GetNumFilteredDesiredEntries()</td>
+  <td>local numDesired = C_Wildcard.GetNumFilteredDesiredEntries()</td>
+</tr>
+<tr>
+  <td>GetNumFilteredUndesiredEntries</td>
+  <td>function</td>
+  <td>C_Wildcard.GetNumFilteredUndesiredEntries()</td>
+  <td>local numUndesired = C_Wildcard.GetNumFilteredUndesiredEntries()</td>
+</tr>
+<tr>
+  <td>GetNumRepurchasableAbilityRolls</td>
+  <td>function</td>
+  <td>C_Wildcard.GetNumRepurchasableAbilityRolls(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>GetNumRepurchasableRolls</td>
+  <td>function</td>
+  <td>C_Wildcard.GetNumRepurchasableRolls()</td>
+  <td>local maximumClaim = C_Wildcard.GetNumRepurchasableRolls()</td>
+</tr>
+<tr>
+  <td>GetNumRepurchasableTalentRolls</td>
+  <td>function</td>
+  <td>C_Wildcard.GetNumRepurchasableTalentRolls()</td>
+  <td>local maximumClaim = C_Wildcard.GetNumRepurchasableTalentRolls()</td>
+</tr>
+<tr>
+  <td>GetRapidRollAbilityBreakpointInfo</td>
+  <td>function</td>
+  <td>C_Wildcard.GetRapidRollAbilityBreakpointInfo()</td>
+  <td>local currentRolls = C_Wildcard.GetRapidRollAbilityBreakpointInfo()</td>
+</tr>
+<tr>
+  <td>GetRapidRollTalentBreakpointInfo</td>
+  <td>function</td>
+  <td>C_Wildcard.GetRapidRollTalentBreakpointInfo()</td>
+  <td>local currentRolls = C_Wildcard.GetRapidRollTalentBreakpointInfo()</td>
+</tr>
+<tr>
+  <td>GetRepurchaseAbilityRollCost</td>
+  <td>function</td>
+  <td>C_Wildcard.GetRepurchaseAbilityRollCost(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>GetRepurchaseRollCost</td>
+  <td>function</td>
+  <td>C_Wildcard.GetRepurchaseRollCost(arg1, arg2)</td>
+  <td>local cost = C_Wildcard.GetRepurchaseRollCost(self.scrollClaimAmount, isUsingGold)</td>
+</tr>
+<tr>
+  <td>GetRepurchaseTalentRollCost</td>
+  <td>function</td>
+  <td>C_Wildcard.GetRepurchaseTalentRollCost(arg1, arg2)</td>
+  <td>local cost = C_Wildcard.GetRepurchaseTalentRollCost(self.talentScrollClaimAmount, isUsingGold)</td>
+</tr>
+<tr>
+  <td>GetRollIcons</td>
+  <td>function</td>
+  <td>C_Wildcard.GetRollIcons(arg1)</td>
+  <td>local fakeInternalIDs = C_Wildcard.GetRollIcons(self.iconsTotal)</td>
+</tr>
+<tr>
+  <td>IsDesiredID</td>
+  <td>function</td>
+  <td>C_Wildcard.IsDesiredID(arg1, arg2)</td>
+  <td>return C_Wildcard.IsDesiredID(self.entry.ID, self.entry.Type)</td>
+</tr>
+<tr>
+  <td>IsRapidRollingEnabled</td>
+  <td>function</td>
+  <td>C_Wildcard.IsRapidRollingEnabled(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>IsUndesiredID</td>
+  <td>function</td>
+  <td>C_Wildcard.IsUndesiredID(arg1, arg2)</td>
+  <td>elseif not C_Wildcard.IsUndesiredID(id, spellType) then</td>
+</tr>
+<tr>
+  <td>RemoveAllUndesiredAbilities</td>
+  <td>function</td>
+  <td>C_Wildcard.RemoveAllUndesiredAbilities(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>RemoveAllUndesiredTalents</td>
+  <td>function</td>
+  <td>C_Wildcard.RemoveAllUndesiredTalents(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>RemoveDesiredID</td>
+  <td>function</td>
+  <td>C_Wildcard.RemoveDesiredID(arg1, arg2)</td>
+  <td>C_Wildcard.RemoveDesiredID(entryID, entryType)</td>
+</tr>
+<tr>
+  <td>RemoveUndesiredID</td>
+  <td>function</td>
+  <td>C_Wildcard.RemoveUndesiredID(arg1, arg2)</td>
+  <td>C_Wildcard.RemoveUndesiredID(entryID, entryType)</td>
+</tr>
+<tr>
+  <td>RepurchaseAbilityRolls</td>
+  <td>function</td>
+  <td>C_Wildcard.RepurchaseAbilityRolls(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>RepurchaseRolls</td>
+  <td>function</td>
+  <td>C_Wildcard.RepurchaseRolls(arg1, arg2)</td>
+  <td>C_Wildcard.RepurchaseRolls(self.scrollClaimAmount, self.UseGold:GetBoolValue())</td>
+</tr>
+<tr>
+  <td>RepurchaseTalentRolls</td>
+  <td>function</td>
+  <td>C_Wildcard.RepurchaseTalentRolls(arg1, arg2)</td>
+  <td>C_Wildcard.RepurchaseTalentRolls(self.talentScrollClaimAmount, self.UseGold:GetBoolValue())</td>
+</tr>
+<tr>
+  <td>ResetAbilities</td>
+  <td>function</td>
+  <td>C_Wildcard.ResetAbilities()</td>
+  <td>C_Wildcard.ResetAbilities()</td>
+</tr>
+<tr>
+  <td>RollAbilities</td>
+  <td>function</td>
+  <td>C_Wildcard.RollAbilities()</td>
+  <td>C_Wildcard.RollAbilities() -- roll new abilities only if we rolled everything in memory</td>
+</tr>
+<tr>
+  <td>SetFilteredDesiredEntries</td>
+  <td>function</td>
+  <td>C_Wildcard.SetFilteredDesiredEntries(arg1, arg2)</td>
+  <td>C_Wildcard.SetFilteredDesiredEntries(text, self.DesiredFilter:GetFilter())</td>
+</tr>
+<tr>
+  <td>SetFilteredUndesiredEntries</td>
+  <td>function</td>
+  <td>C_Wildcard.SetFilteredUndesiredEntries(arg1, arg2)</td>
+  <td>C_Wildcard.SetFilteredUndesiredEntries(text, self.UndesiredFilter:GetFilter())</td>
+</tr>
+<tr>
+  <td>StartRapidRolling</td>
+  <td>function</td>
+  <td>C_Wildcard.StartRapidRolling(arg1)</td>
+  <td>C_Wildcard.StartRapidRolling(false)</td>
+</tr>
+<tr>
+  <td>UnlearnAbility</td>
+  <td>function</td>
+  <td>C_Wildcard.UnlearnAbility(arg1)</td>
+  <td>dprint("C_Wildcard.UnlearnAbility("..internalID..")")</td>
+</tr>
+<tr>
+  <td>WillRollStartingAbilities</td>
+  <td>function</td>
+  <td>C_Wildcard.WillRollStartingAbilities()</td>
+  <td>if (C_Wildcard.WillRollStartingAbilities() or (C_CharacterAdvancement.GetLearnedAE() &lt;= 8)) then</td>
+</tr>
+</tbody>
+</table>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>C_Tutorial</title>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.5;margin:0;padding:0;background:#fff;color:#111}
+main{max-width:980px;margin:0 auto;padding:32px 20px}
+pre,code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
+pre{padding:12px;overflow:auto;background:#f6f8fa;border-radius:8px}
+code{background:#f6f8fa;border-radius:6px;padding:0.15em 0.35em}
+pre code{background:transparent;padding:0}
+table{border-collapse:collapse;display:block;overflow:auto}
+th,td{border:1px solid #d0d7de;padding:6px 10px}
+h1,h2,h3{line-height:1.25}
+a{color:#0969da;text-decoration:none}
+a:hover{text-decoration:underline}
+hr{border:0;border-top:1px solid #d0d7de;margin:24px 0}
+</style>
+</head>
+<body>
+<main>
+<h1>C_Tutorial</h1>
+
+<p><strong>Members:</strong> 40  •  <strong>Functions:</strong> 40  •  <strong>Interface calls:</strong> 70 (across up to 3 files)</p>
+
+<p><strong>Defined in Interface Lua:</strong> no</p>
+
+<p><strong>Definition / evidence:</strong> not defined in Interface Lua (likely native client API)</p>
+
+<h2>Members</h2>
+
+<table>
+<thead>
+<tr>
+  <th>Member</th>
+  <th>Kind</th>
+  <th>Syntax / access</th>
+  <th>Example (from Interface)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>AddMentorSpecialization</td>
+  <td>function</td>
+  <td>C_Tutorial.AddMentorSpecialization(arg1)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>AnyUnclaimedRewards</td>
+  <td>function</td>
+  <td>C_Tutorial.AnyUnclaimedRewards()</td>
+  <td></td>
+</tr>
+<tr>
+  <td>CanCollectReward</td>
+  <td>function</td>
+  <td>C_Tutorial.CanCollectReward(arg1)</td>
+  <td>if C_Tutorial.CanCollectReward(self.tutorialID) then</td>
+</tr>
+<tr>
+  <td>CanToggleMentorStatus</td>
+  <td>function</td>
+  <td>C_Tutorial.CanToggleMentorStatus(arg1)</td>
+  <td>local canChangeMentor, reason = C_Tutorial.CanToggleMentorStatus(not isMentor)</td>
+</tr>
+<tr>
+  <td>CollectReward</td>
+  <td>function</td>
+  <td>C_Tutorial.CollectReward(arg1)</td>
+  <td>C_Tutorial.CollectReward(self.tutorialID)</td>
+</tr>
+<tr>
+  <td>DebugTutorialAppliccability</td>
+  <td>function</td>
+  <td>C_Tutorial.DebugTutorialAppliccability(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>GetAvailableMentorAtIndex</td>
+  <td>function</td>
+  <td>C_Tutorial.GetAvailableMentorAtIndex(arg1)</td>
+  <td>local name, level, class, specializations, race, sex = C_Tutorial.GetAvailableMentorAtIndex(self....</td>
+</tr>
+<tr>
+  <td>GetCategories</td>
+  <td>function</td>
+  <td>C_Tutorial.GetCategories()</td>
+  <td>local categories = C_Tutorial.GetCategories()</td>
+</tr>
+<tr>
+  <td>GetCategoryInfo</td>
+  <td>function</td>
+  <td>C_Tutorial.GetCategoryInfo(arg1)</td>
+  <td>local name = C_Tutorial.GetCategoryInfo(categoryID)</td>
+</tr>
+<tr>
+  <td>GetCategoryProgress</td>
+  <td>function</td>
+  <td>C_Tutorial.GetCategoryProgress(arg1)</td>
+  <td>local _, numRewarded, total = C_Tutorial.GetCategoryProgress(tab.categoryID)</td>
+</tr>
+<tr>
+  <td>GetIndexByKeywordID</td>
+  <td>function</td>
+  <td>C_Tutorial.GetIndexByKeywordID(arg1)</td>
+  <td>local keywordIndex = C_Tutorial.GetIndexByKeywordID and C_Tutorial.GetIndexByKeywordID(keywordID)...</td>
+</tr>
+<tr>
+  <td>GetKeywordAtIndex</td>
+  <td>function</td>
+  <td>C_Tutorial.GetKeywordAtIndex(arg1)</td>
+  <td>local keyword = C_Tutorial.GetKeywordAtIndex(self.index)</td>
+</tr>
+<tr>
+  <td>GetKeywordID</td>
+  <td>function</td>
+  <td>C_Tutorial.GetKeywordID(arg1)</td>
+  <td>keyword = C_Tutorial.GetKeywordID(keyword)</td>
+</tr>
+<tr>
+  <td>GetKeywordInfo</td>
+  <td>function</td>
+  <td>C_Tutorial.GetKeywordInfo(arg1)</td>
+  <td>local keywordName, keywordTooltip = C_Tutorial.GetKeywordInfo(keyword)</td>
+</tr>
+<tr>
+  <td>GetMentorSpecializationActive</td>
+  <td>function</td>
+  <td>C_Tutorial.GetMentorSpecializationActive(arg1)</td>
+  <td>button:SetChecked(C_Tutorial.GetMentorSpecializationActive(specID))</td>
+</tr>
+<tr>
+  <td>GetMentorSpecializationInfo</td>
+  <td>function</td>
+  <td>C_Tutorial.GetMentorSpecializationInfo(arg1)</td>
+  <td>name, atlas = C_Tutorial.GetMentorSpecializationInfo(specID)</td>
+</tr>
+<tr>
+  <td>GetMentorSpecializations</td>
+  <td>function</td>
+  <td>C_Tutorial.GetMentorSpecializations()</td>
+  <td>local specializations = C_Tutorial.GetMentorSpecializations()</td>
+</tr>
+<tr>
+  <td>GetNumAvailableMentors</td>
+  <td>function</td>
+  <td>C_Tutorial.GetNumAvailableMentors(...)</td>
+  <td>self.AvailableMentors:SetGetNumResultsFunction(C_Tutorial.GetNumAvailableMentors)</td>
+</tr>
+<tr>
+  <td>GetNumKeywords</td>
+  <td>function</td>
+  <td>C_Tutorial.GetNumKeywords(...)</td>
+  <td>self.Keywords:SetGetNumResultsFunction(C_Tutorial.GetNumKeywords)</td>
+</tr>
+<tr>
+  <td>GetNumTutorials</td>
+  <td>function</td>
+  <td>C_Tutorial.GetNumTutorials()</td>
+  <td>self.Objectives:SetGetNumResultsFunction(C_Tutorial.GetNumTutorials)</td>
+</tr>
+<tr>
+  <td>GetObjectiveInfo</td>
+  <td>function</td>
+  <td>C_Tutorial.GetObjectiveInfo(arg1)</td>
+  <td>local objectiveName = C_Tutorial.GetObjectiveInfo(objectiveID)</td>
+</tr>
+<tr>
+  <td>GetObjectives</td>
+  <td>function</td>
+  <td>C_Tutorial.GetObjectives(arg1)</td>
+  <td>for _, objectiveID in ipairs(C_Tutorial.GetObjectives(self.tutorialID)) do</td>
+</tr>
+<tr>
+  <td>GetRewards</td>
+  <td>function</td>
+  <td>C_Tutorial.GetRewards(arg1)</td>
+  <td>local rewards = C_Tutorial.GetRewards(self.tutorialID)</td>
+</tr>
+<tr>
+  <td>GetTutorialAtIndex</td>
+  <td>function</td>
+  <td>C_Tutorial.GetTutorialAtIndex(arg1)</td>
+  <td>self.tutorialID, self.name, self.questID, self.suggestedLevel, self.icon, self.achievementID, sel...</td>
+</tr>
+<tr>
+  <td>GetTutorialByID</td>
+  <td>function</td>
+  <td>C_Tutorial.GetTutorialByID(arg1)</td>
+  <td>local _, _, _, questID = C_Tutorial.GetTutorialByID(self.tutorialID)</td>
+</tr>
+<tr>
+  <td>GetTutorialDisplay</td>
+  <td>function</td>
+  <td>C_Tutorial.GetTutorialDisplay(arg1)</td>
+  <td>self.name, self.description, self.questID = C_Tutorial.GetTutorialDisplay(tutorialID)</td>
+</tr>
+<tr>
+  <td>GetTutorialsRequiredForMentorStatus</td>
+  <td>function</td>
+  <td>C_Tutorial.GetTutorialsRequiredForMentorStatus()</td>
+  <td>local incompleteTutorials = C_Tutorial.GetTutorialsRequiredForMentorStatus()</td>
+</tr>
+<tr>
+  <td>IsCategoryEnabled</td>
+  <td>function</td>
+  <td>C_Tutorial.IsCategoryEnabled(arg1)</td>
+  <td>local tabEnabled = C_Tutorial.IsCategoryEnabled(categoryID)</td>
+</tr>
+<tr>
+  <td>IsMentorStatusActive</td>
+  <td>function</td>
+  <td>C_Tutorial.IsMentorStatusActive()</td>
+  <td>local isMentor = C_Tutorial.IsMentorStatusActive()</td>
+</tr>
+<tr>
+  <td>IsRewardCollected</td>
+  <td>function</td>
+  <td>C_Tutorial.IsRewardCollected(arg1)</td>
+  <td>if C_Tutorial.IsRewardCollected(self.tutorialID) then</td>
+</tr>
+<tr>
+  <td>IsTutorialAvailable</td>
+  <td>function</td>
+  <td>C_Tutorial.IsTutorialAvailable(arg1)</td>
+  <td>self.isAvailable, self.notAvailableReason = C_Tutorial.IsTutorialAvailable(self.tutorialID)</td>
+</tr>
+<tr>
+  <td>IsTutorialComplete</td>
+  <td>function</td>
+  <td>C_Tutorial.IsTutorialComplete(arg1)</td>
+  <td>if C_Tutorial.IsTutorialComplete(self.tutorialID) then</td>
+</tr>
+<tr>
+  <td>IsTutorialRequiredForMentorStatus</td>
+  <td>function</td>
+  <td>C_Tutorial.IsTutorialRequiredForMentorStatus(arg1)</td>
+  <td>self.isMentorTutorial = C_Tutorial.IsTutorialRequiredForMentorStatus(self.tutorialID)</td>
+</tr>
+<tr>
+  <td>QueryActiveMentors</td>
+  <td>function</td>
+  <td>C_Tutorial.QueryActiveMentors()</td>
+  <td>C_Tutorial.QueryActiveMentors()</td>
+</tr>
+<tr>
+  <td>RemoveMentorSpecialization</td>
+  <td>function</td>
+  <td>C_Tutorial.RemoveMentorSpecialization(arg1)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>SetAvailableMentorFilter</td>
+  <td>function</td>
+  <td>C_Tutorial.SetAvailableMentorFilter(arg1, arg2)</td>
+  <td>C_Tutorial.SetAvailableMentorFilter(self.SearchBox:GetText(), filter)</td>
+</tr>
+<tr>
+  <td>SetKeywordFilter</td>
+  <td>function</td>
+  <td>C_Tutorial.SetKeywordFilter(arg1)</td>
+  <td>C_Tutorial.SetKeywordFilter(searchText)</td>
+</tr>
+<tr>
+  <td>SetTutorialFilter</td>
+  <td>function</td>
+  <td>C_Tutorial.SetTutorialFilter(arg1, arg2)</td>
+  <td>C_Tutorial.SetTutorialFilter(self.selectedCategoryID, searchText)</td>
+</tr>
+<tr>
+  <td>StartQuest</td>
+  <td>function</td>
+  <td>C_Tutorial.StartQuest(arg1)</td>
+  <td>C_Tutorial.StartQuest(self.questID)</td>
+</tr>
+<tr>
+  <td>ToggleMentorStatus</td>
+  <td>function</td>
+  <td>C_Tutorial.ToggleMentorStatus(arg1)</td>
+  <td>C_Tutorial.ToggleMentorStatus(not C_Tutorial.IsMentorStatusActive())</td>
+</tr>
+</tbody>
+</table>
+
+<h2>Notes</h2>
+
+<ul>
+<li>2 member(s) had a runtime probe marked <code>ok</code> in the scan data.</li>
+</ul>
+
+</main>
+</body>
+</html>

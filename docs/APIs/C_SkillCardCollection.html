@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>C_SkillCardCollection</title>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.5;margin:0;padding:0;background:#fff;color:#111}
+main{max-width:980px;margin:0 auto;padding:32px 20px}
+pre,code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
+pre{padding:12px;overflow:auto;background:#f6f8fa;border-radius:8px}
+code{background:#f6f8fa;border-radius:6px;padding:0.15em 0.35em}
+pre code{background:transparent;padding:0}
+table{border-collapse:collapse;display:block;overflow:auto}
+th,td{border:1px solid #d0d7de;padding:6px 10px}
+h1,h2,h3{line-height:1.25}
+a{color:#0969da;text-decoration:none}
+a:hover{text-decoration:underline}
+hr{border:0;border-top:1px solid #d0d7de;margin:24px 0}
+</style>
+</head>
+<body>
+<main>
+<h1>C_SkillCardCollection</h1>
+
+<p><strong>Members:</strong> 21  •  <strong>Functions:</strong> 21  •  <strong>Interface calls:</strong> 26 (across up to 3 files)</p>
+
+<p><strong>Defined in Interface Lua:</strong> no</p>
+
+<p><strong>Definition / evidence:</strong> not defined in Interface Lua (likely native client API)</p>
+
+<h2>Members</h2>
+
+<table>
+<thead>
+<tr>
+  <th>Member</th>
+  <th>Kind</th>
+  <th>Syntax / access</th>
+  <th>Example (from Interface)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>CanClaimPendingSkillCardAtIndex</td>
+  <td>function</td>
+  <td>C_SkillCardCollection.CanClaimPendingSkillCardAtIndex(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>CanPurchaseSealedCard</td>
+  <td>function</td>
+  <td>C_SkillCardCollection.CanPurchaseSealedCard(arg1, arg2)</td>
+  <td>local canPurchase, reason = C_SkillCardCollection.CanPurchaseSealedCard(cardType, 1)</td>
+</tr>
+<tr>
+  <td>CanPurchaseSealedCardBoosterPack</td>
+  <td>function</td>
+  <td>C_SkillCardCollection.CanPurchaseSealedCardBoosterPack(arg1)</td>
+  <td>local canPurchase, errors = C_SkillCardCollection.CanPurchaseSealedCardBoosterPack(self.claimAmount)</td>
+</tr>
+<tr>
+  <td>ClaimAllPendingSkillCards</td>
+  <td>function</td>
+  <td>C_SkillCardCollection.ClaimAllPendingSkillCards(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>ClaimPendingSkillCard</td>
+  <td>function</td>
+  <td>C_SkillCardCollection.ClaimPendingSkillCard(arg1)</td>
+  <td>dprint("C_SkillCardCollection.ClaimPendingSkillCard "..UUID)</td>
+</tr>
+<tr>
+  <td>GetBonusSealedCardPacksProgress</td>
+  <td>function</td>
+  <td>C_SkillCardCollection:GetBonusSealedCardPacksProgress()</td>
+  <td>return C_SkillCardCollection:GetBonusSealedCardPacksProgress()*100</td>
+</tr>
+<tr>
+  <td>GetMaxNumPurchasableSealedCardBoosterPacks</td>
+  <td>function</td>
+  <td>C_SkillCardCollection.GetMaxNumPurchasableSealedCardBoosterPacks()</td>
+  <td>self.PurchaseButton.UpButton:SetEnabled(self.claimAmount &lt; C_SkillCardCollection.GetMaxNumPurchas...</td>
+</tr>
+<tr>
+  <td>GetMaxRank</td>
+  <td>function</td>
+  <td>C_SkillCardCollection.GetMaxRank(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>GetNumPendingSkillCards</td>
+  <td>function</td>
+  <td>C_SkillCardCollection.GetNumPendingSkillCards()</td>
+  <td>return C_SkillCardCollection.GetNumPendingSkillCards()</td>
+</tr>
+<tr>
+  <td>GetNumSkillCards</td>
+  <td>function</td>
+  <td>C_SkillCardCollection.GetNumSkillCards(arg1)</td>
+  <td>return C_SkillCardCollection.GetNumSkillCards(cardType)</td>
+</tr>
+<tr>
+  <td>GetPendingSkillCardAtIndex</td>
+  <td>function</td>
+  <td>C_SkillCardCollection.GetPendingSkillCardAtIndex(arg1)</td>
+  <td>return C_SkillCardCollection.GetPendingSkillCardAtIndex(index)</td>
+</tr>
+<tr>
+  <td>GetProgress</td>
+  <td>function</td>
+  <td>C_SkillCardCollection.GetProgress(arg1)</td>
+  <td>local progress = C_SkillCardCollection.GetProgress(cardID)</td>
+</tr>
+<tr>
+  <td>GetSealedCardBoosterPackCost</td>
+  <td>function</td>
+  <td>C_SkillCardCollection.GetSealedCardBoosterPackCost(arg1)</td>
+  <td>local cost = C_SkillCardCollection.GetSealedCardBoosterPackCost(self.claimAmount)</td>
+</tr>
+<tr>
+  <td>GetSealedCardCost</td>
+  <td>function</td>
+  <td>C_SkillCardCollection.GetSealedCardCost(arg1, arg2)</td>
+  <td>local itemID, count = C_SkillCardCollection.GetSealedCardCost(cardType, 1)</td>
+</tr>
+<tr>
+  <td>GetSkillCardAtIndex</td>
+  <td>function</td>
+  <td>C_SkillCardCollection.GetSkillCardAtIndex(arg1, arg2)</td>
+  <td>return C_SkillCardCollection.GetSkillCardAtIndex(cardType, index)</td>
+</tr>
+<tr>
+  <td>HasAnySkillCardsCollected</td>
+  <td>function</td>
+  <td>C_SkillCardCollection.HasAnySkillCardsCollected(arg1)</td>
+  <td>return C_SkillCardCollection.HasAnySkillCardsCollected(cardType)</td>
+</tr>
+<tr>
+  <td>IsCollected</td>
+  <td>function</td>
+  <td>C_SkillCardCollection.IsCollected(arg1)</td>
+  <td>if (C_SkillCardCollection.IsCollected(self:GetCardID())) and (cardData.CollectedRank == cardData....</td>
+</tr>
+<tr>
+  <td>PurchaseAllSealedCards</td>
+  <td>function</td>
+  <td>C_SkillCardCollection.PurchaseAllSealedCards(...)</td>
+  <td></td>
+</tr>
+<tr>
+  <td>PurchaseSealedCard</td>
+  <td>function</td>
+  <td>C_SkillCardCollection.PurchaseSealedCard(arg1, arg2)</td>
+  <td>C_SkillCardCollection.PurchaseSealedCard(cardType, count)</td>
+</tr>
+<tr>
+  <td>PurchaseSealedCardBoosterPack</td>
+  <td>function</td>
+  <td>C_SkillCardCollection.PurchaseSealedCardBoosterPack(arg1)</td>
+  <td>C_SkillCardCollection.PurchaseSealedCardBoosterPack(self.claimAmount)</td>
+</tr>
+<tr>
+  <td>SetSkillCardFilter</td>
+  <td>function</td>
+  <td>C_SkillCardCollection.SetSkillCardFilter(arg1, arg2, arg3)</td>
+  <td>C_SkillCardCollection.SetSkillCardFilter(cardType, searchString or "", filters)</td>
+</tr>
+</tbody>
+</table>
+
+</main>
+</body>
+</html>
