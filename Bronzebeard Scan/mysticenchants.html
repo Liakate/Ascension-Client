@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>BBScan: Known Mystic Enchants</title>
+  <style>
+  body { font-family: Arial, sans-serif; margin: 18px; }
+  h1 { margin: 0 0 8px 0; }
+  .meta { color: #555; margin-bottom: 12px; }
+  .search { margin: 12px 0; }
+  input[type="text"] { width: 420px; max-width: 95vw; padding: 6px; }
+  table { border-collapse: collapse; width: 100%; }
+  th, td { border: 1px solid #ddd; padding: 6px; vertical-align: top; }
+  th { background: #f3f3f3; position: sticky; top: 0; }
+  tr.hide { display: none; }
+  details pre { white-space: pre-wrap; word-break: break-word; }
+  .small { color: #777; font-size: 12px; }
+</style>
+</head>
+<body>
+  <h1>BBScan: Known Mystic Enchants</h1>
+  <div class="meta">bbscan_version: <code>0.3.108</code> | Generated 2026-02-15 19:15:39 from /WTF/Account/&lt;redacted&gt;/SavedVariables/BBScan.lua</div>
+  <div class="search">
+    <label for="q">Search:</label>
+    <input id="q" type="text" placeholder="type to filter (id, name, text)" />
+    <div class="small">Tip: search matches ID, name, and full JSON details.</div>
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th style="width:110px;">ID</th>
+        <th style="width:260px;">Name</th>
+        <th>Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td colspan="3">No mystic enchant data found. Run: /bbscan mystic</td></tr>
+    </tbody>
+  </table>
+  <script>
+(function() {
+  var box = document.getElementById('q');
+  if (!box) return;
+
+  function norm(s) { return (s || '').toLowerCase(); }
+
+  box.addEventListener('input', function() {
+    var q = norm(box.value);
+    var rows = document.querySelectorAll('tbody tr');
+    for (var i = 0; i < rows.length; i++) {
+      var r = rows[i];
+      var hay = norm(r.getAttribute('data-hay') || '');
+      if (!q || hay.indexOf(q) >= 0) r.className = '';
+      else r.className = 'hide';
+    }
+  });
+})();
+</script>
+</body>
+</html>

@@ -5608,14 +5608,14 @@
     },
     "C_BuildCreator.GetActiveSpecForBuild": {
       "derived": {
-        "confidence": "low",
+        "confidence": "medium",
         "exists_runtime": true,
         "exists_runtime_surface": true,
         "iface_called": false,
         "iface_called_raw": false,
         "member_type": null,
         "namespace_type": null,
-        "observed_called": false,
+        "observed_called": true,
         "present": null,
         "runtime_checked": true
       },
@@ -5649,7 +5649,14 @@
         "kind": "function",
         "lua_type": "function"
       },
-      "trace": null
+      "trace": {
+        "argc_mode": "0",
+        "count": 1,
+        "lastTs": 1771156638,
+        "op_mode": ".",
+        "sample": null,
+        "types_mode": null
+      }
     },
     "C_BuildCreator.GetBookmarkedBuildAtIndex": {
       "derived": {
@@ -5951,11 +5958,11 @@
         "best_call": "C_BuildCreator.GetNumBuilds",
         "best_conflicts": 0,
         "best_op": ".",
-        "best_op_source": "interface",
+        "best_op_source": "trace",
         "call": "C_BuildCreator.GetNumBuilds",
-        "called_in_play": false,
+        "called_in_play": true,
         "calls": 1,
-        "confidence": "medium",
+        "confidence": "high",
         "evidence": "interface_called",
         "full": "C_BuildCreator.GetNumBuilds",
         "id": "C_BuildCreator.GetNumBuilds",
@@ -5963,12 +5970,15 @@
         "lua_type": "function",
         "op": ".",
         "status": "probable_native_or_unresolved",
+        "trace_argc_mode": 0,
+        "trace_count": 171,
+        "trace_op_mode": ".",
         "unique_files": 1
       },
       "trace": {
         "argc_mode": "0",
         "count": 171,
-        "lastTs": 1771142035,
+        "lastTs": 1771156635,
         "op_mode": ".",
         "sample": null,
         "types_mode": null
@@ -6172,14 +6182,14 @@
     },
     "C_BuildCreator.QueryAllBuilds": {
       "derived": {
-        "confidence": "medium",
+        "confidence": "high",
         "exists_runtime": true,
         "exists_runtime_surface": true,
         "iface_called": true,
         "iface_called_raw": true,
         "member_type": "function",
         "namespace_type": "table",
-        "observed_called": false,
+        "observed_called": true,
         "present": true,
         "runtime_checked": true
       },
@@ -6225,11 +6235,11 @@
         "best_call": "C_BuildCreator.QueryAllBuilds",
         "best_conflicts": 0,
         "best_op": ".",
-        "best_op_source": "interface",
+        "best_op_source": "trace",
         "call": "C_BuildCreator.QueryAllBuilds",
-        "called_in_play": false,
+        "called_in_play": true,
         "calls": 2,
-        "confidence": "medium",
+        "confidence": "high",
         "evidence": "interface_called",
         "full": "C_BuildCreator.QueryAllBuilds",
         "id": "C_BuildCreator.QueryAllBuilds",
@@ -6237,9 +6247,20 @@
         "lua_type": "function",
         "op": ".",
         "status": "probable_native_or_unresolved",
+        "trace_argc_mode": 1,
+        "trace_count": 18,
+        "trace_op_mode": ".",
+        "trace_types_mode": "string",
         "unique_files": 2
       },
-      "trace": null
+      "trace": {
+        "argc_mode": "1",
+        "count": 18,
+        "lastTs": 1771156635,
+        "op_mode": ".",
+        "sample": null,
+        "types_mode": "string"
+      }
     },
     "C_BuildCreator.QueryBuild": {
       "derived": {
@@ -6412,11 +6433,11 @@
         "best_call": "C_BuildCreator.UpdateFilter",
         "best_conflicts": 0,
         "best_op": ".",
-        "best_op_source": "interface",
+        "best_op_source": "trace",
         "call": "C_BuildCreator.UpdateFilter",
-        "called_in_play": false,
+        "called_in_play": true,
         "calls": 3,
-        "confidence": "medium",
+        "confidence": "high",
         "evidence": "interface_called",
         "full": "C_BuildCreator.UpdateFilter",
         "id": "C_BuildCreator.UpdateFilter",
@@ -6424,12 +6445,16 @@
         "lua_type": "function",
         "op": ".",
         "status": "probable_native_or_unresolved",
+        "trace_argc_mode": 3,
+        "trace_count": 189,
+        "trace_op_mode": ".",
+        "trace_types_mode": "string,table,table",
         "unique_files": 2
       },
       "trace": {
         "argc_mode": "3",
         "count": 189,
-        "lastTs": 1771142035,
+        "lastTs": 1771156635,
         "op_mode": ".",
         "sample": null,
         "types_mode": "string,table,table"
@@ -6762,14 +6787,14 @@
     },
     "C_BuildDraft.IsDraftableBuild": {
       "derived": {
-        "confidence": "low",
+        "confidence": "medium",
         "exists_runtime": true,
         "exists_runtime_surface": true,
         "iface_called": false,
         "iface_called_raw": false,
         "member_type": null,
         "namespace_type": null,
-        "observed_called": false,
+        "observed_called": true,
         "present": null,
         "runtime_checked": true
       },
@@ -6803,18 +6828,25 @@
         "kind": "function",
         "lua_type": "function"
       },
-      "trace": null
+      "trace": {
+        "argc_mode": "0",
+        "count": 1,
+        "lastTs": 1771156638,
+        "op_mode": ".",
+        "sample": null,
+        "types_mode": null
+      }
     },
     "C_BuildDraft.IsDraftedBuild": {
       "derived": {
-        "confidence": "low",
+        "confidence": "medium",
         "exists_runtime": true,
         "exists_runtime_surface": true,
         "iface_called": false,
         "iface_called_raw": false,
         "member_type": null,
         "namespace_type": null,
-        "observed_called": false,
+        "observed_called": true,
         "present": null,
         "runtime_checked": true
       },
@@ -6848,7 +6880,14 @@
         "kind": "function",
         "lua_type": "function"
       },
-      "trace": null
+      "trace": {
+        "argc_mode": "0",
+        "count": 1,
+        "lastTs": 1771156638,
+        "op_mode": ".",
+        "sample": null,
+        "types_mode": null
+      }
     },
     "C_BuildDraft.SelectRole": {
       "derived": {
@@ -7222,11 +7261,11 @@
         "best_call": "C_BuildEditor.CanAddArmorType",
         "best_conflicts": 0,
         "best_op": ".",
-        "best_op_source": "interface",
+        "best_op_source": "trace",
         "call": "C_BuildEditor.CanAddArmorType",
-        "called_in_play": false,
+        "called_in_play": true,
         "calls": 1,
-        "confidence": "medium",
+        "confidence": "high",
         "evidence": "interface_called",
         "full": "C_BuildEditor.CanAddArmorType",
         "id": "C_BuildEditor.CanAddArmorType",
@@ -7234,12 +7273,16 @@
         "lua_type": "function",
         "op": ".",
         "status": "probable_native_or_unresolved",
+        "trace_argc_mode": 1,
+        "trace_count": 2,
+        "trace_op_mode": ".",
+        "trace_types_mode": "table",
         "unique_files": 1
       },
       "trace": {
         "argc_mode": "1",
         "count": 2,
-        "lastTs": 1771142028,
+        "lastTs": 1771156628,
         "op_mode": ".",
         "sample": null,
         "types_mode": "table"
@@ -7382,11 +7425,11 @@
         "best_call": "C_BuildEditor.CanAddWeaponType",
         "best_conflicts": 0,
         "best_op": ".",
-        "best_op_source": "interface",
+        "best_op_source": "trace",
         "call": "C_BuildEditor.CanAddWeaponType",
-        "called_in_play": false,
+        "called_in_play": true,
         "calls": 1,
-        "confidence": "medium",
+        "confidence": "high",
         "evidence": "interface_called",
         "full": "C_BuildEditor.CanAddWeaponType",
         "id": "C_BuildEditor.CanAddWeaponType",
@@ -7394,12 +7437,16 @@
         "lua_type": "function",
         "op": ".",
         "status": "probable_native_or_unresolved",
+        "trace_argc_mode": 1,
+        "trace_count": 9,
+        "trace_op_mode": ".",
+        "trace_types_mode": "table",
         "unique_files": 1
       },
       "trace": {
         "argc_mode": "1",
         "count": 9,
-        "lastTs": 1771142028,
+        "lastTs": 1771156628,
         "op_mode": ".",
         "sample": null,
         "types_mode": "table"
@@ -8659,14 +8706,14 @@
     },
     "C_BuildEditor.GetNumFilteredEntries": {
       "derived": {
-        "confidence": "low",
+        "confidence": "medium",
         "exists_runtime": true,
         "exists_runtime_surface": true,
         "iface_called": false,
         "iface_called_raw": false,
         "member_type": null,
         "namespace_type": null,
-        "observed_called": false,
+        "observed_called": true,
         "present": null,
         "runtime_checked": true
       },
@@ -8700,7 +8747,14 @@
         "kind": "function",
         "lua_type": "function"
       },
-      "trace": null
+      "trace": {
+        "argc_mode": "0",
+        "count": 1,
+        "lastTs": 1771156638,
+        "op_mode": ".",
+        "sample": null,
+        "types_mode": null
+      }
     },
     "C_BuildEditor.GetPendingBuild": {
       "derived": {
@@ -8784,14 +8838,14 @@
     },
     "C_BuildEditor.GetQualityInfo": {
       "derived": {
-        "confidence": "low",
+        "confidence": "medium",
         "exists_runtime": true,
         "exists_runtime_surface": true,
         "iface_called": false,
         "iface_called_raw": false,
         "member_type": null,
         "namespace_type": null,
-        "observed_called": false,
+        "observed_called": true,
         "present": null,
         "runtime_checked": true
       },
@@ -8825,7 +8879,14 @@
         "kind": "function",
         "lua_type": "function"
       },
-      "trace": null
+      "trace": {
+        "argc_mode": "0",
+        "count": 1,
+        "lastTs": 1771156638,
+        "op_mode": ".",
+        "sample": null,
+        "types_mode": null
+      }
     },
     "C_BuildEditor.GetQualityInfoForLevel": {
       "derived": {
@@ -15931,10 +15992,10 @@
         "exists_runtime_surface": true,
         "iface_called": true,
         "iface_called_raw": true,
-        "member_type": "function",
+        "member_type": "nil",
         "namespace_type": "table",
         "observed_called": false,
-        "present": true,
+        "present": false,
         "runtime_checked": true
       },
       "full": "C_CharacterAdvancement.CanUseBrowser",
@@ -15950,10 +16011,10 @@
         "iface_op": ".",
         "iface_status": "defined_in_interface",
         "member": "CanUseBrowser",
-        "member_type": "function",
+        "member_type": "nil",
         "namespace_type": "table",
         "ns": "C_CharacterAdvancement",
-        "present": true
+        "present": false
       },
       "probe": null,
       "runtime": {
@@ -24972,7 +25033,7 @@
         "id": "C_Comm.HardThrottleStart",
         "kind": "field",
         "lua_type": "number",
-        "value": 1191.959
+        "value": 1268.81
       },
       "trace": null
     },
@@ -25056,7 +25117,7 @@
         "id": "C_Comm.LastAvailableUpdate",
         "kind": "field",
         "lua_type": "number",
-        "value": 1771142040
+        "value": 1771156637
       },
       "trace": null
     },
@@ -25565,7 +25626,7 @@
         "id": "C_Comm.elapsed",
         "kind": "field",
         "lua_type": "number",
-        "value": 0
+        "value": 1
       },
       "trace": null
     },
@@ -43839,14 +43900,14 @@
     },
     "C_MysticEnchant.CanCollectionReforgeAnySlot": {
       "derived": {
-        "confidence": "low",
+        "confidence": "medium",
         "exists_runtime": true,
         "exists_runtime_surface": true,
         "iface_called": false,
         "iface_called_raw": false,
         "member_type": null,
         "namespace_type": null,
-        "observed_called": false,
+        "observed_called": true,
         "present": null,
         "runtime_checked": true
       },
@@ -43880,18 +43941,25 @@
         "kind": "function",
         "lua_type": "function"
       },
-      "trace": null
+      "trace": {
+        "argc_mode": "0",
+        "count": 1,
+        "lastTs": 1771156638,
+        "op_mode": ".",
+        "sample": null,
+        "types_mode": null
+      }
     },
     "C_MysticEnchant.CanCollectionReforgeItem": {
       "derived": {
-        "confidence": "low",
+        "confidence": "medium",
         "exists_runtime": true,
         "exists_runtime_surface": true,
         "iface_called": false,
         "iface_called_raw": false,
         "member_type": null,
         "namespace_type": null,
-        "observed_called": false,
+        "observed_called": true,
         "present": null,
         "runtime_checked": true
       },
@@ -43925,18 +43993,25 @@
         "kind": "function",
         "lua_type": "function"
       },
-      "trace": null
+      "trace": {
+        "argc_mode": "0",
+        "count": 1,
+        "lastTs": 1771156638,
+        "op_mode": ".",
+        "sample": null,
+        "types_mode": null
+      }
     },
     "C_MysticEnchant.CanCollectionReforgeSlot": {
       "derived": {
-        "confidence": "low",
+        "confidence": "medium",
         "exists_runtime": true,
         "exists_runtime_surface": true,
         "iface_called": false,
         "iface_called_raw": false,
         "member_type": null,
         "namespace_type": null,
-        "observed_called": false,
+        "observed_called": true,
         "present": null,
         "runtime_checked": true
       },
@@ -43970,18 +44045,25 @@
         "kind": "function",
         "lua_type": "function"
       },
-      "trace": null
+      "trace": {
+        "argc_mode": "0",
+        "count": 1,
+        "lastTs": 1771156638,
+        "op_mode": ".",
+        "sample": null,
+        "types_mode": null
+      }
     },
     "C_MysticEnchant.CanDestroy": {
       "derived": {
-        "confidence": "low",
+        "confidence": "medium",
         "exists_runtime": true,
         "exists_runtime_surface": true,
         "iface_called": false,
         "iface_called_raw": false,
         "member_type": null,
         "namespace_type": null,
-        "observed_called": false,
+        "observed_called": true,
         "present": null,
         "runtime_checked": true
       },
@@ -44015,18 +44097,25 @@
         "kind": "function",
         "lua_type": "function"
       },
-      "trace": null
+      "trace": {
+        "argc_mode": "0",
+        "count": 1,
+        "lastTs": 1771156638,
+        "op_mode": ".",
+        "sample": null,
+        "types_mode": null
+      }
     },
     "C_MysticEnchant.CanDisenchantItem": {
       "derived": {
-        "confidence": "low",
+        "confidence": "medium",
         "exists_runtime": true,
         "exists_runtime_surface": true,
         "iface_called": false,
         "iface_called_raw": false,
         "member_type": null,
         "namespace_type": null,
-        "observed_called": false,
+        "observed_called": true,
         "present": null,
         "runtime_checked": true
       },
@@ -44060,18 +44149,25 @@
         "kind": "function",
         "lua_type": "function"
       },
-      "trace": null
+      "trace": {
+        "argc_mode": "0",
+        "count": 1,
+        "lastTs": 1771156638,
+        "op_mode": ".",
+        "sample": null,
+        "types_mode": null
+      }
     },
     "C_MysticEnchant.CanDisenchantSlot": {
       "derived": {
-        "confidence": "low",
+        "confidence": "medium",
         "exists_runtime": true,
         "exists_runtime_surface": true,
         "iface_called": false,
         "iface_called_raw": false,
         "member_type": null,
         "namespace_type": null,
-        "observed_called": false,
+        "observed_called": true,
         "present": null,
         "runtime_checked": true
       },
@@ -44105,7 +44201,14 @@
         "kind": "function",
         "lua_type": "function"
       },
-      "trace": null
+      "trace": {
+        "argc_mode": "0",
+        "count": 1,
+        "lastTs": 1771156638,
+        "op_mode": ".",
+        "sample": null,
+        "types_mode": null
+      }
     },
     "C_MysticEnchant.CanEquipEnchant": {
       "derived": {
@@ -44215,13 +44318,13 @@
         "best_call": "C_MysticEnchant.CanEquipSlot",
         "best_conflicts": 0,
         "best_op": ".",
-        "best_op_source": "interface",
+        "best_op_source": "trace",
         "best_retc": 2,
         "best_retc_source": "interface",
         "call": "C_MysticEnchant.CanEquipSlot",
-        "called_in_play": false,
+        "called_in_play": true,
         "calls": 1,
-        "confidence": "medium",
+        "confidence": "high",
         "evidence": "interface_called",
         "full": "C_MysticEnchant.CanEquipSlot",
         "id": "C_MysticEnchant.CanEquipSlot",
@@ -44229,12 +44332,16 @@
         "lua_type": "function",
         "op": ".",
         "status": "probable_native_or_unresolved",
+        "trace_argc_mode": 1,
+        "trace_count": 2,
+        "trace_op_mode": ".",
+        "trace_types_mode": "number",
         "unique_files": 1
       },
       "trace": {
         "argc_mode": "1",
-        "count": 24,
-        "lastTs": 1771142176,
+        "count": 2,
+        "lastTs": 1771156628,
         "op_mode": ".",
         "sample": null,
         "types_mode": "number"
@@ -44242,14 +44349,14 @@
     },
     "C_MysticEnchant.CanInspect": {
       "derived": {
-        "confidence": "medium",
+        "confidence": "high",
         "exists_runtime": true,
         "exists_runtime_surface": true,
         "iface_called": true,
         "iface_called_raw": true,
         "member_type": "function",
         "namespace_type": "table",
-        "observed_called": false,
+        "observed_called": true,
         "present": true,
         "runtime_checked": true
       },
@@ -44294,7 +44401,14 @@
         "status": "probable_native_or_unresolved",
         "unique_files": 1
       },
-      "trace": null
+      "trace": {
+        "argc_mode": "1",
+        "count": 4,
+        "lastTs": 1771157305,
+        "op_mode": ".",
+        "sample": null,
+        "types_mode": "string"
+      }
     },
     "C_MysticEnchant.CanPurchaseMysticExtract": {
       "derived": {
@@ -44387,14 +44501,14 @@
     },
     "C_MysticEnchant.CanReforgeItem": {
       "derived": {
-        "confidence": "low",
+        "confidence": "medium",
         "exists_runtime": true,
         "exists_runtime_surface": true,
         "iface_called": false,
         "iface_called_raw": false,
         "member_type": null,
         "namespace_type": null,
-        "observed_called": false,
+        "observed_called": true,
         "present": null,
         "runtime_checked": true
       },
@@ -44428,18 +44542,25 @@
         "kind": "function",
         "lua_type": "function"
       },
-      "trace": null
+      "trace": {
+        "argc_mode": "0",
+        "count": 1,
+        "lastTs": 1771156638,
+        "op_mode": ".",
+        "sample": null,
+        "types_mode": null
+      }
     },
     "C_MysticEnchant.CanReforgeSlot": {
       "derived": {
-        "confidence": "low",
+        "confidence": "medium",
         "exists_runtime": true,
         "exists_runtime_surface": true,
         "iface_called": false,
         "iface_called_raw": false,
         "member_type": null,
         "namespace_type": null,
-        "observed_called": false,
+        "observed_called": true,
         "present": null,
         "runtime_checked": true
       },
@@ -44473,7 +44594,14 @@
         "kind": "function",
         "lua_type": "function"
       },
-      "trace": null
+      "trace": {
+        "argc_mode": "0",
+        "count": 1,
+        "lastTs": 1771156638,
+        "op_mode": ".",
+        "sample": null,
+        "types_mode": null
+      }
     },
     "C_MysticEnchant.CanSaveApply": {
       "derived": {
@@ -44758,13 +44886,13 @@
         "best_call": "C_MysticEnchant.GetAppliedEnchant",
         "best_conflicts": 0,
         "best_op": ".",
-        "best_op_source": "interface",
+        "best_op_source": "trace",
         "best_retc": 1,
         "best_retc_source": "interface",
         "call": "C_MysticEnchant.GetAppliedEnchant",
-        "called_in_play": false,
+        "called_in_play": true,
         "calls": 7,
-        "confidence": "medium",
+        "confidence": "high",
         "evidence": "interface_called",
         "full": "C_MysticEnchant.GetAppliedEnchant",
         "id": "C_MysticEnchant.GetAppliedEnchant",
@@ -44772,12 +44900,16 @@
         "lua_type": "function",
         "op": ".",
         "status": "probable_native_or_unresolved",
+        "trace_argc_mode": 2,
+        "trace_count": 39,
+        "trace_op_mode": ".",
+        "trace_types_mode": "string,number",
         "unique_files": 2
       },
       "trace": {
         "argc_mode": "2",
-        "count": 177,
-        "lastTs": 1771142176,
+        "count": 281,
+        "lastTs": 1771157325,
         "op_mode": ".",
         "sample": null,
         "types_mode": "string,number"
@@ -44825,13 +44957,13 @@
         "best_call": "C_MysticEnchant.GetApplyChanges",
         "best_conflicts": 0,
         "best_op": ".",
-        "best_op_source": "interface",
+        "best_op_source": "trace",
         "best_retc": 1,
         "best_retc_source": "interface",
         "call": "C_MysticEnchant.GetApplyChanges",
-        "called_in_play": false,
+        "called_in_play": true,
         "calls": 1,
-        "confidence": "medium",
+        "confidence": "high",
         "evidence": "interface_called",
         "full": "C_MysticEnchant.GetApplyChanges",
         "id": "C_MysticEnchant.GetApplyChanges",
@@ -44839,12 +44971,15 @@
         "lua_type": "function",
         "op": ".",
         "status": "probable_native_or_unresolved",
+        "trace_argc_mode": 0,
+        "trace_count": 1,
+        "trace_op_mode": ".",
         "unique_files": 1
       },
       "trace": {
         "argc_mode": "0",
         "count": 1,
-        "lastTs": 1771142028,
+        "lastTs": 1771156628,
         "op_mode": ".",
         "sample": null,
         "types_mode": null
@@ -45217,8 +45352,8 @@
       },
       "trace": {
         "argc_mode": "1",
-        "count": 352,
-        "lastTs": 1771142265,
+        "count": 715,
+        "lastTs": 1771157328,
         "op_mode": ".",
         "sample": null,
         "types_mode": "number"
@@ -45281,13 +45416,13 @@
         "best_call": "C_MysticEnchant.GetEnchantInfoBySpell",
         "best_conflicts": 0,
         "best_op": ".",
-        "best_op_source": "interface",
+        "best_op_source": "trace",
         "best_retc": 1,
         "best_retc_source": "interface",
         "call": "C_MysticEnchant.GetEnchantInfoBySpell",
-        "called_in_play": false,
+        "called_in_play": true,
         "calls": 30,
-        "confidence": "medium",
+        "confidence": "high",
         "evidence": "interface_called",
         "full": "C_MysticEnchant.GetEnchantInfoBySpell",
         "hint_key_files": 13,
@@ -45306,12 +45441,16 @@
         "lua_type": "function",
         "op": ".",
         "status": "probable_native_or_unresolved",
+        "trace_argc_mode": 1,
+        "trace_count": 1107,
+        "trace_op_mode": ".",
+        "trace_types_mode": "number",
         "unique_files": 14
       },
       "trace": {
         "argc_mode": "1",
-        "count": 2870,
-        "lastTs": 1771142222,
+        "count": 7100,
+        "lastTs": 1771157343,
         "op_mode": ".",
         "sample": null,
         "types_mode": "number"
@@ -45359,13 +45498,13 @@
         "best_call": "C_MysticEnchant.GetMysticScrollCost",
         "best_conflicts": 0,
         "best_op": ".",
-        "best_op_source": "interface",
+        "best_op_source": "trace",
         "best_retc": 1,
         "best_retc_source": "interface",
         "call": "C_MysticEnchant.GetMysticScrollCost",
-        "called_in_play": false,
+        "called_in_play": true,
         "calls": 2,
-        "confidence": "medium",
+        "confidence": "high",
         "evidence": "interface_called",
         "full": "C_MysticEnchant.GetMysticScrollCost",
         "id": "C_MysticEnchant.GetMysticScrollCost",
@@ -45373,12 +45512,15 @@
         "lua_type": "function",
         "op": ".",
         "status": "probable_native_or_unresolved",
+        "trace_argc_mode": 0,
+        "trace_count": 2,
+        "trace_op_mode": ".",
         "unique_files": 1
       },
       "trace": {
         "argc_mode": "0",
         "count": 2,
-        "lastTs": 1771142028,
+        "lastTs": 1771156628,
         "op_mode": ".",
         "sample": null,
         "types_mode": null
@@ -45386,14 +45528,14 @@
     },
     "C_MysticEnchant.GetMysticScrolls": {
       "derived": {
-        "confidence": "high",
+        "confidence": "medium",
         "exists_runtime": true,
         "exists_runtime_surface": true,
         "iface_called": true,
         "iface_called_raw": true,
         "member_type": "function",
         "namespace_type": "table",
-        "observed_called": true,
+        "observed_called": false,
         "present": true,
         "runtime_checked": true
       },
@@ -45442,25 +45584,18 @@
         "status": "probable_native_or_unresolved",
         "unique_files": 1
       },
-      "trace": {
-        "argc_mode": "0",
-        "count": 12,
-        "lastTs": 1771142176,
-        "op_mode": ".",
-        "sample": null,
-        "types_mode": null
-      }
+      "trace": null
     },
     "C_MysticEnchant.GetProgress": {
       "derived": {
-        "confidence": "high",
+        "confidence": "medium",
         "exists_runtime": true,
         "exists_runtime_surface": true,
         "iface_called": true,
         "iface_called_raw": true,
         "member_type": "function",
         "namespace_type": "table",
-        "observed_called": true,
+        "observed_called": false,
         "present": true,
         "runtime_checked": true
       },
@@ -45509,14 +45644,7 @@
         "status": "probable_native_or_unresolved",
         "unique_files": 1
       },
-      "trace": {
-        "argc_mode": "0",
-        "count": 1,
-        "lastTs": 1771142131,
-        "op_mode": ".",
-        "sample": null,
-        "types_mode": null
-      }
+      "trace": null
     },
     "C_MysticEnchant.GetReforgeCost": {
       "derived": {
@@ -45613,14 +45741,14 @@
     },
     "C_MysticEnchant.HasAnyCollected": {
       "derived": {
-        "confidence": "high",
+        "confidence": "medium",
         "exists_runtime": true,
         "exists_runtime_surface": true,
         "iface_called": true,
         "iface_called_raw": true,
         "member_type": "function",
         "namespace_type": "table",
-        "observed_called": true,
+        "observed_called": false,
         "present": true,
         "runtime_checked": true
       },
@@ -45669,14 +45797,7 @@
         "status": "probable_native_or_unresolved",
         "unique_files": 1
       },
-      "trace": {
-        "argc_mode": "0",
-        "count": 1,
-        "lastTs": 1771142063,
-        "op_mode": ".",
-        "sample": null,
-        "types_mode": null
-      }
+      "trace": null
     },
     "C_MysticEnchant.HasAnyScroll": {
       "derived": {
@@ -45740,14 +45861,14 @@
     },
     "C_MysticEnchant.HasAnySlotEnchanted": {
       "derived": {
-        "confidence": "low",
+        "confidence": "medium",
         "exists_runtime": true,
         "exists_runtime_surface": true,
         "iface_called": false,
         "iface_called_raw": false,
         "member_type": null,
         "namespace_type": null,
-        "observed_called": false,
+        "observed_called": true,
         "present": null,
         "runtime_checked": true
       },
@@ -45781,7 +45902,14 @@
         "kind": "function",
         "lua_type": "function"
       },
-      "trace": null
+      "trace": {
+        "argc_mode": "0",
+        "count": 1,
+        "lastTs": 1771156638,
+        "op_mode": ".",
+        "sample": null,
+        "types_mode": null
+      }
     },
     "C_MysticEnchant.HasNearbyMysticAltar": {
       "derived": {
@@ -45823,11 +45951,11 @@
         "best_call": "C_MysticEnchant.HasNearbyMysticAltar",
         "best_conflicts": 0,
         "best_op": ".",
-        "best_op_source": "interface",
+        "best_op_source": "trace",
         "call": "C_MysticEnchant.HasNearbyMysticAltar",
-        "called_in_play": false,
+        "called_in_play": true,
         "calls": 1,
-        "confidence": "medium",
+        "confidence": "high",
         "evidence": "interface_called",
         "full": "C_MysticEnchant.HasNearbyMysticAltar",
         "id": "C_MysticEnchant.HasNearbyMysticAltar",
@@ -45835,12 +45963,15 @@
         "lua_type": "function",
         "op": ".",
         "status": "probable_native_or_unresolved",
+        "trace_argc_mode": 0,
+        "trace_count": 1,
+        "trace_op_mode": ".",
         "unique_files": 1
       },
       "trace": {
         "argc_mode": "0",
-        "count": 41,
-        "lastTs": 1771142176,
+        "count": 8,
+        "lastTs": 1771157112,
         "op_mode": ".",
         "sample": null,
         "types_mode": null
@@ -45848,14 +45979,14 @@
     },
     "C_MysticEnchant.Inspect": {
       "derived": {
-        "confidence": "medium",
+        "confidence": "high",
         "exists_runtime": true,
         "exists_runtime_surface": true,
         "iface_called": true,
         "iface_called_raw": true,
         "member_type": "function",
         "namespace_type": "table",
-        "observed_called": false,
+        "observed_called": true,
         "present": true,
         "runtime_checked": true
       },
@@ -45904,7 +46035,14 @@
         "status": "probable_native_or_unresolved",
         "unique_files": 1
       },
-      "trace": null
+      "trace": {
+        "argc_mode": "2",
+        "count": 4,
+        "lastTs": 1771157305,
+        "op_mode": ".",
+        "sample": null,
+        "types_mode": "string,boolean"
+      }
     },
     "C_MysticEnchant.PurchaseMysticExtract": {
       "derived": {
@@ -46054,13 +46192,13 @@
         "best_call": "C_MysticEnchant.QueryEnchants",
         "best_conflicts": 0,
         "best_op": ".",
-        "best_op_source": "interface",
+        "best_op_source": "trace",
         "best_retc": 2,
         "best_retc_source": "interface",
         "call": "C_MysticEnchant.QueryEnchants",
-        "called_in_play": false,
+        "called_in_play": true,
         "calls": 2,
-        "confidence": "medium",
+        "confidence": "high",
         "evidence": "interface_called",
         "full": "C_MysticEnchant.QueryEnchants",
         "hint_key_files": 1,
@@ -46072,12 +46210,16 @@
         "lua_type": "function",
         "op": ".",
         "status": "probable_native_or_unresolved",
+        "trace_argc_mode": 4,
+        "trace_count": 6,
+        "trace_op_mode": ".",
+        "trace_types_mode": "number,number,string,table",
         "unique_files": 2
       },
       "trace": {
         "argc_mode": "4",
-        "count": 86,
-        "lastTs": 1771142222,
+        "count": 6,
+        "lastTs": 1771156628,
         "op_mode": ".",
         "sample": null,
         "types_mode": "number,number,string,table"
@@ -46602,13 +46744,13 @@
         "best_call": "C_MysticEnchantPreset.GetNumPresets",
         "best_conflicts": 0,
         "best_op": ".",
-        "best_op_source": "interface",
+        "best_op_source": "trace",
         "best_retc": 1,
         "best_retc_source": "interface",
         "call": "C_MysticEnchantPreset.GetNumPresets",
-        "called_in_play": false,
+        "called_in_play": true,
         "calls": 5,
-        "confidence": "medium",
+        "confidence": "high",
         "evidence": "interface_called",
         "full": "C_MysticEnchantPreset.GetNumPresets",
         "id": "C_MysticEnchantPreset.GetNumPresets",
@@ -46616,12 +46758,15 @@
         "lua_type": "function",
         "op": ".",
         "status": "probable_native_or_unresolved",
+        "trace_argc_mode": 0,
+        "trace_count": 1,
+        "trace_op_mode": ".",
         "unique_files": 4
       },
       "trace": {
         "argc_mode": "0",
-        "count": 13,
-        "lastTs": 1771142143,
+        "count": 1,
+        "lastTs": 1771156628,
         "op_mode": ".",
         "sample": null,
         "types_mode": null
@@ -46671,11 +46816,11 @@
         "best_call": "C_MysticEnchantPreset.GetPresetData",
         "best_conflicts": 0,
         "best_op": ".",
-        "best_op_source": "interface",
+        "best_op_source": "trace",
         "call": "C_MysticEnchantPreset.GetPresetData",
-        "called_in_play": false,
+        "called_in_play": true,
         "calls": 1,
-        "confidence": "medium",
+        "confidence": "high",
         "evidence": "interface_called",
         "full": "C_MysticEnchantPreset.GetPresetData",
         "id": "C_MysticEnchantPreset.GetPresetData",
@@ -46683,12 +46828,16 @@
         "lua_type": "function",
         "op": ".",
         "status": "probable_native_or_unresolved",
+        "trace_argc_mode": 1,
+        "trace_count": 1,
+        "trace_op_mode": ".",
+        "trace_types_mode": "number",
         "unique_files": 1
       },
       "trace": {
         "argc_mode": "1",
-        "count": 12,
-        "lastTs": 1771142143,
+        "count": 1,
+        "lastTs": 1771156628,
         "op_mode": ".",
         "sample": null,
         "types_mode": "number"
@@ -55782,7 +55931,7 @@
         "id": "C_Quest.lastQuery",
         "kind": "field",
         "lua_type": "number",
-        "value": 1195.143
+        "value": 1273.284
       },
       "trace": null
     },
@@ -77082,12 +77231,13 @@
     "addons_enabled_hash": "91be8038",
     "addons_enabled_list": null,
     "addons_total": 113,
-    "apiindex": "E:\\Ascension Launcher\\resources\\client\\Interface\\AddOns\\BBScan\\Core\\ApiIndex.lua",
-    "bbscan_version": "0.3.92",
+    "apiindex": "Core/ApiIndex.lua",
+    "bbscan_version": "0.3.108",
     "client_build": "12340",
     "client_version": "3.3.5",
-    "generated_at": "2026-02-15T08:13:21Z",
-    "savedvars": "E:\\Ascension Launcher\\resources\\client\\WTF\\Account\\CtrlAlt\\SavedVariables\\BBScan.lua",
+    "generated_at": "2026-02-15T18:15:30Z",
+    "savedvars": "/WTF/Account/<redacted>/SavedVariables/BBScan.lua",
+    "scan_bbscan_version": "0.3.95",
     "toc": 30300
   }
 }

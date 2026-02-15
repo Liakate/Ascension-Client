@@ -320,6 +320,66 @@
     },
     {
       "kind": "field",
+      "lua_type": "number",
+      "path": "_G.ASCENSION_SECONDARY_COLOR.1",
+      "value": 0.99
+    },
+    {
+      "kind": "field",
+      "lua_type": "number",
+      "path": "_G.ASCENSION_SECONDARY_COLOR.2",
+      "value": 0.54
+    },
+    {
+      "kind": "field",
+      "lua_type": "number",
+      "path": "_G.ASCENSION_SECONDARY_COLOR.3",
+      "value": 0
+    },
+    {
+      "kind": "field",
+      "lua_type": "number",
+      "path": "_G.ASCENSION_SECONDARY_COLOR.4",
+      "value": 1
+    },
+    {
+      "kind": "field",
+      "lua_type": "number",
+      "path": "_G.ASCENSION_SECONDARY_COLOR.a",
+      "value": 1
+    },
+    {
+      "kind": "field",
+      "lua_type": "string",
+      "path": "_G.ASCENSION_SECONDARY_COLOR.colorStr",
+      "value": "fffc8a00"
+    },
+    {
+      "kind": "field",
+      "lua_type": "number",
+      "path": "_G.ASCENSION_SECONDARY_COLOR.b",
+      "value": 0
+    },
+    {
+      "kind": "field",
+      "lua_type": "number",
+      "path": "_G.ASCENSION_SECONDARY_COLOR.r",
+      "value": 0.99
+    },
+    {
+      "kind": "field",
+      "lua_type": "string",
+      "path": "_G.ASCENSION_SECONDARY_COLOR.hex",
+      "value": "|cfffc8a00"
+    },
+    {
+      "kind": "field",
+      "lua_type": "number",
+      "path": "_G.ASCENSION_SECONDARY_COLOR.g",
+      "value": 0.54
+    },
+    {
+      "kind": "field",
       "lua_type": "string",
       "path": "_G.AscensionSpellbookFrameContentPetSpellsSpellButton8TrainBookTrainBook.atlas",
       "value": "spellbook-trainbook"
@@ -329,6 +389,30 @@
       "lua_type": "number",
       "path": "_G.C_TrinityCore.index",
       "value": 1
+    },
+    {
+      "kind": "field",
+      "lua_type": "number",
+      "path": "_G.C_Comm.elapsed",
+      "value": 0
+    },
+    {
+      "kind": "field",
+      "lua_type": "number",
+      "path": "_G.C_Comm.HardThrottleStart",
+      "value": 1268.81
+    },
+    {
+      "kind": "field",
+      "lua_type": "number",
+      "path": "_G.C_Comm.available",
+      "value": 5
+    },
+    {
+      "kind": "field",
+      "lua_type": "number",
+      "path": "_G.C_Comm.LastAvailableUpdate",
+      "value": 1771156640
     },
     {
       "kind": "field",
@@ -353,6 +437,12 @@
       "lua_type": "string",
       "path": "_G.AscensionLFGFrameButton2Ring.atlas",
       "value": "bluemenu-Ring"
+    },
+    {
+      "kind": "field",
+      "lua_type": "number",
+      "path": "_G.C_Cache.LastStatQuery",
+      "value": 0
     },
     {
       "kind": "field",
@@ -2321,6 +2411,18 @@
       "lua_type": "string",
       "path": "_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton6EditControlsEditIcon.tooltipTitle",
       "value": "Change Icon"
+    },
+    {
+      "kind": "field",
+      "lua_type": "string",
+      "path": "_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton6EditBoxLeft.atlas",
+      "value": "common-search-border-left"
+    },
+    {
+      "kind": "field",
+      "lua_type": "string",
+      "path": "_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton6EditBoxMiddle.atlas",
+      "value": "common-search-border-middle"
     }
   ],
   "frames": [
@@ -5733,26 +5835,6 @@
     {
       "keyCountCapped": false,
       "keys": {
-        "1": "UpdateAvailable",
-        "2": "0",
-        "3": "elapsed",
-        "4": "IsEmpty",
-        "5": "HardThrottleStart",
-        "6": "Enqueue",
-        "7": "Setup",
-        "8": "Priority",
-        "9": "available",
-        "10": "LastAvailableUpdate"
-      },
-      "kind": "frame",
-      "lua_type": "table",
-      "nKeysApprox": 13,
-      "objType": "Frame",
-      "path": "_G.C_Comm"
-    },
-    {
-      "keyCountCapped": false,
-      "keys": {
         "1": "0"
       },
       "kind": "frame",
@@ -8483,6 +8565,17 @@
       "lua_type": "table",
       "nKeysApprox": 1,
       "objType": "Texture",
+      "path": "_G.AscensionReputationPanelScrollListScrollFrameButton3ReputationBarHighlight1"
+    },
+    {
+      "keyCountCapped": false,
+      "keys": {
+        "1": "0"
+      },
+      "kind": "frame",
+      "lua_type": "table",
+      "nKeysApprox": 1,
+      "objType": "Texture",
       "path": "_G.AscensionCharacterStatsPanelBackground"
     },
     {
@@ -8504,61 +8597,8 @@
       "kind": "frame",
       "lua_type": "table",
       "nKeysApprox": 1,
-      "objType": "Texture",
-      "path": "_G.AscensionCurrencyPanelScrollListScrollFrameButton19Check"
-    },
-    {
-      "keyCountCapped": false,
-      "keys": {
-        "1": "OnLeave",
-        "2": "OnModifiedClick",
-        "3": "TrainTextBackground",
-        "4": "CheckedTexture",
-        "5": "_RegisterForClicks",
-        "6": "TextBackground",
-        "7": "OnDragStart",
-        "8": "SubSpellName",
-        "9": "OnClick",
-        "10": "AutoCastable"
-      },
-      "kind": "frame",
-      "lua_type": "table",
-      "nKeysApprox": 44,
-      "objType": "CheckButton",
-      "path": "_G.AscensionSpellbookFrameContentPetSpellsSpellButton10"
-    },
-    {
-      "keyCountCapped": false,
-      "keys": {
-        "1": "0",
-        "2": "Delete",
-        "3": "Edit"
-      },
-      "kind": "frame",
-      "lua_type": "table",
-      "nKeysApprox": 3,
-      "objType": "Frame",
-      "path": "_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton7Controls"
-    },
-    {
-      "keyCountCapped": false,
-      "keys": {
-        "1": "SetWatchedFaction",
-        "2": "OnShow",
-        "3": "OnLoad",
-        "4": "OnHide",
-        "5": "DetailsFrame",
-        "6": "ToggleAtWar",
-        "7": "OnEvent",
-        "8": "UpdateReputationDetails",
-        "9": "ScrollList",
-        "10": "0"
-      },
-      "kind": "frame",
-      "lua_type": "table",
-      "nKeysApprox": 10,
-      "objType": "Frame",
-      "path": "_G.AscensionReputationPanel"
+      "objType": "FontString",
+      "path": "_G.AscensionSkillsPanelScrollListScrollFrameButton21StatusBarSkillName"
     },
     {
       "keyCountCapped": false,
@@ -8568,8 +8608,31 @@
       "kind": "frame",
       "lua_type": "table",
       "nKeysApprox": 1,
+      "objType": "Button",
+      "path": "_G.AscensionReputationPanelScrollListScrollFrameButton16ExpandOrCollapseButton"
+    },
+    {
+      "keyCountCapped": false,
+      "keys": {
+        "1": "0"
+      },
+      "kind": "frame",
+      "lua_type": "table",
+      "nKeysApprox": 1,
+      "objType": "Button",
+      "path": "_G.AscensionSpellbookFrameContentProfessionsProfession5AbandonButton"
+    },
+    {
+      "keyCountCapped": false,
+      "keys": {
+        "1": "0",
+        "2": "atlas"
+      },
+      "kind": "frame",
+      "lua_type": "table",
+      "nKeysApprox": 2,
       "objType": "Texture",
-      "path": "_G.AscensionSpellbookFrameContentPetSpellsSpellButton12IconTextureBg"
+      "path": "_G.AscensionSpellbookFrameContentSpellsSpellButton2SlotFrame"
     },
     {
       "keyCountCapped": false,
@@ -8590,26 +8653,6 @@
       "nKeysApprox": 14,
       "objType": "Frame",
       "path": "_G.AscensionPaperDollPanel"
-    },
-    {
-      "keyCountCapped": false,
-      "keys": {
-        "1": "0",
-        "2": "OnEnter",
-        "3": "HighlightTexture",
-        "4": "Active",
-        "5": "IsSelected",
-        "6": "Expand",
-        "7": "OnSelected",
-        "8": "SetIndex",
-        "9": "OnRightClick",
-        "10": "OnClick"
-      },
-      "kind": "frame",
-      "lua_type": "table",
-      "nKeysApprox": 19,
-      "objType": "Button",
-      "path": "_G.AscensionCharacterTitlesPanelScrollFrameButton3"
     },
     {
       "keyCountCapped": false,
@@ -8637,6 +8680,18 @@
     {
       "keyCountCapped": false,
       "keys": {
+        "1": "0",
+        "2": "atlas"
+      },
+      "kind": "frame",
+      "lua_type": "table",
+      "nKeysApprox": 2,
+      "objType": "Texture",
+      "path": "_G.AscensionCharacterStatsPanelScrollFrameButton7Middle"
+    },
+    {
+      "keyCountCapped": false,
+      "keys": {
         "1": "0"
       },
       "kind": "frame",
@@ -8644,6 +8699,18 @@
       "nKeysApprox": 1,
       "objType": "Texture",
       "path": "_G.AscensionReputationPanelScrollListScrollFrameButton5Background"
+    },
+    {
+      "keyCountCapped": false,
+      "keys": {
+        "1": "0",
+        "2": "atlas"
+      },
+      "kind": "frame",
+      "lua_type": "table",
+      "nKeysApprox": 2,
+      "objType": "Texture",
+      "path": "_G.AscensionCharacterStatsPanelScrollFrameButton21Middle"
     },
     {
       "keyCountCapped": false,
@@ -8686,30 +8753,7 @@
       "lua_type": "table",
       "nKeysApprox": 2,
       "objType": "Texture",
-      "path": "_G.AscensionSpellbookFrameContentProfessionsProfession5Highlight"
-    },
-    {
-      "keyCountCapped": false,
-      "keys": {
-        "1": "0",
-        "2": "atlas"
-      },
-      "kind": "frame",
-      "lua_type": "table",
-      "nKeysApprox": 2,
-      "objType": "Texture",
       "path": "_G.AscensionSpellbookFrameContentSpellsSpellButton4TextBackground"
-    },
-    {
-      "keyCountCapped": false,
-      "keys": {
-        "1": "0"
-      },
-      "kind": "frame",
-      "lua_type": "table",
-      "nKeysApprox": 1,
-      "objType": "Texture",
-      "path": "_G.AscensionReputationPanelScrollListScrollFrameButton16ReputationBarAtWarHighlight1"
     },
     {
       "keyCountCapped": false,
@@ -8757,22 +8801,13 @@
     {
       "keyCountCapped": false,
       "keys": {
-        "1": "0",
-        "2": "GetFrameDrawLayer",
-        "3": "SetCenterColor",
-        "4": "ShowNineSlicePiece",
-        "5": "SetNineSliceIgnoreInLayout",
-        "6": "GetBorderColor",
-        "7": "TopRightCorner",
-        "8": "TopLeftCorner",
-        "9": "RightEdge",
-        "10": "HideNineSlicePiece"
+        "1": "0"
       },
       "kind": "frame",
       "lua_type": "table",
-      "nKeysApprox": 24,
-      "objType": "Frame",
-      "path": "_G.AscensionLFGFrameNineSlice"
+      "nKeysApprox": 1,
+      "objType": "Texture",
+      "path": "_G.AscensionSpellbookFrameContentProfessionsProfession4ProgressBarBar"
     },
     {
       "keyCountCapped": false,
@@ -8799,26 +8834,6 @@
     {
       "keyCountCapped": false,
       "keys": {
-        "1": "0",
-        "2": "OnLeave",
-        "3": "OnModifiedClick",
-        "4": "MarkDirty",
-        "5": "Update",
-        "6": "unit",
-        "7": "UpdateLock",
-        "8": "IconBorder",
-        "9": "UpdateTooltip",
-        "10": "backgroundTextureName"
-      },
-      "kind": "frame",
-      "lua_type": "table",
-      "nKeysApprox": 28,
-      "objType": "Button",
-      "path": "_G.AscensionCharacterSecondaryHandSlot"
-    },
-    {
-      "keyCountCapped": false,
-      "keys": {
         "1": "0"
       },
       "kind": "frame",
@@ -8835,20 +8850,8 @@
       "kind": "frame",
       "lua_type": "table",
       "nKeysApprox": 1,
-      "objType": "FontString",
-      "path": "_G.AscensionCurrencyPanelScrollListScrollFrameButton4Count"
-    },
-    {
-      "keyCountCapped": false,
-      "keys": {
-        "1": "0",
-        "2": "atlas"
-      },
-      "kind": "frame",
-      "lua_type": "table",
-      "nKeysApprox": 2,
       "objType": "Texture",
-      "path": "_G.AscensionSpellbookFrameContentProfessionsProfession5ProgressBarLeft"
+      "path": "_G.AscensionReputationPanelScrollListScrollFrameButton2ReputationBarHighlight2"
     },
     {
       "keyCountCapped": false,
@@ -8915,19 +8918,18 @@
       "lua_type": "table",
       "nKeysApprox": 2,
       "objType": "Texture",
-      "path": "_G.AscensionSpellbookFrameContentProfessionsProfession3IconBorder"
+      "path": "_G.AscensionCharacterTabardSlotFrame"
     },
     {
       "keyCountCapped": false,
       "keys": {
-        "1": "0",
-        "2": "atlas"
+        "1": "0"
       },
       "kind": "frame",
       "lua_type": "table",
-      "nKeysApprox": 2,
-      "objType": "Texture",
-      "path": "_G.AscensionCharacterTabardSlotFrame"
+      "nKeysApprox": 1,
+      "objType": "FontString",
+      "path": "_G.AscensionPVEFrameLFDFrameSpecificListButton10InstanceName"
     },
     {
       "keyCountCapped": false,
@@ -8951,6 +8953,29 @@
       "nKeysApprox": 2,
       "objType": "Texture",
       "path": "_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton1EditBoxLeft"
+    },
+    {
+      "keyCountCapped": false,
+      "keys": {
+        "1": "0",
+        "2": "atlas"
+      },
+      "kind": "frame",
+      "lua_type": "table",
+      "nKeysApprox": 2,
+      "objType": "Texture",
+      "path": "_G.AscensionSpellbookFrameContentSpellsSpellButton3TextBackground"
+    },
+    {
+      "keyCountCapped": false,
+      "keys": {
+        "1": "0"
+      },
+      "kind": "frame",
+      "lua_type": "table",
+      "nKeysApprox": 1,
+      "objType": "Cooldown",
+      "path": "_G.AscensionCharacterMainHandSlotCooldown"
     },
     {
       "keyCountCapped": false,
@@ -8986,6 +9011,17 @@
       "nKeysApprox": 1,
       "objType": "Texture",
       "path": "_G.AscensionSpellbookFrameContentSpellsSpellButton10AutoCastable"
+    },
+    {
+      "keyCountCapped": false,
+      "keys": {
+        "1": "0"
+      },
+      "kind": "frame",
+      "lua_type": "table",
+      "nKeysApprox": 1,
+      "objType": "Button",
+      "path": "_G.AscensionSpellbookFramePreviousPageButton"
     },
     {
       "keyCountCapped": false,
@@ -9029,6 +9065,29 @@
       "nKeysApprox": 1,
       "objType": "Texture",
       "path": "_G.AscensionPVEFrameHelpPlateButtonIGlow"
+    },
+    {
+      "keyCountCapped": false,
+      "keys": {
+        "1": "0"
+      },
+      "kind": "frame",
+      "lua_type": "table",
+      "nKeysApprox": 1,
+      "objType": "Texture",
+      "path": "_G.AscensionReputationPanelScrollListScrollFrameButton9ReputationBarHighlight2"
+    },
+    {
+      "keyCountCapped": false,
+      "keys": {
+        "1": "0",
+        "2": "atlas"
+      },
+      "kind": "frame",
+      "lua_type": "table",
+      "nKeysApprox": 2,
+      "objType": "Texture",
+      "path": "_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton6EditBoxRight"
     },
     {
       "keyCountCapped": false,
@@ -9078,6 +9137,19 @@
     {
       "keyCountCapped": false,
       "keys": {
+        "1": "0",
+        "2": "Delete",
+        "3": "Edit"
+      },
+      "kind": "frame",
+      "lua_type": "table",
+      "nKeysApprox": 3,
+      "objType": "Frame",
+      "path": "_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton3Controls"
+    },
+    {
+      "keyCountCapped": false,
+      "keys": {
         "1": "0"
       },
       "kind": "frame",
@@ -9094,8 +9166,8 @@
       "kind": "frame",
       "lua_type": "table",
       "nKeysApprox": 1,
-      "objType": "FontString",
-      "path": "_G.AscensionSpellbookFrameContentProfessionsProfession6Rank"
+      "objType": "Texture",
+      "path": "_G.AscensionPVEFrameLFDFrameSpecificListButton13ExpandOrCollapseButtonHighlight"
     },
     {
       "keyCountCapped": false,
@@ -9106,7 +9178,24 @@
       "lua_type": "table",
       "nKeysApprox": 1,
       "objType": "FontString",
-      "path": "_G.AscensionCharacterMysticEnchantPanelScrollFrameButton4Count"
+      "path": "_G.AscensionSpellbookFrameContentProfessionsProfession6Rank"
+    },
+    {
+      "keyCountCapped": false,
+      "keys": {
+        "1": "BGRight",
+        "2": "CapLeft",
+        "3": "CapRight",
+        "4": "0",
+        "5": "RankText",
+        "6": "BGMiddle",
+        "7": "BGLeft"
+      },
+      "kind": "frame",
+      "lua_type": "table",
+      "nKeysApprox": 7,
+      "objType": "StatusBar",
+      "path": "_G.AscensionSpellbookFrameContentProfessionsProfession8ProgressBar"
     },
     {
       "keyCountCapped": false,
@@ -9122,6 +9211,26 @@
     {
       "keyCountCapped": false,
       "keys": {
+        "1": "OnLeave",
+        "2": "OnModifiedClick",
+        "3": "TrainTextBackground",
+        "4": "CheckedTexture",
+        "5": "_RegisterForClicks",
+        "6": "TextBackground",
+        "7": "OnDragStart",
+        "8": "SubSpellName",
+        "9": "OnClick",
+        "10": "AutoCastable"
+      },
+      "kind": "frame",
+      "lua_type": "table",
+      "nKeysApprox": 44,
+      "objType": "CheckButton",
+      "path": "_G.AscensionSpellbookFrameContentSpellsSpellButton2"
+    },
+    {
+      "keyCountCapped": false,
+      "keys": {
         "1": "0"
       },
       "kind": "frame",
@@ -9133,14 +9242,22 @@
     {
       "keyCountCapped": false,
       "keys": {
-        "1": "0",
-        "2": "atlas"
+        "1": "OnLeave",
+        "2": "OnModifiedClick",
+        "3": "TrainTextBackground",
+        "4": "CheckedTexture",
+        "5": "_RegisterForClicks",
+        "6": "TextBackground",
+        "7": "OnDragStart",
+        "8": "SubSpellName",
+        "9": "OnClick",
+        "10": "AutoCastable"
       },
       "kind": "frame",
       "lua_type": "table",
-      "nKeysApprox": 2,
-      "objType": "Texture",
-      "path": "_G.AscensionSpellbookFrameContentProfessionsProfession8ProgressBarRight"
+      "nKeysApprox": 44,
+      "objType": "CheckButton",
+      "path": "_G.AscensionSpellbookFrameContentSpellsSpellButton11"
     },
     {
       "keyCountCapped": false,
@@ -9153,17 +9270,6 @@
       "nKeysApprox": 2,
       "objType": "Texture",
       "path": "_G.AscensionSpellbookFrameContentSpellsSpellButton1SlotFrame"
-    },
-    {
-      "keyCountCapped": false,
-      "keys": {
-        "1": "0"
-      },
-      "kind": "frame",
-      "lua_type": "table",
-      "nKeysApprox": 1,
-      "objType": "Texture",
-      "path": "_G.AscensionCurrencyPanelScrollListScrollFrameButton8Check"
     },
     {
       "keyCountCapped": false,
@@ -9195,18 +9301,39 @@
       "lua_type": "table",
       "nKeysApprox": 2,
       "objType": "Frame",
-      "path": "_G.AscensionSpellbookFrameContentPetSpellsSpellButton3TrainBook"
+      "path": "_G.AscensionSpellbookFrameContentSpellsSpellButton1TrainBook"
     },
     {
       "keyCountCapped": false,
       "keys": {
-        "1": "0"
+        "1": "0",
+        "2": "atlas"
       },
       "kind": "frame",
       "lua_type": "table",
-      "nKeysApprox": 1,
+      "nKeysApprox": 2,
       "objType": "Texture",
-      "path": "_G.AscensionSkillsPanelScrollListScrollFrameButton3ExpandIcon"
+      "path": "_G.AscensionCharacterTitlesPanelScrollFrameButton20Active"
+    },
+    {
+      "keyCountCapped": false,
+      "keys": {
+        "1": "HideCurrentPanel",
+        "2": "RemoveAllTabs",
+        "3": "SetTabPoint",
+        "4": "tabPadding",
+        "5": "SelectFirstEnabledTab",
+        "6": "RightEdge",
+        "7": "tabLevel",
+        "8": "UpdateTabLayout",
+        "9": "tabPanels",
+        "10": "SetTabLayout"
+      },
+      "kind": "frame",
+      "lua_type": "table",
+      "nKeysApprox": 81,
+      "objType": "Frame",
+      "path": "_G.AscensionCharacterFrameRightInset"
     },
     {
       "keyCountCapped": false,
@@ -9227,36 +9354,8 @@
       "kind": "frame",
       "lua_type": "table",
       "nKeysApprox": 1,
-      "objType": "Texture",
-      "path": "_G.AscensionCharacterFramePoolFrameAscensionCharacterFrameTabTemplate3Right"
-    },
-    {
-      "keyCountCapped": false,
-      "keys": {
-        "1": "0"
-      },
-      "kind": "frame",
-      "lua_type": "table",
-      "nKeysApprox": 1,
       "objType": "FontString",
-      "path": "_G.AscensionCurrencyPanelScrollListScrollFrameButton19Count"
-    },
-    {
-      "keyCountCapped": false,
-      "keys": {
-        "1": "enabledColor",
-        "2": "Instructions",
-        "3": "disabledColor",
-        "4": "0",
-        "5": "Right",
-        "6": "Middle",
-        "7": "Left"
-      },
-      "kind": "frame",
-      "lua_type": "table",
-      "nKeysApprox": 7,
-      "objType": "EditBox",
-      "path": "_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton8EditBox"
+      "path": "_G.AscensionReputationPanelScrollListScrollFrameButton2FactionName"
     },
     {
       "keyCountCapped": false,
@@ -9272,13 +9371,56 @@
     {
       "keyCountCapped": false,
       "keys": {
-        "1": "0"
+        "1": "0",
+        "2": "atlas"
       },
       "kind": "frame",
       "lua_type": "table",
-      "nKeysApprox": 1,
-      "objType": "CheckButton",
-      "path": "_G.AscensionPVEFrameLFDFrameSpecificListButton2EnableButton"
+      "nKeysApprox": 2,
+      "objType": "Texture",
+      "path": "_G.AscensionSpellbookFrameContentPetSpellsSpellButton8TextBackground"
+    },
+    {
+      "keyCountCapped": false,
+      "keys": {
+        "1": "0",
+        "2": "border",
+        "3": "Texture"
+      },
+      "kind": "frame",
+      "lua_type": "table",
+      "nKeysApprox": 3,
+      "objType": "Frame",
+      "path": "_G.AscensionPVEFrameLFDFrameRoleButtonDPSIncentiveIcon"
+    },
+    {
+      "keyCountCapped": false,
+      "keys": {
+        "1": "0",
+        "2": "atlas"
+      },
+      "kind": "frame",
+      "lua_type": "table",
+      "nKeysApprox": 2,
+      "objType": "Texture",
+      "path": "_G.AscensionSpellbookFrameContentProfessionsProfession3IconBorder"
+    },
+    {
+      "keyCountCapped": false,
+      "keys": {
+        "1": "BGRight",
+        "2": "CapLeft",
+        "3": "CapRight",
+        "4": "0",
+        "5": "RankText",
+        "6": "BGMiddle",
+        "7": "BGLeft"
+      },
+      "kind": "frame",
+      "lua_type": "table",
+      "nKeysApprox": 7,
+      "objType": "StatusBar",
+      "path": "_G.AscensionSpellbookFrameContentProfessionsProfession13ProgressBar"
     },
     {
       "keyCountCapped": false,
@@ -9288,19 +9430,8 @@
       "kind": "frame",
       "lua_type": "table",
       "nKeysApprox": 1,
-      "objType": "Texture",
-      "path": "_G.AscensionWeeklyKeystoneFrameExpansionDropdownLeft"
-    },
-    {
-      "keyCountCapped": false,
-      "keys": {
-        "1": "0"
-      },
-      "kind": "frame",
-      "lua_type": "table",
-      "nKeysApprox": 1,
-      "objType": "Texture",
-      "path": "_G.AscensionCharacterEquipmentManagerPanelSaveButtonLeft"
+      "objType": "Button",
+      "path": "_G.AscensionReputationPanelScrollListScrollFrameButton17ExpandOrCollapseButton"
     },
     {
       "keyCountCapped": false,
@@ -9316,40 +9447,24 @@
     {
       "keyCountCapped": false,
       "keys": {
-        "1": "0",
-        "2": "OnEnter",
-        "3": "HighlightTexture",
-        "4": "Active",
-        "5": "IsSelected",
-        "6": "Expand",
-        "7": "OnSelected",
-        "8": "SetIndex",
-        "9": "OnRightClick",
-        "10": "OnClick"
+        "1": "0"
       },
       "kind": "frame",
       "lua_type": "table",
-      "nKeysApprox": 19,
-      "objType": "Button",
-      "path": "_G.AscensionCharacterTitlesPanelScrollFrameButton1"
+      "nKeysApprox": 1,
+      "objType": "FontString",
+      "path": "_G.AscensionSpellbookFrameContentPetSpellsSpellButton6SeeTrainerString"
     },
     {
       "keyCountCapped": false,
       "keys": {
-        "1": "Highlight1",
-        "2": "Highlight2",
-        "3": "FactionStanding",
-        "4": "RightTexture",
-        "5": "AtWarHighlight1",
-        "6": "AtWarHighlight2",
-        "7": "LeftTexture",
-        "8": "0"
+        "1": "0"
       },
       "kind": "frame",
       "lua_type": "table",
-      "nKeysApprox": 8,
-      "objType": "StatusBar",
-      "path": "_G.AscensionReputationPanelScrollListScrollFrameButton15ReputationBar"
+      "nKeysApprox": 1,
+      "objType": "Button",
+      "path": "_G.AscensionReputationPanelScrollListScrollFrameButton3ExpandOrCollapseButton"
     },
     {
       "keyCountCapped": false,
@@ -9374,6 +9489,18 @@
     {
       "keyCountCapped": false,
       "keys": {
+        "1": "0",
+        "2": "tooltipTitle"
+      },
+      "kind": "frame",
+      "lua_type": "table",
+      "nKeysApprox": 2,
+      "objType": "Button",
+      "path": "_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton7EditControlsEditIcon"
+    },
+    {
+      "keyCountCapped": false,
+      "keys": {
         "1": "0"
       },
       "kind": "frame",
@@ -9385,13 +9512,21 @@
     {
       "keyCountCapped": false,
       "keys": {
-        "1": "0"
+        "1": "heroicIcon",
+        "2": "lockedIndicator",
+        "3": "0",
+        "4": "id",
+        "5": "expandOrCollapseButton",
+        "6": "enableButton",
+        "7": "instanceName",
+        "8": "level",
+        "9": "isCollapsed"
       },
       "kind": "frame",
       "lua_type": "table",
-      "nKeysApprox": 1,
-      "objType": "FontString",
-      "path": "_G.AscensionSpellbookFrameContentPetSpellsSpellButton2RequiredLevelString"
+      "nKeysApprox": 9,
+      "objType": "Frame",
+      "path": "_G.AscensionPVEFrameLFDFrameSpecificListButton1"
     },
     {
       "keyCountCapped": false,
@@ -9443,30 +9578,31 @@
       "kind": "frame",
       "lua_type": "table",
       "nKeysApprox": 1,
+      "objType": "Texture",
+      "path": "_G.AscensionSpellbookFrameContentPetSpellsSpellButton9FlyoutArrow"
+    },
+    {
+      "keyCountCapped": false,
+      "keys": {
+        "1": "0",
+        "2": "atlas"
+      },
+      "kind": "frame",
+      "lua_type": "table",
+      "nKeysApprox": 2,
+      "objType": "Texture",
+      "path": "_G.AscensionPaperDollPanelFelCommutationNoticeArtwork"
+    },
+    {
+      "keyCountCapped": false,
+      "keys": {
+        "1": "0"
+      },
+      "kind": "frame",
+      "lua_type": "table",
+      "nKeysApprox": 1,
       "objType": "FontString",
       "path": "_G.AscensionSpellbookFrameContentPetSpellsSpellButton10SubSpellName"
-    },
-    {
-      "keyCountCapped": false,
-      "keys": {
-        "1": "0"
-      },
-      "kind": "frame",
-      "lua_type": "table",
-      "nKeysApprox": 1,
-      "objType": "Texture",
-      "path": "_G.AscensionCharacterBackSlotNormalTexture"
-    },
-    {
-      "keyCountCapped": false,
-      "keys": {
-        "1": "0"
-      },
-      "kind": "frame",
-      "lua_type": "table",
-      "nKeysApprox": 1,
-      "objType": "Texture",
-      "path": "_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton4IconBackground"
     },
     {
       "keyCountCapped": false,
@@ -9487,17 +9623,6 @@
       "kind": "frame",
       "lua_type": "table",
       "nKeysApprox": 1,
-      "objType": "Texture",
-      "path": "_G.AscensionCurrencyPanelScrollListScrollFrameButton21Icon"
-    },
-    {
-      "keyCountCapped": false,
-      "keys": {
-        "1": "0"
-      },
-      "kind": "frame",
-      "lua_type": "table",
-      "nKeysApprox": 1,
       "objType": "FontString",
       "path": "_G.AscensionSkillsPanelScrollListScrollFrameButton16CategoryName"
     },
@@ -9509,8 +9634,19 @@
       "kind": "frame",
       "lua_type": "table",
       "nKeysApprox": 1,
-      "objType": "Texture",
-      "path": "_G.AscensionCharacterStatsPanelScrollFrameButton2ExpandOrCollapseIcon"
+      "objType": "FontString",
+      "path": "_G.AscensionSpellbookFrameContentPetSpellsSpellButton5SpellName"
+    },
+    {
+      "keyCountCapped": false,
+      "keys": {
+        "1": "0"
+      },
+      "kind": "frame",
+      "lua_type": "table",
+      "nKeysApprox": 1,
+      "objType": "Button",
+      "path": "_G.AscensionCurrencyPanelScrollListScrollFrameButton5LinkButton"
     },
     {
       "keyCountCapped": false,
@@ -9532,28 +9668,6 @@
       "lua_type": "table",
       "nKeysApprox": 1,
       "objType": "Texture",
-      "path": "_G.AscensionReputationPanelScrollListScrollFrameButton6ExpandOrCollapseButtonHighlight"
-    },
-    {
-      "keyCountCapped": false,
-      "keys": {
-        "1": "0"
-      },
-      "kind": "frame",
-      "lua_type": "table",
-      "nKeysApprox": 1,
-      "objType": "Texture",
-      "path": "_G.AscensionPVEFrameLFDFrameSpecificListButton14ExpandOrCollapseButtonHighlight"
-    },
-    {
-      "keyCountCapped": false,
-      "keys": {
-        "1": "0"
-      },
-      "kind": "frame",
-      "lua_type": "table",
-      "nKeysApprox": 1,
-      "objType": "Texture",
       "path": "_G.AscensionSpellbookFrameContentPetSpellsSpellButton12AutoCastable"
     },
     {
@@ -9564,19 +9678,8 @@
       "kind": "frame",
       "lua_type": "table",
       "nKeysApprox": 1,
-      "objType": "Texture",
-      "path": "_G.AscensionPVEFrameLFDFrameSpecificListButton15LockedIndicator"
-    },
-    {
-      "keyCountCapped": false,
-      "keys": {
-        "1": "0"
-      },
-      "kind": "frame",
-      "lua_type": "table",
-      "nKeysApprox": 1,
-      "objType": "Texture",
-      "path": "_G.AscensionReputationPanelScrollListScrollFrameButton3ReputationBarHighlight1"
+      "objType": "Button",
+      "path": "_G.AscensionReputationPanelScrollListScrollFrameButton2ExpandOrCollapseButton"
     },
     {
       "keyCountCapped": false,
@@ -9610,6 +9713,18 @@
       "keyCountCapped": false,
       "keys": {
         "1": "0",
+        "2": "atlas"
+      },
+      "kind": "frame",
+      "lua_type": "table",
+      "nKeysApprox": 2,
+      "objType": "Texture",
+      "path": "_G.AscensionCurrencyPanelScrollListScrollFrameButton22CategoryBackground"
+    },
+    {
+      "keyCountCapped": false,
+      "keys": {
+        "1": "0",
         "2": "OnEnter",
         "3": "Highlight",
         "4": "_SetScript",
@@ -9635,6 +9750,17 @@
       "lua_type": "table",
       "nKeysApprox": 1,
       "objType": "Texture",
+      "path": "_G.AscensionCurrencyPanelScrollListScrollFrameButton15Icon"
+    },
+    {
+      "keyCountCapped": false,
+      "keys": {
+        "1": "0"
+      },
+      "kind": "frame",
+      "lua_type": "table",
+      "nKeysApprox": 1,
+      "objType": "Texture",
       "path": "_G.AscensionCurrencyPanelScrollListScrollFrameButton10Check"
     },
     {
@@ -9646,7 +9772,52 @@
       "lua_type": "table",
       "nKeysApprox": 1,
       "objType": "FontString",
-      "path": "_G.AscensionSkillsPanelScrollListScrollFrameButton21StatusBarSkillName"
+      "path": "_G.AscensionReputationPanelScrollListScrollFrameButton5ReputationBarFactionStanding"
+    },
+    {
+      "keyCountCapped": false,
+      "keys": {
+        "1": "0"
+      },
+      "kind": "frame",
+      "lua_type": "table",
+      "nKeysApprox": 1,
+      "objType": "FontString",
+      "path": "_G.AscensionCharacterAmmoSlotStock"
+    },
+    {
+      "keyCountCapped": false,
+      "keys": {
+        "1": "0"
+      },
+      "kind": "frame",
+      "lua_type": "table",
+      "nKeysApprox": 1,
+      "objType": "FontString",
+      "path": "_G.AscensionSpellbookFrameContentPetSpellsSpellButton9SeeTrainerString"
+    },
+    {
+      "keyCountCapped": false,
+      "keys": {
+        "1": "0",
+        "2": "atlas"
+      },
+      "kind": "frame",
+      "lua_type": "table",
+      "nKeysApprox": 2,
+      "objType": "Texture",
+      "path": "_G.AscensionSpellbookFrameContentProfessionsProfession6ProgressBarBGRight"
+    },
+    {
+      "keyCountCapped": false,
+      "keys": {
+        "1": "0"
+      },
+      "kind": "frame",
+      "lua_type": "table",
+      "nKeysApprox": 1,
+      "objType": "FontString",
+      "path": "_G.AscensionSpellbookFrameContentSpellsSpellButton12SpellName"
     },
     {
       "keyCountCapped": false,
@@ -9667,8 +9838,8 @@
       "kind": "frame",
       "lua_type": "table",
       "nKeysApprox": 1,
-      "objType": "Button",
-      "path": "_G.AscensionReputationPanelScrollListScrollFrameButton16ExpandOrCollapseButton"
+      "objType": "Texture",
+      "path": "_G.AscensionSpellbookFrameContentSpellsSpellButton5Highlight"
     },
     {
       "keyCountCapped": false,
@@ -9678,20 +9849,19 @@
       "kind": "frame",
       "lua_type": "table",
       "nKeysApprox": 1,
-      "objType": "Button",
-      "path": "_G.AscensionSpellbookFrameContentProfessionsProfession5AbandonButton"
+      "objType": "FontString",
+      "path": "_G.AscensionCharacterStatsPanelScrollFrameButton11Label"
     },
     {
       "keyCountCapped": false,
       "keys": {
-        "1": "0",
-        "2": "atlas"
+        "1": "0"
       },
       "kind": "frame",
       "lua_type": "table",
-      "nKeysApprox": 2,
+      "nKeysApprox": 1,
       "objType": "Texture",
-      "path": "_G.AscensionSpellbookFrameContentSpellsSpellButton2SlotFrame"
+      "path": "_G.AscensionSpellbookFrameContentPetSpellsSpellButton12IconTextureBg"
     },
     {
       "keyCountCapped": false,
@@ -9722,6 +9892,50 @@
       "lua_type": "table",
       "nKeysApprox": 1,
       "objType": "Texture",
+      "path": "_G.AscensionCurrencyPanelScrollListScrollFrameButton19Check"
+    },
+    {
+      "keyCountCapped": false,
+      "keys": {
+        "1": "OnLeave",
+        "2": "OnModifiedClick",
+        "3": "TrainTextBackground",
+        "4": "CheckedTexture",
+        "5": "_RegisterForClicks",
+        "6": "TextBackground",
+        "7": "OnDragStart",
+        "8": "SubSpellName",
+        "9": "OnClick",
+        "10": "AutoCastable"
+      },
+      "kind": "frame",
+      "lua_type": "table",
+      "nKeysApprox": 44,
+      "objType": "CheckButton",
+      "path": "_G.AscensionSpellbookFrameContentPetSpellsSpellButton10"
+    },
+    {
+      "keyCountCapped": false,
+      "keys": {
+        "1": "0",
+        "2": "Delete",
+        "3": "Edit"
+      },
+      "kind": "frame",
+      "lua_type": "table",
+      "nKeysApprox": 3,
+      "objType": "Frame",
+      "path": "_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton7Controls"
+    },
+    {
+      "keyCountCapped": false,
+      "keys": {
+        "1": "0"
+      },
+      "kind": "frame",
+      "lua_type": "table",
+      "nKeysApprox": 1,
+      "objType": "Texture",
       "path": "_G.AscensionReputationPanelScrollListScrollFrameButton10ExpandOrCollapseButtonHighlight"
     },
     {
@@ -9739,14 +9953,22 @@
     {
       "keyCountCapped": false,
       "keys": {
-        "1": "0",
-        "2": "atlas"
+        "1": "SetWatchedFaction",
+        "2": "OnShow",
+        "3": "OnLoad",
+        "4": "OnHide",
+        "5": "DetailsFrame",
+        "6": "ToggleAtWar",
+        "7": "OnEvent",
+        "8": "UpdateReputationDetails",
+        "9": "ScrollList",
+        "10": "0"
       },
       "kind": "frame",
       "lua_type": "table",
-      "nKeysApprox": 2,
-      "objType": "Texture",
-      "path": "_G.AscensionCharacterStatsPanelScrollFrameButton7Middle"
+      "nKeysApprox": 10,
+      "objType": "Frame",
+      "path": "_G.AscensionReputationPanel"
     },
     {
       "keyCountCapped": false,
@@ -9759,18 +9981,6 @@
       "nKeysApprox": 2,
       "objType": "Texture",
       "path": "_G.AscensionSpellbookFrameContentProfessionsProfession10ProgressBarBGRight"
-    },
-    {
-      "keyCountCapped": false,
-      "keys": {
-        "1": "0",
-        "2": "atlas"
-      },
-      "kind": "frame",
-      "lua_type": "table",
-      "nKeysApprox": 2,
-      "objType": "Texture",
-      "path": "_G.AscensionCharacterStatsPanelScrollFrameButton21Middle"
     },
     {
       "keyCountCapped": false,
@@ -9793,6 +10003,26 @@
       "nKeysApprox": 1,
       "objType": "Texture",
       "path": "_G.AscensionSpellbookFrameTab1LeftDisabled"
+    },
+    {
+      "keyCountCapped": false,
+      "keys": {
+        "1": "0",
+        "2": "OnEnter",
+        "3": "HighlightTexture",
+        "4": "Active",
+        "5": "IsSelected",
+        "6": "Expand",
+        "7": "OnSelected",
+        "8": "SetIndex",
+        "9": "OnRightClick",
+        "10": "OnClick"
+      },
+      "kind": "frame",
+      "lua_type": "table",
+      "nKeysApprox": 19,
+      "objType": "Button",
+      "path": "_G.AscensionCharacterTitlesPanelScrollFrameButton3"
     },
     {
       "keyCountCapped": false,
@@ -9842,13 +10072,14 @@
     {
       "keyCountCapped": false,
       "keys": {
-        "1": "0"
+        "1": "0",
+        "2": "atlas"
       },
       "kind": "frame",
       "lua_type": "table",
-      "nKeysApprox": 1,
+      "nKeysApprox": 2,
       "objType": "Texture",
-      "path": "_G.AscensionSpellbookFrameContentProfessionsProfession4ProgressBarBar"
+      "path": "_G.AscensionSpellbookFrameContentProfessionsProfession5Highlight"
     },
     {
       "keyCountCapped": false,
@@ -9870,7 +10101,47 @@
       "lua_type": "table",
       "nKeysApprox": 1,
       "objType": "Texture",
-      "path": "_G.AscensionReputationPanelScrollListScrollFrameButton2ReputationBarHighlight2"
+      "path": "_G.AscensionReputationPanelScrollListScrollFrameButton16ReputationBarAtWarHighlight1"
+    },
+    {
+      "keyCountCapped": false,
+      "keys": {
+        "1": "0",
+        "2": "GetFrameDrawLayer",
+        "3": "SetCenterColor",
+        "4": "ShowNineSlicePiece",
+        "5": "SetNineSliceIgnoreInLayout",
+        "6": "GetBorderColor",
+        "7": "TopRightCorner",
+        "8": "TopLeftCorner",
+        "9": "RightEdge",
+        "10": "HideNineSlicePiece"
+      },
+      "kind": "frame",
+      "lua_type": "table",
+      "nKeysApprox": 24,
+      "objType": "Frame",
+      "path": "_G.AscensionLFGFrameNineSlice"
+    },
+    {
+      "keyCountCapped": false,
+      "keys": {
+        "1": "0",
+        "2": "OnLeave",
+        "3": "OnModifiedClick",
+        "4": "MarkDirty",
+        "5": "Update",
+        "6": "unit",
+        "7": "UpdateLock",
+        "8": "IconBorder",
+        "9": "UpdateTooltip",
+        "10": "backgroundTextureName"
+      },
+      "kind": "frame",
+      "lua_type": "table",
+      "nKeysApprox": 28,
+      "objType": "Button",
+      "path": "_G.AscensionCharacterSecondaryHandSlot"
     },
     {
       "keyCountCapped": false,
@@ -9885,6 +10156,17 @@
       "nKeysApprox": 4,
       "objType": "Frame",
       "path": "_G.AscensionPVEFrameLFDFramePartyBackfill"
+    },
+    {
+      "keyCountCapped": false,
+      "keys": {
+        "1": "0"
+      },
+      "kind": "frame",
+      "lua_type": "table",
+      "nKeysApprox": 1,
+      "objType": "FontString",
+      "path": "_G.AscensionCurrencyPanelScrollListScrollFrameButton4Count"
     },
     {
       "keyCountCapped": false,
@@ -9931,6 +10213,18 @@
     {
       "keyCountCapped": false,
       "keys": {
+        "1": "0",
+        "2": "atlas"
+      },
+      "kind": "frame",
+      "lua_type": "table",
+      "nKeysApprox": 2,
+      "objType": "Texture",
+      "path": "_G.AscensionSpellbookFrameContentProfessionsProfession5ProgressBarLeft"
+    },
+    {
+      "keyCountCapped": false,
+      "keys": {
         "1": "0"
       },
       "kind": "frame",
@@ -9958,53 +10252,8 @@
       "kind": "frame",
       "lua_type": "table",
       "nKeysApprox": 1,
-      "objType": "FontString",
-      "path": "_G.AscensionPVEFrameLFDFrameSpecificListButton10InstanceName"
-    },
-    {
-      "keyCountCapped": false,
-      "keys": {
-        "1": "0",
-        "2": "atlas"
-      },
-      "kind": "frame",
-      "lua_type": "table",
-      "nKeysApprox": 2,
-      "objType": "Texture",
-      "path": "_G.AscensionSpellbookFrameContentSpellsSpellButton3TextBackground"
-    },
-    {
-      "keyCountCapped": false,
-      "keys": {
-        "1": "0"
-      },
-      "kind": "frame",
-      "lua_type": "table",
-      "nKeysApprox": 1,
-      "objType": "Cooldown",
-      "path": "_G.AscensionCharacterMainHandSlotCooldown"
-    },
-    {
-      "keyCountCapped": false,
-      "keys": {
-        "1": "0"
-      },
-      "kind": "frame",
-      "lua_type": "table",
-      "nKeysApprox": 1,
       "objType": "Texture",
       "path": "_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton1IsEquipped"
-    },
-    {
-      "keyCountCapped": false,
-      "keys": {
-        "1": "0"
-      },
-      "kind": "frame",
-      "lua_type": "table",
-      "nKeysApprox": 1,
-      "objType": "Button",
-      "path": "_G.AscensionSpellbookFramePreviousPageButton"
     },
     {
       "keyCountCapped": false,
@@ -10061,54 +10310,7 @@
       "lua_type": "table",
       "nKeysApprox": 1,
       "objType": "Texture",
-      "path": "_G.AscensionReputationPanelScrollListScrollFrameButton9ReputationBarHighlight2"
-    },
-    {
-      "keyCountCapped": false,
-      "keys": {
-        "1": "0",
-        "2": "atlas"
-      },
-      "kind": "frame",
-      "lua_type": "table",
-      "nKeysApprox": 2,
-      "objType": "Texture",
-      "path": "_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton6EditBoxRight"
-    },
-    {
-      "keyCountCapped": false,
-      "keys": {
-        "1": "0"
-      },
-      "kind": "frame",
-      "lua_type": "table",
-      "nKeysApprox": 1,
-      "objType": "Texture",
       "path": "_G.AscensionPVEFrameLFDFrameFindGroupButtonLeft"
-    },
-    {
-      "keyCountCapped": false,
-      "keys": {
-        "1": "0",
-        "2": "Delete",
-        "3": "Edit"
-      },
-      "kind": "frame",
-      "lua_type": "table",
-      "nKeysApprox": 3,
-      "objType": "Frame",
-      "path": "_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton3Controls"
-    },
-    {
-      "keyCountCapped": false,
-      "keys": {
-        "1": "0"
-      },
-      "kind": "frame",
-      "lua_type": "table",
-      "nKeysApprox": 1,
-      "objType": "Texture",
-      "path": "_G.AscensionPVEFrameLFDFrameSpecificListButton13ExpandOrCollapseButtonHighlight"
     },
     {
       "keyCountCapped": false,
@@ -10170,23 +10372,6 @@
     {
       "keyCountCapped": false,
       "keys": {
-        "1": "BGRight",
-        "2": "CapLeft",
-        "3": "CapRight",
-        "4": "0",
-        "5": "RankText",
-        "6": "BGMiddle",
-        "7": "BGLeft"
-      },
-      "kind": "frame",
-      "lua_type": "table",
-      "nKeysApprox": 7,
-      "objType": "StatusBar",
-      "path": "_G.AscensionSpellbookFrameContentProfessionsProfession8ProgressBar"
-    },
-    {
-      "keyCountCapped": false,
-      "keys": {
         "1": "0",
         "2": "OnLeave",
         "3": "OnModifiedClick",
@@ -10223,46 +10408,6 @@
       "nKeysApprox": 19,
       "objType": "CheckButton",
       "path": "_G.AscensionCharacterEquipmentManagerPanelIconSelector.Button15"
-    },
-    {
-      "keyCountCapped": false,
-      "keys": {
-        "1": "OnLeave",
-        "2": "OnModifiedClick",
-        "3": "TrainTextBackground",
-        "4": "CheckedTexture",
-        "5": "_RegisterForClicks",
-        "6": "TextBackground",
-        "7": "OnDragStart",
-        "8": "SubSpellName",
-        "9": "OnClick",
-        "10": "AutoCastable"
-      },
-      "kind": "frame",
-      "lua_type": "table",
-      "nKeysApprox": 44,
-      "objType": "CheckButton",
-      "path": "_G.AscensionSpellbookFrameContentSpellsSpellButton2"
-    },
-    {
-      "keyCountCapped": false,
-      "keys": {
-        "1": "OnLeave",
-        "2": "OnModifiedClick",
-        "3": "TrainTextBackground",
-        "4": "CheckedTexture",
-        "5": "_RegisterForClicks",
-        "6": "TextBackground",
-        "7": "OnDragStart",
-        "8": "SubSpellName",
-        "9": "OnClick",
-        "10": "AutoCastable"
-      },
-      "kind": "frame",
-      "lua_type": "table",
-      "nKeysApprox": 44,
-      "objType": "CheckButton",
-      "path": "_G.AscensionSpellbookFrameContentSpellsSpellButton11"
     },
     {
       "keyCountCapped": false,
@@ -10328,14 +10473,13 @@
     {
       "keyCountCapped": false,
       "keys": {
-        "1": "0",
-        "2": "Icon"
+        "1": "0"
       },
       "kind": "frame",
       "lua_type": "table",
-      "nKeysApprox": 2,
-      "objType": "Frame",
-      "path": "_G.AscensionSpellbookFrameContentSpellsSpellButton1TrainBook"
+      "nKeysApprox": 1,
+      "objType": "FontString",
+      "path": "_G.AscensionCharacterMysticEnchantPanelScrollFrameButton4Count"
     },
     {
       "keyCountCapped": false,
@@ -10347,27 +10491,7 @@
       "lua_type": "table",
       "nKeysApprox": 2,
       "objType": "Texture",
-      "path": "_G.AscensionCharacterTitlesPanelScrollFrameButton20Active"
-    },
-    {
-      "keyCountCapped": false,
-      "keys": {
-        "1": "HideCurrentPanel",
-        "2": "RemoveAllTabs",
-        "3": "SetTabPoint",
-        "4": "tabPadding",
-        "5": "SelectFirstEnabledTab",
-        "6": "RightEdge",
-        "7": "tabLevel",
-        "8": "UpdateTabLayout",
-        "9": "tabPanels",
-        "10": "SetTabLayout"
-      },
-      "kind": "frame",
-      "lua_type": "table",
-      "nKeysApprox": 81,
-      "objType": "Frame",
-      "path": "_G.AscensionCharacterFrameRightInset"
+      "path": "_G.AscensionSpellbookFrameContentProfessionsProfession8ProgressBarRight"
     },
     {
       "keyCountCapped": false,
@@ -10388,8 +10512,8 @@
       "kind": "frame",
       "lua_type": "table",
       "nKeysApprox": 1,
-      "objType": "FontString",
-      "path": "_G.AscensionReputationPanelScrollListScrollFrameButton2FactionName"
+      "objType": "Texture",
+      "path": "_G.AscensionCurrencyPanelScrollListScrollFrameButton8Check"
     },
     {
       "keyCountCapped": false,
@@ -10406,13 +10530,24 @@
       "keyCountCapped": false,
       "keys": {
         "1": "0",
-        "2": "atlas"
+        "2": "Icon"
       },
       "kind": "frame",
       "lua_type": "table",
       "nKeysApprox": 2,
+      "objType": "Frame",
+      "path": "_G.AscensionSpellbookFrameContentPetSpellsSpellButton3TrainBook"
+    },
+    {
+      "keyCountCapped": false,
+      "keys": {
+        "1": "0"
+      },
+      "kind": "frame",
+      "lua_type": "table",
+      "nKeysApprox": 1,
       "objType": "Texture",
-      "path": "_G.AscensionSpellbookFrameContentPetSpellsSpellButton8TextBackground"
+      "path": "_G.AscensionSkillsPanelScrollListScrollFrameButton3ExpandIcon"
     },
     {
       "keyCountCapped": false,
@@ -10431,32 +10566,13 @@
     {
       "keyCountCapped": false,
       "keys": {
-        "1": "0",
-        "2": "border",
-        "3": "Texture"
+        "1": "0"
       },
       "kind": "frame",
       "lua_type": "table",
-      "nKeysApprox": 3,
-      "objType": "Frame",
-      "path": "_G.AscensionPVEFrameLFDFrameRoleButtonDPSIncentiveIcon"
-    },
-    {
-      "keyCountCapped": false,
-      "keys": {
-        "1": "BGRight",
-        "2": "CapLeft",
-        "3": "CapRight",
-        "4": "0",
-        "5": "RankText",
-        "6": "BGMiddle",
-        "7": "BGLeft"
-      },
-      "kind": "frame",
-      "lua_type": "table",
-      "nKeysApprox": 7,
-      "objType": "StatusBar",
-      "path": "_G.AscensionSpellbookFrameContentProfessionsProfession13ProgressBar"
+      "nKeysApprox": 1,
+      "objType": "Texture",
+      "path": "_G.AscensionCharacterFramePoolFrameAscensionCharacterFrameTabTemplate3Right"
     },
     {
       "keyCountCapped": false,
@@ -10466,8 +10582,25 @@
       "kind": "frame",
       "lua_type": "table",
       "nKeysApprox": 1,
-      "objType": "Button",
-      "path": "_G.AscensionReputationPanelScrollListScrollFrameButton17ExpandOrCollapseButton"
+      "objType": "FontString",
+      "path": "_G.AscensionCurrencyPanelScrollListScrollFrameButton19Count"
+    },
+    {
+      "keyCountCapped": false,
+      "keys": {
+        "1": "enabledColor",
+        "2": "Instructions",
+        "3": "disabledColor",
+        "4": "0",
+        "5": "Right",
+        "6": "Middle",
+        "7": "Left"
+      },
+      "kind": "frame",
+      "lua_type": "table",
+      "nKeysApprox": 7,
+      "objType": "EditBox",
+      "path": "_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton8EditBox"
     },
     {
       "keyCountCapped": false,
@@ -10499,8 +10632,8 @@
       "kind": "frame",
       "lua_type": "table",
       "nKeysApprox": 1,
-      "objType": "FontString",
-      "path": "_G.AscensionSpellbookFrameContentPetSpellsSpellButton6SeeTrainerString"
+      "objType": "CheckButton",
+      "path": "_G.AscensionPVEFrameLFDFrameSpecificListButton2EnableButton"
     },
     {
       "keyCountCapped": false,
@@ -10510,8 +10643,8 @@
       "kind": "frame",
       "lua_type": "table",
       "nKeysApprox": 1,
-      "objType": "Button",
-      "path": "_G.AscensionReputationPanelScrollListScrollFrameButton3ExpandOrCollapseButton"
+      "objType": "Texture",
+      "path": "_G.AscensionWeeklyKeystoneFrameExpansionDropdownLeft"
     },
     {
       "keyCountCapped": false,
@@ -10527,14 +10660,13 @@
     {
       "keyCountCapped": false,
       "keys": {
-        "1": "0",
-        "2": "tooltipTitle"
+        "1": "0"
       },
       "kind": "frame",
       "lua_type": "table",
-      "nKeysApprox": 2,
-      "objType": "Button",
-      "path": "_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton7EditControlsEditIcon"
+      "nKeysApprox": 1,
+      "objType": "Texture",
+      "path": "_G.AscensionCharacterEquipmentManagerPanelSaveButtonLeft"
     },
     {
       "keyCountCapped": false,
@@ -10570,44 +10702,40 @@
     {
       "keyCountCapped": false,
       "keys": {
-        "1": "heroicIcon",
-        "2": "lockedIndicator",
-        "3": "0",
-        "4": "id",
-        "5": "expandOrCollapseButton",
-        "6": "enableButton",
-        "7": "instanceName",
-        "8": "level",
-        "9": "isCollapsed"
-      },
-      "kind": "frame",
-      "lua_type": "table",
-      "nKeysApprox": 9,
-      "objType": "Frame",
-      "path": "_G.AscensionPVEFrameLFDFrameSpecificListButton1"
-    },
-    {
-      "keyCountCapped": false,
-      "keys": {
-        "1": "0"
-      },
-      "kind": "frame",
-      "lua_type": "table",
-      "nKeysApprox": 1,
-      "objType": "Texture",
-      "path": "_G.AscensionSpellbookFrameContentPetSpellsSpellButton9FlyoutArrow"
-    },
-    {
-      "keyCountCapped": false,
-      "keys": {
         "1": "0",
-        "2": "atlas"
+        "2": "OnEnter",
+        "3": "HighlightTexture",
+        "4": "Active",
+        "5": "IsSelected",
+        "6": "Expand",
+        "7": "OnSelected",
+        "8": "SetIndex",
+        "9": "OnRightClick",
+        "10": "OnClick"
       },
       "kind": "frame",
       "lua_type": "table",
-      "nKeysApprox": 2,
-      "objType": "Texture",
-      "path": "_G.AscensionPaperDollPanelFelCommutationNoticeArtwork"
+      "nKeysApprox": 19,
+      "objType": "Button",
+      "path": "_G.AscensionCharacterTitlesPanelScrollFrameButton1"
+    },
+    {
+      "keyCountCapped": false,
+      "keys": {
+        "1": "Highlight1",
+        "2": "Highlight2",
+        "3": "FactionStanding",
+        "4": "RightTexture",
+        "5": "AtWarHighlight1",
+        "6": "AtWarHighlight2",
+        "7": "LeftTexture",
+        "8": "0"
+      },
+      "kind": "frame",
+      "lua_type": "table",
+      "nKeysApprox": 8,
+      "objType": "StatusBar",
+      "path": "_G.AscensionReputationPanelScrollListScrollFrameButton15ReputationBar"
     },
     {
       "keyCountCapped": false,
@@ -10640,18 +10768,7 @@
       "lua_type": "table",
       "nKeysApprox": 1,
       "objType": "FontString",
-      "path": "_G.AscensionSpellbookFrameContentPetSpellsSpellButton5SpellName"
-    },
-    {
-      "keyCountCapped": false,
-      "keys": {
-        "1": "0"
-      },
-      "kind": "frame",
-      "lua_type": "table",
-      "nKeysApprox": 1,
-      "objType": "Button",
-      "path": "_G.AscensionCurrencyPanelScrollListScrollFrameButton5LinkButton"
+      "path": "_G.AscensionSpellbookFrameContentPetSpellsSpellButton2RequiredLevelString"
     },
     {
       "keyCountCapped": false,
@@ -10663,17 +10780,6 @@
       "nKeysApprox": 1,
       "objType": "Texture",
       "path": "_G.AscensionReputationPanelScrollListScrollFrameButton9ReputationBarLeftTexture"
-    },
-    {
-      "keyCountCapped": false,
-      "keys": {
-        "1": "0"
-      },
-      "kind": "frame",
-      "lua_type": "table",
-      "nKeysApprox": 1,
-      "objType": "Button",
-      "path": "_G.AscensionReputationPanelScrollListScrollFrameButton2ExpandOrCollapseButton"
     },
     {
       "keyCountCapped": false,
@@ -10690,25 +10796,13 @@
     {
       "keyCountCapped": false,
       "keys": {
-        "1": "0",
-        "2": "atlas"
-      },
-      "kind": "frame",
-      "lua_type": "table",
-      "nKeysApprox": 2,
-      "objType": "Texture",
-      "path": "_G.AscensionCurrencyPanelScrollListScrollFrameButton22CategoryBackground"
-    },
-    {
-      "keyCountCapped": false,
-      "keys": {
         "1": "0"
       },
       "kind": "frame",
       "lua_type": "table",
       "nKeysApprox": 1,
       "objType": "Texture",
-      "path": "_G.AscensionCurrencyPanelScrollListScrollFrameButton15Icon"
+      "path": "_G.AscensionCharacterBackSlotNormalTexture"
     },
     {
       "keyCountCapped": false,
@@ -10718,42 +10812,8 @@
       "kind": "frame",
       "lua_type": "table",
       "nKeysApprox": 1,
-      "objType": "FontString",
-      "path": "_G.AscensionReputationPanelScrollListScrollFrameButton5ReputationBarFactionStanding"
-    },
-    {
-      "keyCountCapped": false,
-      "keys": {
-        "1": "0"
-      },
-      "kind": "frame",
-      "lua_type": "table",
-      "nKeysApprox": 1,
-      "objType": "FontString",
-      "path": "_G.AscensionCharacterAmmoSlotStock"
-    },
-    {
-      "keyCountCapped": false,
-      "keys": {
-        "1": "0"
-      },
-      "kind": "frame",
-      "lua_type": "table",
-      "nKeysApprox": 1,
-      "objType": "FontString",
-      "path": "_G.AscensionSpellbookFrameContentPetSpellsSpellButton9SeeTrainerString"
-    },
-    {
-      "keyCountCapped": false,
-      "keys": {
-        "1": "0",
-        "2": "atlas"
-      },
-      "kind": "frame",
-      "lua_type": "table",
-      "nKeysApprox": 2,
       "objType": "Texture",
-      "path": "_G.AscensionSpellbookFrameContentProfessionsProfession6ProgressBarBGRight"
+      "path": "_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton4IconBackground"
     },
     {
       "keyCountCapped": false,
@@ -10763,8 +10823,41 @@
       "kind": "frame",
       "lua_type": "table",
       "nKeysApprox": 1,
-      "objType": "FontString",
-      "path": "_G.AscensionSpellbookFrameContentSpellsSpellButton12SpellName"
+      "objType": "Texture",
+      "path": "_G.AscensionCurrencyPanelScrollListScrollFrameButton21Icon"
+    },
+    {
+      "keyCountCapped": false,
+      "keys": {
+        "1": "0"
+      },
+      "kind": "frame",
+      "lua_type": "table",
+      "nKeysApprox": 1,
+      "objType": "Texture",
+      "path": "_G.AscensionCharacterStatsPanelScrollFrameButton2ExpandOrCollapseIcon"
+    },
+    {
+      "keyCountCapped": false,
+      "keys": {
+        "1": "0"
+      },
+      "kind": "frame",
+      "lua_type": "table",
+      "nKeysApprox": 1,
+      "objType": "Texture",
+      "path": "_G.AscensionReputationPanelScrollListScrollFrameButton6ExpandOrCollapseButtonHighlight"
+    },
+    {
+      "keyCountCapped": false,
+      "keys": {
+        "1": "0"
+      },
+      "kind": "frame",
+      "lua_type": "table",
+      "nKeysApprox": 1,
+      "objType": "Texture",
+      "path": "_G.AscensionPVEFrameLFDFrameSpecificListButton14ExpandOrCollapseButtonHighlight"
     },
     {
       "keyCountCapped": false,
@@ -10787,18 +10880,7 @@
       "lua_type": "table",
       "nKeysApprox": 1,
       "objType": "Texture",
-      "path": "_G.AscensionSpellbookFrameContentSpellsSpellButton5Highlight"
-    },
-    {
-      "keyCountCapped": false,
-      "keys": {
-        "1": "0"
-      },
-      "kind": "frame",
-      "lua_type": "table",
-      "nKeysApprox": 1,
-      "objType": "FontString",
-      "path": "_G.AscensionCharacterStatsPanelScrollFrameButton11Label"
+      "path": "_G.AscensionPVEFrameLFDFrameSpecificListButton15LockedIndicator"
     },
     {
       "keyCountCapped": false,
@@ -38774,6 +38856,18 @@
     {
       "keyCountCapped": false,
       "keys": {
+        "1": "0",
+        "2": "Anim"
+      },
+      "kind": "frame",
+      "lua_type": "table",
+      "nKeysApprox": 2,
+      "objType": "Texture",
+      "path": "_G.DraftModeMicroButtonGlow"
+    },
+    {
+      "keyCountCapped": false,
+      "keys": {
         "1": "0"
       },
       "kind": "frame",
@@ -40416,6 +40510,26 @@
     {
       "keyCountCapped": false,
       "keys": {
+        "1": "UpdateAvailable",
+        "2": "0",
+        "3": "elapsed",
+        "4": "IsEmpty",
+        "5": "HardThrottleStart",
+        "6": "Enqueue",
+        "7": "Setup",
+        "8": "Priority",
+        "9": "available",
+        "10": "LastAvailableUpdate"
+      },
+      "kind": "frame",
+      "lua_type": "table",
+      "nKeysApprox": 13,
+      "objType": "Frame",
+      "path": "_G.C_Comm"
+    },
+    {
+      "keyCountCapped": false,
+      "keys": {
         "1": "0",
         "2": "atlas"
       },
@@ -41059,18 +41173,6 @@
       "nKeysApprox": 1,
       "objType": "Texture",
       "path": "_G.AscensionPVPFrameCasualFrameSkirmish1v1ButtonAnchor"
-    },
-    {
-      "keyCountCapped": false,
-      "keys": {
-        "1": "0",
-        "2": "Anim"
-      },
-      "kind": "frame",
-      "lua_type": "table",
-      "nKeysApprox": 2,
-      "objType": "Texture",
-      "path": "_G.DraftModeMicroButtonGlow"
     },
     {
       "keyCountCapped": false,
@@ -43383,17 +43485,6 @@
       "nKeysApprox": 1,
       "objType": "Texture",
       "path": "_G.AscensionPVPFrameCasualFrameRandomBGButtonRewardArena.IconBG"
-    },
-    {
-      "keyCountCapped": false,
-      "keys": {
-        "1": "0"
-      },
-      "kind": "frame",
-      "lua_type": "table",
-      "nKeysApprox": 1,
-      "objType": "AnimationGroup",
-      "path": "_G.DraftModeMicroButtonGlow.Anim"
     },
     {
       "keyCountCapped": false,
@@ -46015,6 +46106,17 @@
       "nKeysApprox": 2,
       "objType": "Frame",
       "path": "_G.C_Flipbook.Updater"
+    },
+    {
+      "keyCountCapped": false,
+      "keys": {
+        "1": "0"
+      },
+      "kind": "frame",
+      "lua_type": "table",
+      "nKeysApprox": 1,
+      "objType": "AnimationGroup",
+      "path": "_G.DraftModeMicroButtonGlow.Anim"
     },
     {
       "keyCountCapped": false,
@@ -51193,21 +51295,107 @@
       "nKeysApprox": 2,
       "objType": "Texture",
       "path": "_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton6EditBox.Left"
+    },
+    {
+      "keyCountCapped": false,
+      "keys": {
+        "1": "0",
+        "2": "Delete",
+        "3": "Edit"
+      },
+      "kind": "frame",
+      "lua_type": "table",
+      "nKeysApprox": 3,
+      "objType": "Frame",
+      "path": "_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton7.Controls"
+    },
+    {
+      "keyCountCapped": false,
+      "keys": {
+        "1": "enabledColor",
+        "2": "Instructions",
+        "3": "disabledColor",
+        "4": "0",
+        "5": "Right",
+        "6": "Middle",
+        "7": "Left"
+      },
+      "kind": "frame",
+      "lua_type": "table",
+      "nKeysApprox": 7,
+      "objType": "EditBox",
+      "path": "_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton7.EditBox"
+    },
+    {
+      "keyCountCapped": false,
+      "keys": {
+        "1": "0",
+        "2": "atlas"
+      },
+      "kind": "frame",
+      "lua_type": "table",
+      "nKeysApprox": 2,
+      "objType": "Texture",
+      "path": "_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton7.HighlightTexture"
+    },
+    {
+      "keyCountCapped": false,
+      "keys": {
+        "1": "0"
+      },
+      "kind": "frame",
+      "lua_type": "table",
+      "nKeysApprox": 1,
+      "objType": "Texture",
+      "path": "_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton7.IsEquipped"
+    },
+    {
+      "keyCountCapped": false,
+      "keys": {
+        "1": "Overlay",
+        "2": "SetBorderInset",
+        "3": "Highlight",
+        "4": "SetOverlayColor",
+        "5": "SetBorderAlpha",
+        "6": "SetBackgroundTexture",
+        "7": "IconBorder",
+        "8": "SetOverlaySize",
+        "9": "SetHighlightInset",
+        "10": "SetOverlayOffset"
+      },
+      "kind": "frame",
+      "lua_type": "table",
+      "nKeysApprox": 56,
+      "objType": "Frame",
+      "path": "_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton7.Icon"
+    },
+    {
+      "keyCountCapped": false,
+      "keys": {
+        "1": "0"
+      },
+      "kind": "frame",
+      "lua_type": "table",
+      "nKeysApprox": 1,
+      "objType": "FontString",
+      "path": "_G.AscensionCharacterEquipmentManagerPanelScrollFrameButton7.Text"
     }
   ],
   "meta": {
-    "fields": 387,
-    "frames": 3900,
-    "generated_at": "2026-02-15T08:13:23Z",
-    "globals_rows": 8000,
-    "globals_scan_ts": 1771142043,
-    "savedvars": "E:\\Ascension Launcher\\resources\\client\\WTF\\Account\\CtrlAlt\\SavedVariables\\BBScan.lua",
+    "bbscan_version": "0.3.108",
+    "client_build": null,
+    "fields": 404,
+    "frames": 3906,
+    "generated_at": "2026-02-15T18:15:34Z",
+    "globals_scan_ts": 1771156641,
+    "rows": 8000,
+    "savedvars": "/WTF/Account/<redacted>/SavedVariables/BBScan.lua",
     "scan_meta": {
       "addons_enabled_count": 11,
       "addons_enabled_hash": "91be8038",
       "addons_total": 113,
       "bbscan_store": 1,
-      "bbscan_version": "0.3.92",
+      "bbscan_version": "0.3.95",
       "cap": 250,
       "client_build": "12340",
       "client_date": "Jun 24 2010",
