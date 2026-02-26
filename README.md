@@ -1,10 +1,8 @@
 <p align="center">
+  # Ascension Client documentation (GitHub-friendly)
   ![GitHub Release](https://img.shields.io/github/v/release/Liakate/Ascension-Client)  ![GitHub repo size](https://img.shields.io/github/repo-size/Liakate/Ascension-Client)
   ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/Liakate/Ascension-Client/total)
-
 </p>
-
-# Ascension Client documentation (GitHub-friendly)
 
 This repository combines:
 
