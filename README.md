@@ -1,3 +1,6 @@
+![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/https%3A%2F%2Fgithub.com%2FLiakate/https%3A%2F%2Fgithub.com%2FLiakate%2FAscension-Client/total)
+
+
 # Ascension Client documentation (GitHub-friendly)
 
 This repository combines:
@@ -59,8 +62,6 @@ This repo includes the original source archives used to generate the documentati
 
 - `interface.zip` — the Bronzebeard **Interface** package (code-only `Interface\*` rip: FrameXML/SharedXML + bundled UI).
 - `DBFiles.zip` — the Bronzebeard **DBFilesClient** content pack (DBC tables; offline content evidence).
-
-> Note: These are the **same** `interface.zip` and `DBFiles.zip` referenced by the Bronzebeard ruleset.
 
 ## File inventory (Ascension Client.zip)
 
