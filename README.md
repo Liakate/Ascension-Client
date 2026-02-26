@@ -1,4 +1,5 @@
-![GitHub Release](https://img.shields.io/github/v/release/Liakate/Ascension-Client)
+![GitHub Release](https://img.shields.io/github/v/release/Liakate/Ascension-Client)![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/Liakate/Ascension-Client/total)
+
 
 
 
