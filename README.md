@@ -1,5 +1,6 @@
 ![GitHub Release](https://img.shields.io/github/v/release/Liakate/Ascension-Client)  ![GitHub repo size](https://img.shields.io/github/repo-size/Liakate/Ascension-Client)
-![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/Liakate/Ascension-Client/total)
+![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/Liakate/Ascension-Client/total) ![Static Badge](https://img.shields.io/badge/100%25-ChatGPT-blue?style=flat-square&logo=ChatGPT)
+
 
 # Ascension Client documentation (GitHub-friendly)
 
